@@ -55,7 +55,11 @@
 
 * [Nessus Essentials](Tools/Nessus%20Essentials/Nessus%20Essentials.md)
 
+### Web Application Penetration Testing
 
+* [sqlmap](Tools/sqlmap/sqlmap.md) - Detecting and exploiting SQL injection flaws and taking over of database servers
+
+* OWASP ZAP - web application security scanners
 
 ### Scripting & Automation
 
@@ -96,6 +100,10 @@
 
 * [Wargames](https://overthewire.org/wargames/) - The wargames offered by the OverTheWire community can help you to learn and practice security concepts in the form of fun-filled games.
 
+* [Portswigger's Mystery lab challenge](https://portswigger.net/web-security/all-labs) - Web Application Penetration Testing
+
+
+
 ### News
 
 *  [The Hacker News](https://thehackernews.com) -  Cybersecurity News and Analysis
@@ -106,7 +114,11 @@
 
 
 
+## Hacking Lab
 
+### Web Application Penetration Testing
+
+* [Portswigger Mystery lab challenges](HackingLab/Portswigger%20Mystery%20lab%20challenge/Portswigger%20Mystery%20lab%20challenge.md) 
 
 
 ## Home Work
