@@ -21,13 +21,14 @@
     - [Solution](#solution)
   - [Lab: DOM XSS in innerHTML sink using source location.search](#lab-dom-xss-in-innerhtml-sink-using-source-location-search)
     - [Solution](#solution)
-  - [DOM XSS in jQuery anchor href attribute sink using location.search source](#dom-xss-in-jquery-anchor-href-attribute-sink-using-location-search-source)
+  - [Lab: DOM XSS in jQuery anchor href attribute sink using location.search source](#lab-dom-xss-in-jquery-anchor-href-attribute-sink-using-location-search-source)
+    - [Solution](#solution)
+  - [Lab: DOM XSS in jQuery selector sink using a hashchange event](#lab-dom-xss-in-jquery-selector-sink-using-a-hashchange-event)
     - [Solution](#solution)
 - [Information disclosure](#information-disclosure)
   - [Lab: Information disclosure in version control history](#lab-information-disclosure-in-version-control-history)
       - [Download Git Repo](#download-git-repo)
       - [Browse .git repo with command line `git` client](#browse-git-repo-with-command-line-git-client)
-
 
 
 
@@ -116,7 +117,7 @@ Put this into search field:
 `'<iframe src="javascript:alert('hacked')"></iframe>`
 
 
-## DOM XSS in jQuery anchor href attribute sink using location.search source
+## Lab: DOM XSS in jQuery anchor href attribute sink using location.search source
 
 > This lab contains a DOM-based cross-site scripting vulnerability in the submit feedback page. It uses the jQuery library's $ selector function to find an anchor element, and changes its href attribute using data from location.search.
 > 
@@ -126,7 +127,7 @@ Put this into search field:
 
 `https://ac9e1f261f8059e7c0480f4600a40022.web-security-academy.net/feedback?returnPath=javascript:alert(%27hacked%27)`
 
-### Lab: DOM XSS in jQuery selector sink using a hashchange event
+## Lab: DOM XSS in jQuery selector sink using a hashchange event
 
 > This lab contains a DOM-based cross-site scripting vulnerability on the home page. It uses jQuery's $() selector function to auto-scroll to a given post, whose title is passed via the location.hash property.
 > 
