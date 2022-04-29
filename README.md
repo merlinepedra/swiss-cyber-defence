@@ -37,9 +37,12 @@
 * [Wireshark](Tools/Wireshark/Wireshark.md)
 
 ### WiFi Hacking
-* [Wifite2](https://github.com/derv82/wifite2) - Python script for auditing wireless networks
 
-* [Aircrack-ng](http://aircrack-ng.org/) - Aircrack-ng is a complete suite of tools to assess WiFi network security
+
+
+* [Wifite2](Tools/Wifite2/Wifite2.md) - Python script for auditing wireless networks
+
+* [Aircrack-ng](Tools/Aircrack-ng/Aircrack-ng.md) - Aircrack-ng is a complete suite of tools to assess WiFi network security
 
 ### Memory Forensics
 
