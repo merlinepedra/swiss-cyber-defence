@@ -15,9 +15,15 @@ It focuses on different areas of WiFi security:
 
 All tools are command line which allows for heavy scripting. A lot of GUIs have taken advantage of this feature. It works primarily on Linux but also Windows, macOS, FreeBSD, OpenBSD, NetBSD, as well as Solaris and even eComStation 2.
 
+
 ## Installation
 
 * Pre-Installed on Kali Linux
+
+## Recomended YouTube Videos
+* [Cracking WiFi WPA2 Handshake by David Bombal](https://www.youtube.com/watch?v=WfYxrLaqlN8)
+* [Cracking Wifi Password Using John The Ripper | JTR 2022](https://www.youtube.com/watch?v=ombsRNYwev0)
+
 
 
 ## General Information
@@ -46,3 +52,10 @@ All tools are command line which allows for heavy scripting. A lot of GUIs have 
 `sudo service network-manager start`
 
 
+
+
+
+## Cracking Password
+
+**WiFi Passwords has a minimum of 8 characters**
+`cat rockyou.txt | sort | uniq | pw-inspector -m 8 -M 63 > rockyou_wifi.txt`
