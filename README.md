@@ -11,9 +11,6 @@
 * [Web Application Penetration Testing](Topics/Web%20Application%20Penetration%20Testing/README.md)
 
 
-### 681 Detect and Repel Attacks on ICT Infrastructure
-
-
 
 
 ## Tools & Applications
