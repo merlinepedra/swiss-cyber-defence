@@ -3,10 +3,12 @@
 ## Modules
 
 
-### 674 - Team Building and Management
+### Topics
 
-
-* [Team Building and Management](674%20-%20Team%20Building%20and%20Management//674%20-%20Team%20Building%20and%20Management.md)
+* [Forensic principles and policies and Legal and regulatory compliance](Topics/Forensic%20principles%20and%20policies%20and%20Legal%20and%20regulatory%20compliance/README.md)
+* [Manage security incidents and Incident Response](Topics/Manage%20security%20incidents%20and%20Incident%20Response/README.md)
+* [Team Building and Management](Topics/Team%20Building%20and%20Management/README.md)
+* [Web Application Penetration Testing](Topics/Web%20Application%20Penetration%20Testing/README.md)
 
 
 ### 681 Detect and Repel Attacks on ICT Infrastructure
