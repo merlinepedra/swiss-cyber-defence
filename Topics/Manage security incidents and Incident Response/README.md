@@ -1,5 +1,8 @@
 # Manage security incidents & Incident Response
 
+
+[Flashcards](https://app.studysmarter.de/studysets/8976516?ref=VfFctwQooo0boGPvpYEQ1vMTRDhZpXL5)
+
 [Source Presentation](https://import.cdn.thinkific.com/380432/courses/1359027/ForensicprinciplesandpoliciesLegalandregulatorycompliance-220429-102205.pdf)
 
 ## Table of Contents
@@ -66,6 +69,9 @@
 * How can we prevent future incidents?
 * How can we better prepared for future incidents?
 * Who’s was/is the attacker? What’s the MOM?
+    * Medium
+    * Opportunity
+    * Motive
 
 ### Questions you should focus on
 * How do we manage the IR?
