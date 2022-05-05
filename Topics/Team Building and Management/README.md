@@ -2,6 +2,7 @@
 
 
 * ⭐️ [Flashcards](https://app.studysmarter.de/studysets/9004280?ref=VfFctwQooo0boGPvpYEQ1vMTRDhZpXL5)
+* Source: Modulnummer 674 - Team führen und fördern.pdf
 
 ---
 
@@ -59,6 +60,30 @@
           - [7. Laissez-Faire Style](#7-laissez-faire-style)
         - [Choosing Leadership Styles](#choosing-leadership-styles)
       - [Organizational Structures](#organizational-structures)
+        - [1. Hierarchical org structure](#1-hierarchical-org-structure)
+        - [2. Functional org structure](#2-functional-org-structure)
+        - [3. Horizontal or flat org structure](#3-horizontal-or-flat-org-structure)
+        - [4. Divisional org structure](#4-divisional-org-structure)
+          - [4.1 Market-based divisional org structure](#4-1-market-based-divisional-org-structure)
+        - [4.2 Product-based divisional org structure](#4-2-product-based-divisional-org-structure)
+        - [4.3 Geographic divisional org structure](#4-3-geographic-divisional-org-structure)
+        - [5. Matrix org structure](#5-matrix-org-structure)
+        - [6. Team-based org structure](#6-team-based-org-structure)
+        - [7. Network org structure](#7-network-org-structure)
+      - [Jack Welsh on Leadership](#jack-welsh-on-leadership)
+    - [3. Communication](#3-communication)
+      - [Knowledge required for action](#knowledge-required-for-action)
+      - [Communication](#communication)
+      - [Four Ear Model (F. Schulz von Thun)](#four-ear-model-f-schulz-von-thun)
+        - [The Model](#the-model)
+          - [The four sides of the message](#the-four-sides-of-the-message)
+          - [Beaks and Ears](#beaks-and-ears)
+          - [Example](#example)
+      - [Non-violent communication (NVC)](#non-violent-communication-nvc)
+      - [Some Rules for Effective Feedback](#some-rules-for-effective-feedback)
+      - [The Pendleton Method of Giving Feedback](#the-pendleton-method-of-giving-feedback)
+    - [4. Team Building and Roles](#4-team-building-and-roles)
+
 
 
 
@@ -89,10 +114,6 @@ Leads and promotes a team in professional and social respects and through an ada
 8. Identifies the need for further training in the team, develops individual development goals together with the employees, and plans the corresponding further training or support measures.
 
 ## Modulnummer 674 - Team führen und fördern
-*(Tuesday, 01. June 2021 - Live Session)*
-
-Source:
-[Modulnummer 674 - Team führen und fördern.pdf](https://import.cdn.thinkific.com/380432/courses/1359027/674TeamBuildingandManagementV8-210527-130533.pdf)
 
 ### Competence
 
@@ -519,11 +540,436 @@ Consciously **shapes own leadership behavior** and **adapts** it according to th
 
 
 ##### 3. Horizontal or flat org structure
+A horizontal or flat organizational structure fits companies with **few levels** between **upper management** and **staff-level employees**. Many **start-up businesses** use a horizontal org structure before they grow large enough to build out different departments, but some organizations maintain this structure since it **encourages less supervision** and **more involvement** from all emplovees.
+
+![](assets/16517364206148.png)
+
+
+| Pros                                                      | Cons                                                                             |
+|:----------------------------------------------------------|----------------------------------------------------------------------------------|
+| Gives employees more responsibility                       | Can create confusion since employees do not have a clear supervisor to report to |
+| Fosters more open communication                           | Can produce employees with more generalized skills and knowledge                 |
+| Improves coordination and speed of implementing new ideas | Can be difficult to maintain once the company grows beyond start-up status       |
 
 ##### 4. Divisional org structure
 
+* In divisional organizational structures, a company's **divisions**
+**have control** over their own **resources**, essentially operating
+like their own company within the **larger organization**.
+* Each division can have its own **marketing** team, **sales** team, **IT**
+team, etc.
+* This structure works well for large companies as it **empowers**
+the various **divisions** to **make decisions** without everyone
+having to report to just a **few executives**.
+* Depending on the organization's focus, there's a few **variations**
+to consider.
+
+
+| Pros                                                                | Cons                                                                                      |
+|---------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
+| -Helps large companies stay flexible                                | Can easily lead to duplicate resources                                                    |
+| Allows for a quicker response to industry changes or customer needs | Can mean muddled or insufficient communication between the headquarters and its divisions |
+| Promotes independence, autonomy, and a customized approach          | Can result in a company competing with itself                                             |
+
+###### 4.1 Market-based divisional org structure
+
+Divisions are separated by **market**, **industry**, or **customer type**.
+A large consumer goods company, like Target or Walmart,
+might separate its durable goods (clothing, electronics,
+furniture, etc.) from its food or logistics divisions.
+
+![](assets/16517369654029.png)
+
+
+##### 4.2 Product-based divisional org structure
+
+Divisions are separated by **product line**. For example, a **tech company** might have a division dedicated to its **cloud offerings**, while the rest of the divisions focus on the **different software offerings** - e.g., **Adobe** and its creative suite of Illustrator, Photoshop, InDesign, etc.
+
+![](assets/16517371032687.png)
+
+
+##### 4.3 Geographic divisional org structure
+
+Divisions are separated by **region**, **territories**, or **districts**, offering **more effective localization** and logistics. Companies might establish **satellite offices** across the country country or the globe in order to stay **close to their customers**.
+
+![](assets/16517372301527.png)
+
+
 ##### 5. Matrix org structure
+
+A matrix organizational chart looks like a **grid**, and it shows **cross functional teams** that form for **special projects**. For example, an **engineer** may regularly belong to the **engineering department** (led by an engineering director) but work on a **temporary project** (led by a project manager). The matrix org chart accounts for both of these roles and reporting relationships.
+
+![](assets/16517375197541.png)
+
+
+| Pros                                                                                           | Cons                                                                 |
+|------------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
+| Allows supervisors to easily choose individuals by the needs of a project                      | Presents a conflict between department managers and project managers |
+| Gives a more dynamic view of the organization                                                  | Can change more frequently than other organizational chart types     |
+| Encourages employees to use their skills in various capacities aside from their original roles |                                                                      |
 
 ##### 6. Team-based org structure
 
+It'll come as no surprise that a team-based organizational structure **groups employees** according to (what else?) teams - think **scrum teams** or tiger teams. A team organizational structure is meant to **disrupt the traditional hierarchy**, focusing more on **problem solving, cooperation**, and giving **employees more control**.
+
+![](assets/16517377001552.png)
+
+
+
+| Pros                                                                         | Cons                                                                                |
+|------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
+| Increases productivity, performance, and transparency by breaking down silos | Goes against many companies' natural inclination of a purely hierarchical structure |
+| Changes the traditional career models by getting people to move laterally    | Might make promotional paths less clear for employees                               |
+| Values experience rather than seniority                                      |                                                                                     |
+| Requires minimal management                                                  |                                                                                     |
+| Fits well with agile companies with scrum or tiger teams                     |                                                                                     |
+
+
 ##### 7. Network org structure
+
+* These days, few businesses have all their **services under one roof**, and juggling the **multitudes of vendors**, **subcontractors**, **freelancers**, **offsite locations**, and **satellite offices** can get confusing.
+* A network organizational structure makes sense of the **spread of resources**. It can also describe an **internal structure** that focuses more on **open communication** and **relationships** rather than **hierarchy**.
+
+![](assets/16517380018378.png)
+
+
+
+
+| Pros                                                                                  | Cons                                                                          |
+|---------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
+| Visualizes the complex web of onsite and offsite relationships in companies           | Can quickly become overly complex when dealing with lots of offsite processes |
+| Allows companies to be more flexible and agile                                        | Can make it more difficult for employees to know who has final say            |
+| -Give more power to all employees to collaborate, take initiative, and make decisions | 
+Helps employees and stakeholders understand workflows and processes           |
+                                                                                                                                                            
+
+#### Jack Welsh on Leadership
+
+1. Fire the loosers
+2. It's all about **communication**
+3. It's all in the execution (just f*** do it)
+4. Build great teams
+5. Give your team a vision
+6. Change (what's in for those who are affected by the changes - no one likes change) 
+7. Have a generosity gene (don't be jealous if a subordinate makes more money than you do)
+8. Be yourself (authentic)
+9. Get rid of the clutter (just like playing curling - broom)
+10. Change lives (make sure it matters what you do)
+
+### 3. Communication
+
+Designs own communication behavior consciously and according to the situation and establishes an appreciative communication culture in the team.
+
+#### Knowledge required for action
+
+Designs own **communication behavior** consciously and according to the **situation** and establishes an **appreciative communication culture** in the team.
+
+* Knows **basic communication models** (e.g. **four ears model** according to
+Schultz von Thun, **non-violent communication** according to B.
+Rosenberg) and can explain their **significance** for one's own
+**communication behavior**.
+* Knows the **rules** for **giving** and **receiving feedback**.
+
+
+#### Communication
+
+* Even if communication partners speak the **same language** it is not always possible to **avoid misunderstanding**.
+* **Verbal messages** are **not** as **simple** and **plain** as they sometimes seem to be.
+
+![](assets/16517388884196.jpg)
+*Nonviolent Communication -(Rosenberg)*
+
+#### Four Ear Model (F. Schulz von Thun)
+
+![](assets/16517389292756.png)
+*Four Ear Model - (Schultz von Thun)*
+
+* A **classical model** by the German psychologist and communication expert **Friedemann Schulz von Thun** shows that **every verbal expression** has **four "sides"** that have to be respected and taken into consideration.
+* Neglecting some of these sides **increases the risk** that **sender** and **receiver** of the message **misunderstand** each other.
+* This is particularly true when sender and receiver come from **different cultural backgrounds**, for example when volunteers work with refugees and asylum seekers.
+
+##### The Model
+
+* The **model** says that every **message** has **four facets**, though not the same emphasis might be put on each.
+* A message (**communication**) can therefore be sent as well as received as one of the **four sides of information**.
+* The model has **two personas** and a couple of elements:
+    * **The Sender**: The person delivering a message, i.e. saying/writing something
+    * **The Receiver**: The person receiving a message, i.e. listening/reading
+    * **The Message**: What is being said - the actual spoken or written words (if there was a recording everyone would hear the same words)
+
+###### The four sides of the message
+
+* The four sides are types of "**hidden**" or "**implicit**" information involved in the message.
+* They comprise the **sender's intention** and the **receiver's perception**.
+    * **Factual Information:** Objective or matter of fact information, such as facts and data
+    * **Appeal:** Desire, advice, instructions, commands that the sender is intending
+    * **Relationship:** Information on the relationship between sender and receiver; how they get along; what they think of each other
+    * **Self-Revelation:** Implicit information (conscious or intended) about the sender; his motives, values, emotions, likes/dislikes, etc.
+
+###### Beaks and Ears
+
+* Metaphorically we can speak of **four beaks** through which the **sender speaks**.
+* As the receiver you listen through one of **four ears**.
+
+###### Example
+
+A volunteer helper, female, 60 years old (sender), talks to an
+asylum seeker, male, 23 years old (receiver).
+
+* She asks: "Did you go to the employment agency?"
+* Here the four sides of the sender's message:
+    * **Factual information**: I would like to know if you were at the employment agency.
+    * **Self-revelation**: I would like to be informed about your activities.
+    * **Relationship**: I care for your integration/ I am interested in your activities/ I want to control you.
+    * **Appeal**: You should go to the employment agency!
+
+* And the four sides of the message the **receiver hears**:
+    * **Factual information**: She wants to know if I went to the employment agency.     
+    * **Self-revelation**: She wants to be informed/ she is impatient.
+    * **Relationship**: She is interested in my integration/ she cares for me/ she gives orders to me/ she thinks that I am lazy.
+    * **Appeal**: Go to the employment agency!
+
+* Maybe the **sender** wants to **express interest** and **sympathy** whereas the **receiver** hears **impatience**, **control** and **orders**.
+* His reply then can be: "This is not your business!"
+* The example shows that sender and receiver championed the **art of misunderstanding** each other.
+* It also shows that every conversation carries a huge **potential** of **misunderstanding**, particularly in **intercultural contexts** and situations.
+
+#### Non-violent communication (NVC)
+
+* **NVC** is an approach to **nonviolent living** developed by **Marshall Rosenberg** beginning in the 1960s.
+* NVC is based on the **assumption** that **all human beings** have capacity for **compassion** and **empathy** and that people only resort to violence or behavior harmful to others when they do not **recognize** more **effective strategies** for **meeting needs**.
+* NVC proposes that people should **identify shared needs**, which are revealed by the **thoughts** and **feelings surrounding** these **needs**, and then they should **collaborate** to **develop strategies** and **make requests of each other** to meet each other's needs.
+* The goal is **interpersonal harmony** and learning for future cooperation.
+
+![](assets/16517426148064.png)
+
+
+#### Some Rules for Effective Feedback
+* **Ask permission** to provide feedback (potentially drop the issue if answered no)
+* Be **timely** (feedback as close as possible to the **time** the **behavior occurred**)
+* Be **specific** (explain **specifically** what you **like** or **want changed** in a person's behavior)
+* Concentrate on **behaviors** (rather than **emotions** that one cannot control)
+* Describe what you've **seen**, not what **others told you** (avoid the question "Who told you that!?")
+* **Respect** the **person's privacy** (don't provide feedback publicly)
+
+#### The Pendleton Method of Giving Feedback
+
+1. **Ask** vour **staff member** or **volunteer** to **tell** you what they **think went well** / they did well.
+    * Sometimes people struggle with this step. They might shrug their shoulders or use a phrase like "**I Don't Know**" or "**Nothing Much**". Don't let them off the hook. Thev need to find at least one thing they thought **went well** - no matter how small.
+2. **Acknowledge** those **successes** and then **add** to them by saying "What I thought went well / you did well was..."
+    * Reflect on the successes that they share, but then make a real effort to find other examples of things that went well. This shows your staff member or volunteer that you notice everything - not just the areas that need improvement.
+3. **Ask** your **staff member** or **volunteer** if there was anything they would do **differently** next time.
+    * Notice this question is not about what went wrong or what they could do better, it is simply about what they could do differently. This removes an judgement and makes the question simply about exploring options.
+4. **Acknowledge** their **ideas** and add to them by saying "What I might have tried / done differently was.."
+    * Providing examples of how you might do something simply adds to the options for next time. You are not necessarily saying this is the only way to do something, but you are suggesting it might be something worth trying.
+
+* The Pendleton Method is a simple way to give feedback in a constructive manner
+
+**The 4 steps are:**
+1. **Ask** vour **staff member** or **volunteer** to **tell** you what they **think went well** / they did well.
+2. **Acknowledge** those **successes** and then **add** to them by saying "What I thought went well / you did well was..."
+3. **Ask** your **staff member** or **volunteer** if there was anything they would do **differently** next time.
+4. **Acknowledge** their **ideas** and add to them by saying "What I might have tried / done differently was.."
+
+
+> One of the things that makes this method of feedback **effective**, is that it gives staff members or volunteers an opportunity to carry out their **own reflection first**.
+> In doing this, they will often **highlight areas** one wants to address and it makes it much **easier** to **offer constructive feedback** and **suggestions**.
+
+### 4. Team Building and Roles
+
+Actively promotes the team building process and facilitates role clarification within the team.
+
+#### Knowledge Needed for Action
+
+Actively **promotes** the **team building process** and facilitates role clarification within the team.
+
+1. Knows the **difference** between a **group** and a **team**.
+2. Knows the **five phases of team building** according to **Tuckman** (Forming, Storming, Norming, Performing, and Adjourning) and can explain the **characteristics** of each phase.
+3. Knows **role models** in a team (e.g., **team roles** according to **Belbin**), knows the difference between performing a role (role making) and **actively assuming a role** (role taking), and can explain the importance of **role composition** to performance in a team.
+
+
+#### 4.1 Difference between a Group and a Team
+
+* A *group* is a **collection of individuals** who **coordinate their individual efforts**.
+* A *team* is a **group of people** who **share a common team purpose** and a number of challenging goals. Members of the team are **mutually committed** to the **goals** and to each other. This mutual commitment also creates **joint accountability** which creates a **strong bond** and a **strong motivation** to perform.
+* The *purpose* must be **worthwhile** and **create a sense of doing something important** together.
+* The *goals* must be **challenging** and **specific** so that each member can understand how they contribute to the success of the team.
+* A well-defined *strategic plan* outlining the **purpose**, **values**, **goals** and **objectives** of the team becomes the glue that binds the group together and helps transform them into a team.
+* **Participation** in **developing** that **plan** helps to build understanding, consensus, and commitment.
+* As a **leader**, you use the plan to **set expectations** for **individuals** and the **team** as a whole.
+* The *power of a team* emerges from the **sense of community** that develops and exerts strong influence on the attitudes and behaviors of the participants.
+* **Peer pressure** and a **desire** to be a **productive member** of the team helps to **shape priorities** and **direct efforts** where they will support the **team goals**.
+* As a *leader*, you are no longer limited to **managing individuals**. You have an opportunity to **manage the team** as a whole and enlist the **support of the team** to help **manage the individuals**.
+
+
+#### 4.2 Knows the five phases of team building according to Tuckman 
+
+As the team develops maturity and ability, relationships establish, and the **leader** changes leadership style - beginning with a **directing style**, moving through coaching, then **participating**, finishing **delegating** and almost **detached**.
+
+The progression is:
+1. Forming
+2. Storming
+3. Norming
+4. Performing
+5. (Adjourning)
+
+![](assets/16517443787503.jpg)
+
+
+##### 1. Forming
+
+* **High dependence on leader** for guidance and direction
+* **Little agreement** on **team aims** other than received from leader
+* Individual **roles** and **responsibilities** are **unclear**
+* **Leader answer** lots of **questions** about the team's purpose, objectives and external relationships
+* **Processes** are often **ignored**
+* Members **test tolerance** of **system** and **leader**
+* *Leader* **directs**
+
+##### 2. Storming
+
+* **Decisions** don't come easily within group
+* **Team members** vie for **position** as they attempt to establish themselves in relation to other team members and the leader, who might receive **challenges** from team members
+* **Clarity of purpose increases** but plenty of uncertainties persist
+* **Cliques** and **factions form** and there may be **power struggles**
+* The **team** needs to be **focused on** its **goals** to avoid becoming distracted by relationships and emotional issues
+* **Compromises** may be required to enable progress
+* *Leader* **coaches**
+
+##### 3. Norming
+
+* **Agreement** and consensus is largely formed **among team**, who respond well to **facilitation by leader**
+* Roles and responsibilities are clear and accepted
+* **Big decisions** are made by **group agreement**; smaller decisions may be delegated to individuals or small teams within group
+* **Commitment** and **unity** is strong
+* The team discusses and develops its **processes** and working style
+* *Leader* **facilitates and enables**
+
+##### 4. Performing
+
+* **Team** has a **high degree of autonomy**
+* **Disagreements** occur but now they are **resolved** within the **team** positively and necessary changes to processes and structure are made by the team
+* Able to work towards **achieving the goal**, and also to attend to relationship, style and process issues along the way
+* Requires **delegated tasks** and projects from the leader
+* Might ask for **assistance from the leader** with personal and interpersonal development
+* *Leader* **delegates and oversees**
+
+##### 5. Adjourning
+
+* Once a project ends, the team disbands. This phase is sometimes known as **mourning** because **members** have **grown close** and **feel a loss** now that the experience is over.
+* It is, therefore, important to **recognize** the **group members** for their **accomplishments** and **celebrate** the **group's overall success**.
+* Members may also feel some **uncertainty** or insecurity about the **future**.
+* Team *leaders* and managers can alleviate these feelings through **appropriate plans** for the **transition**.
+
+##### Legacy of Tuckman's Model
+
+* **Tuckman's model** describes the **general stages** that groups move through as they **mature** and **develop**.
+* The **5-stage model** reveals what happens from the time a newly formed group gets acquainted until the members become united in their pursuit of a commonly accepted goal.
+* The group becomes **better** able to **achieve the desired results** as it moves through the stages. Each stage will vary from group to group, and there is **no firm line between the stages**.
+* However, **each stage is necessary** and inevitable in the **development process**.
+
+#### 4.3 Role Models
+
+##### Roles: Definition
+
+* A **role** comprises a **set of patterns of behavior**, **rights**, and **duties** which are **temporarily assigned** to various persons.
+* For example, in **different settings** a person will be seen as
+    * a **child** when the person is visiting his or her parents,
+    * a **student** when he or she is at university,
+    * a **discussion member** where he/she can take the role of a facilitator to push the group forward
+* The role that one assumes is **dependent** on the **context** of the **social setting** and differ within societies.
+* Accordingly, a **set of expectations** are addressed and communicated to the person who assumes the role.
+
+##### Roles are Products of Social Interaction
+
+* **Roles** are also **developed dynamically** in **social systems** by **repetitively perceiving social interaction patterns** and **expectations** (e.g., the moderator, the decision maker, the informal leader, and the opinion leader).
+* The **shaping** of **(new) roles** depends on the **characteristics** of the **persons who assume a role** and on **how they play it** (role-making) as well as on those who assign a role to others.
+* However, these simply circumscribed **dynamics** are embedded in **complex social structures** within an **organization**, **community**, or **society**
+
+##### Teamwork
+
+* **Teamwork** involves the **interaction of individuals** to a **common purpose** where the **interests of the individual** are **secondary** to **group unity** and the **efficiency** of the group to **perform** the **task** assigned.
+* Creating **productive environments** requires workers with **highly developed communication** and **interpersonal skills** and an organizational structure that **promotes collaboration**.
+* Teamwork helps accomplish **projects** which are **too complex** for an **individual**. A group approach increases the chances of **detecting flaws** in a **solution** an individual might miss.
+
+##### Belbin Team Roles
+
+* The research of **Dr Meredith Belbin** in the **1970's** lead to the development of Belbin Team Roles, **nine clusters of behavior** that individuals adopt when **participating in a team**.
+* During extensive experiments at Henley Management College it became clear that teams **comprising a balanced mix** of Team Roles **outperformed unbalanced teams**.
+* Subsequent research has also demonstrated that **teams** consistently **outperform individuals** when dealing with **high risk - high complex issues** where a **wide range** of **complementary behaviors** is **required**.
+
+
+##### The Nine (9) Belbin Team Roles People
+
+![](assets/16517460972505.jpg)
+
+
+##### Belbin Team Roles
+
+![](assets/16517461510488.png)
+
+
+#### Patterns of Role Dynamics
+
+The **most relevant patterns** of role dynamics are role-assignment, role-taking, and role-making which are defined as follows:
+
+1. **Role-assignment**
+2. **Role-taking**
+3. **Role-making**
+4. **Inter-role-conflict**
+
+##### 1. Role-assignment
+
+* There are **various types** of **role-assignments**.
+* A person **assigns** a **concrete role** to **another person** by either **urging** him or her to **assume** it. This may happen by **applying means of social sanctions** (e.g., threats of negative consequences).
+* Or a person is **allowed by others** to **take a role voluntarily**.
+* Furthermore, persons may decide **independently to take over a concrete role** and other people (within the social system) will **agree** more or less **explicitly**
+
+##### 2. Role-taking
+
+* **Role-taking** indicates that a person acts due to the **expectations of a specific role**. These expectations can potentially be **enforced by sanctions** being imposed on the role actor.
+* People develop an **individual understanding** regarding the **expectations of a role** - even if they have already taken it - and they are able to reflect on their role. This so-called **role-distance** means looking at one's own way of role-taking at a **remove**.
+* Role-distance includes a **competent**, **critical**, **evaluative attitude** toward the **expectations** which **influence a role**. A person need not to stick to a single role but can take several roles or switch between them.
+
+##### 3. Role-making
+
+* **Role-making** characterizes how a person **lives (plays) a role**, and how he or she **transforms the expectations** into **concrete behavior**. Role-making takes place in **social interaction**, where people **"negotiate"** the **expectations** which are significant for a role.
+* In general, this **negotiation proceeds implicitly** and is often **not reflected by the actors**.
+* The **driving force** of role-making is the **difference** between the **role-taker's individual attitude** toward the role on the one hand and the **expectations** which are assigned to the role by its social context (e.g., given by the society, community, group, or organization).
+
+##### 4. Inter-role-conflict
+
+* If a **person** within a **social network**, organization, or community takes **more than one role** at the same time or switches frequently, a **conflict between** the roles can occur.
+* This results from **different demands** on **different roles**.
+    * For example, a person takes two roles such as **moderator** and **participant** at the same time.
+    * In the first situation, he or she **structures the participants' discussion** and therefore should take a neutral position.
+    * In the second role, he or she **provides** his or her **own input** and **argues** for his or her **own opinion**.
+    * Thus, there is a **conflict** between the **person's competing interests**.
+
+    
+### 5. Motivation
+
+#### Knowledge Needed for Action
+
+Creates the framework for a team to work in a motivated manner.
+
+1. Knows basic models from motivation theory (e.g. Maslow, Herzberg) and can explain their significance for practice.
+2. Knows the difference between extrinsic and intrinsic motivation.
+
+
+#### Introduction to Motivation
+
+* **Motivation** is an **urge to behave or act** in a way that will satisfy certain conditions, such as wishes, desires, or goals.
+* Psychologists believe that motivation is **rooted** in a **basic impulse** to **optimize well-being**, **minimize physical pain**, and **maximize pleasure**.
+* **Motivations** are commonly **separated** into *drives* (which are primarily biological, like thirst or hunger) and *motives* (which are primarily driven by **social** and **psychological mechanisms**).
+* In addition to **biological drives**, motivations can be *intrinsic* (arising from internal factors) or *extrinsic* (arising from external factors).
+* In reality, **our motivations** are often a **mix** of both **intrinsic** and **extrinsic** factors, and the nature of the mix can change over time.
+
+
+#### Drives and Motives
+
+* Drives are primarily biological, like thirst, hunger, sleepiness, and the need to reproduce -all of which lead us to seek out and take part in certain activities. Drives are believed to originate within a person and may not require external stimuli to encourage behavior.
+* Motives, on the other hand, are primarily driven by social and psychological mechanisms, such as work, family, and relationships. They include factors like praise and approval.
+* Both drives and motives can be manipulated by stimulation and deprivation. Motivation can be stimulated by uncomfortable or aversive conditions or events (shocks, loud noise, or excessive heat or cold can motivate us to seek better conditions) or by attractions to positive or pleasurable conditions or events (such as food or sex).
+
+
