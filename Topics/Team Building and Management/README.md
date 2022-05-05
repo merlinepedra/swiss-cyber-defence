@@ -1,5 +1,10 @@
 # 674 Team Building and Management
 
+
+* ⭐️ [Flashcards](https://app.studysmarter.de/studysets/9004280?ref=VfFctwQooo0boGPvpYEQ1vMTRDhZpXL5)
+
+---
+
 - [674 Team Building and Management](#674-team-building-and-management)
   - [Objectives](#objectives)
   - [Modulnummer 674 - Team führen und fördern](#modulnummer-674-team-führen-und-fördern)

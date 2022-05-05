@@ -5,7 +5,6 @@
 
 ### Topics
 
-* [Forensic principles and policies and Legal and regulatory compliance](Topics/Forensic%20principles%20and%20policies%20and%20Legal%20and%20regulatory%20compliance/README.md)
 * [Manage security incidents and Incident Response](Topics/Manage%20security%20incidents%20and%20Incident%20Response/README.md)
 * [Team Building and Management](Topics/Team%20Building%20and%20Management/README.md)
 * [Web Application Penetration Testing](Topics/Web%20Application%20Penetration%20Testing/README.md)
@@ -17,7 +16,7 @@
 
 
 ### OS
-* [Kali Linux](Tools/Kali%20Linux/Kali%20Linux.md)
+* [Kali Linux](Tools/Kali%20Linux/README.md)
 
 
 ### Firewall
@@ -27,36 +26,36 @@
 ### IDS (Intrusion Detection System)
 
 
-* [Snort](Tools/Snort/Snort.md) 
+* [Snort](Tools/Snort/README.md) 
 
 
 ### Network Analysis
-* [Brim](Tools/Brim/Brim.md)
+* [Brim](Tools/Brim/README.md)
 
-* [Wireshark](Tools/Wireshark/Wireshark.md)
+* [Wireshark](Tools/Wireshark/README.md)
 
 ### WiFi Hacking
 
 
 
-* [Wifite2](Tools/Wifite2/Wifite2.md) - Python script for auditing wireless networks
+* [Wifite2](Tools/Wifite2/README.md) - Python script for auditing wireless networks
 
-* [Aircrack-ng](Tools/Aircrack-ng/Aircrack-ng.md) - Aircrack-ng is a complete suite of tools to assess WiFi network security
+* [Aircrack-ng](Tools/Aircrack-ng/README.md) - Aircrack-ng is a complete suite of tools to assess WiFi network security
 
 ### Memory Forensics
 
-* [Volatility](Tools/Volatility/Volatility.md)
+* [Volatility](Tools/Volatility/README.md)
 
 ### Vulnerability (Scanner / Analytics)
 
 
-* [OpenVAS](Tools/OpenVAS/OpenVAS.md) - Open Vulnerability Assessment Scanner
+* [OpenVAS](Tools/OpenVAS/README.md) - Open Vulnerability Assessment Scanner
 
-* [Nessus Essentials](Tools/Nessus%20Essentials/Nessus%20Essentials.md)
+* [Nessus Essentials](Tools/Nessus%20Essentials/README.md)
 
 ### Web Application Penetration Testing
 
-* [sqlmap](Tools/sqlmap/sqlmap.md) - Detecting and exploiting SQL injection flaws and taking over of database servers
+* [sqlmap](Tools/sqlmap/README.md) - Detecting and exploiting SQL injection flaws and taking over of database servers
 
 * OWASP ZAP - web application security scanners
 
@@ -129,6 +128,16 @@
 
 ## Federal Exam
 
+
+
+
+## Glossary
+
+* ⭐️ [Glossar Flashcards](https://app.studysmarter.de/studysets/9003877?ref=VfFctwQooo0boGPvpYEQ1vMTRDhZpXL5)
+* ⭐️ [Glossar (Apple Numbers App)](assets/Glossar.numbers)
+ ------
+* [nist.gov/glossary](https://csrc.nist.gov/glossary)
+* [(CNSS) Glossary - Committee on National Security Systems](assets/CNSSI_4009.pdf)
 
 ## Additional Informations
 
