@@ -968,8 +968,72 @@ Creates the framework for a team to work in a motivated manner.
 
 #### Drives and Motives
 
-* Drives are primarily biological, like thirst, hunger, sleepiness, and the need to reproduce -all of which lead us to seek out and take part in certain activities. Drives are believed to originate within a person and may not require external stimuli to encourage behavior.
-* Motives, on the other hand, are primarily driven by social and psychological mechanisms, such as work, family, and relationships. They include factors like praise and approval.
-* Both drives and motives can be manipulated by stimulation and deprivation. Motivation can be stimulated by uncomfortable or aversive conditions or events (shocks, loud noise, or excessive heat or cold can motivate us to seek better conditions) or by attractions to positive or pleasurable conditions or events (such as food or sex).
+* **Drives** are primarily biological, like thirst, hunger, sleepiness, and the need to reproduce -all of which lead us to seek out and take part in certain activities. Drives are believed to **originate within a person** and may not require external stimuli to encourage behavior.
+* **Motives**, on the other hand, are primarily driven by social and psychological mechanisms, such as **work**, **family**, and **relationships**. They include factors like **praise** and **approval**.
+* Both drives and motives can be **manipulated** by **stimulation** and **deprivation**. Motivation can be stimulated by **uncomfortable** or **aversive conditions** or events (shocks, loud noise, or excessive heat or cold can motivate us to seek better conditions) or by **attractions** to **positive or pleasurable conditions** or events (such as food or sex).
+
+#### Motivation vs. Emotion
+
+* While **motivation** and emotion can be intricately linked, they are two **fundamentally different things**.
+* **Motivation** describes the **wants** or **needs** that direct behavior toward a **goal**; in contrast, an **emotion** is a **subjective state** of being that we often describe as a **feeling**.
+* Emotion and motivation are **linked** in several ways: both **influence behavior** and can lead us to **take action**, and emotion itself can act as a **motivator**.
+* For example, the **emotion of fear** can **motivate** a person to **leave** a stressful situation, while the **emotion of happiness** can motivate a person to be more **productive** on a project that reinforces that emotion.
+
+#### Some Motivation Models
+
+1. Maslow's Need Hierarchy Theory
+2. Herzberg's Motivation Hygiene Theory
+3. McClelland's Need Theory
+4. McGregor's Participation Theory
+5. Urwick's Theory Z
+6. Argyris's Theory
+7. Vroom's Expectancy Theory
+8. Porter and Lawler's Expectancy Theory.
+
+##### Maslow's Need Hierarchy Theory
+
+* **Maslow's theory** is based on the **human needs**. Drawing chiefly on his **clinical experience**, he classified all human needs into a hierarchical manner from the lower to the higher order.
+* In essence, he believed that once a **given level of need is satisfied**, it **no longer serves to motivate** man. Then, the **next higher level** of need has to be **activated** in order to motivate the man.
+* Maslow identified **five levels** in his need hierarchy
+
+![](assets/16517479396500.jpg)
+
+
+
+###### 1. Physiological Needs
+
+* These needs are basic to **human life** and, hence, include **food**, clothing, shelter, air, water and necessities of life.
+* These needs relate to the **survival** and **maintenance of human life**.
+* They exert **tremendous influence** on **human behavior**.
+* These needs are to be **met first** at least **partly** before higher level needs emerge.
+* Once **physiological needs are satisfied**, they **no longer motivate** the man.
+
+###### 2. Safety Needs
+
+* After satisfying the **physiological needs**, the next needs felt are called **safety** and **security needs**.
+* These needs find expression in such desires as **economic security** and **protection from physical dangers**.
+* Meeting these needs requires more **money** and, hence, the **individual is prompted to work more**.
+* Like physiological needs, these **become inactive** once they are **satisfied**.
+
+###### 3. Social Needs
+
+* **Human** being is a **social being**.
+* He is, therefore, interested in **social interaction**, **companionship**, **belongingness**, etc.
+* It is this socializing and belongingness why individuals prefer to work in **groups** and especially **older people** go to work.
+
+###### 4. Esteem Needs
+
+* These needs refer to **self-esteem** and **self-respect**.
+* They include such needs which indicate **self-confidence**, **achievement**, **competence**, **knowledge** and **independence**.
+* The **fulfillment** of esteem needs leads to **self-confidence**, **strength** and **capability** of being **useful in the organization**.
+* However, **inability** to fulfill these needs results in feeling like **inferiority**, **weakness** and **helplessness**.
+
+###### 5. Self-Actualization Needs
+
+* This level represents the culmination of all the lower, intermediate, and higher needs of human beings.
+* In other words, the final step under the need hierarchy model is the need for self-actualization. This refers to fulfillment.
+* -The term self-actualization was coined by Kurt Goldstein and means to become actualized in what one is potentially good at. In effect, self- actualization is the person's motivation to transform perception of self into reality.
+
+
 
 
