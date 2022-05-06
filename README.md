@@ -134,16 +134,22 @@
 
 ## Federal Exam
 
-
+## All Flashcards (studysmarter.de)
+* [674 Team Building and Management](https://app.studysmarter.de/studysets/9004280?ref=VfFctwQooo0boGPvpYEQ1vMTRDhZpXL5)
+* [Manage security incidents & Incident Response](https://app.studysmarter.de/studysets/8976516?ref=VfFctwQooo0boGPvpYEQ1vMTRDhZpXL5)
+* [Glossar Flashcards](https://app.studysmarter.de/studysets/9003877?ref=VfFctwQooo0boGPvpYEQ1vMTRDhZpXL5)
+* [Ports Flashcards](https://app.studysmarter.de/studysets/9018754?ref=VfFctwQooo0boGPvpYEQ1vMTRDhZpXL5)
 
 
 ## Glossary
 
-* ⭐️ [Glossar Flashcards](https://app.studysmarter.de/studysets/9003877?ref=VfFctwQooo0boGPvpYEQ1vMTRDhZpXL5)
-* ⭐️ [Glossar (Apple Numbers App)](assets/Glossar.numbers)
- ------
+* [Glossar Flashcards](https://app.studysmarter.de/studysets/9003877?ref=VfFctwQooo0boGPvpYEQ1vMTRDhZpXL5)
+* [Glossar (Apple Numbers App)](assets/Glossar.numbers)
 * [nist.gov/glossary](https://csrc.nist.gov/glossary)
 * [(CNSS) Glossary - Committee on National Security Systems](assets/CNSSI_4009.pdf)
+* [Ports Flashcards](https://app.studysmarter.de/studysets/9018754?ref=VfFctwQooo0boGPvpYEQ1vMTRDhZpXL5)
+* [Common Ports You Should Know (Apple Numbers App)](assets/Common%20Ports%20You%20Should%20Know.numbers)
+* [50 Common Ports You Should Know](https://www.geeksforgeeks.org/50-common-ports-you-should-know/)
 
 ## Additional Informations
 
