@@ -23,7 +23,7 @@
 
 ### OS
 * [Kali Linux](Tools/Kali%20Linux/README.md)
-
+* [Kali Nethunter](Tools/Kali%20Nethunter/README.md)
 
 ### Firewall
 
