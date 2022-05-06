@@ -14,7 +14,7 @@
 * [Manage security incidents and Incident Response](Topics/Manage%20security%20incidents%20and%20Incident%20Response/README.md)
 * [Team Building and Management](Topics/Team%20Building%20and%20Management/README.md)
 * [Web Application Penetration Testing](Topics/Web%20Application%20Penetration%20Testing/README.md)
-
+* [Introduction to Python and Case Study](Topics/Introduction%20to%20Python%20and%20Case%20Study/README.md)
 
 
 
