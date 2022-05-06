@@ -1188,17 +1188,33 @@ clarify it.
 7. Consolidating **Gains**
 8. **Anchoring Change** in the Corporate Culture
 
+![](assets/16517513902494.png)
 
 
 
 ##### 1. Creating an Urgency (Burning Platform)
 
-* Identifying and highlighting the potential threats and the repercussions which might crop up in the future.
-* Examining the opportunities which can be tapped through effective interventions.
-* Initiate honest dialogues and discussions to make people think over the prevalent issues and give convincing reasons to them.
-* Request the involvement and support of the industry people, key stakeholders and customers on the issue of change.
+* Identifying and highlighting the **potential threats** and the **repercussions** which might crop up in the future.
+* Examining the **opportunities** which can be tapped through **effective interventions**.
+* Initiate **honest dialogues** and discussions to make people think over the **prevalent issues** and give **convincing reasons** to them.
+* **Request** the **involvement** and **support** of the industry people, key **stakeholders** and **customers** on the issue of change.
 
+##### 2. Forming Powerful Guiding Coalitions
 
+* **Identifying** the **effective change leaders** in your organizations and also the **key stakeholders**, requesting their involvement and commitment towards the entire process.
+* Form a **powerful change coalition** who would be working as a team.
+* Identify the **weak areas** in the coalition teams and ensure that the team involves many **influential people** from various cross functional departments and working in different levels in the company.
 
+##### 3. Developing a Vision and a Strategy
 
+* Determining the **core values**, defining the **ultimate vision** and the **strategies** for **realizing a change** in an organization.
+* Ensure that the **change leaders** can **describe** the **vision** effectively and in a manner that people can easily **understand** and **follow**.
 
+##### 4. Communicating the Vision
+
+* Communicate the **change** in the **vision** very often powerfully and convincingly. **Connect** the **vision** with all the crucial aspects like **performance reviews**, **training**, etc.
+* Handle the **concerns** and **issues** of people **honestly** and with **involvement**.
+
+##### 5. Removing Obstacles
+
+* 
