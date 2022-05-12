@@ -83,6 +83,73 @@
       - [Some Rules for Effective Feedback](#some-rules-for-effective-feedback)
       - [The Pendleton Method of Giving Feedback](#the-pendleton-method-of-giving-feedback)
     - [4. Team Building and Roles](#4-team-building-and-roles)
+      - [Knowledge Needed for Action](#knowledge-needed-for-action)
+      - [4.1 Difference between a Group and a Team](#4-1-difference-between-a-group-and-a-team)
+      - [4.2 Knows the five phases of team building according to Tuckman](#4-2-knows-the-five-phases-of-team-building-according-to-tuckman)
+        - [1. Forming](#1-forming)
+        - [2. Storming](#2-storming)
+        - [3. Norming](#3-norming)
+        - [4. Performing](#4-performing)
+        - [5. Adjourning](#5-adjourning)
+        - [Legacy of Tuckman's Model](#legacy-of-tuckman-s-model)
+      - [4.3 Role Models](#4-3-role-models)
+        - [Roles: Definition](#roles-definition)
+        - [Roles are Products of Social Interaction](#roles-are-products-of-social-interaction)
+        - [Teamwork](#teamwork)
+        - [Belbin Team Roles](#belbin-team-roles)
+        - [The Nine (9) Belbin Team Roles People](#the-nine-9-belbin-team-roles-people)
+        - [Belbin Team Roles](#belbin-team-roles)
+      - [Patterns of Role Dynamics](#patterns-of-role-dynamics)
+        - [1. Role-assignment](#1-role-assignment)
+        - [2. Role-taking](#2-role-taking)
+        - [3. Role-making](#3-role-making)
+        - [4. Inter-role-conflict](#4-inter-role-conflict)
+    - [5. Motivation](#5-motivation)
+      - [Knowledge Needed for Action](#knowledge-needed-for-action)
+      - [Introduction to Motivation](#introduction-to-motivation)
+      - [Drives and Motives](#drives-and-motives)
+      - [Motivation vs. Emotion](#motivation-vs-emotion)
+      - [Some Motivation Models](#some-motivation-models)
+        - [Maslow's Need Hierarchy Theory](#maslow-s-need-hierarchy-theory)
+          - [1. Physiological Needs](#1-physiological-needs)
+          - [2. Safety Needs](#2-safety-needs)
+          - [3. Social Needs](#3-social-needs)
+          - [4. Esteem Needs](#4-esteem-needs)
+          - [5. Self-Actualization Needs](#5-self-actualization-needs)
+          - [Main Criticisms of the Theory](#main-criticisms-of-the-theory)
+        - [Herzberg's Motivation Hygiene Theory](#herzberg-s-motivation-hygiene-theory)
+          - [Criticism](#criticism)
+        - [Intrinsic Motivation](#intrinsic-motivation)
+        - [Extrinsic Motivation](#extrinsic-motivation)
+    - [6. Conflict Management](#6-conflict-management)
+      - [Knowledge required for action](#knowledge-required-for-action)
+        - [Conflicts](#conflicts)
+        - [Team Conflicts](#team-conflicts)
+        - [Types of Team Conflicts](#types-of-team-conflicts)
+          - [1. Task-based conflicts](#1-task-based-conflicts)
+          - [2. Leadership conflicts](#2-leadership-conflicts)
+          - [3. Work style conflicts](#3-work-style-conflicts)
+          - [4. Personality clashes](#4-personality-clashes)
+        - [Managing & Avoiding Conflicts](#managing-avoiding-conflicts)
+        - [Key Lessons Learned](#key-lessons-learned)
+    - [7. Change Management](#7-change-management)
+      - [Knowledge required for action](#knowledge-required-for-action)
+      - [Change Management (Kotter)](#change-management-kotter)
+        - [1. Creating an Urgency (Burning Platform)](#1-creating-an-urgency-burning-platform)
+        - [2. Forming Powerful Guiding Coalitions](#2-forming-powerful-guiding-coalitions)
+        - [3. Developing a Vision and a Strategy](#3-developing-a-vision-and-a-strategy)
+        - [4. Communicating the Vision](#4-communicating-the-vision)
+        - [5. Removing Obstacles](#5-removing-obstacles)
+        - [6. Removing Obstacles](#6-removing-obstacles)
+        - [7. Consolidating Gains](#7-consolidating-gains)
+        - [8. Anchoring Change in the Corporate Culture](#8-anchoring-change-in-the-corporate-culture)
+        - [Advantages / Disadvantages](#advantages-disadvantages)
+      - [Change Management (Lewin)](#change-management-lewin)
+      - [CF for Change Management](#cf-for-change-management)
+      - [Risks to Change Management](#risks-to-change-management)
+      - [Reasons for Fear and Resistance](#reasons-for-fear-and-resistance)
+      - [Strategies for overcoming resistance to change](#strategies-for-overcoming-resistance-to-change)
+
 
 
 
@@ -1217,4 +1284,196 @@ clarify it.
 
 ##### 5. Removing Obstacles
 
-* 
+* Ensure that the **organizational processes** and structure are in place and **aligned** with the **overall organizational vision**.
+* Continuously check for **barriers** or **people** who are **resisting change**. Implement **proactive actions** to **remove** the **obstacles** involved in the process of change.
+* **Reward people** for **endorsing change** and supporting in the process.
+
+##### 6. Removing Obstacles
+
+* By creating **short term wins early** in the change process, you can give a **feel of victory** in the early stages of change.
+* Create **many short term targets** instead of one long-term goal, which are **achievable** and **less expensive** and have **lesser possibilities of failure**.
+* **Reward** the contributions of people who are involved in meeting the targets.
+
+##### 7. Consolidating Gains
+
+* Achieve **continuous improvement** by analysing the **success stories** individually and **improving** from those individual experiences.
+
+##### 8. Anchoring Change in the Corporate Culture
+
+* **Discuss** the **successful stories** related to **change initiatives** on every given opportunity. 
+* Ensure that the **change** becomes an **integral part** in your **organizational culture** and is **visible** in every organizational aspect.
+* Ensure that the **support** of the **existing company leaders** as well as the **new leaders** continue to extend their **support towards the change**.
+
+##### Advantages / Disadvantages
+
+
+| Advantages                                                                                                                                                     | Disadvantages                                                                                                         |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
+| It is an easy step by step model
+which provides a clear description and guidance on the entire process of change and is relatively easy for being implemented. | Since it is a step by step model, skipping even a single step might result in serious problems.                       |
+| Emphasis is on the involvement and acceptability of the employees for the success in the overall process.                                                      | The process is quite time consuming (Rose 2002).                                                                      |
+| Major emphasis is on preparing and building acceptability for change instead of the actual change process.                                                     | The model is essentially top-down and discourages any scope for participation or co-creation.                        |
+|                                                                                                                                                                | Can build frustration and dissatisfaction among the employees if the individual requirements are given due attention. |
+
+
+
+#### Change Management (Lewin)
+
+**Unfreez**
+
+* Encompasses ensuring readiness of change, by preparing the organization to understand and accept the criticality of the need for change.
+
+**Change (Transition)**
+
+* Move towards the desired state, making the required changes. At this stage there is uncertain about the future, and people need time to adjust.
+
+**Freeze (Refreeze)**
+* Reinforcing and institutionalizing the desired changes, ensuring they are widely accepted, and incorporated into the business and the organizational culture.
+
+
+
+#### CF for Change Management
+
+Five **Critical Success Factors (CSF's)** for Change Management
+
+1. **Continuity of Leadership**: Effective change demands underlying stability
+2. **Constancy of Purpose**: Purpose: Align people, groups, functions etc. with the goals of the change management initiatives; align with a clear vision of what "done" looks like.
+3. **Consistency of Method**: Change and adaptation are easier when methods and processes are consistent.
+4. **Clarity through Communication**: Communications needs to be clear, frequent, consultative (as appropriate) and directive (as appropriate)
+5. **Commitment**: Ensure that things go back to the way they were before
+
+#### Risks to Change Management
+
+Key Risks to successful Change Management
+
+1. **Resistance**: People are usually set in their ways and are reluctant to accept new procedures.
+2. **Leadership**: Commitment and conviction are essential leadership qualities. Management must maintain focus through the inevitable schedule slippages and unanticipated events during the implementation process.
+3. **Disruption**: Esp. in large scale transformational projects, implement changes in stages, to avoid unnecessary disruptions to operations and processes
+4. **Forcing Change**: Employees and mid-level managers should understand why the change is necessary, because without their buy-in, the change process may never succeed
+
+
+#### Reasons for Fear and Resistance
+
+**Self-interest**
+* People focus on their own self-interests (every stakeholder has their own agenda) and not the best interests of the organization. Eventually this develops into group resistance to change.
+* Eventually this develops into group resistance to change.
+
+**Misunderstanding and lack of trust**
+* A lack of understanding about the implications of the change is also a driver of resistance to change.
+* An existing lack of trust between the manager initiating change and the workers expected to implement it exacerbates this misunderstanding.
+
+**Different evaluations**
+* This situation arises when people **assess the impacts of transformation differently** to their managers or others who initiate the change.
+
+**Low tolerance for change**
+* Some people fear change because they worry that they cannot develop the **skills** and **abilities** needed.
+* This is particularly true of projects that require **rapid change** - the bigger and faster the change, the harder it is for people to come to terms with.
+
+#### Strategies for overcoming resistance to change
+
+**Communication and education**
+* People will only accept change if they believe the **risk** of **doing nothing** is **higher** than the** risk of changing direction**. Similarly, if people don't understand why change is needed, they will question why you are changing something that they believe **works well**.
+* **Communication** and **education** about the change should begin **before** it is **initiated**. This will help your people to **rationalize the change**, and ensure that individuals and teams **receive adequate information** to make **positive judgements**.
+
+**Participation**
+* A lack of **belief** that the **organization can make effective change** leads to **resistance** to **change**. Likewise, when people aren't consulted and change is forced upon them, there is likely to be **more resistance**. This is especially the case if people believe their **jobs will be at risk**.
+* It is critical that the **stakeholders** and those** implementing change** are **involved in** its **design**. A **collaborative effort** will engage people in the change, and in the identification of potential issues and solutions. People are far less likely to resist change that they have **helped to create**.
+* Another participative strategy is to **employ socialization**, putting people before practice and ensuring that shared values crush resistance to change.
+
+**Support**
+* Organizational transformation is usually accompanied by a** change to routines**, taking people out of (long-established) **comfort zones**. This may also lead to **exhaustion**, especially if the organization is subject to **frequent change** or **business evolution**.
+* Even if people appear to be accepting of change, it may be that they are simply **resigned** to it. They must be given the support needed to **enable new skills** to be developed and ensure that change burnout does not become a reality.
+* Support requires managers to develop their **emotional intelligence** and **connect with their people**. Offering adequate support is also time- consuming, requiring trained managers and leaders to employ **coaching tactics** to be most effective when managing change in an organization.
+
+**Co-opting**
+* People become **connected** to the way that **things have always been done**. There are often **strong emotional connections** to **processes** and **procedures** that employees may have been at least partly responsible for developing. To bond with the old may require a Herculean effort.
+* One strategy is to **co-opt** those who may be **most resistant to** change into **central roles** in the **implementation** of **change initiatives**. This can gain the **support** of would-be resistors relatively cheaply, though it does come with a caveat - placing people who are deemed to be resistant to change in such positions could give them a position from which to** influence greater resistance** across a **wider audience**.
+
+**Coercion**
+* Sometimes it is necessary to **coerce people** into **accepting change**. This is often the case where people feel they **cannot learn** the **new skills** needed or if they feel that **change** is temporary that will be **reversed**.
+* Techniques for implementing change include wielding the **threat of disciplinary action** while insisting that people fall into line with required behaviors and actions. If **speed of change** is **critical**, **coercion** may be the only viable option.
+* A major **drawback** of this strategy is that it **does not remove resistance** to change, which may continue to **bubble under the surface** and result in a **destructive atmosphere** at a **later date** (particularly if the proposed transformation does not produce at least the outcomes promoted by the initiator of change).
+
+
+
+### 8. Training
+
+#### Knowledge required for action
+
+Identifies **training needs** within the team, works with staff to develop **individual development goals** and plans appropriate training or **support measures**.
+
+1. Knows **support measures** (e.g., **training**, **coaching**, **team development**) and can explain the **characteristics** and their **appropriateness** to the **situation**.
+2. Knows the **requirements** for good **target agreements** and **constructive**,** appreciative discussions** for **joint target agreement**.
+
+#### Key Points for Team Building
+
+* **Team building** can only occur when **relevant** and timely activities that address **specific needs** are part of your organization's culture.
+* The **purpose of team building activities** is to **motivate** your people to work together, to **develop** their **strengths**, and to **address** any **weaknesses**.
+* So, any team building exercise should encourage **collaboration** rather than **competition**.
+
+#### Starting point for team building efforts
+
+**Team building efforts** can address one or more of the following
+questions:
+
+* Are there **conflicts** between certain people that are creating divisions within the team?
+* Do team members need to** get to know** one another better?
+* Do some members focus on their **own success**, and **harm the group** as a result?
+* Is poor communication affecting the group's progress?
+* Do people need to **learn to work together**, instead of individually?
+* Do some members affect the group's ability to move forward through **resistance to change**?
+* Does the group need a **morale boost**?
+
+#### Coaching
+
+The **coaching process** is typically divided into **seven phases**:
+
+1. getting to know each other and **building trust**,
+2. through the **framework agreement** of the **coaching collaboration**,
+3. to a **holistic analysis of the coachee** by the coach. Based on the identified potentials and blockages,
+4. coaches can suggest **options for action** and help their coaches to find their own solutions.
+5. These action steps are then successively **put into practice**
+6. and the **success** of this implementation is **monitored**.
+7. Finally, there is a summary with **mutual feedback** and the anchoring of learned behaviors, self-management techniques and leadership methods.
+
+
+![](assets/16523259512638.png)
+
+
+#### Management by Objective (MBO)
+
+> Objectives are goals, aims or purposes that organization wish over varying periods of time
+
+* **Peter Ducker** in 1954
+* Concept of **planning**
+* **Accomplishment of objectives** through **participation** of all **concerned persons**
+* **Participative** and **democratic style of management**
+
+
+##### Steps in Management by Objectives Process
+
+**Define organization goals**
+* Setting objectives is not only critical to the success of any company, but it also serves a variety of purposes. It needs to include several different types of managers in setting goals. The objectives set by the supervisors are provisional, based on an interpretation and evaluation of what the company can and should achieve within a specified time.
+
+**Define employee objectives**
+* Once the employees are briefed about the general objectives, plan, and the strategies to follow, the managers can start working with their subordinates on establishing their personal objectives. This will be a one- on-one discussion where the subordinates will let the managers know about their targets and which goals they can accomplish within a specific time and with what resources. Thev can then share some tentative thoughts about which goals the organization or department can find feasible.
+
+**Continuous monitoring performance and progress**
+* Though the management by objectives approach is necessary for increasing the effectiveness of managers, it is equally essential for monitoring the performance and progress of each employee in the organization.
+
+**Performance evaluation**
+* Within the MBO framework, the performance review is achieved by the participation of the managers concerned.
+
+**Providing feedback**
+* In the management by objectives approach, the most essential step is the continuous feedback on the results and objectives, as it enables the employees to track and make corrections to their actions. The ongoing feedback is complemented by frequent formal evaluation meetings in which superiors and subordinates may discuss progress towards objectives, leading to more feedback.
+
+**Performance appraisal**
+* Performance reviews are a routine review of the success of employees within MB organizations.
+
+![](assets/16523264433347.png)
+
+##### Key Takeaways
+
+* **Management by Objectives** (**MBO**) is an approach adopted by managers to **control their employees** by implementing a series of **concrete goals** that both the employee and the organization aim to **accomplish** in the **immediate future** and work accordingly to achieve.
+* The **MBO** approach is implemented to ensure that the **employees** get a **clear understanding** of their roles and responsibilities, along with **expectations**, so that they can understand the **relation** of their **activities** to the **overall success** of the **organization**.
+

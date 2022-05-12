@@ -36,17 +36,23 @@
 
 
 ### Network Analysis
+
 * [Brim](Tools/Brim/README.md)
 
 * [Wireshark](Tools/Wireshark/README.md)
 
-### WiFi Hacking
 
+### Penetration Testing
 
+* [Metasploit](Tools/Metasploit/README.md) - 
 
 * [Wifite2](Tools/Wifite2/README.md) - Python script for auditing wireless networks
 
 * [Aircrack-ng](Tools/Aircrack-ng/README.md) - Aircrack-ng is a complete suite of tools to assess WiFi network security
+
+* [Hydra](Tools/Hydra/README.md) - Brute Force Attack 
+
+
 
 ### Memory Forensics
 
@@ -66,6 +72,9 @@
 * OWASP ZAP - web application security scanners
 
 ### Scripting & Automation
+
+
+
 
 ## Websites & Services
 
