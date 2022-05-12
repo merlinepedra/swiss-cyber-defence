@@ -1,5 +1,10 @@
 # Web Application Penetration Testing
 
+## ⭐️ Useful Tools
+
+* [sqlmap](../../Tools/sqlmap/README.md) - Detecting and exploiting SQL injection flaws and taking over of database servers
+
+
 
 
 ## Access control vulnerabilities

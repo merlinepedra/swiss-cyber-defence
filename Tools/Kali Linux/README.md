@@ -1,5 +1,7 @@
 # Kali Linux
 
+![](assets/16523461913935.jpg)
+
 ## What is Kali Linux
 
 Kali Linux is a Debian-derived Linux distribution designed for digital forensics and penetration testing. It is maintained and funded by Offensive Security. Kali Linux has around 600 penetration-testing programs, including Armitage, Nmap, Wireshark, metasploit, John the Ripper, sqlmap, Aircrack-ng, Burp suite and OWASP ZAP web application security scanners, etc

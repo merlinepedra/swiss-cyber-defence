@@ -13,7 +13,7 @@
     - [Beschreibung des Handlungskompetenzbereichs (HKB)](#beschreibung-des-handlungskompetenzbereichs-hkb)
     - [Kontext](#kontext)
     - [Berufliche Handlungskompetenz](#berufliche-handlungskompetenz)
-      - [* A1: Entwicklung von Bedrohungen laufend beobachten](#a1-entwicklung-von-bedrohungen-laufend-beobachten)
+      - [A1: Entwicklung von Bedrohungen laufend beobachten](#a1-entwicklung-von-bedrohungen-laufend-beobachten)
       - [A2: Bedrohungen analysieren und Informationen aufbereiten](#a2-bedrohungen-analysieren-und-informationen-aufbereiten)
       - [A3: Schwachstellen erkennen](#a3-schwachstellen-erkennen)
       - [A4: Schwachstellen schliessen](#a4-schwachstellen-schliessen)
@@ -28,8 +28,8 @@
     - [Berufliche Handlungskompetenz](#berufliche-handlungskompetenz)
       - [B1: Systeme im Betrieb überwachen](#b1-systeme-im-betriebü-berwachen)
       - [B2: Daten analysieren und interpretieren](#b2-daten-analysieren-und-interpretieren)
-    - [B3: Sicherheitsvorfälle triagieren](#b3-sicherheitsvorfälle-triagieren)
-    - [B4: Sicherheitsvorfälle dokumentieren](#b4-sicherheitsvorfälle-dokumentieren)
+      - [B3: Sicherheitsvorfälle triagieren](#b3-sicherheitsvorfälle-triagieren)
+      - [B4: Sicherheitsvorfälle dokumentieren](#b4-sicherheitsvorfälle-dokumentieren)
       - [B5: Behandlung eines Sicherheitsvorfalls überwachen](#b5-behandlung-eines-sicherheitsvorfallsü-berwachen)
     - [Persönliche und soziale Kompetenzen](#persönliche-und-soziale-kompetenzen)
     - [Leistungskriterien (LK)](#leistungskriterien-lk)
@@ -61,6 +61,7 @@
     - [Prüfungsteil 2 – Projekte & Betriebswirtschaft](#prüfungsteil-2–-projekte-betriebswirtschaft)
     - [Prüfungsteil 3 – Führung & Kommunikation](#prüfungsteil-3–-führung-kommunikation)
     - [Hilfsmittel](#hilfsmittel)
+
 
 
 
@@ -123,7 +124,7 @@ Bezug zu HKB D: In den Bereichen Antizipation und Prävention können in der Pra
 
 ### Berufliche Handlungskompetenz
 
-#### * A1: Entwicklung von Bedrohungen laufend beobachten
+#### A1: Entwicklung von Bedrohungen laufend beobachten
 * Informationsquellen wie Gefährdungskataloge MELANI, BSI, Sicherheitsreports von Herstellern, Foren, Fachgremien etc.
 
 #### A2: Bedrohungen analysieren und Informationen aufbereiten
@@ -147,6 +148,7 @@ Bezug zu HKB D: In den Bereichen Antizipation und Prävention können in der Pra
 #### A6: Stakeholder fachlich beraten
 * Grundsätze der systemisch-lösungsorientierten Beratung
 * Kommunikationsmodelle und Kommunikationsregeln
+    * [Team Building and Management](../Topics/Team%20Building%20and%20Management/README.md)
 
 #### A7: Stakeholder trainieren
 * Methodisch-didaktische Grundlagen
@@ -206,12 +208,12 @@ Bezug zu HKB D: Durch die Erkennung von Sicherheitsvorfällen können in der Pra
 * Methoden zur Datenanalyse
 * Darstellungstechniken zur Verdichtung von Informationen
 
-### B3: Sicherheitsvorfälle triagieren
+#### B3: Sicherheitsvorfälle triagieren
 * Vorgaben aus internen Richtlinien und Prozessen
 * Klassierung und Priorisierung von Incidents
 * Zuteilung (Dispatching) von Incidents
 
-### B4: Sicherheitsvorfälle dokumentieren
+#### B4: Sicherheitsvorfälle dokumentieren
 * Issue-Tracking-Systeme (ITS) für die Verwaltung von Incidents über deren gesamten Lebenszyklus
 * Informationselemente eines Incidents resp. Tickets
 
