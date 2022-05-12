@@ -17,7 +17,14 @@ Follow me on Twitter:
 * A1: Monitor threat development on an ongoing basis
 * A2: Analyzing threats and preparing information
 * A3: Identify weaknesses
-    * [Web Application Penetration Testing](Topics/Web%20Application%20Penetration%20Testing/README.md)
+    * Audits and audit types (system, process, performance and compliance audit).
+    * Procedures and tools for penetration testing, vulnerability scanning, and compliance scanning.
+    * Indicators of Compromise (IoC) and Indicators of Attack (IoA)
+    * Proactive threat hunting
+        * [Web Application Penetration Testing](Topics/Web%20Application%20Penetration%20Testing/README.md)
+    * Legal framework for hacking
+
+
 * A4: Close vulnerabilities
 * A5: Use methods to deceive
 * A6: Expert advice to stakeholders
@@ -67,9 +74,7 @@ Follow me on Twitter:
 
 ### IDS (Intrusion Detection System)
 
-
 * [Snort](Tools/Snort/README.md) 
-
 
 ### Network Analysis
 
@@ -77,10 +82,11 @@ Follow me on Twitter:
 
 * [Wireshark](Tools/Wireshark/README.md)
 
+* [Nmap](Tools/nmap/README.md) - Discover your network
 
 ### Penetration Testing
 
-* [Metasploit](Tools/Metasploit/README.md) - 
+* [Metasploit](Tools/Metasploit/README.md) - Metasploit provides information about security vulnerabilities and aids in penetration testing and IDS signature development.
 
 * [Wifite2](Tools/Wifite2/README.md) - Python script for auditing wireless networks
 
