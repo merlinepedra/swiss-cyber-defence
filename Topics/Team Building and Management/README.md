@@ -149,9 +149,14 @@
       - [Risks to Change Management](#risks-to-change-management)
       - [Reasons for Fear and Resistance](#reasons-for-fear-and-resistance)
       - [Strategies for overcoming resistance to change](#strategies-for-overcoming-resistance-to-change)
-
-
-
+    - [8. Training](#8-training)
+      - [Knowledge required for action](#knowledge-required-for-action)
+      - [Key Points for Team Building](#key-points-for-team-building)
+      - [Starting point for team building efforts](#starting-point-for-team-building-efforts)
+      - [Coaching](#coaching)
+      - [Management by Objective (MBO)](#management-by-objective-mbo)
+        - [Steps in Management by Objectives Process](#steps-in-management-by-objectives-process)
+        - [Key Takeaways](#key-takeaways)
 
 
 

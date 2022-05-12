@@ -5,9 +5,9 @@
 
 python1.py
 
-name = "Philipe";
-lastname = "Regenass";
-age = 35;
+name = "Peter";
+lastname = "Mueller";
+age = 31;
 salery = 10000.50;
 income = salery * 12;
 test = "1" + "1"

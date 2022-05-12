@@ -1,21 +1,57 @@
 ![repository-header](assets/repository-header.png)
 
-
+Follow me on Twitter: 
 
 # SCA
 
+## Federal Exam
+
+* ⭐️ [Topics / Overview ](Federal%20Exam/README.md) ⭐️
 
 
-## Modules
+## Topics
 
 
-### Topics
+### A. Preventively Protect Systems
 
-* [Manage security incidents and Incident Response](Topics/Manage%20security%20incidents%20and%20Incident%20Response/README.md)
-* [Team Building and Management](Topics/Team%20Building%20and%20Management/README.md)
-* [Web Application Penetration Testing](Topics/Web%20Application%20Penetration%20Testing/README.md)
-* [Introduction to Python and Case Study](Topics/Introduction%20to%20Python%20and%20Case%20Study/README.md)
+* A1: Monitor threat development on an ongoing basis
+* A2: Analyzing threats and preparing information
+* A3: Identify weaknesses
+    * [Web Application Penetration Testing](Topics/Web%20Application%20Penetration%20Testing/README.md)
+* A4: Close vulnerabilities
+* A5: Use methods to deceive
+* A6: Expert advice to stakeholders
+* A7: Train stakeholders
 
+
+### B. Detect Security Incidents
+
+* B1: Monitor systems in operation
+* B2: Analyzing and interpreting data
+    *[Introduction to Python and Case Study](Topics/Introduction%20to%20Python%20and%20Case%20Study/README.md)
+* B3: Triage security incidents
+* B4: Document security incidents
+* B5: Monitor & handling of a security incident
+    * [Manage security incidents and Incident Response](Topics/Manage%20security%20incidents%20and%20Incident%20Response/README.md)
+
+### C. Handle / Response Security Incidents
+
+* C1: Implement immediate measures
+* C2: Secure evidence
+* C3: Analyzing causes and effects
+* C4: Define and implement protective measures
+* C5: Support system recovery
+
+### D. Planning and Implementing Security Solutions
+
+
+* D1: Delimit systems and specify requirements
+* D2: Check feasibility and effectiveness
+* D3: Evaluate and budget for expenses
+* D4: Carry out evaluation
+* D5: Complete sub-project
+* D6: Lead team
+    * [Team Building and Management](Topics/Team%20Building%20and%20Management/README.md)
 
 
 ## Tools & Applications
@@ -119,7 +155,8 @@
 
 * [Portswigger's Mystery lab challenge](https://portswigger.net/web-security/all-labs) - Web Application Penetration Testing
 
-
+### Other
+* [List of hacker groups](https://en.wikipedia.org/wiki/List_of_hacker_groups)
 
 ### News
 
@@ -145,7 +182,6 @@
 ## Exam Simulation
 
 
-## Federal Exam
 
 ## All Flashcards (studysmarter.de)
 * [674 Team Building and Management](https://app.studysmarter.de/studysets/9004280?ref=VfFctwQooo0boGPvpYEQ1vMTRDhZpXL5)
@@ -163,14 +199,3 @@
 * [Ports Flashcards](https://app.studysmarter.de/studysets/9018754?ref=VfFctwQooo0boGPvpYEQ1vMTRDhZpXL5)
 * [Common Ports You Should Know (Apple Numbers App)](assets/Common%20Ports%20You%20Should%20Know.numbers)
 * [50 Common Ports You Should Know](https://www.geeksforgeeks.org/50-common-ports-you-should-know/)
-
-## Additional Informations
-
-### Hacking Groups
-
-* Snake (Turla) - FSB
-* Cozy Bear (ARP29) - SWR
-* Fancy Bear (APT28) & Sandworm - GRU
-
-### Intressting News Articles
-* Waffen, Nahrungsmittel und Kredite – welche Länder die Ukraine im Krieg am meisten unterstützen
