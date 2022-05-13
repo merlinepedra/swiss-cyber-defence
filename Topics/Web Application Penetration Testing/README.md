@@ -39,11 +39,11 @@
 
 ## SQL injection
 
-* [SQL Injection Payload List on GitHub](https://github.com/payloadbox/sql-injection-payload-list)
-
 ### Cheat Sheet's
 * [PortSwigger's SQL injection cheat sheet](https://portswigger.net/web-security/sql-injection/cheat-sheet)
 
+### Payload
+* [SQL Injection Payload List on GitHub](https://github.com/payloadbox/sql-injection-payload-list)
 
 ### Tools
 * ➡️ [sqlmap](../../Tools/sqlmap/README.md)

