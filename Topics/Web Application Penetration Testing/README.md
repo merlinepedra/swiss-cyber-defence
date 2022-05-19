@@ -13,6 +13,10 @@
 
 ## Cross-site scripting
 
+### Payload
+
+* [XSS Vectors Cheat Sheet](https://gist.github.com/kurobeats/9a613c9ab68914312cbb415134795b45)
+
 ## Cross-site request forgery (CSRF)
 
 ## Insecure deserialization
