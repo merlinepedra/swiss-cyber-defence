@@ -24,19 +24,19 @@ def writeJSON(accessLogLines, forensicsJsonLines):
 
 	for line in accessLogLines:
 		splits = line.split( )
-		print(splits)
 		responseCode = splits[9]
 		if responseCode == "-": responseCode = "0"
 
 		command = 'grep -i "' + str(splits[0]) + '" ' + pathForensicsJson
 		forensicsJson = (subprocess.check_output(command, shell=True)).decode('utf-8');
-
 		requestHeadersJson = json.loads(forensicsJson)
+		requestHeadersJson = requestHeadersJson["headers"].split('\n')
+		
 
 
 		jsonObject = {'requestId':splits[0],
 		'remoteAddress':splits[1],
-		'timestamp': datetime.datetime.strptime(splits[4][1:], "%d/%MM/%Y:%H:%M:%S %z").isoformat(),
+		'timestamp': datetime.datetime.strptime(splits[4][1:] + " " + splits[5][:-1], "%d/%m/%Y:%H:%M:%S %z").isoformat(),
 		'method':splits[6][1:], 
 		'url':splits[7], 
 		'version':splits[8][:-1], 
