@@ -5,6 +5,9 @@
 
 By default Volatility isn't installed on Kali Linux.
 
+* [Install via Docker](https://hub.docker.com/r/phocean/volatility)
+* 🐍 [volatility-guru.py](assets/volatility-guru.py)
+
 ## Volatility Procedure 
 
 ### 1. Identify rogue processes
