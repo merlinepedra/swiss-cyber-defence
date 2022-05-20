@@ -35,7 +35,7 @@ Follow me on Twitter:
 
 * B1: Monitor systems in operation
 * B2: Analyzing and interpreting data
-    * [Introduction to Python and Case Study](Topics/Introduction%20to%20Python%20and%20Case%20Study/README.md)
+    * [Python](Topics/Python/README.md)
 * B3: Triage security incidents
 * B4: Document security incidents
 * B5: Monitor & handling of a security incident
