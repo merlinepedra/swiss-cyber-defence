@@ -11,11 +11,9 @@ import sys
 pathAccessLog = "./access.log"  
 pathForensicsJson = "./forensics.json"
 pathOutputJson = "./output.json"
-isDebug = True
+isDebug = False
 
 ####################################
-
-
 
 def start():
 	accessLog = importFile(pathAccessLog)
@@ -40,9 +38,18 @@ def array_on_duplicate_keys(ordered_pairs):
 		   d[k] = [v]
 	return d
 
-def writeJSON(accessLogLines, forensicsLines, pathOutputJson):
-	jsonArray = []
+def handleSpecialCases(line):
+	line = line.replace('"1..2""', "\'1..2\'\"")
+	line = line.replace('"",', '",')
+	
+	return line
 
+def writeJSON(accessLogLines, forensicsLines, pathOutputJson):	
+	# clear existing file
+	jsonFile = open(pathOutputJson, "w")
+	jsonFile.write("")
+	jsonFile.close()
+	
 	index = 0
 	for line in accessLogLines:
 		if index < 200 or isDebug == False:
@@ -54,7 +61,12 @@ def writeJSON(accessLogLines, forensicsLines, pathOutputJson):
 			if responseCode == "-": responseCode = "0"
 	
 			forensicsJson = list(filter(lambda x: str(splits[0]) in x, forensicsLines))
-			forensicsJson = forensicsJson[0]
+			if len(forensicsJson) > 0:
+				forensicsJson = forensicsJson[0]
+			else:
+				sys.stderr.write("\n\n" + str(splits[0]) + " not found in " + pathForensicsJson)
+				forensicsJson = ""
+				
 			requestHeadersJson = ""
 			
 			if len(forensicsJson) > 0:
@@ -71,9 +83,10 @@ def writeJSON(accessLogLines, forensicsLines, pathOutputJson):
 				headerString = "{" + headerString[:-1] + "}"
 	
 				try:
-					requestHeadersJson = json.loads(headerString, object_pairs_hook=array_on_duplicate_keys)
+					cleanHeaderString = handleSpecialCases(headerString)
+					requestHeadersJson = json.loads(cleanHeaderString, object_pairs_hook=array_on_duplicate_keys)
 				except Exception:
-					sys.stderr.write("\n\nJSON 'loads' issue for: "  + headerString)
+					sys.stderr.write("\n\Format Issue for:\n"  + headerString)
 					requestHeadersJson = ""
 					continue
 	
@@ -88,13 +101,11 @@ def writeJSON(accessLogLines, forensicsLines, pathOutputJson):
 				'responseSize': splits[10],
 				'requestHeaders': requestHeadersJson
 			}
-			jsonArray.append(jsonObject)
-   
-	jsonString = json.dumps(jsonArray)
-
-	jsonFile = open(pathOutputJson, "w")
-	jsonFile.write(json.dumps(json.loads(jsonString), indent=4))
-	jsonFile.close()
+			
+			jsonFile = open(pathOutputJson, "a")
+			jsonFile.write(json.dumps(jsonObject))
+			jsonFile.write("\n")
+			jsonFile.close()
 	
 	if  isDebug == True:
 		os.system("cat " + pathOutputJson)
