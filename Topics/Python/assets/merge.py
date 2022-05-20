@@ -15,11 +15,12 @@ isDebug = True
 
 ####################################
 
+
+
 def start():
 	accessLog = importFile(pathAccessLog)
 	forensicsLines = importFile(pathForensicsJson)
 	writeJSON(accessLog, forensicsLines, pathOutputJson)
-
 
 def importFile(path):
 	f = open(path, "r")
@@ -99,5 +100,6 @@ def writeJSON(accessLogLines, forensicsLines, pathOutputJson):
 		os.system("cat " + pathOutputJson)
 	
 	print("\n\n ✅  Merging done -> check output.json")
+
 
 start()
