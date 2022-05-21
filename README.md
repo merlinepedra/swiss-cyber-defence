@@ -2,7 +2,7 @@
 
 Follow me on Twitter: 
 
-# SCA
+# Swiss Cyber Defence
 
 ## Federal Exam
 
