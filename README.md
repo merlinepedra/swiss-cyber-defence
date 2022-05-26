@@ -121,6 +121,13 @@ Follow me on Twitter:
 ## Websites & Services
 
 
+### Document Forensic
+
+
+* [Scan Maldoc](https://scan.tylabs.com) - QuickSand Framework
+
+
+
 ### Network Analysis
 
 * [A-Packets](https://apackets.com) - Online pcap file analyzer
@@ -132,6 +139,7 @@ Follow me on Twitter:
 * [MITRE ATT&CK® Matrix](https://attack.mitre.org/matrices/enterprise/) - The MITRE ATT&CK® Matrix for Enterprise identifies an extraordinary breadth of cybercriminal tactics - more than 200 techniques across 14 attack categories
 
 * [VirusTotal](https://www.virustotal.com/) - Analyze suspicious files, domains, IPs and URLs to detect malware and other breaches, automatically share them with the security community
+
 
 ### Tools & Applications
 
