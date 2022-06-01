@@ -47,8 +47,9 @@ https://github.com/sleventyeleven/linuxprivchecker/blob/master/linuxprivchecker.
 🚧 [Kali-Setup.py](assets/Kali-Setup.py)
 
 
+# Cheat Sheets
 
-
+*  [Python-CheatSheet](assets/Python-CheatSheet.pdf) - From [darknetdiaries.com/links](http://darknetdiaries.com/links/)
 
 # Snippets
 
