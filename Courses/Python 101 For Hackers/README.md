@@ -89,3 +89,58 @@ and
 `./calculate-demo.py`
 ![](assets/16552207324741.png)
 
+
+### Optional Main Function
+
+> If there is '__main__', this will be executed first
+
+```
+#!/bin/python3
+
+print(1 + 1)
+print(__name__)
+
+if __name__ == "__main__":
+    print("do something")
+```
+
+![](assets/16552210727579.jpg)
+
+
+## Python syntax
+
+> Always use same Indentation. For Example double space or tab. Mixing it inside a script will cause error.
+
+![](assets/16552216894035.png)
+
+
+### Official Python Documentation
+
+* https://docs.python.org/3/
+![](assets/16552219865059.png)
+
+### Included Help in Python
+
+#### Search Help for specific function
+
+`python3`
+
+![](assets/16552220456013.png)
+
+`help(print)`
+
+> *print* ins this case what I want so search in help
+
+![](assets/16552221448939.png)
+
+#### See arguments for specific function
+
+`dir(print)`
+
+![](assets/16552223851524.png)
+
+### Python Style Guide
+
+PEP 8 – Style Guide for Python Code
+https://peps.python.org/pep-0008/v
+
