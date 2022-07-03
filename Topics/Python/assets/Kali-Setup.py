@@ -17,3 +17,7 @@ os.system("sudo apt update && sudo apt upgrade")
 os.system("sudo apt install kali-desktop-gnome")
 os.system("sudo tasksel")
 
+
+print("----- Install zaproxy");
+os.system("sudo apt install -y zaproxy")
+
