@@ -389,3 +389,22 @@ Select document name part of url and Fuzz
 
 ## Lab - DVWA
 
+Go to:
+
+`xxxx@pwst-server:~/pwst-resources/3-5_lab-dvwa$ `
+
+then:
+
+`docker compose up -d`
+
+> If you run it on ARM64 Processor, add this to `docker-compose.yml`
+
+```
+ mysql:
+    platform: linux/amd64
+```
+
+Check if everything started:
+
+`docker container ls`
+
