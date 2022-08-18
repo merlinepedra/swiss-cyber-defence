@@ -1,17 +1,13 @@
 # Volatility
 
-**How to install**
+## How to install
 
 By default Volatility isn't installed on Kali Linux.
 
 * [Install via Docker](https://hub.docker.com/r/phocean/volatility)
 * 🐍 [volatility-guru.py](assets/volatility-guru.py)
 
-
-
-## Volatility Procedure
-
-
+## Volatility Commands
 
 ### Get Operation System
 
@@ -23,8 +19,6 @@ Identify Operation System:
 
 ➡️ Now replace profile we found with  ‘[OS Profile]’
 
-
-
 ### Process
 
 ```
@@ -34,10 +28,6 @@ volatility -f [image] --profile = [OS Profile] pstree
 volatility -f [image] --profile = [OS Profile] psxview  
 volatility -f [image] --profile = [OS Profile] psxview --apply-rules
 ```
-
-
-
--------------------------
 
 ### Network
 
