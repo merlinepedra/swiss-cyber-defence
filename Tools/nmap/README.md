@@ -77,13 +77,13 @@
     - [#6 Detect if a Website is protected by WAF](#6-detect-if-a-website-is-protected-by-waf)
     - [#7 Find well known vulnerabilities related to an open port](#7-find-well-known-vulnerabilities-related-to-an-open-port)
 
-
 # Installation
+
 * Pre-Installed on Kali Linux
 
 # Cheatsheet
 
-*  [NMAP Commands Cheat Sheet and Tutorial with Examples as PDF](assets/NMAP%20CHEAT%20SHEET%20AND%20TUTORIAL.pdf)
+* [NMAP Commands Cheat Sheet and Tutorial with Examples as PDF](assets/NMAP%20CHEAT%20SHEET%20AND%20TUTORIAL.pdf)
 
 # Use
 
@@ -94,58 +94,78 @@
 > Because we have not specified any other switches on the commands above (except the target IP address), the command will perform first host discovery by default and then scan the most common 1000 TCP ports by default.
 
 ### Scan a single host IP
+
 `nmap 10.0.0.1`
 
 ### Scan a Class C subnet range
+
 `nmap 192.168.10.0/24`
 
 ### Scan the range of IPs between 10.1.1.5 up to 10.1.1.100
+
 `nmap 10.1.1.5-100`
 
 ### Scan the IP addresses listed in text file “hosts.txt”
+
 `nmap -iL hosts.txt`
 
 ### Scan the 3 specified IPs only
-`nmap 10.1.1.3 10.1.1.6 10.1.1.8`
 
+`nmap 10.1.1.3 10.1.1.6 10.1.1.8`
 
 ## Port Related Commands
 
 ### Scan only port 80 for specified host
+
 `nmap -p80 10.1.1.1`
 
+### Scan via Ping if server block some requests
+
+```
+nmap -v -n -p- -Pn  10.18.53.20
+```
+
 ### Scan ports 20 up to 23 for specified host
+
 `nmap -p20-23 10.1.1.1`
 
 ### Scan ports 80,88,8000 only
+
 `nmap -p80,88,8000 10.1.1.1`
 
 ### Scan ALL ports for specified host
+
 `nmap -p- 10.1.1.1`
 
 ### Scan ports UDP 53 and TCP 22
+
 `nmap -sS -sU -p U:53,T:22 10.1.1.1`
 
 ### Scan http and ssh ports for specified host
+
 `nmap -p http,ssh 10.1.1.1`
 
 ## Different Scan Types
 
 ### TCP SYN Scan (best option)
-`nmap -sS 10.1.1.1	`
+
+`nmap -sS 10.1.1.1    `
 
 ### Full TCP connect scan
-`nmap -sT 10.1.1.1	`
+
+`nmap -sT 10.1.1.1    `
 
 ### Scan UDP ports
+
 `nmap -sU 10.1.1.1`
 
 ### Do a Ping scan only
+
 `nmap -sP 10.1.1.0/24`
 
 ### Don’t ping the hosts, assume they are up.
-`nmap -Pn 10.1.1.1`
 
+`nmap -Pn 10.1.1.1`
 
 > There are some more scan types supported by nmap but we have listed the most useful ones above. Here is an overview of the most popular scan types:
 
@@ -153,111 +173,135 @@
 * -sT: This creates a full TCP connection with the host (full TCP handshake). This is considered more accurate than SYN scan but slower and noisier.
 * -sP: This is for fast checking which hosts reply to ICMP ping packets (useful if you are on the same subnet as the scanned range and want a fast result about how many live hosts are connected).
 
-
-
-
 ## Identify Versions of Services and Operating Systems
 
 ### Version detection scan of open ports (services)
+
 `nmap -sV 10.1.1.1`
 
 ### Identify Operating System version
+
 `nmap -O 10.1.1.1`
 
 ### This combines OS detection, service version detection, script scanning and traceroute.
-`nmap -A 10.1.1.1	`
+
+`nmap -A 10.1.1.1    `
 
 ## Scan Timings
 
 ### Slowest scan (to avoid IDS)
+
 `nmap -T0 10.1.1.1`
 
 ### Sneaky (to avoid IDS)
+
 `nmap -T1 10.1.1.1`
 
 ### Polite (10 times slower than T3)
+
 `nmap -T2 10.1.1.1`
 
 ### Default scan timer (normal)
+
 `nmap -T3 10.1.1.1`
 
 ### Aggressive (fast and fairly accurate)
+
 `nmap -T4 10.1.1.1`
 
 ### Very Aggressive (might miss open ports)
+
 `nmap -T5 10.1.1.1`
 
 ## Output Types
 
 ### Normal text format
+
 `nmap -oN [filename] [IP hosts]`
 
 ### Grepable file (useful to search inside file)
+
 `nmap -oG [filename] [IP hosts]`
 
 ### XML file
+
 `nmap -oX [filename] [IP hosts]`
 
 ### Output in all 3 formats supported
+
 `nmap -oA [filename] [IP hosts]`
 
 ### Example
+
 `nmap -oN scan.txt 192.168.0.0/24 (this will scan the subnet and output the results in text file “scan.txt”)`
 
 ## Discover Live Hosts
 
 ### Discover hosts by TCP SYN packets to specified ports (in our example here the ports are 22 to 25 and 80)
+
 `nmap -PS22-25,80 10.1.1.0/24`
 
 ### Disable port discovery. Treat all hosts as online.
+
 `nmap -Pn 10.1.1.0/24`
 
 ### Send ICMP Echo packets to discover hosts.
+
 `nmap -PE 10.1.1.0/24`
 
 ### Ping scan.
+
 `nmap -sn 10.1.1.0/24`
 
 ## NSE Scripts
 
 > Did you know that nmap is not only a port scanner? Actually, there are hundreds of included scripts that you can use with nmap to scan for all sorts of vulnerabilities, brute force login to services, check for well-known weaknesses on services etc.
 
-
 ### Run the specified script towards the targets.
+
 `nmap --script="name of script" 10.1.1.0/24`
 
 ### Run the script with the specified arguments.
+
 `nmap --script="name of script" --script-args="argument=arg" 10.1.1.0/24`
 
 ### Update script database
+
 `nmap --script-updatedb`
 
 ## Other Useful Commands
 
 ### Scan IPv6 hosts
+
 `nmap -6 [IP hosts]`
 
 ### Run the scan through proxies
+
 `nmap --proxies url1,url2`
 
 ### Only show open ports
+
 `nmap --open`
 
 ### Get info and help for the specified script
+
 `nmap --script-help="script name"`
 
 ### Show currently installed version
+
 `nmap -V`
 
 ### Spoof source IP
-`nmap -S [IP address]	`
+
+`nmap -S [IP address]    `
 
 ### Maximum parallel probes/connections
+
 `nmap --max-parallelism [number]`
 
 ### Maximum packets per second
-`nmap --max-rate [number]`
 
+`nmap --max-rate [number]`
 
 ## #1 My personal favourite way of using Nmap
 
@@ -344,17 +388,17 @@ The following command uses geolocation script “ip-geolocation-ipinfodb” to f
 `nmap --script=ip-geolocation-ipinfodb --script-args=ip-geolocation-ipinfodb.apikey=[APIKEY] 8.8.8.8`
 
 > Nmap scan report for google-public-dns-a.google.com (8.8.8.8)
-Host is up (0.0097s latency).
-Not shown: 998 filtered ports
-PORT    STATE SERVICE
-53/tcp  open  domain
-443/tcp open  https
-Host script results:
->
+> Host is up (0.0097s latency).
+> Not shown: 998 filtered ports
+> PORT    STATE SERVICE
+> 53/tcp  open  domain
+> 443/tcp open  https
+> Host script results:
+> 
 > | ip-geolocation-ipinfodb:
-| 8.8.8.8
-|   coordinates (lat,lon): 37.406,-122.079
-|_  city: Mountain View, California, United States
+> | 8.8.8.8
+> |   coordinates (lat,lon): 37.406,-122.079
+> |_  city: Mountain View, California, United States
 
 ### #6 Detect if a Website is protected by WAF
 
@@ -365,12 +409,12 @@ The following command uses a script to detect if the target website is protected
 `nmap -p80,443 --script http-waf-detect --script-args="http-waf-detect.aggro,http-waf-detect.detectBodyChanges" www.networkstraining.com`
 
 > Nmap scan report for www.networkstraining.com (104.18.38.202)
-Host is up (0.011s latency).
-PORT    STATE SERVICE
-80/tcp  open  http
-443/tcp open  https
-| http-waf-detect: IDS/IPS/WAF detected:
-|_www.networkstraining.com:443/?p4yl04d=hostname%00
+> Host is up (0.011s latency).
+> PORT    STATE SERVICE
+> 80/tcp  open  http
+> 443/tcp open  https
+> | http-waf-detect: IDS/IPS/WAF detected:
+> |_www.networkstraining.com:443/?p4yl04d=hostname%00
 
 ### #7 Find well known vulnerabilities related to an open port
 
