@@ -2,6 +2,10 @@
 
 import os
 import argparse
+import pprint
+from subprocess import Popen, PIPE
+import subprocess
+import sys
 
 print("""\
 
@@ -33,9 +37,9 @@ def install():
 	os.system('echo \'\nfunction volatility() {\n\tsudo docker run --rm --user=$(id -u):$(id -g) -v "$(pwd)":/dumps:ro,Z -ti phocean/volatility $@\n}\' >> ~/.zshrc')
 	
 
+# volScript = 'sudo docker run --rm --user=$(id -u):$(id -g) -v "$(pwd)":/dumps:ro,Z -ti phocean/volatility '
+volScript = "volatility "
 
-
-volScript = "python2 ~/scripts/volatility/vol.py"
 
 parser = argparse.ArgumentParser(description='Volatility Guru - Automated volatility analysis.')
 parser.add_argument('-f', '--file', help='File path to memory dump')
@@ -49,21 +53,21 @@ if args.install == True:
 
 if args.file:
 	print("---- Get Operation System ----")
-	osProfile = os.popen(volScript + ' -f ' + args.f + 'imageinfo').read()
-	print("Operation System Profile: " + osProfile)
 
+	# profileOS = os.popen(volScript + ' -f ' + args.file + 'imageinfo')
+	# print("Profile of Operating System: " + profileOS)
+
+	profileOS = "Win7SP1x64"
 
 	print("---- Process ----")
-	pslist = os.popen(volScript + ' -f ' + args.f + 'pslist').read()
+	cmd = volScript + '" -f ' + args.file + " --profile " + profileOS + ' pslist"'
+	print(cmd)
+	pslist = os.popen(cmd).read()
 	print("pslist: " + pslist)
 
 
+print("---- Done ----")
 
-
-	
-
-
-	#Process
 
 
 #	volatility -f [image] --profile = [OS Profile] pslist  
@@ -77,7 +81,6 @@ if args.file:
 #pcap = input("Path to memory: ");
 #print(pcap)
 
-#print("1. Install ")
 
 #command = input("Select Option:");
 
