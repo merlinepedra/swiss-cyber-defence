@@ -157,12 +157,128 @@ Determines effort based on resource planning and prepares a  structured cost pla
 
 # 3 - BID COSTING
 
+## Knowledge required for action
+
+Assiststhe relevant departmentswith the bid costing for the ICT project.
+
+1. Knows the differencebetween fixedand variable costs and can give typical examples from ICT projects.
+
+2. Knows the differencebetween direct costs and overhead costs and can explain their significancefor the calculation of full costs and the contribution margin.
+
+3. Knows the break-even point and can explain its significancefor the calculation of price or sales volume.
+
+### 3.1 Difference between fixed / variable costs
+
+- Fixed costs vs. variable costs (vs. semi-variable costs)
+
+- Price and contract models (price, deadlines, profit, relationship of trust)
+
+- Approaches: Waterfall-Model, Agile
+
+- Pricing Alternatives: Fixed, Effort-based, Capped effortbased, Multi-stage, Requirements-based, Agile
+
+### 3.2 Direct- and overhead costs / Calculation of full costs
+
+- Definition: Direct Costs
+
+- Definiaon: Indirect Costs
+
+- Full Costing (Absorption Costing)
+
+- Components of Absorption Costing
+
+- Contribuang Margin
+
+- Assignment Work: See Page 129
+
+### 3.3 Break-even point / Price & sale calculation
+
+- Break Even Point
+
+- Break Even: Units Sold (Total Cost, Total Revenue, Break Even Point)
+
 ---
 
 # 4 - BUDGETING
 
+## Knowledge required for action
+
+Draws up a budgetfor the implementationof the ICT project, considering the budgeting process of an organization and the financing plan.
+
+1. Knows the basic requirements of a budget(e.g.reference to the future, reference to the period, timing, nature of a target, comprehensibility) and can explain the effects on liquidity.
+
+2. Knows the overarching budgeting process of an organization and can explain its influenceon budgetingin his/her own area of responsibility.
+
+### 4.1 Requirements of Budet / Liquidity
+
+- Budget - Cash Flow Budget
+
+- Budget - Cash Flow Statement
+
+- Budget - Working Capital
+
+### 4.2 Departement & Organization budgeting process
+
+- Challenges with Budget Planning (Strategically disconnected, Slow, Expensive, Unreliable)
+
+- Best Practive: Budget Planning (Control, Reduce, Fexibility modelling, Standardize budgeting methods, link to strategy, business drivers, Active engagement, People)
+
+- Key characteristics of best practice systems (4 Bullet-Points)
+
+- Linking Stratey to the Budget (6 Bullet-Points)
+
 ---
 
 # 5- BUDGET TRACKING
+
+## Knowledge required for action
+
+During the realizationof the ICT project, checks the effective effort against the budgetand proposes appropriate measures to deal with deviations.
+
+1. Knows the basic parameters of cost control (e.g.planned costs, actual costs, forecast residual costs).
+
+2. Knows suitable methods and instrumentsfor analyzingand presentingcosts(e.g., target/actual comparison, cost trend analysis, earned value analysis, cost of delay).
+
+3. Knows typical contractual agreements for progress control in agile ICT projectswith fixed cost frameworks and fixed deadlines (e.g., checkpoints, acceptance criteria, risk share model between customer and supplier, efficiency bonus, exits)
+
+4. Knows the parameters of the Magic Triangle and the Devil's Square and can explainthe relevanceof these models for the development of measuresin case of deviations.
+
+### 5.1 Cost control
+
+- Planned costs
+
+- Actual costs
+
+- Forecast residual costs (value)
+
+### 5.2 Methodes for analyzing & presenting costs
+
+- Cost estimates evolve over time
+
+- Project Life Cycle with Idicative Uncertainty Curves
+
+- EVA
+
+### 5.3 Agreements for progress control
+
+- The Dilemma - PMBOK
+
+- The Dilemma - Agile
+
+- Possible Development of in the Course of a (IT) Project
+
+- Recommendations for Scrum Contracts
+
+- Contract Puzzle Agile Fixed Price
+
+### 5.4 Development of measures in case of deviations (Abweichung)
+
+- Target Value (Time, Budget/Costs, Quality, Scope)
+
+- Devil Square (Model)
+
+- Magic Triangle ?
+
+- Examples of measures in case of deviaaons (ame delay)
 
 ---
