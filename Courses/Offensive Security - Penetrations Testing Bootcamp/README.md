@@ -342,3 +342,9 @@ nmap -v --script vuln 10.211.55.7
 ![](assets/2022-08-24-20-50-06-image.png)
 
 ![](assets/2022-08-24-20-53-12-image.png)
+
+**Optional Homework**
+Install Metasploitable: 1
+[Metasploitable: 1 ~ VulnHub](https://www.vulnhub.com/entry/metasploitable-1,28/#top)
+
+## 
