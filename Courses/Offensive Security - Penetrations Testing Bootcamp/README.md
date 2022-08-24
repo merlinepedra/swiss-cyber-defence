@@ -347,4 +347,14 @@ nmap -v --script vuln 10.211.55.7
 Install Metasploitable: 1
 [Metasploitable: 1 ~ VulnHub](https://www.vulnhub.com/entry/metasploitable-1,28/#top)
 
+
+
+**How to install Metasploitable 1 in Virtual Box**
+
+[Installing Metasploitable in VirtualBox - Hackercool Magazine](https://www.hackercoolmagazine.com/installing-metasploitable-in-virtualbox/)
+
+
+
+
+
 ## 
