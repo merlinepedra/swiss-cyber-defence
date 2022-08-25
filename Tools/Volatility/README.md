@@ -113,6 +113,7 @@ photorec / d [Directory] [image]
 ### Timeline
 
 ```
+volatility -f [image] --profile = [OS Profile] timeliner
 volatility -f [image] --profile = [OS Profile] timeliner --output-file = timeliner.body --output = body
 ```
 
