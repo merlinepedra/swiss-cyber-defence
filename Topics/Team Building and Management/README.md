@@ -49,7 +49,7 @@ Get your hand dirty, Take responsibility, Listen to your team members, Ackknowla
 
 ----
 
-## 2. Situative Leadershiop
+## 2. Situative Leadership
 
 ### Knowledge needed for action
 
@@ -72,3 +72,21 @@ Consciously shapes own leadership behavior and adapts it according to the situat
 ### 2.2 Organizational forms
 
 - Organizational Structures: Hierarchical, Functional, Horizontal, Divisional, Matrix, Team-based, Network
+
+---
+
+## 3. Communication
+
+### Knowledge needed for action
+
+Designs own communication behavior consciously and according to the situationand establishes an appreciative communication culture in the team.
+
+1. Knows basic communication models (e.g. four ears modelaccording to Schultz von Thun, non-violent communication according to B. Rosenberg) and can explain their significance for one's own communication behavior.
+
+2. Knows the rulesfor givingand receiving feedback.
+
+### 3.1 Communication Models
+
+- Communication (Avoid misunderstanding)
+
+- Four Ears Model (F. Schulz von Thun) - (Four sides: )

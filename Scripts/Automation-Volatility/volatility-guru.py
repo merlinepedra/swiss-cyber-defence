@@ -33,7 +33,11 @@ print("""\
 def install():
 	os.system('sudo apt update && sudo apt install -y docker.io && sudo systemctl enable docker --now && sudo usermod -aG docker $USER')
 	os.system('sudo docker pull phocean/volatility')
-	os.system('echo \'\nfunction volatility() {\n\tsudo docker run --rm --user=$(id -u):$(id -g) -v "$(pwd)":/dumps:ro,Z -ti phocean/volatility $@\n}\' >> ~/.zshrc')
+	os.system('echo \'\nfunction volatility() {\n\tsudo docker run --rm --user=$(id -u):$(id -g) -v "$(pwd)":/dumps:rw,Z -ti phocean/volatility $@\n}\' >> ~/.zshrc')
+	os.system('sudo /dumps')
+	os.system('chmod -R -f 755 /dumps')
+	
+
 	
 
 # volScript = 'sudo docker run --rm --user=$(id -u):$(id -g) -v "$(pwd)":/dumps:ro,Z -ti phocean/volatility '
