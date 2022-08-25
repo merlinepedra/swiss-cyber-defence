@@ -60,6 +60,7 @@ volatility -f [image] --profile = [OS Profile] lsadump
 ### Command history
 
 ```
+volatility -f [image] --profile = [OS Profile] cmdscan
 volatility -f [image] --profile = [OS Profile] cmdscan  
 volatility -f [image] --profile = [OS Profile] consoles
 ```
