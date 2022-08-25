@@ -132,6 +132,7 @@ mactime -b [BodyFile] -d -z UTC
 ### Vad
 
 ```
+volatility -f [image] --profile = [OS Profile] vadinfo
 volatility -f [image] --profile = [OS Profile] -p [pid] vadinfo  
 volatility -f [image] --profile = [OS Profile] -p vaddump -D [Directory]
 ```
