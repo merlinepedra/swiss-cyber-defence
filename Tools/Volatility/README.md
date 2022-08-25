@@ -60,7 +60,7 @@ volatility -f [image] --profile = [OS Profile] lsadump
 ### Command history
 
 ```
-volatility -f [image] --profile = [OS Profile] cmdscan
+volatility -f [image] --profile = [OS Profile] cmdline
 volatility -f [image] --profile = [OS Profile] cmdscan  
 volatility -f [image] --profile = [OS Profile] consoles
 ```
@@ -93,6 +93,7 @@ volatility -f [image] --profile = [OS Profile] svcscan
 ### FileSystem
 
 ```
+volatility -f [image] --profile = [OS Profile] filescan
 volatility -f [image] --profile = [OS Profile] mftparser --output-file = [outfile.txt]  
 volatility -f [image] --profile = [OS Profile] mftparser --output-file =
  [outfile.txt] --output = body # body format can be read by other 
