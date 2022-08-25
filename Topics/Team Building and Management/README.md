@@ -53,20 +53,22 @@ Get your hand dirty, Take responsibility, Listen to your team members, Ackknowla
 
 ### Knowledge needed for action
 
-Consciously shapes own leadership behavior and adaptsit according to the situation, depending on the context.
+Consciously shapes own leadership behavior and adapts it according to the situation, depending on the context.
 
-1. Knows the different leadership styles and their characteristicsand can explain the situational suitability of a style.
+1. Knows the different leadership styles and their characteristics and can explain the situational suitability of a style.
 
 2. Knows the different organizational forms and their characteristics(e.g. single and multi-line organization, staff line organization, matrix organization, pure project organization with task force) and can explain the situational suitability of an organizational form
 
+### 2.1 Leadership styles
 
+- Characteristics of Leadership (Influence, motivate, encouraging individuals, effectiveness)
 
-### 2.1 Different leadershiop styles
+- Importance of Leadership (Initiates action, Motivation, Provide guidance, Create confidence, Building morale, Builds work environment, Co-ordination)
 
-- Leadership / Characteristics of Leadership (Influence, motivate, encouraging individuals, effectiveness)
+- Primary Leadership Styles: Autocratic, Authoritative, Peacesetting, Democratic, Coaching, Affiliative, Laissez-Fair
 
-- 
-  
-  
+- Choosing Leadership Style (Know, Understand, Practive, Develop)
 
+### 2.2 Organizational forms
 
+- Organizational Structures: Hierarchical, Functional, Horizontal, Divisional, Matrix, Team-based, Network
