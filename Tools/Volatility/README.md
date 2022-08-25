@@ -10,6 +10,10 @@ By default Volatility isn't installed on Kali Linux.
 ## References
 
 - [Command Reference · volatilityfoundation/volatility Wiki · GitHub](https://github.com/volatilityfoundation/volatility/wiki/Command%20Reference)
+- [Volatility tips: how to extract text typed in a notepad window from a Windows memory dump | Andrea Fortuna
+- ](https://andreafortuna.org/2018/03/02/volatility-tips-extract-text-typed-in-a-notepad-window-from-a-windows-memory-dump/)
+
+
 
 ## Volatility Commands
 
@@ -106,6 +110,7 @@ software
 volatility -f [image] --profile = [OS Profile] dlldump -p [pid] -D [Directory]  
 volatility -f [image] --profile = [OS Profile] procdump -p [pid] -D [Directory]  
 volatility -f [image] --profile = [OS Profile] dumpfiles -r .evtx $ --ignore-case -D [Directory]  
+volatility -f [image] --profile = [OS Profile] memdump --dump-dir=/dumps -p 3032
 procdump -p [pid] --dump-dir = / tmp  
 photorec / d [Directory] [image]
 ```
@@ -145,6 +150,8 @@ strings -td -a [image] >> strings.txt # The word "FREE MEMORY" doesn't do anythi
 strings -td -el -a [image] >> strings.txt
 
 volatility -f [image] --profile = [OS Profile] strings -s strings.txt> [out.txt]
+
+strings -e l  3032.dmp  | grep flag  # search for "flag" in mem dump from notepad.exe
 
 grep [string] out.txt # Hook with IP address etc. and output before and after with -A -B option and investigate
 ```
