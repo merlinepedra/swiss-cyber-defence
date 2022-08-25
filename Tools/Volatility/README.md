@@ -13,8 +13,6 @@ By default Volatility isn't installed on Kali Linux.
 - [Volatility tips: how to extract text typed in a notepad window from a Windows memory dump | Andrea Fortuna
 - ](https://andreafortuna.org/2018/03/02/volatility-tips-extract-text-typed-in-a-notepad-window-from-a-windows-memory-dump/)
 
-
-
 ## Volatility Commands
 
 ### Get Operation System
@@ -98,6 +96,7 @@ volatility -f [image] --profile = [OS Profile] svcscan
 
 ```
 volatility -f [image] --profile = [OS Profile] filescan
+volatility -f [image] --profile = [OS Profile] mftparser > mft.txt # File record Information NTFS
 volatility -f [image] --profile = [OS Profile] mftparser --output-file = [outfile.txt]  
 volatility -f [image] --profile = [OS Profile] mftparser --output-file =
  [outfile.txt] --output = body # body format can be read by other 
