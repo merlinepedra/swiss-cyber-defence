@@ -79,14 +79,66 @@ Consciously shapes own leadership behavior and adapts it according to the situat
 
 ### Knowledge needed for action
 
-Designs own communication behavior consciously and according to the situationand establishes an appreciative communication culture in the team.
+Designs own communication behavior consciously and according to the situation and establishes an appreciative communication culture in the team.
 
 1. Knows basic communication models (e.g. four ears modelaccording to Schultz von Thun, non-violent communication according to B. Rosenberg) and can explain their significance for one's own communication behavior.
 
-2. Knows the rulesfor givingand receiving feedback.
+2. Knows the rules for giving and receiving feedback.
 
 ### 3.1 Communication Models
 
 - Communication (Avoid misunderstanding)
 
-- Four Ears Model (F. Schulz von Thun) - (Four sides: )
+- Four Ears Model (F. Schulz von Thun) - (Four sides: Factual Information, Appeal, Relationship, Self-Revelation)
+
+- Non-violent communication (NVC) - (Observation, Feelings, Needs, Requests)
+
+### 3.2 Give and Receive Feedback
+
+- Some Rules for Effective Feedback (Ask permission, timely, specific, behaviors not emotions, what you seen, person's privacy)
+
+- The Pendleton Method of Giving Feedback (Ask staff member, Acknowledge successes and add ..., Ask staff member what they would do differently next time,  Acknowledge their ideas)
+
+## 4. Team Bulding and Roles
+
+### Knowledge needed for action
+
+Actively promotesthe team building process and facilitates role clarification within the team.
+
+1. Knows the difference between a group and a team.
+
+2. Knows the five phases of team building according to Tuckman (Forming, Storming, Norming, Performing, and Adjourning) and can explain the characteristics of each phase.
+
+3. Knows role models in a team (e.g., team roles according to Belbin), knows the difference between performing a role (role making) and actively assuming a role (role taking), and can explain the importance of role composition to performance in a team.
+
+### 4.1 Group and Team
+
+- Difference between a Group and a Team
+  
+  - Group: Collection of individuals, coordinate their individual efforts
+  
+  - Team: Group of people, share a common team purpose, mutually committed to goals, strong bond, strong motivation
+
+## 4.2 Five Phases of Team Building
+
+- Tuckman’s Team Development Mode
+  
+  - Forming, Storming, Norming, Performing, (Adjourning)
+
+### 4.3 Role models
+
+- Roles: Definition: Patterns of behavior, rights and duties > temorarily assigned
+
+- Roles are Products of Social Interaction
+
+- Teamwork
+
+- Beldin Team Roles
+  
+  - People: Ressoure Investigator, Team worker, Co-ordinator
+  
+  - Thinking: Plant, Monitor Evaluator, Specialist
+  
+  - Action: Shaper, Implementer, Completer / Finisher
+
+- Patterns of Role Dynamics: Role-assignment, Role-taking- Role-making, Inter-role-conflict
