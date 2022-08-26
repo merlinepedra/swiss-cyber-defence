@@ -351,8 +351,6 @@ Install Metasploitable: 1
 
 ## Day 4 – Pentesting tools
 
-
-
 ![](assets/2022-08-25-19-10-39-image.png)
 
 ```
@@ -360,8 +358,6 @@ nc 10.211.55.8 22
 ```
 
 ![](assets/2022-08-25-19-13-54-image.png)
-
-
 
 **Find Exploit for this OpenSSH Version**
 
@@ -387,8 +383,6 @@ nc 10.211.55.8 22
 
 [pyExploitDb · PyPI](https://pypi.org/project/pyExploitDb/)
 
-
-
 **Downloaded exploits in kali**
 
 ```
@@ -406,7 +400,6 @@ nmap -sV 10.211.55.8
 ```
 nmap -h | grep PS
 ```
-
 
 [Timing Templates (-T) | Nmap Network Scanning](https://nmap.org/book/performance-timing-templates.html)
 
@@ -461,8 +454,6 @@ HTTP GET
 ```
 
 and enter
-
-
 
 **Run netcat as server**
 

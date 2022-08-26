@@ -66,16 +66,16 @@
     - [Maximum parallel probes/connections](#maximum-parallel-probesconnections)
     - [Maximum packets per second](#maximum-packets-per-second)
   - [#1 My personal favourite way of using Nmap](#1-my-personal-favourite-way-of-using-nmap)
-    - [Step 1a: Host Discovery with well knows ports](#step-1a-host-discovery-with-well-knows-ports)
-    - [Step 1b: Host Discovery with ICMP](#step-1b-host-discovery-with-icmp)
-    - [Step 2: Filter Above Files to Create a Clean Live Hosts Lists](#step-2-filter-above-files-to-create-a-clean-live-hosts-lists)
-    - [Step 3: Perform Full Port Scan using the Live Hosts List](#step-3-perform-full-port-scan-using-the-live-hosts-list)
-    - [#2 Scan network for EternalBlue (MS17-010) Vulnerability](#2-scan-network-for-eternalblue-ms17-010-vulnerability)
-    - [#3 Find HTTP servers and then run nikto against them](#3-find-http-servers-and-then-run-nikto-against-them)
-    - [#4 Find Servers running Netbios (ports 137,139, 445)](#4-find-servers-running-netbios-ports-137-139-445)
-    - [#5 Find Geo Location of a specific IP address](#5-find-geo-location-of-a-specific-ip-address)
-    - [#6 Detect if a Website is protected by WAF](#6-detect-if-a-website-is-protected-by-waf)
-    - [#7 Find well known vulnerabilities related to an open port](#7-find-well-known-vulnerabilities-related-to-an-open-port)
+    1. [Step 1a: Host Discovery with well knows ports](#step-1a-host-discovery-with-well-knows-ports)
+    2. [Step 1b: Host Discovery with ICMP](#step-1b-host-discovery-with-icmp)
+    3. [Step 2: Filter Above Files to Create a Clean Live Hosts Lists](#step-2-filter-above-files-to-create-a-clean-live-hosts-lists)
+    4. [Step 3: Perform Full Port Scan using the Live Hosts List](#step-3-perform-full-port-scan-using-the-live-hosts-list)
+    5. [#2 Scan network for EternalBlue (MS17-010) Vulnerability](#2-scan-network-for-eternalblue-ms17-010-vulnerability)
+    6. [#3 Find HTTP servers and then run nikto against them](#3-find-http-servers-and-then-run-nikto-against-them)
+    7. [#4 Find Servers running Netbios (ports 137,139, 445)](#4-find-servers-running-netbios-ports-137-139-445)
+    8. [#5 Find Geo Location of a specific IP address](#5-find-geo-location-of-a-specific-ip-address)
+    9. [#6 Detect if a Website is protected by WAF](#6-detect-if-a-website-is-protected-by-waf)
+    10. [#7 Find well known vulnerabilities related to an open port](#7-find-well-known-vulnerabilities-related-to-an-open-port)
 
 # Installation
 
@@ -417,6 +417,12 @@ The following command uses a script to detect if the target website is protected
 > |_www.networkstraining.com:443/?p4yl04d=hostname%00
 
 ### #7 Find well known vulnerabilities related to an open port
+
+**Vuln Scan with nmap**
+
+```
+nmap -v --script vuln scanme.nmap.org
+```
 
 Let’s say you have scanned a target host and found several open services/ports running on the host. With nmap you can query public vulnerability databases to find out if there are any known published vulnerabilities related to the services running.
 
