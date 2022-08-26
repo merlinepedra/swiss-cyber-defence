@@ -612,3 +612,152 @@ sudo wireshark&
 ![](assets/2022-08-25-20-57-54-image.png)
 
 ![](assets/2022-08-25-20-58-13-image.png)
+
+---
+
+## Day 5 – Creating your own exploits
+
+> Question regarding Google hacks. Does anyone know a Google hack to get all websites with a specific word in the domain name (not url)? For example, I want all websites with the word "saturn", but only websites where "saturn" is in the domain name, e.g., www. saturn.com, www.saturncoffee.com. What I don't want is www.astronomy.com/planets/ringed-planets/saturn.html
+
+```
+https://github.com/elceef/dnstwist
+```
+
+
+
+```
+nmap -sV 10.211.55.7
+```
+
+![](assets/2022-08-26-19-10-21-image.png)
+
+
+
+- https://www.cvedetails.com/
+
+- https://www.exploit-db.com/
+
+
+
+![](assets/2022-08-26-19-14-09-image.png)
+
+![](assets/2022-08-26-19-16-25-image.png)
+
+![](assets/2022-08-26-19-17-08-image.png)
+
+![](assets/2022-08-26-19-22-44-image.png)
+
+![](assets/2022-08-26-19-23-43-image.png)
+
+```
+netstat -ano | find 4444
+```
+
+![](assets/2022-08-26-19-24-21-image.png)
+
+```
+nc 10.211.55.7 4444
+```
+
+![](assets/2022-08-26-19-24-55-image.png)
+
+![](assets/2022-08-26-19-28-33-image.png)
+
+**Download & rename exploit via wget**
+
+```
+wget https://www.exploit-db.com/download/42315 -O eternal2016.py
+```
+
+![](assets/2022-08-26-19-41-54-image.png)
+
+**Find Payload**
+
+![](assets/2022-08-26-19-42-38-image.png)
+
+**Our new Payload: <mark>Create new user</mark>**
+
+![](assets/2022-08-26-19-45-57-image.png)
+
+![](assets/2022-08-26-19-51-27-image.png)
+
+
+
+**<mark>Bottom two screenshots can be ignored (Exploit didn't work in end)</mark>**
+
+![](assets/2022-08-26-19-55-22-image.png)
+
+![](assets/2022-08-26-19-57-37-image.png)
+
+
+
+**Metasploit**
+
+
+
+**Interview with Metasploit Founder:**
+https://darknetdiaries.com/episode/114/
+
+
+
+```
+mfsconsole
+```
+
+![](assets/2022-08-26-20-22-07-image.png)
+
+![](assets/2022-08-26-20-24-16-image.png)
+
+![](assets/2022-08-26-20-24-45-image.png)
+
+
+
+**GUI for Metasploit**
+
+```
+sudo apt-get install artimage
+```
+
+```
+sudo armitage
+```
+
+![](assets/2022-08-26-20-29-25-image.png)
+
+![](assets/2022-08-26-20-29-35-image.png)
+
+![](assets/2022-08-26-20-30-00-image.png)
+
+![](assets/2022-08-26-20-30-41-image.png)
+
+
+
+Check out what what intressting tools Alejandro has ;-) 
+
+![](assets/2022-08-26-20-34-54-image.png)
+
+
+
+**Create own Payload**
+
+![](assets/2022-08-26-20-40-40-image.png)
+
+![](assets/2022-08-26-20-41-13-image.png)
+
+
+
+**Vulnhub:  Mr-Robot: 1**
+
+https://www.vulnhub.com/entry/mr-robot-1,151/
+
+
+
+**Find Bufferoverflow**
+
+![](assets/2022-08-26-20-49-59-image.png)
+
+
+
+**Course Recommendation: The External Pentest Playbook**
+
+https://academy.tcm-sec.com/p/external-pentest-playbook
