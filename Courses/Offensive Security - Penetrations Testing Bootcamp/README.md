@@ -623,21 +623,15 @@ sudo wireshark&
 https://github.com/elceef/dnstwist
 ```
 
-
-
 ```
 nmap -sV 10.211.55.7
 ```
 
 ![](assets/2022-08-26-19-10-21-image.png)
 
-
-
 - https://www.cvedetails.com/
 
 - https://www.exploit-db.com/
-
-
 
 ![](assets/2022-08-26-19-14-09-image.png)
 
@@ -681,24 +675,16 @@ wget https://www.exploit-db.com/download/42315 -O eternal2016.py
 
 ![](assets/2022-08-26-19-51-27-image.png)
 
-
-
 **<mark>Bottom two screenshots can be ignored (Exploit didn't work in end)</mark>**
 
 ![](assets/2022-08-26-19-55-22-image.png)
 
 ![](assets/2022-08-26-19-57-37-image.png)
 
-
-
 **Metasploit**
-
-
 
 **Interview with Metasploit Founder:**
 https://darknetdiaries.com/episode/114/
-
-
 
 ```
 mfsconsole
@@ -709,8 +695,6 @@ mfsconsole
 ![](assets/2022-08-26-20-24-16-image.png)
 
 ![](assets/2022-08-26-20-24-45-image.png)
-
-
 
 **GUI for Metasploit**
 
@@ -730,13 +714,9 @@ sudo armitage
 
 ![](assets/2022-08-26-20-30-41-image.png)
 
-
-
 Check out what what intressting tools Alejandro has ;-) 
 
 ![](assets/2022-08-26-20-34-54-image.png)
-
-
 
 **Create own Payload**
 
@@ -744,20 +724,174 @@ Check out what what intressting tools Alejandro has ;-)
 
 ![](assets/2022-08-26-20-41-13-image.png)
 
-
-
 **Vulnhub:  Mr-Robot: 1**
 
 https://www.vulnhub.com/entry/mr-robot-1,151/
-
-
 
 **Find Bufferoverflow**
 
 ![](assets/2022-08-26-20-49-59-image.png)
 
-
-
 **Course Recommendation: The External Pentest Playbook**
 
 https://academy.tcm-sec.com/p/external-pentest-playbook
+
+---
+
+## Day 6 – Metasploit Framework
+
+**Start Metasploit**
+
+```
+msfconsole
+```
+
+**See what kind of "scan options we have**
+
+```
+search scan
+```
+
+![](assets/2022-08-27-19-09-51-image.png)
+
+![](assets/2022-08-27-19-15-30-image.png)
+
+![](assets/2022-08-27-19-15-47-image.png)
+
+**Example Metasploit Script**
+
+![](assets/2022-08-27-19-17-00-image.png)
+
+```
+search portscan
+```
+
+![](assets/2022-08-27-19-18-39-image.png)
+
+![](assets/2022-08-27-19-19-06-image.png)
+
+
+
+![](assets/2022-08-27-19-19-52-image.png)
+
+![](assets/2022-08-27-19-20-41-image.png)
+
+```
+show options
+```
+
+![](assets/2022-08-27-19-21-21-image.png)
+
+![](assets/2022-08-27-19-22-21-image.png)
+
+![](assets/2022-08-27-19-23-30-image.png)
+
+![](assets/2022-08-27-19-24-55-image.png)
+
+![](assets/2022-08-27-19-26-29-image.png)
+
+![](assets/2022-08-27-19-28-39-image.png)
+
+![](assets/2022-08-27-19-32-04-image.png)
+
+```
+sudo service postgresql start
+```
+
+![](assets/2022-08-27-19-36-42-image.png)
+
+![](assets/2022-08-27-19-37-45-image.png)
+
+![](assets/2022-08-27-19-38-49-image.png)
+
+![](assets/2022-08-27-19-39-26-image.png)
+
+![](assets/2022-08-27-19-40-06-image.png)
+
+```
+services
+```
+
+![](assets/2022-08-27-19-40-45-image.png)
+
+![](assets/2022-08-27-19-41-59-image.png)
+
+![](assets/2022-08-27-19-42-56-image.png)
+
+![](assets/2022-08-27-19-44-14-image.png)
+
+![](assets/2022-08-27-19-46-15-image.png)
+
+![](assets/2022-08-27-19-47-09-image.png)
+
+![](assets/2022-08-27-19-48-01-image.png)
+
+![](assets/2022-08-27-19-49-42-image.png)
+
+![](assets/2022-08-27-19-51-06-image.png)
+
+![](assets/2022-08-27-19-51-17-image.png)
+
+```
+ps
+```
+
+![](assets/2022-08-27-19-51-45-image.png)
+
+![](assets/2022-08-27-19-52-01-image.png)
+
+![](assets/2022-08-27-19-52-19-image.png)
+
+![](assets/2022-08-27-19-53-36-image.png)
+
+![](assets/2022-08-27-19-55-05-image.png)
+
+![](assets/2022-08-27-19-57-21-image.png)
+
+![](assets/2022-08-27-19-57-32-image.png)
+
+![](assets/2022-08-27-20-00-10-image.png)
+
+![](assets/2022-08-27-20-12-15-image.png)
+
+![](assets/2022-08-27-20-13-41-image.png)
+
+![](assets/2022-08-27-20-14-30-image.png)
+
+![](assets/2022-08-27-20-14-48-image.png)
+
+![](assets/2022-08-27-20-15-40-image.png)
+
+![](assets/2022-08-27-20-17-13-image.png)
+
+![](assets/2022-08-27-20-18-38-image.png)
+
+![](assets/2022-08-27-20-20-58-image.png)
+
+**Kill Antivirus**
+
+![](assets/2022-08-27-20-22-33-image.png)
+
+https://www.offensive-security.com/metasploit-unleashed/meterpreter-basics/
+
+```
+meterpreter > webcam_list
+meterpreter > webcam_snap or use
+meterpreter > webcam_snap -I 2
+```
+
+![](assets/2022-08-27-20-32-32-image.png)
+
+![](assets/2022-08-27-20-32-52-image.png)
+
+![](assets/2022-08-27-20-37-55-image.png)
+
+![](assets/2022-08-27-20-41-30-image.png)
+
+![](assets/2022-08-27-20-43-37-image.png)
+
+![](assets/2022-08-27-20-44-05-image.png)
+
+![](assets/2022-08-27-20-46-51-image.png)
+
+![](assets/2022-08-27-20-48-20-image.png)
