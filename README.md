@@ -8,38 +8,34 @@ Follow me on Twitter:
 
 * ⭐️ [Topics / Overview ](Federal%20Exam/README.md) ⭐️
 
-
 ## Topics
-
 
 ### A. Preventively Protect Systems
 
 * A1: Monitor threat development on an ongoing basis
 * A2: Analyzing threats and preparing information
 * A3: Identify weaknesses
-    * Audits and audit types (system, process, performance and compliance audit).
-    * Procedures and tools for penetration testing, vulnerability scanning, and compliance scanning.
-    * Indicators of Compromise (IoC) and Indicators of Attack (IoA)
-    * Proactive threat hunting
-        * [Web Application Penetration Testing](Topics/Web%20Application%20Penetration%20Testing/README.md)
-    * Legal framework for hacking
-
+  * Audits and audit types (system, process, performance and compliance audit).
+  * Procedures and tools for penetration testing, vulnerability scanning, and compliance scanning.
+  * Indicators of Compromise (IoC) and Indicators of Attack (IoA)
+  * Proactive threat hunting
+    * [Web Application Penetration Testing](Topics/Web%20Application%20Penetration%20Testing/README.md)
+  * Legal framework for hacking
 
 * A4: Close vulnerabilities
 * A5: Use methods to deceive
 * A6: Expert advice to stakeholders
 * A7: Train stakeholders
 
-
 ### B. Detect Security Incidents
 
 * B1: Monitor systems in operation
 * B2: Analyzing and interpreting data
-    * [Python](Topics/Python/README.md)
+  * [Python](Topics/Python/README.md)
 * B3: Triage security incidents
 * B4: Document security incidents
 * B5: Monitor & handling of a security incident
-    * [Manage security incidents and Incident Response](Topics/Manage%20security%20incidents%20and%20Incident%20Response/README.md)
+  * [Manage security incidents and Incident Response](Topics/Manage%20security%20incidents%20and%20Incident%20Response/README.md)
 
 ### C. Handle / Response Security Incidents
 
@@ -51,26 +47,22 @@ Follow me on Twitter:
 
 ### D. Planning and Implementing Security Solutions
 
-
 * D1: Delimit systems and specify requirements
 * D2: Check feasibility and effectiveness
 * D3: Evaluate and budget for expenses
 * D4: Carry out evaluation
 * D5: Complete sub-project
 * D6: Lead team
-    * [Team Building and Management](Topics/Team%20Building%20and%20Management/README.md)
-
+  * [Team Building and Management](Topics/Team%20Building%20and%20Management/README.md)
 
 ## Tools & Applications
 
-
 ### OS
+
 * [Kali Linux](Tools/Kali%20Linux/README.md)
 * [Kali Nethunter](Tools/Kali%20Nethunter/README.md)
 
 ### Firewall
-
-
 
 ### IDS (Intrusion Detection System)
 
@@ -94,14 +86,11 @@ Follow me on Twitter:
 
 * [Hydra](Tools/Hydra/README.md) - Brute Force Attack 
 
-
-
 ### Memory Forensics
 
 * [Volatility](Tools/Volatility/README.md)
 
 ### Vulnerability (Scanner / Analytics)
-
 
 * [OpenVAS](Tools/OpenVAS/README.md) - Open Vulnerability Assessment Scanner
 
@@ -115,18 +104,11 @@ Follow me on Twitter:
 
 ### Scripting & Automation
 
-
-
-
 ## Websites & Services
-
 
 ### Document Forensic
 
-
 * [Scan Maldoc](https://scan.tylabs.com) - QuickSand Framework
-
-
 
 ### Network Analysis
 
@@ -140,7 +122,6 @@ Follow me on Twitter:
 
 * [VirusTotal](https://www.virustotal.com/) - Analyze suspicious files, domains, IPs and URLs to detect malware and other breaches, automatically share them with the security community
 
-
 ### Tools & Applications
 
 * [CyberChef](https://gchq.github.io/CyberChef/) - CyberChef encourages both technical and non-technical people to explore data formats, encryption and compression
@@ -149,15 +130,16 @@ Follow me on Twitter:
 
 * [Security Information and Event Management (SIEM) Reviews and Ratings](https://www.gartner.com/reviews/market/security-information-event-management)
 
-
-
 ### Generator
 
 * [Reverse Shell Generator](https://www.revshells.com) - Online Reverse Shell generator with Local Storage functionality, URI & Base64 Encoding, MSFVenom Generator, and Raw Mode. Great for CTFs
+* http://localhost.run/ - connect a tunnel to your web or shell application
+* 
 
 ### Tutorials
 
 * [HackTricks](https://book.hacktricks.xyz) - Welcome to the page where you will find each hacking trick/technique/whatever I have learnt in CTFs, real life apps, and reading researches and news.
+* [Expose Local Services To The Internet With 1 COMMAND! - YouTube](https://www.youtube.com/watch?v=111ZDMKVTL4)
 
 ### Learning Cyber Security
 
@@ -170,17 +152,16 @@ Follow me on Twitter:
 * [Portswigger's Mystery lab challenge](https://portswigger.net/web-security/all-labs) - Web Application Penetration Testing
 
 ### Other
+
 * [List of hacker groups](https://en.wikipedia.org/wiki/List_of_hacker_groups)
 
 ### News
 
-*  [The Hacker News](https://thehackernews.com) -  Cybersecurity News and Analysis
+* [The Hacker News](https://thehackernews.com) -  Cybersecurity News and Analysis
 
 ### Podcasts
 
-*  ⭐️ [Darknet Diaries](https://darknetdiaries.com) -True stories from the dark side of the Internet ([Apple Podcasts](https://podcasts.apple.com/ch/podcast/darknet-diaries/id1296350485))
-
-
+* ⭐️ [Darknet Diaries](https://darknetdiaries.com) -True stories from the dark side of the Internet ([Apple Podcasts](https://podcasts.apple.com/ch/podcast/darknet-diaries/id1296350485))
 
 ## Hacking Lab
 
@@ -188,21 +169,16 @@ Follow me on Twitter:
 
 * [Portswigger Mystery lab challenges](HackingLab/Portswigger%20Mystery%20lab%20challenge/Portswigger%20Mystery%20lab%20challenge.md) 
 
-
 ## Home Work
-
-
 
 ## Exam Simulation
 
-
-
 ## All Flashcards (studysmarter.de)
+
 * [674 Team Building and Management](https://app.studysmarter.de/studysets/9004280?ref=VfFctwQooo0boGPvpYEQ1vMTRDhZpXL5)
 * [Manage security incidents & Incident Response](https://app.studysmarter.de/studysets/8976516?ref=VfFctwQooo0boGPvpYEQ1vMTRDhZpXL5)
 * [Glossar Flashcards](https://app.studysmarter.de/studysets/9003877?ref=VfFctwQooo0boGPvpYEQ1vMTRDhZpXL5)
 * [Ports Flashcards](https://app.studysmarter.de/studysets/9018754?ref=VfFctwQooo0boGPvpYEQ1vMTRDhZpXL5)
-
 
 ## Glossary
 
