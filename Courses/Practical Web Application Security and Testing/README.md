@@ -408,3 +408,40 @@ Check if everything started:
 
 `docker container ls`
 
+# The OWASP Top 10
+
+## OWASP Overview
+
+![](assets/16616690093784.jpg)
+
+![](assets/16616690578232.jpg)
+
+## 4-2: Broken Access Control
+
+![](assets/16616713444069.jpg)
+
+##  4-3: Cryptographic Failures
+
+![](assets/16616714171457.jpg)
+
+
+![](assets/16616720354841.jpg)
+
+![](assets/16616720561518.png)
+
+![](assets/16616720864788.jpg)
+
+![](assets/16616717985280.jpg)
+
+![](assets/16616718122013.jpg)
+
+![](assets/16616718405632.jpg)
+
+![](assets/16616719763549.jpg)
+
+![](assets/16616719869506.jpg)
+
+##  4-4: Injection - XSS
+
+![](assets/16616721862523.jpg)
+
