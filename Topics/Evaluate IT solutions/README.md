@@ -85,3 +85,5 @@ I would recommend Solution B has 84% Fullfill Rate by Auswahlkriterien and fulfi
 
 
 ![](assets/2022-08-31-00-16-19-image.png)
+
+![](assets/2022-08-31-00-21-15-image.png)
