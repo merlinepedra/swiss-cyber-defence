@@ -894,6 +894,8 @@ meterpreter > webcam_snap -I 2
 
 ![](assets/2022-08-27-20-48-20-image.png)
 
+---
+
 ### Day 7  – Web application pentesting
 
 ![](assets/2022-08-29-19-05-37-image.png)
@@ -912,19 +914,13 @@ https://nodejs.org
 
 ![](assets/2022-08-29-19-08-56-image.png)
 
-
-
 ```
 https://github.com/juice-shop/juice-shop#from-sources
 ```
 
-
-
 ![](assets/2022-08-29-19-20-20-image.png)
 
 ![](assets/2022-08-29-19-21-12-image.png)
-
-
 
 ![](assets/2022-08-29-19-27-04-image.png)
 
@@ -946,17 +942,11 @@ https://github.com/juice-shop/juice-shop#from-sources
 
 ![](assets/2022-08-29-19-48-22-image.png)
 
-
-
 ![](assets/2022-08-29-19-56-41-image.png)
-
-
 
 Good Framework for Attacker
 
 https://beefproject.com/
-
-
 
 **Put in Search Field**
 
@@ -994,10 +984,116 @@ https://beefproject.com/
 
 ![](assets/2022-08-29-20-43-03-image.png)
 
-
-
 [GitHub - prometheus/prometheus: The Prometheus monitoring system and time series database.](https://github.com/prometheus/prometheus)
 
 ![](assets/2022-08-29-20-46-45-image.png)
 
 ![](assets/2022-08-29-20-50-50-image.png)
+
+---
+
+### Day 8 – Web application pentesting
+
+![](assets/2022-08-30-19-40-00-image.png)
+
+
+
+> From HERBAIN BOGNON to Everyone: Launch the web server with <mark>npm start </mark>in the webapp folder then open a web browser to localhost:3000
+
+
+
+![](assets/2022-08-30-19-11-19-image.png)
+
+![](assets/2022-08-30-19-13-07-image.png)
+
+
+
+![](assets/2022-08-30-19-14-40-image.png)
+
+```
+SELECT * FROM user WHERE user = ‘%s' AND password = ‘%s‘
+```
+
+![](assets/2022-08-30-19-21-27-image.png)
+
+![](assets/2022-08-30-19-21-45-image.png)
+
+![](assets/2022-08-30-19-25-38-image.png)
+
+![](assets/2022-08-30-19-27-47-image.png)
+
+![](assets/2022-08-30-19-27-56-image.png)
+
+![](assets/2022-08-30-19-28-21-image.png)
+
+```
+locate big.txt
+```
+
+![](assets/2022-08-30-19-30-31-image.png)
+
+![](assets/2022-08-30-19-34-04-image.png)
+
+![](assets/2022-08-30-19-35-03-image.png)
+
+![](assets/2022-08-30-19-35-25-image.png)
+
+![](assets/2022-08-30-19-38-18-image.png)
+
+![](assets/2022-08-30-19-40-16-image.png)
+
+![](assets/2022-08-30-19-42-50-image.png)
+
+```
+locate webshell
+```
+
+![](assets/2022-08-30-19-45-35-image.png)
+
+![](assets/2022-08-30-19-48-25-image.png)
+
+![](assets/2022-08-30-19-51-31-image.png)
+
+![](assets/2022-08-30-19-52-09-image.png)
+
+![](assets/2022-08-30-19-52-40-image.png)
+
+![](assets/2022-08-30-19-52-49-image.png)
+
+![](assets/2022-08-30-20-04-29-image.png)
+
+![](assets/2022-08-30-20-05-17-image.png)
+
+![](assets/2022-08-30-20-05-59-image.png)
+
+![](assets/2022-08-30-20-06-10-image.png)
+
+![](assets/2022-08-30-20-07-27-image.png)
+
+![](assets/2022-08-30-20-23-31-image.png)
+
+![](assets/2022-08-30-20-24-25-image.png)
+
+![](assets/2022-08-30-20-26-06-image.png)
+
+![](assets/2022-08-30-20-28-10-image.png)
+
+![](assets/2022-08-30-20-30-46-image.png)
+
+![](assets/2022-08-30-20-33-11-image.png)
+
+![](assets/2022-08-30-20-38-12-image.png)
+
+![](assets/2022-08-30-20-44-07-image.png)
+
+![](assets/2022-08-30-20-45-58-image.png)
+
+![](assets/2022-08-30-20-47-15-image.png)
+
+![](assets/2022-08-30-20-52-26-image.png)
+
+![](assets/2022-08-30-20-59-30-image.png)
+
+
+
+![](assets/2022-08-30-21-01-17-image.png)
