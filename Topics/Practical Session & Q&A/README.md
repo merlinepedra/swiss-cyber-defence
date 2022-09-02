@@ -48,18 +48,66 @@
 
 ![](assets/2022-09-02-21-34-37-image.png)
 
-
-
 ![](assets/2022-09-02-21-41-15-image.png)
 
 ![](assets/2022-09-02-21-45-03-image.png)
 
 ![](assets/2022-09-02-21-47-43-image.png)
 
-
-
 ![](assets/2022-09-02-21-53-48-image.png)
 
 ![](assets/2022-09-02-22-10-21-image.png)
 
 ![](assets/2022-09-02-22-07-56-image.png)
+
+![](assets/2022-09-02-22-31-50-image.png)
+
+![](assets/2022-09-02-22-36-14-image.png)
+
+
+
+![](assets/2022-09-02-22-42-18-image.png)
+
+![](assets/2022-09-02-22-43-02-image.png)
+
+```
+https://som-research.uoc.edu/research-tools/
+```
+
+```
+https://apps.microsoft.com/store/detail/devtoys/9PGCV4V3BK4W?hl=fr-ch&gl=ch
+```
+
+[JSON discoverer](http://som-research.uoc.edu/tools/jsonDiscoverer/#/simple)
+
+
+
+![](assets/2022-09-02-23-17-45-image.png)
+
+![](assets/2022-09-02-23-19-00-image.png)
+
+![](assets/2022-09-02-22-33-33-image.png)
+
+![](assets/2022-09-02-22-37-20-image.png)
+
+![](assets/2022-09-02-22-38-41-image.png)
+
+![](assets/2022-09-02-22-40-01-image.png)
+
+![](assets/2022-09-02-22-46-28-image.png)
+
+![](assets/2022-09-02-22-50-40-image.png)
+
+![](assets/2022-09-02-22-52-16-image.png)
+
+![](assets/2022-09-02-22-54-03-image.png)
+
+
+
+
+
+![](assets/2022-09-02-23-17-14-image.png)
+
+![](assets/2022-09-02-23-20-51-image.png)
+
+![](assets/2022-09-02-23-24-20-image.png)
