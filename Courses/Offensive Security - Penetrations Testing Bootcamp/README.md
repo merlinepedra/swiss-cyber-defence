@@ -1354,13 +1354,9 @@ search for `jump esp`
 
 ![](assets/2022-09-01-19-26-37-image.png)
 
-
-
 > From Chat
 > 
 > If you're Looking for strings in a program, you could also use something like Ghidra or IDA
-
-
 
 ![](assets/2022-09-01-19-27-51-image.png)
 
@@ -1371,21 +1367,15 @@ search for `jump esp`
 > 
 > https://www.youtube.com/watch?v=kx2xp7IQNSc
 
-
-
 ![](assets/2022-09-01-19-33-34-image.png)
 
 ![](assets/2022-09-01-19-36-45-image.png)
 
 ![](assets/2022-09-01-19-37-10-image.png)
 
-
-
 ![](assets/2022-09-01-19-39-18-image.png)
 
 `351` is payload size
-
-
 
 ![](assets/2022-09-01-19-40-11-image.png)
 
@@ -1421,17 +1411,11 @@ https://github.com/stephenbradshaw/vulnserver
 > 
 > https://import.cdn.thinkific.com/380432/nmxRVUvRmW4ICetXD2ww_Assignment-20--20Volatility-2001-20--20Robert-20Seyer.pdf
 
-
-
 ![](assets/2022-09-01-20-14-58-image.png)
-
-
 
 ```
 show payloads
 ```
-
-
 
 ![](assets/2022-09-01-20-15-19-image.png)
 
@@ -1519,8 +1503,6 @@ show options
 
 ![](assets/2022-09-01-20-47-21-image.png)
 
-
-
 ![](assets/2022-09-01-20-49-23-image.png)
 
 ![](assets/2022-09-01-20-50-00-image.png)
@@ -1554,3 +1536,165 @@ Replace Task with your own Reverse Shell .exe
 ![](assets/2022-09-01-21-02-28-image.png)
 
 ![](assets/2022-09-01-21-02-43-image.png)
+
+---
+
+## Day 11 -  Friday: Linux privilege escalation and lateral movement
+
+
+
+![](assets/2022-09-02-19-13-19-image.png)
+
+![](assets/2022-09-02-19-14-17-image.png)
+
+![](assets/2022-09-02-19-14-50-image.png)
+
+![](assets/2022-09-02-19-16-47-image.png)
+
+![](assets/2022-09-02-19-16-58-image.png)
+
+![](assets/2022-09-02-19-18-07-image.png)
+
+![](assets/2022-09-02-19-18-22-image.png)
+
+![](assets/2022-09-02-19-23-48-image.png)
+
+![](assets/2022-09-02-19-24-33-image.png)
+
+![](assets/2022-09-02-19-25-50-image.png)
+
+![](assets/2022-09-02-19-29-10-image.png)
+
+```
+https://www.fuzzysecurity.com/tutorials/files/wmic_info.rar
+```
+
+![](assets/2022-09-02-19-33-52-image.png)
+
+![](assets/2022-09-02-19-34-04-image.png)
+
+![](assets/2022-09-02-19-35-45-image.png)
+
+
+
+![](assets/2022-09-02-19-37-08-image.png)
+
+**Or directly over Internet:**
+
+```
+https://live.sysinternals.com/
+```
+
+![](assets/2022-09-02-19-43-44-image.png)
+
+![](assets/2022-09-02-19-40-49-image.png)
+
+![](assets/2022-09-02-19-56-20-image.png)
+
+![](assets/2022-09-02-19-45-00-image.png)
+
+```
+https://github.com/absolomb/WindowsEnum
+```
+
+![](assets/2022-09-02-19-51-50-image.png)
+
+
+
+```
+PS C:\Users\Admin> curl -OutFile pslist.exe https://live.sysinternals.com/
+
+PS C:\Users\Admin> ls .\pslist.exe
+
+
+    Directory: C:\Users\Admin
+
+
+Mode                LastWriteTime         Length Name                                                                                                                    
+----                -------------         ------ ----                                                                                                                    
+-a----       02/09/2022     14:50          17399 pslist.exe
+
+
+```
+
+![](assets/2022-09-02-19-56-31-image.png)
+
+![](assets/2022-09-02-19-58-17-image.png)
+
+![](assets/2022-09-02-20-04-36-image.png)
+
+![](assets/2022-09-02-20-06-07-image.png)
+
+![](assets/2022-09-02-20-09-15-image.png)
+
+![](assets/2022-09-02-20-14-00-image.png)
+
+![](assets/2022-09-02-20-14-09-image.png)
+
+![](assets/2022-09-02-20-28-04-image.png)
+
+![](assets/2022-09-02-20-28-32-image.png)
+
+![](assets/2022-09-02-20-28-44-image.png)
+
+![](assets/2022-09-02-20-29-13-image.png)
+
+![](assets/2022-09-02-20-31-13-image.png)
+
+![](assets/2022-09-02-20-31-56-image.png)
+
+![](assets/2022-09-02-20-32-05-image.png)
+
+```
+ps root
+```
+
+```
+ps -ef | less
+```
+
+```
+top
+```
+
+![](assets/2022-09-02-20-34-17-image.png)
+
+![](assets/2022-09-02-20-35-04-image.png)
+
+![](assets/2022-09-02-20-35-18-image.png)
+
+![](assets/2022-09-02-20-36-34-image.png)
+
+![](assets/2022-09-02-20-36-42-image.png)
+
+![](assets/2022-09-02-20-37-33-image.png)
+
+![](assets/2022-09-02-20-37-22-image.png)
+
+![](assets/2022-09-02-20-41-39-image.png)
+
+![](assets/2022-09-02-20-45-16-image.png)
+
+![](assets/2022-09-02-20-45-48-image.png)
+
+![](assets/2022-09-02-20-46-00-image.png)
+
+```
+https://pentestmonkey.net/tools/audit/unix-privesc-check
+```
+
+```
+https://www.cyberciti.biz/open-source/command-line-hacks/linux-run-command-as-different-user/
+```
+
+![](assets/2022-09-02-20-48-00-image.png)
+
+![](assets/2022-09-02-20-50-58-image.png)
+
+```
+https://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet
+```
+
+![](assets/2022-09-02-20-57-19-image.png)
+
+![](assets/2022-09-02-20-59-05-image.png)
