@@ -1541,8 +1541,6 @@ Replace Task with your own Reverse Shell .exe
 
 ## Day 11 -  Friday: Linux privilege escalation and lateral movement
 
-
-
 ![](assets/2022-09-02-19-13-19-image.png)
 
 ![](assets/2022-09-02-19-14-17-image.png)
@@ -1575,8 +1573,6 @@ https://www.fuzzysecurity.com/tutorials/files/wmic_info.rar
 
 ![](assets/2022-09-02-19-35-45-image.png)
 
-
-
 ![](assets/2022-09-02-19-37-08-image.png)
 
 **Or directly over Internet:**
@@ -1599,8 +1595,6 @@ https://github.com/absolomb/WindowsEnum
 
 ![](assets/2022-09-02-19-51-50-image.png)
 
-
-
 ```
 PS C:\Users\Admin> curl -OutFile pslist.exe https://live.sysinternals.com/
 
@@ -1613,8 +1607,6 @@ PS C:\Users\Admin> ls .\pslist.exe
 Mode                LastWriteTime         Length Name                                                                                                                    
 ----                -------------         ------ ----                                                                                                                    
 -a----       02/09/2022     14:50          17399 pslist.exe
-
-
 ```
 
 ![](assets/2022-09-02-19-56-31-image.png)
@@ -1698,3 +1690,134 @@ https://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet
 ![](assets/2022-09-02-20-57-19-image.png)
 
 ![](assets/2022-09-02-20-59-05-image.png)
+
+---
+
+## Day 12 - Pentest simulation and report creation
+
+
+
+```
+sudo apt install python3-pip
+sudo git clone https://github.com/SecureAuthCorp/impacket.git
+sudo pip3 install -r /opt/impacket/requirements.txt
+sudo python3 /opt/impacket/setup.py install
+sudo git clone https://github.com/bdamele/icmpsh.git
+cd icmpsh
+```
+
+
+
+
+
+![](assets/2022-09-03-19-07-33-image.png)
+
+![](assets/2022-09-03-19-07-59-image.png)
+
+```
+sudo git clone https://github.com/SecureAuthCorp/impacket.git
+```
+
+![](assets/2022-09-03-19-09-12-image.png)
+
+![](assets/2022-09-03-19-09-42-image.png)
+
+```
+sudo git clone https://github.com/bdamele/icmpsh.git
+```
+
+![](assets/2022-09-03-19-12-12-image.png)
+
+![](assets/2022-09-03-19-14-34-image.png)
+
+```
+net.ipv4.icmp_echo_ignore_all=1
+```
+
+![](assets/2022-09-03-19-17-33-image.png)
+
+![](assets/2022-09-03-19-19-03-image.png)
+
+![](assets/2022-09-03-19-21-27-image.png)
+
+![](assets/2022-09-03-19-21-44-image.png)
+
+![](assets/2022-09-03-19-22-16-image.png)
+
+![](assets/2022-09-03-19-22-58-image.png)
+
+**Reverse shell via ICMP**
+
+![](assets/2022-09-03-19-33-38-image.png)
+
+![](assets/2022-09-03-19-34-03-image.png)
+
+![](assets/2022-09-03-19-35-18-image.png)
+
+![](assets/2022-09-03-19-39-22-image.png)
+
+```
+https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/attack-simulation-training-get-started?view=o365-worldwide
+```
+
+
+
+![](assets/2022-09-03-20-01-46-image.png)
+
+
+
+> You would've been the guy they would've pointed the finger at if shit hit the fan.
+> 
+> In the CSS class, the term "CYA" was used. CYA standing for "Cover your ass", which means, in situations like this, when management is making questionable decisions against your advice, make sure to get it in writing, so that you're safe when shit does hit the fan :)
+
+
+
+![](assets/2022-09-03-20-20-56-image.png)
+
+![](assets/2022-09-03-20-21-59-image.png)
+
+![](assets/2022-09-03-20-22-16-image.png)
+
+![](assets/2022-09-03-20-23-12-image.png)
+
+![](assets/2022-09-03-20-23-19-image.png)
+
+![](assets/2022-09-03-20-23-30-image.png)
+
+![](assets/2022-09-03-20-26-35-image.png)
+
+![](assets/2022-09-03-20-26-46-image.png)
+
+![](assets/2022-09-03-20-27-11-image.png)
+
+![](assets/2022-09-03-20-34-02-image.png)
+
+![](assets/2022-09-03-20-35-08-image.png)
+
+![](assets/2022-09-03-20-40-08-image.png)
+
+![](assets/2022-09-03-20-41-10-image.png)
+
+![](assets/2022-09-03-20-42-26-image.png)
+
+![](assets/2022-09-03-20-44-26-image.png)
+
+![](assets/2022-09-03-20-44-37-image.png)
+
+![](assets/2022-09-03-20-52-04-image.png)
+
+
+
+
+
+
+
+![](assets/2022-09-03-21-00-13-image.png)
+
+---
+
+> [All Scripts](assets/Scripts.zip)
+
+
+
+> [Pentest Report Template](assets/satiexs-penetration-test-report-template.docx)
