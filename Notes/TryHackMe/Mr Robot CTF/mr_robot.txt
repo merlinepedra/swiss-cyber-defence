@@ -1,0 +1,41 @@
+IP VPN:
+10.17.66.19
+
+
+
+--------------
+
+Target IP:
+10.10.196.115
+--------------
+
+Wordpress:
+
+--------------
+
+http://10.10.196.115/wp-login.php
+
+login: 
+Elliot 
+  
+password: 
+ER28-0652
+
+
+
+--------------
+
+
+Reverse Shell
+
+nc -lvnp 4444
+
+
+-------------
+
+User: 
+robot
+
+Passwort:
+c3fcd3d76192e4007dfb496cca67e13b
+
