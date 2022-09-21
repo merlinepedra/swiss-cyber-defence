@@ -55,3 +55,27 @@ You scored 3 / 5 (60%)
 ![](assets/16637527898917.png)
 
 
+### 1.5 Where does a GRC Analyst Fit in the Cybersecurity Picture?
+
+**A Symphony sounds lovely when all the pieces are playing their part.**
+An effective cybersecurity program has many moving parts and GRC is but one. This lecture will outline where in the big picture GRC fits and how it interrelates with other functions.
+
+![](assets/16637541351729.png)
+![](assets/16637538410781.png)
+![](assets/16637539769155.png)
+
+### 1.6 Understanding Technology
+
+![](assets/16637542726923.png)
+![](assets/16637543239591.png)
+
+![](assets/16637547665100.png)
+
+
+### 1.7 Understanding Threats
+
+- Natural Desasters
+- 
+
+![](assets/16637549500447.png)
+
