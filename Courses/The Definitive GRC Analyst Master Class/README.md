@@ -75,19 +75,11 @@ An effective cybersecurity program has many moving parts and GRC is but one. Thi
 
 ![](assets/2022-09-21-19-09-02-image.png)
 
-
-
 ### 1.8 Quiz - Cybersecurity Primer
-
-
 
 > You scored 9 / 10 (90%)
 
-
-
 ## 2. Compliance and Audit Work
-
-
 
 ### 2.1 Introduction
 
@@ -95,49 +87,27 @@ Compliance = Minimum Standart of Something (HIPA, GDPR, ...)
 
 Audit (List of Controls / Interview Questions) = Validate Compliance
 
-
-
 ### 2.2 Compliance and Audit Baseline Assessment
-
-
 
 >  60% right
 
-
-
 ### 2.3 Cybersecurity Frameworks
-
-
 
 > Don't be intimated by the term framework. It's literally just a 
 > previously vetted, comprehensive way of implementing a cybersecurity 
 > program. See easy!
 
-
-
 **NIST**
-
-
 
 ![](assets/2022-09-21-19-34-04-image.png)
 
-
-
 Left from Boom: Identifie and Protect
-
-
 
 ![](assets/2022-09-21-19-44-13-image.png)
 
 ![](assets/2022-09-21-19-44-29-image.png)
 
-
-
-
-
 [The 18 CIS Critical Security Controls](https://www.cisecurity.org/controls/cis-controls-list)
-
-
 
 ![](assets/2022-09-21-19-49-27-image.png)
 
@@ -149,10 +119,6 @@ Left from Boom: Identifie and Protect
 
 ![](assets/2022-09-21-20-01-56-image.png)
 
-
-
-
-
 ### 2.4 Regulations and Compliance Standards
 
 **Do I have to?**
@@ -162,23 +128,15 @@ Regulations force organizations to have cybersecurity. But why would
 they need to be forced and what regulations? Let's answer that in this 
 lecture!
 
-
-
 - Hipaa Complain (Health Care)
 
 - Implement Security Controls 
 
 - Complaince Requirements
 
-
-
 ### 2.4b SOC2 (Guest Lecturer)
 
-
-
 SOC2 its a major player in the cybersecurity framework and standards space.
-
-
 
 ![](assets/2022-09-21-20-33-09-image.png)
 
@@ -186,31 +144,19 @@ SOC2 its a major player in the cybersecurity framework and standards space.
 
 ![](assets/2022-09-21-20-35-24-image.png)
 
-
-
 > Show SOC report with NDA
-
-
 
 ![](assets/2022-09-21-20-36-12-image.png)
 
-
-
 >  One who do SOC Report is independend from Company
 
-
-
 >  Implmement Controls (You own Controls)
-
-
 
 ![](assets/2022-09-21-20-38-03-image.png)
 
 ![](assets/2022-09-21-20-40-33-image.png)
 
 ![](assets/2022-09-21-20-40-40-image.png)
-
-
 
 - SOC1 -> Financial Statement (As of <Date of Review>- End of Review)
 
@@ -220,12 +166,272 @@ SOC2 its a major player in the cybersecurity framework and standards space.
 
 - SOC2+ -> 
 
-
-
 ![](assets/2022-09-21-20-45-33-image.png)
 
 ![](assets/2022-09-21-20-46-28-image.png)
 
+### 2.5 Practical Auditing (Practical Lab)
+
+*NIST SP 800-171 Audit*
+
+![](assets/2022-09-22-07-44-11-image.png)
+
+![](assets/2022-09-22-07-44-25-image.png)
+
+> Google Search: nist 800-171 filetype:xls
+
+![](assets/2022-09-22-08-14-34-image.png)
+
+![](assets/2022-09-22-08-18-00-image.png)
+
+![](assets/2022-09-22-08-20-08-image.png)
+
+![](assets/2022-09-22-08-24-22-image.png)
+
+![](assets/2022-09-22-08-25-52-image.png)
+
+![](assets/2022-09-22-08-30-06-image.png)
+
+![](assets/2022-09-22-08-36-10-image.png)
+
+![](assets/2022-09-22-08-36-31-image.png)
+
+### 2.6 Quiz - Compliance and Audit
+
+> You scored 8 / 10 (80%)
 
 
 
+
+
+### 2.7 Conclusion and Touchpoints
+
+
+
+**You get an Audit! You get an Audit! You get an Audit!**
+
+Wonderful!
+ You should now have an understanding of both what an audit is what 
+regulations, frameworks, or programs you would likely be auditing. Well
+ done!
+
+Based on what you have at this point you could start sniffing around for GRC analyst 'audit' work. Just saying'
+
+
+
+### 2.8 Resume Bullet Unlocked
+
+- Prepared, executed, and reported on audit of subset of NIST SP 800-53 cybersecurity controls to include interview, document review, and testing of systems to support compliance audit activities.
+- Knowledgeable on NIST Cybersecurity Framework and how the Identify, Protect, Detect, Respond, and Recover categories comprise and facilitate an information 
+  security program
+
+
+
+## 3. Security Awareness Work
+
+### 3.1 Introduction
+
+
+
+**Often Misunderstood and Incredibly Valuable**
+
+Security awareness is a critical tool to modifying end-user behavior toward better cyber hygiene. We are going to dive deep in this section and walkthrough developing quality, effective security awareness tooling.
+
+
+
+**Module Objectives**
+
+By the end of this module, students will be able to:
+
+- Develop information security awareness content
+
+- Identify several free resources supporting information security awareness content creation
+
+- Contrast audience types for selecting awareness content aspects
+
+
+
+![](assets/2022-09-22-09-30-48-image.png)
+
+
+
+### 3.2 Security Awareness Baseline Assessment
+
+> You scored 5 / 5 (100%)
+
+### 
+
+### 3.3 Know Your Audience
+
+**Whats this gotta do with me?**
+
+You can have the best messaging, but if it doesn't resonate with your audience it makes no difference.
+
+
+
+![](assets/2022-09-22-09-42-00-image.png)
+
+![](assets/2022-09-22-09-42-52-image.png)
+
+![](assets/2022-09-22-09-43-12-image.png)
+
+![](assets/2022-09-22-09-47-52-image.png)
+
+
+
+### 3.4 Tools of the Trade
+
+**Your Toolbox to Win the Day**
+
+Below are list of resources, all that should be free, that you can leverage to achieve high quality security awareness content.
+
+
+
+1. Canva Image Editing [https://www.canva.com/](https://www.canva.com/)
+
+2. Loom Desktop Video Recording https://www.loom.com
+
+3. Pexels Photo Collections https://www.pexels.com/
+
+4. OBS (Bit complicated to setup) Desktop Video Recording https://obsproject.com/
+
+5. Streamlabs Desktop Video Recording https://streamlabs.com/
+
+6. Current Cybersecurity Stories to get Inspired
+   
+   1. https://cisoseries.com/
+   
+   2. https://threatpost.com/
+
+### 
+
+### 3.5 Let's Raise Awareness (Practical Lab)
+
+This section we will walk through exactly how I build my awareness messaging and the tools I use. I challenge you when we are done with this section to make one of your own using the same techniques!
+
+
+
+![](assets/2022-09-22-10-00-56-image.png) 
+
+![](assets/2022-09-22-10-02-48-image.png)
+
+![](assets/2022-09-22-10-22-51-image.png)
+
+![](assets/2022-09-22-10-24-41-image.png)
+
+![](assets/2022-09-22-10-29-39-image.png)
+
+![](assets/2022-09-22-10-31-32-image.png)
+
+
+
+### 3.6 Quiz - Security Awareness
+
+> You scored 10 / 10 (100%)
+
+
+
+### 3.7 Conclusion and Touchpoints
+
+
+
+### 3.8 Resume Bullet Unlocked
+
+- Developed concise, tailored cybersecurity awareness content, improving targeted end-user base cyber hygiene
+
+- Developed Just-In-Time cybersecurity awareness content for emerging threats to reduce operational risk to tailored audiences
+
+
+
+## 4. Cybersecurity Risk Work
+
+
+
+### 4.1 Introduction
+
+**Is Risk Risky?**
+
+Risk is the core function of the GRC analyst. Businesses cannot invest 
+in every technology and protect from every threat, so where to invest 
+and where to commit resources is the role of the risk analyst to figure 
+out. Lets dig in.
+
+
+
+**Module Objectives**
+
+By the end of this module, students will be able to:
+
+- Explain what information security risk is
+
+- Name multiple resources for gathering threat intelligence
+
+- Apply threat intelligence to qualifying information security risk
+
+- Analyze information security risk based on vulnerabilities, threats, and exploitation potential
+
+- Summarize how information security risk is calculated
+
+
+
+### 4.2 Cybersecurity Risk Assessment Baseline Assessment
+
+
+
+> You scored 2 / 5 (40%)
+
+
+
+### 4.3 What is Cybersecurity Risk? (1 of 4)
+
+ 
+
+- Pishing eMail
+
+- Speer Pishing
+
+
+
+**NIST Risk Management Framework**
+
+
+
+![](assets/2022-09-22-11-18-56-image.png)
+
+
+
+> **Controls** you implement in Company to **reduce risk**
+
+
+
+### 4.4 What is Cybersecurity Risk (2 of 4)
+
+
+
+- Identify Risk
+
+- Mission Critical Apps not in Datacenter
+
+
+
+### 4.5 What is Cybersecurity Risk (3 of 4)
+
+![](assets/2022-09-22-11-50-47-image.png)
+
+![](assets/2022-09-22-12-00-34-image.png)
+
+
+
+### 4.6 What is Cybersecurity Risk (4 of 4)
+
+
+
+> Cyber Insurance does not replace Controls inside Company!!
+
+
+
+### 4.7 What is Threat Modeling?
+
+
+
+  
