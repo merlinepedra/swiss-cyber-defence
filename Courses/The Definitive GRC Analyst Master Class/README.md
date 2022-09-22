@@ -434,4 +434,50 @@ By the end of this module, students will be able to:
 
 
 
-  
+- What is Risk to my Organisation
+
+- What is Risk to Industrie my Company is working in 
+
+- Thread Models
+
+- New Threads come up daily 
+
+
+
+**STRIDE model by Microsoft (Best practive)**
+
+![](assets/2022-09-22-13-24-50-image.png)
+
+**DREAD (risk assessment model) -> No longer used**
+
+![](assets/2022-09-22-13-20-39-image.png)
+
+**OCTAVE (Alternative Model)**
+
+![](assets/2022-09-22-13-21-41-image.png)
+
+![](assets/2022-09-22-13-37-53-image.png)
+
+**Desktop App:**
+
+![](assets/2022-09-22-13-26-02-image.png)
+
+
+
+Thread Modeling:
+
+- https://cisoseries.com/
+
+- https://talosintelligence.com/
+
+- https://exchange.xforce.ibmcloud.com/
+
+- https://googleprojectzero.blogspot.com/
+
+- https://www.recordedfuture.com/
+
+
+
+**Diamond Model**
+
+![](assets/2022-09-22-14-00-18-image.png)
