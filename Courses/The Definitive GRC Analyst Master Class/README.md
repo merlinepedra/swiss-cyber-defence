@@ -1,6 +1,10 @@
 # The Definitive GRC Analyst Master Class
 
-Link to Course: https://academy.tcm-sec.com/courses
+
+
+> Link to Course: https://academy.tcm-sec.com/courses
+
+
 
 ## 0. Getting Started
 
@@ -200,13 +204,7 @@ SOC2 its a major player in the cybersecurity framework and standards space.
 
 > You scored 8 / 10 (80%)
 
-
-
-
-
 ### 2.7 Conclusion and Touchpoints
-
-
 
 **You get an Audit! You get an Audit! You get an Audit!**
 
@@ -217,27 +215,19 @@ regulations, frameworks, or programs you would likely be auditing. Well
 
 Based on what you have at this point you could start sniffing around for GRC analyst 'audit' work. Just saying'
 
-
-
 ### 2.8 Resume Bullet Unlocked
 
 - Prepared, executed, and reported on audit of subset of NIST SP 800-53 cybersecurity controls to include interview, document review, and testing of systems to support compliance audit activities.
 - Knowledgeable on NIST Cybersecurity Framework and how the Identify, Protect, Detect, Respond, and Recover categories comprise and facilitate an information 
   security program
 
-
-
 ## 3. Security Awareness Work
 
 ### 3.1 Introduction
 
-
-
 **Often Misunderstood and Incredibly Valuable**
 
 Security awareness is a critical tool to modifying end-user behavior toward better cyber hygiene. We are going to dive deep in this section and walkthrough developing quality, effective security awareness tooling.
-
-
 
 **Module Objectives**
 
@@ -249,11 +239,7 @@ By the end of this module, students will be able to:
 
 - Contrast audience types for selecting awareness content aspects
 
-
-
 ![](assets/2022-09-22-09-30-48-image.png)
-
-
 
 ### 3.2 Security Awareness Baseline Assessment
 
@@ -267,8 +253,6 @@ By the end of this module, students will be able to:
 
 You can have the best messaging, but if it doesn't resonate with your audience it makes no difference.
 
-
-
 ![](assets/2022-09-22-09-42-00-image.png)
 
 ![](assets/2022-09-22-09-42-52-image.png)
@@ -277,15 +261,11 @@ You can have the best messaging, but if it doesn't resonate with your audience i
 
 ![](assets/2022-09-22-09-47-52-image.png)
 
-
-
 ### 3.4 Tools of the Trade
 
 **Your Toolbox to Win the Day**
 
 Below are list of resources, all that should be free, that you can leverage to achieve high quality security awareness content.
-
-
 
 1. Canva Image Editing [https://www.canva.com/](https://www.canva.com/)
 
@@ -309,8 +289,6 @@ Below are list of resources, all that should be free, that you can leverage to a
 
 This section we will walk through exactly how I build my awareness messaging and the tools I use. I challenge you when we are done with this section to make one of your own using the same techniques!
 
-
-
 ![](assets/2022-09-22-10-00-56-image.png) 
 
 ![](assets/2022-09-22-10-02-48-image.png)
@@ -323,17 +301,11 @@ This section we will walk through exactly how I build my awareness messaging and
 
 ![](assets/2022-09-22-10-31-32-image.png)
 
-
-
 ### 3.6 Quiz - Security Awareness
 
 > You scored 10 / 10 (100%)
 
-
-
 ### 3.7 Conclusion and Touchpoints
-
-
 
 ### 3.8 Resume Bullet Unlocked
 
@@ -341,11 +313,7 @@ This section we will walk through exactly how I build my awareness messaging and
 
 - Developed Just-In-Time cybersecurity awareness content for emerging threats to reduce operational risk to tailored audiences
 
-
-
 ## 4. Cybersecurity Risk Work
-
-
 
 ### 4.1 Introduction
 
@@ -355,8 +323,6 @@ Risk is the core function of the GRC analyst. Businesses cannot invest
 in every technology and protect from every threat, so where to invest 
 and where to commit resources is the role of the risk analyst to figure 
 out. Lets dig in.
-
-
 
 **Module Objectives**
 
@@ -372,15 +338,9 @@ By the end of this module, students will be able to:
 
 - Summarize how information security risk is calculated
 
-
-
 ### 4.2 Cybersecurity Risk Assessment Baseline Assessment
 
-
-
 > You scored 2 / 5 (40%)
-
-
 
 ### 4.3 What is Cybersecurity Risk? (1 of 4)
 
@@ -390,29 +350,17 @@ By the end of this module, students will be able to:
 
 - Speer Pishing
 
-
-
 **NIST Risk Management Framework**
-
-
 
 ![](assets/2022-09-22-11-18-56-image.png)
 
-
-
 > **Controls** you implement in Company to **reduce risk**
 
-
-
 ### 4.4 What is Cybersecurity Risk (2 of 4)
-
-
 
 - Identify Risk
 
 - Mission Critical Apps not in Datacenter
-
-
 
 ### 4.5 What is Cybersecurity Risk (3 of 4)
 
@@ -420,19 +368,11 @@ By the end of this module, students will be able to:
 
 ![](assets/2022-09-22-12-00-34-image.png)
 
-
-
 ### 4.6 What is Cybersecurity Risk (4 of 4)
-
-
 
 > Cyber Insurance does not replace Controls inside Company!!
 
-
-
 ### 4.7 What is Threat Modeling?
-
-
 
 - What is Risk to my Organisation
 
@@ -441,8 +381,6 @@ By the end of this module, students will be able to:
 - Thread Models
 
 - New Threads come up daily 
-
-
 
 **STRIDE model by Microsoft (Best practive)**
 
@@ -462,8 +400,6 @@ By the end of this module, students will be able to:
 
 ![](assets/2022-09-22-13-26-02-image.png)
 
-
-
 Thread Modeling:
 
 - https://cisoseries.com/
@@ -476,8 +412,91 @@ Thread Modeling:
 
 - https://www.recordedfuture.com/
 
-
-
 **Diamond Model**
 
 ![](assets/2022-09-22-14-00-18-image.png)
+
+
+
+### 4.8 Let's Assess Risk! (Practical Lab)
+
+**Ok Risk is Cool, but How Do I Do It?**
+
+Calculating risk as a workflow is easy when you've seen it done. There is a lot of rinse repeat, but knowing the foundational process will empower you to assess risk no matter what the model or what the threats. 
+
+
+
+**HIPAA compliance framework**
+
+![](assets/2022-09-22-16-40-27-image.png)
+
+
+
+- How long (days) can your business surive without working IT?
+
+- Is recovery time (backup) fast enough that your business can get over it?
+
+
+
+![](assets/2022-09-22-17-35-58-image.png)
+
+
+
+![](assets/2022-09-22-17-38-55-image.png)
+
+
+
+### 4.9 Quiz - Cybersecurity Risk
+
+
+
+> You scored 8 / 10 (80%)
+
+
+
+### 4.10 Conclusion and Touchpoints
+
+
+
+### 4.11 Resume Bullet Unlocked
+
+The following resume bullets are appropriate based on the work and knowledge you picked up in this module.
+
+- Semi-quantitatively analyzed cybersecurity risk using NIST SP 800-30 methodology to identify highest risk weaknesses for a system
+- Executed threat modeling exercise to determine higher likelihood threat events to inform cybersecurity risk modeling
+
+
+
+## 5. Information Security Governance Work
+
+
+
+### 5.1 Introduction
+
+
+
+**What's the G in GRC?**
+
+Governance is an abstract concept that can't be technically practiced. It is the tone of the company and often set by senior leadership. What is acceptable and what will not be tolerated is documented in policy and enforced by management. This will inherently reflect the attitude of leadership and define an orgs governance.
+
+
+
+**Module Objectives**
+
+By the end of this module, students will be able to:
+
+- List the core documents that support information security governance
+
+- Explain how information security governance manifests in organizations
+
+- Contrast policies and procedures
+
+- Build an information security policy
+
+
+
+### 5.2 Governance Baseline Assessment
+
+
+
+> You scored 4 / 4 (100%)
