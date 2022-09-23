@@ -467,13 +467,9 @@ By the end of this module, students will be able to:
 
 > You scored 4 / 4 (100%)
 
-
-
 ### 5.3 Policies
 
 ![](assets/2022-09-23-11-19-58-image.png)
-
-
 
 - Password Policy
 
@@ -481,43 +477,23 @@ By the end of this module, students will be able to:
 
 - Take Data Home (Allowed)?
 
-
-
 ![](assets/2022-09-23-11-21-27-image.png)
 
-
-
 > Penalty if you don't follow Policies
-
-
-
-
 
 <mark>NIST 800-53</mark>
 
 https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r5.pdf
 
-
-
-
-
 ![](assets/2022-09-23-11-37-27-image.png)
 
-
-
 ![](assets/2022-09-23-11-37-43-image.png)
-
-
 
 ![](assets/2022-09-23-11-41-07-image.png)
 
 ![](assets/2022-09-23-11-43-32-image.png)
 
-
-
 [Information Security Policy Template | HealthIT.gov](https://www.healthit.gov/resource/information-security-policy-template)
-
-
 
 ### 5.4 Standards
 
@@ -525,22 +501,73 @@ https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r5.pdf
 
 ![](assets/2022-09-23-11-54-28-image.png)
 
-
-
-
-
 ### 5.5 Procedures
 
-
-
 ![](assets/2022-09-23-11-59-33-fu751002.jpg)
-
-
 
 ![](assets/2022-09-23-12-01-47-image.png)
 
 
 
-
-
 ### 5.6 Let's Research and Write an Effective Policy (Practical Lab)
+
+
+
+- Title
+
+- Purpose
+
+- Scope
+
+- Policy
+
+- Related Procedures
+
+- Non-Compliance
+
+- Management
+
+- Commitment / Authority
+
+- Review Schedule
+
+- Definitions
+
+
+
+
+
+[The 18 CIS Critical Security Controls](https://www.cisecurity.org/controls/cis-controls-list)
+
+
+
+![](assets/2022-09-23-17-03-42-image.png)
+
+
+
+
+
+https://www.cisecurity.org/-/jssmedia/Project/cisecurity/cisecurity/data/media/files/uploads/2021/11/NIST-Cybersecurity-Framework-Policy-Template-Guide-v2111Online.pdf
+
+
+
+![](assets/2022-09-23-17-04-05-image.png)
+
+
+
+![](assets/2022-09-23-17-08-28-image.png)
+
+![](assets/2022-09-23-17-05-04-image.png)
+
+![](assets/2022-09-23-17-10-44-image.png)
+
+
+
+**Security and Privacy Controls for  Information Systems and Organizations**
+
+https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r5.pdf
+
+
+
+> **My own Policy**
+> [Write_own_Policy.odt](assets/Write_own_Policy.odt)
