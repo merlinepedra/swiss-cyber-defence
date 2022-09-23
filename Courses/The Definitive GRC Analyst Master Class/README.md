@@ -571,3 +571,80 @@ https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r5.pdf
 
 > **My own Policy**
 > [Write_own_Policy.odt](assets/Write_own_Policy.odt)
+
+
+
+### 5.7 Quiz - Governance
+
+> You scored 4 / 6 (66%)
+
+
+
+### 5.8 Conclusion and Touchpoints
+
+
+
+### 5.9 Resume Bullet Unlocked
+
+**Pay the Cost to be The Boss**
+
+Governance work comes from the leadership at the organization. Developing policy and procedures is critical way of documenting and enforcing leaderships will. You've written a policy in the lab, so lets beef up the resume with this accomplishment.
+
+
+
+- Developed Information Security policy to establish authorized access management and authenticator management for internal and third-party personnel.
+
+- Ensured policy documents are aligned with business objectives, implementable by the organization, and practical for compliance by ensuring purpose, scope, authority, and policy statements incorporate operational perspective and constraints
+
+
+
+## 6. Getting a GRC Analyst Job
+
+
+
+### 6.1 Introduction
+
+**Lets get you to the ball Cinderella**
+
+You've got a lot of tools in your GRC Analyst toolbox now, but how to turn skills into paying work? This section will drive the workflow and get you ready to dance!
+
+
+
+**Module Objectives**
+
+By the end of this module, students will be able to:
+
+- Identify resources to find a GRC analyst job
+- Build a LinkedIn profile
+- Contrast resume components for optimal composition
+- Recognize best practices for job interviewing
+
+
+
+### 6.2 Getting a GRC Analyst Job Baseline Assessment
+
+> 80% 
+
+
+
+### 6.3 Finding a Job
+
+**Help Wanted!**
+
+We need to know how to find the open GRC Analyst opportunities. There are a few keywords to look for and places to look in. I know you know the keywords after taking this class, but lets revisit and look at some ways to find those jobs.
+
+
+
+**Use Discord**
+
+![](assets/2022-09-23-18-17-58-image.png)
+
+![](assets/2022-09-23-18-19-58-image.png)
+
+![](assets/2022-09-23-18-30-16-image.png)
+
+![](assets/2022-09-23-18-32-10-image.png)
+
+
+
+### 6.4 Setup and Tune LinkedIn
