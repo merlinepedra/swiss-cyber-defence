@@ -1,10 +1,6 @@
 # The Definitive GRC Analyst Master Class
 
-
-
 > Link to Course: https://academy.tcm-sec.com/courses
-
-
 
 ## 0. Getting Started
 
@@ -416,47 +412,29 @@ Thread Modeling:
 
 ![](assets/2022-09-22-14-00-18-image.png)
 
-
-
 ### 4.8 Let's Assess Risk! (Practical Lab)
 
 **Ok Risk is Cool, but How Do I Do It?**
 
 Calculating risk as a workflow is easy when you've seen it done. There is a lot of rinse repeat, but knowing the foundational process will empower you to assess risk no matter what the model or what the threats. 
 
-
-
 **HIPAA compliance framework**
 
 ![](assets/2022-09-22-16-40-27-image.png)
-
-
 
 - How long (days) can your business surive without working IT?
 
 - Is recovery time (backup) fast enough that your business can get over it?
 
-
-
 ![](assets/2022-09-22-17-35-58-image.png)
-
-
 
 ![](assets/2022-09-22-17-38-55-image.png)
 
-
-
 ### 4.9 Quiz - Cybersecurity Risk
-
-
 
 > You scored 8 / 10 (80%)
 
-
-
 ### 4.10 Conclusion and Touchpoints
-
-
 
 ### 4.11 Resume Bullet Unlocked
 
@@ -465,21 +443,13 @@ The following resume bullets are appropriate based on the work and knowledge you
 - Semi-quantitatively analyzed cybersecurity risk using NIST SP 800-30 methodology to identify highest risk weaknesses for a system
 - Executed threat modeling exercise to determine higher likelihood threat events to inform cybersecurity risk modeling
 
-
-
 ## 5. Information Security Governance Work
 
-
-
 ### 5.1 Introduction
-
-
 
 **What's the G in GRC?**
 
 Governance is an abstract concept that can't be technically practiced. It is the tone of the company and often set by senior leadership. What is acceptable and what will not be tolerated is documented in policy and enforced by management. This will inherently reflect the attitude of leadership and define an orgs governance.
-
-
 
 **Module Objectives**
 
@@ -493,10 +463,84 @@ By the end of this module, students will be able to:
 
 - Build an information security policy
 
-
-
 ### 5.2 Governance Baseline Assessment
 
-
-
 > You scored 4 / 4 (100%)
+
+
+
+### 5.3 Policies
+
+![](assets/2022-09-23-11-19-58-image.png)
+
+
+
+- Password Policy
+
+- Remote Access Policy
+
+- Take Data Home (Allowed)?
+
+
+
+![](assets/2022-09-23-11-21-27-image.png)
+
+
+
+> Penalty if you don't follow Policies
+
+
+
+
+
+<mark>NIST 800-53</mark>
+
+https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r5.pdf
+
+
+
+
+
+![](assets/2022-09-23-11-37-27-image.png)
+
+
+
+![](assets/2022-09-23-11-37-43-image.png)
+
+
+
+![](assets/2022-09-23-11-41-07-image.png)
+
+![](assets/2022-09-23-11-43-32-image.png)
+
+
+
+[Information Security Policy Template | HealthIT.gov](https://www.healthit.gov/resource/information-security-policy-template)
+
+
+
+### 5.4 Standards
+
+![](assets/2022-09-23-11-54-08-image.png)
+
+![](assets/2022-09-23-11-54-28-image.png)
+
+
+
+
+
+### 5.5 Procedures
+
+
+
+![](assets/2022-09-23-11-59-33-fu751002.jpg)
+
+
+
+![](assets/2022-09-23-12-01-47-image.png)
+
+
+
+
+
+### 5.6 Let's Research and Write an Effective Policy (Practical Lab)
