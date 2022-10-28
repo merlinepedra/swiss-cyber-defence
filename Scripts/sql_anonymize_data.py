@@ -77,10 +77,42 @@ def setRandomString(columnKey, length):
     except Exception as e:
             print('Type: {0}; Issue: {1}'.format(type(e), e))
 
-
-def setStaticMasking(columnKey, keepLenght, totalLenght):
+def setRandomNumer(columnKey, length):
+    """Generate a random string"""
     try:
-        executeSQL('''UPDATE {3} SET {0} = substr({1}, {2}, {0}) || '******'    ;'''.format(columnKey, keepLenght, totalLenght, anonymizedTableName))
+        str = string.digits
+        encrypted_values = []
+
+        cwd = os.getcwd()
+        conn = sqlite3.connect('{0}{1}{2}'.format(cwd, os.sep, dbFilename))
+        c = conn.cursor()
+
+        c.execute('''SELECT {} FROM {};'''.format(columnKey, anonymizedTableName))
+        records = c.fetchall()
+
+        for record in records:
+            randomString =  ''.join(random.choice(str) for i in range(length))
+            encrypted_values.append(randomString)
+
+        rowId = 1
+        for value in encrypted_values:
+            c.execute('''UPDATE `{}` SET `{}`=\'{}\' WHERE id='{}';'''.format(anonymizedTableName, columnKey, value, rowId))
+            rowId += 1
+        conn.commit()
+        conn.close()
+    except Exception as e:
+            print('Type: {0}; Issue: {1}'.format(type(e), e))
+
+
+def setStaticMasking(columnKey, keepLenght, astrixLenght):
+    keepLenght = keepLenght + 1
+
+    marking = ""
+    for x in range(astrixLenght):
+        marking = "{}*".format(marking)
+
+    try:
+        executeSQL('''UPDATE {3} SET {0} = substr({0}, 0, {1}) || '{4}'    ;'''.format(columnKey, keepLenght, astrixLenght, anonymizedTableName, marking))
     except Exception as e:
         print('Type: {0}; Issue: {1}'.format(type(e), e))
 
@@ -97,6 +129,11 @@ def setCategory(columnKey, catName, condition):
     except Exception as e:
         print('Type: {0}; Issue: {1}'.format(type(e), e))
 
+def setNullValue(columnKey):
+    try:
+        executeSQL('''UPDATE {1} SET {0} = null;'''.format(columnKey, anonymizedTableName))
+    except Exception as e:
+        print('Type: {0}; Issue: {1}'.format(type(e), e))
 
 def executeSQL(sql):
     cwd = os.getcwd()
@@ -119,6 +156,16 @@ def duplicateTable():
     except Exception as e:
         print('Type: {0}; Issue: {1}'.format(type(e), e))
 
+
+def copyTableBack():
+    try:
+        executeSQL('''DROP TABLE {};'''.format(originalTableName))
+        executeSQL('''CREATE TABLE {} AS SELECT * FROM {};'''.format(originalTableName ,anonymizedTableName))
+        deleteExistingAnonymizedTable()
+    except Exception as e:
+        print('Type: {0}; Issue: {1}'.format(type(e), e))
+
+
 if __name__ == '__main__':
     abspath = os.path.abspath(__file__)
     dname = os.path.dirname(abspath)
@@ -126,29 +173,23 @@ if __name__ == '__main__':
 
     deleteExistingAnonymizedTable()
     duplicateTable()
+    setStaticMasking("firstname", 1, 20)
     setRandomString("lastname", 3)
-    setStaticMasking("firstname", 1, 1)
     reduceDate("date_of_birth", "%Y")
 
     catField = "cc_cvv"
     setCategory(catField, "high", ">= 600")
     setCategory(catField, "medium", ">= 200 AND {} < 600".format(catField))
     setCategory(catField, "low", "< 200")
+
+    setNullValue("cc_type")
     
+    setRandomNumer("contract_id", 10)
 
-    """         c.execute('''SELECT cc_number FROM customers;''')
-    cc_numbers = c.fetchall()
 
-    for cc in cc_numbers:
-        encrypted_cc_numbers.append(encrypt(cc[0],'219203'))
+    # copyTableBack()
 
-    print(encrypted_cc_numbers)
-    cnt = 1
-    for cc in encrypted_cc_numbers:
-        c.execute('''UPDATE `customers` SET `cc_number`=\'{0}\' WHERE id='{1}';'''.format(cc,cnt))
-        cnt += 1
-    conn.commit()
-    conn.close() """
+
 
 
 
