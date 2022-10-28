@@ -51,6 +51,31 @@ def encrypt(val,s):
         n += 1
     return ''.join(['%02x'%x for x in t_t]) 
 
+def pseudoAnonymize(columnKey, type):
+    try:
+        cwd = os.getcwd()
+        conn = sqlite3.connect('{0}{1}{2}'.format(cwd, os.sep, dbFilename))
+        c = conn.cursor()
+        c.execute('''SELECT count(*) FROM {};'''.format(anonymizedTableName))
+        user_count = c.fetchall()[0][0]
+        for i in range(user_count):
+            idx = i + 1
+            if type == "str":
+                c.execute('''UPDATE `{2}` SET `{3}`=\'{0}\' WHERE id='{1}';'''.format('{1}{0:05}'.format(idx, columnKey),idx, anonymizedTableName, columnKey))
+            
+            if type == "phone":
+                c.execute('''UPDATE `{2}` SET `{3}`=\'{0}\' WHERE id='{1}';'''.format('{1}{0:05}'.format(idx, columnKey),idx, anonymizedTableName, columnKey))
+
+            if type == "email":
+                c.execute('''UPDATE `{2}` SET `{3}`=\'{0}\' WHERE id='{1}';'''.format('{1}{0:05}@example.org'.format(idx, columnKey),idx, anonymizedTableName, columnKey))
+
+            if type == "cc_number":
+                c.execute('''UPDATE `{2}` SET `{3}`=\'{0}\' WHERE id='{1}';'''.format('{1}{0:05}'.format(idx, columnKey),idx, anonymizedTableName, columnKey))
+        conn.commit()
+        conn.close()
+    except Exception as e:
+        print('Type: {0}; Issue: {1}'.format(type(e), e))
+
 def setRandomString(columnKey, length):
     """Generate a random string"""
     try:
@@ -173,6 +198,13 @@ if __name__ == '__main__':
 
     deleteExistingAnonymizedTable()
     duplicateTable()
+
+
+    # pseudoAnonymize("firstname", "str")
+    pseudoAnonymize("phone", "phone")
+    pseudoAnonymize("email", "email")
+    pseudoAnonymize("cc_number", "cc_number")
+
     setStaticMasking("firstname", 1, 20)
     setRandomString("lastname", 3)
     reduceDate("date_of_birth", "%Y")
