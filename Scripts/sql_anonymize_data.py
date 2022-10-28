@@ -80,19 +80,20 @@ def setRandomString(columnKey, length):
 
 def setStaticMasking(columnKey, keepLenght, totalLenght):
     try:
-        cwd = os.getcwd()
-        conn = sqlite3.connect('{0}{1}{2}'.format(cwd, os.sep, dbFilename))
-        c = conn.cursor()
+        executeSQL('''UPDATE {3} SET {0} = substr({1}, {2}, {0}) || '******'    ;'''.format(columnKey, keepLenght, totalLenght, anonymizedTableName))
+    except Exception as e:
+        print('Type: {0}; Issue: {1}'.format(type(e), e))
 
 
-        # c.execute('''create table static_masking as SELECT substr({1}, {2}, {0}) || '******' AS {0}) FROM {3};'''.format(columnKey, keepLenght, totalLenght, anonymizedTableName))
-        c.execute('''UPDATE {3} SET {0} = substr({1}, {2}, {0}) || '******'    ;'''.format(columnKey, keepLenght, totalLenght, anonymizedTableName))
+def reduceDate(columnKey, format):
+    try:
+        executeSQL('''UPDATE {2} SET {0} = strftime('{1}', {0});'''.format(columnKey, format, anonymizedTableName))
+    except Exception as e:
+        print('Type: {0}; Issue: {1}'.format(type(e), e))
 
-
-
-
-        conn.commit()
-        conn.close()
+def setCategory(columnKey, catName, condition):
+    try:
+        executeSQL('''UPDATE {3} SET {0} = '{1}' WHERE {0} {2} AND {0} NOT NULL;'''.format(columnKey, catName, condition, anonymizedTableName))
     except Exception as e:
         print('Type: {0}; Issue: {1}'.format(type(e), e))
 
@@ -107,54 +108,49 @@ def executeSQL(sql):
 
 def deleteExistingAnonymizedTable():
     try:
-        cwd = os.getcwd()
-        conn = sqlite3.connect('{0}{1}{2}'.format(cwd, os.sep, dbFilename))
-        c = conn.cursor()
-        c.execute('''DROP TABLE {};'''.format(anonymizedTableName))
-        conn.commit()
-        conn.close()
-
+        executeSQL('''DROP TABLE {};'''.format(anonymizedTableName))
     except Exception as e:
-      print('Type: {0}; Issue: {1}'.format(type(e), e))
+        print("")
 
 
 def duplicateTable():
     try:
-        cwd = os.getcwd()
-        conn = sqlite3.connect('{0}{1}{2}'.format(cwd, os.sep, dbFilename))
-        c = conn.cursor()
-        c.execute('''CREATE TABLE {} AS SELECT * FROM {};'''.format(anonymizedTableName, originalTableName))
-        conn.commit()
-        conn.close()
-
-    except Exception as e:
-      print('Type: {0}; Issue: {1}'.format(type(e), e))
-
-if __name__ == '__main__':
-    encrypted_cc_numbers = []
-    try:
-        deleteExistingAnonymizedTable()
-        duplicateTable()
-        setRandomString("lastname", 3)
-        setStaticMasking("firstname", 3, 10)
-
-
-        """         c.execute('''SELECT cc_number FROM customers;''')
-        cc_numbers = c.fetchall()
-
-        for cc in cc_numbers:
-            encrypted_cc_numbers.append(encrypt(cc[0],'219203'))
-
-        print(encrypted_cc_numbers)
-        cnt = 1
-        for cc in encrypted_cc_numbers:
-            c.execute('''UPDATE `customers` SET `cc_number`=\'{0}\' WHERE id='{1}';'''.format(cc,cnt))
-            cnt += 1
-        conn.commit()
-        conn.close() """
-
+        executeSQL('''CREATE TABLE {} AS SELECT * FROM {};'''.format(anonymizedTableName, originalTableName))
     except Exception as e:
         print('Type: {0}; Issue: {1}'.format(type(e), e))
+
+if __name__ == '__main__':
+    abspath = os.path.abspath(__file__)
+    dname = os.path.dirname(abspath)
+    os.chdir(dname)
+
+    deleteExistingAnonymizedTable()
+    duplicateTable()
+    setRandomString("lastname", 3)
+    setStaticMasking("firstname", 1, 1)
+    reduceDate("date_of_birth", "%Y")
+
+    catField = "cc_cvv"
+    setCategory(catField, "high", ">= 600")
+    setCategory(catField, "medium", ">= 200 AND {} < 600".format(catField))
+    setCategory(catField, "low", "< 200")
+    
+
+    """         c.execute('''SELECT cc_number FROM customers;''')
+    cc_numbers = c.fetchall()
+
+    for cc in cc_numbers:
+        encrypted_cc_numbers.append(encrypt(cc[0],'219203'))
+
+    print(encrypted_cc_numbers)
+    cnt = 1
+    for cc in encrypted_cc_numbers:
+        c.execute('''UPDATE `customers` SET `cc_number`=\'{0}\' WHERE id='{1}';'''.format(cc,cnt))
+        cnt += 1
+    conn.commit()
+    conn.close() """
+
+
 
 
 
