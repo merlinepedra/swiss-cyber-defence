@@ -32,7 +32,7 @@ Course Discord - [TCM Security](https://discord.gg/tcm)
 
 
 
-**Assessment: External Network Pentest**
+#### Assessment: External Network Pentest
 
 - Assessing an organization's security from the outside looking in
 
@@ -42,7 +42,7 @@ Course Discord - [TCM Security](https://discord.gg/tcm)
 
 
 
-**Assessment: Internal Network Pentest**
+#### Assessment: Internal Network Pentest
 
 - Assessing an organization's security from inside of the network
 
@@ -52,7 +52,7 @@ Course Discord - [TCM Security](https://discord.gg/tcm)
 
 
 
-**Assessment: Web Application Pentest**
+#### Assessment: Web Application Pentest
 
 - Assessing an organization's web application security
 
@@ -62,7 +62,7 @@ Course Discord - [TCM Security](https://discord.gg/tcm)
 
 
 
-**Assessment: Wireless Pentest**
+#### Assessment: Wireless Pentest
 
 - Assessing an organization's wireless network security
 
@@ -72,13 +72,69 @@ Course Discord - [TCM Security](https://discord.gg/tcm)
 
 
 
-**Assessment: Physical Pentest & Social Engineering**
+#### Assessment: Physical Pentest & Social Engineering
 
 - Assessing an organization's pysical security and / or end-user training
 
 - Methodology depends on task and goals
 
 - Typically last 16-40 hours with another 4-8 for report writing
+
+
+
+#### Other Assessments
+
+- Mobile Penetration Testing
+
+- IoT Penetration Testing
+
+- Read Team Engagements
+
+- Purple Team Engagements
+
+- Plus more
+
+
+
+#### Report Writing
+
+- A report is typically delivered within a week after the engagement ends
+
+- Report shouold highlight both non-technical (executive) and technical findings
+
+- Recommendations for remediation should be clear to both executives and technical staff
+
+
+
+#### Debrief
+
+- A debrief walks through your report findings. This can be with technical and non-technical staff present.
+
+- It gives an opportunity for the client to ask questions and address any concerns before a final report is released. 
+
+
+
+### Why You Shouldn't Be An Ethical Hacker
+
+- Starting Salery 102'000$
+
+- Go up fast to 140'000$
+
+- Always have to stay up to date. Study whole time. Always new type of attacks!
+
+- Have to be good in communication. Especially to non-technical peoples. 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
