@@ -2,10 +2,6 @@
 
 
 
-
-
-
-
 ## Before We Begin
 
 ### PNPT Certification Path Progression
@@ -228,5 +224,84 @@ Course Discord - [TCM Security](https://discord.gg/tcm)
 > - TFTP (69)
 > - SNMP (161)
 
+
+
+### The OSI Model
+
+> [!hint] 
+> OSI Seven Layers (**p**lease **d**o **n**ot **t**hrow **s**ausage **p**izza **a**way) 
+> 1 -> Physical Layer - Data Cables, Cat6
+> 2 -> Data Layer - Switching, MAC Address
+> 3 -> Network Layer - IP Address, Routing
+> 4 -> Transport Layer - TCP/UDP 
+> 5 -> Session Layer - Session Management
+> 6 -> Presentation Layer -> WMV, JPEG, MOV
+> 7 -> Application Layer -> HTTP, SMTP
+
+
+### Subnetting Part 1
+
+> [!tip] 
+> Subnet Guide (Excel)
+> https://drive.google.com/file/d/1ETKH31-E7G-7ntEOlWGZcDZWuukmeHFe/view 
+>
+> [[Subnet-Guide.xlsx]]
+
+![[Pasted image 20221211171634.png]]
+
+![[Pasted image 20221211171852.png]]
+
+![[Pasted image 20221211173023.png]]
+
+
+> [!tip] 
+> IP Address Guide:
+> https://www.ipaddressguide.com/cidr 
+
+![[Pasted image 20221211180441.png]]
+
+#### Seven Second Subnetting
+
+> [!hint] 
+> Professor Messer - Seven Second Subnetting 
+> https://www.youtube.com/watch?v=ZxAwQB8TZsM
+
+![[Pasted image 20221211182030.png]]
+![[Pasted image 20221211182202.png]]
+![[Pasted image 20221211182459.png]]
+![[Pasted image 20221211182754.png]]
+![[Pasted image 20221211182902.png]]
+![[Pasted image 20221211192715.png]]
+![[Pasted image 20221211192819.png]]
+![[Pasted image 20221211193102.png]]
+
+
+## Subnetting Part 2
+
+![[Pasted image 20221211195803.png]]
+
+
+## Setting Up Our Lab
+
+### Installing VMWare / VirtualBox
+
+
+> [!summary] 
+> VMware: [https://www.vmware.com/products/workstation-player/workstation-player-evaluation.html](https://www.vmware.com/products/workstation-player/workstation-player-evaluation.html)
+>VirtualBox: [https://www.virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wiki/Downloads)
+
+
+### Configuring VirtualBox
+
+> [!info] 
+> Create new NAT Network for every VM
+> 
+
+
+### Installing Kali Linux
+
+> [!summary] 
+> Download Kali - [https://www.kali.org/get-kali/#kali-virtual-machines](https://www.kali.org/get-kali#kali-virtual-machines)
+> Download 7zip - [https://www.7-zip.org/download.html](https://www.7-zip.org/download.html)
 
 
