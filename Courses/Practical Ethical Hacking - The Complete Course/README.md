@@ -134,20 +134,99 @@ Course Discord - [TCM Security](https://discord.gg/tcm)
 
 ![[Pasted image 20221211124455.png]]
 
-
 > [!hint] 
 >  https://obsidian.md/
 
+### Important Tools
+
+> [!important] 
+>  Best Screenshot Tool for Windows, Mac & Linux 
+>  https://flameshot.org/#download
+
+> [!tip] 
+> Invert Screenshots if background is black if you put it into a report  
+
+> [!info] 
+> Pixelate important information such Password 
+
+![[Pasted image 20221211144630.png]]
 
 
 
 
+## Networking Refresher
+
+### Introduction
+
+- IP Address
+- MAC Address
+- TCP, UDP, and the Three-Way Handshake
+- Common Ports and Protocols
+- The OSI Model
+- Subnetting
+
+### IP Addresses
+
+> [!info] 
+> IP Address is on OSI Layer 3 
+
+> [!hint] 
+>  Show IP Information in Linux
+`ifconfig`
+
+![[Pasted image 20221211155524.png]]
 
 
+### MAC Addresses
+
+> [!abstract] 
+> MAC stands for Media Access Control 
+
+> [!info] 
+> MAC Address is on OSI Layer 2 and is related to switching 
+
+> [!hint] 
+> Mac Address Lookup:
+> https://maclookup.app/ 
 
 
+## TCP, UDP, and the Three-Way Handshake
+
+> [!abstract] 
+> TCP = Transmission Control Protocol
+> UDP = User Datagram Protocol 
+
+> [!info] 
+> TCP & UDP Is on OSI Layer 4 
+
+> [!note] 
+> **How does a Three-Way Handshakre look like:**
+> SYN > SYN ACK > ACK
+> 
+> Hello > Hey SYN I acknowledge you (neighbor waving hello back)  > Acknowledgement (Start Conversation)
+> 
 
 
+## Common Ports and Protocols
+
+> [!abstract] 
+> **TCP:**
+> -  FTP (21)
+> - SSH (22)
+> - Telnet (23)
+> - SMTP (25)
+> - DNS (53)
+> - HTTP (80) / HTTPS (443)
+> - POP (110)
+> - SMB (139+445)
+> - IMAP (143)
+
+> [!abstract] 
+> **UDP:** 
+> - DNS (53)
+> - DHCP (67, 68)
+> - TFTP (69)
+> - SNMP (161)
 
 
 
