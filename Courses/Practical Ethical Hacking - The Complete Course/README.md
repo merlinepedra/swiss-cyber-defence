@@ -128,9 +128,15 @@ Course Discord - [TCM Security](https://discord.gg/tcm)
 
 
 
+## Notekeeping
+
+### Effective Notekeeping
+
+![[Pasted image 20221211124455.png]]
 
 
-
+> [!hint] 
+>  https://obsidian.md/
 
 
 

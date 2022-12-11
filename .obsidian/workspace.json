@@ -1,0 +1,152 @@
+{
+  "main": {
+    "id": "c96b3cff56373c3a",
+    "type": "split",
+    "children": [
+      {
+        "id": "01c7de0a0ebbcc61",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6e94b30963bacadd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Courses/Practical Ethical Hacking - The Complete Course/README.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "447e4fd76e5fa7c5",
+    "type": "split",
+    "children": [
+      {
+        "id": "185391738a5d6576",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9213dc31db69b886",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "d1bffcaf1b976bd4",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "0d35873906c37800",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "40a3912fe2653e49",
+    "type": "split",
+    "children": [
+      {
+        "id": "8dabfe820d03d687",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9236b59a039d5e08",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Courses/Practical Ethical Hacking - The Complete Course/README.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "1febd140978d0139",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Courses/Practical Ethical Hacking - The Complete Course/README.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "ffd5ba733ef103b1",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "3c990baebffa548b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Courses/Practical Ethical Hacking - The Complete Course/README.md"
+              }
+            }
+          },
+          {
+            "id": "30f89cf3cb361e13",
+            "type": "leaf",
+            "state": {
+              "type": "side-panel-control-view",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 438.5
+  },
+  "active": "6e94b30963bacadd",
+  "lastOpenFiles": [
+    "Courses/Practical Ethical Hacking - The Complete Course/README.md",
+    "2022-12-11.md"
+  ]
+}
