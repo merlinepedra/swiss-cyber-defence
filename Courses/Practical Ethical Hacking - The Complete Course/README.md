@@ -4,6 +4,8 @@
 
 
 
+
+
 ## Before We Begin
 
 ### PNPT Certification Path Progression
