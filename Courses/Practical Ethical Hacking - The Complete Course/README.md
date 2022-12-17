@@ -402,4 +402,44 @@ Course Discord - [TCM Security](https://discord.gg/tcm)
 > 
 
 
+### Users and Privileges
+
+![[file_permission_image2-3130722148.png]]
+
+![[c16b1-permissions-1771186171.jpg]]
+
+> [!note] 
+> Change Permission of file:
+> `chmod +rwx script.sh`  -> Read, write, execute permissions
+> or
+>` chmod 777 script.sh -> Full permisson for everyone`
+
+![[Pasted image 20221217150406.png]]
+
+> [!note] 
+> Add new user to system
+> `sudo adduser john` -> You need sudo password, after password for new user
+> Now use john account
+> `su john`
+
+> [!important] 
+> /etc/passwd explained  
+
+![[etc_passwd-4204861671.png]]
+
+> [!important] 
+> /etc/shadow explained 
+
+![[shadow-file-format-022022-01-4257132506.png]]
+
+> [!note] 
+> Edit sudo
+> `sudo cat /etc/sudoers`
+> Find out which group has sudo:
+> `grep 'sudo' /etc/group`
+> Check places I can execute commands with current user:
+>` sudo -l`
+
+
+### Common Network Commands
 
