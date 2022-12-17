@@ -305,3 +305,101 @@ Course Discord - [TCM Security](https://discord.gg/tcm)
 > Download 7zip - [https://www.7-zip.org/download.html](https://www.7-zip.org/download.html)
 
 
+## Introduction to Linux
+
+### Exploring Kali Linux
+
+> [!summary] 
+> Kali Linux is an open-source, Debian-based Linux distribution geared towards various information security tasks, such as Penetration Testing, Security Research, Computer Forensics and Reverse Engineering. 
+
+![[Pasted image 20221217135615.png]]
+
+
+### Sudo Overview
+
+> [!note] 
+> Show Password File in Linux
+>`cat /etc/shadow` -> Permission denied
+>  `sudo cat /etc/shadow` -> You see content because your root (after type root password)
+
+> [!note] 
+> Run current session in Terminal always as root:
+> `sudo su -`
+> 
+
+![[Pasted image 20221217140635.png]]
+
+
+### Navigating the File System
+
+> [!note] 
+> Show current path in terminal:
+> `pwd`
+> -> /home/kali 
+
+> [!note] 
+> Change dictionary:
+> `cd ..` ->  Go one folder up
+>  `cd nameOfFolder` -> Go into this folder
+>  `cd /home/kali` -> Go into this folder by absolute path
+
+> [!note] 
+> List content of current folder:
+> `ls` -> Simple folder listing
+> `ls -la` -> Complex folder listing including file permissions
+
+> [!note] 
+> Create Folder:
+> `mkdir myNewFolderName` 
+
+> [!note] 
+> Remove Folder:
+> `rmdir myNewFolderName`
+
+> [!hint] 
+>explainshell.com 
+>Write down a command-line to see the help text that matches each argument 
+ https://explainshell.com 
+
+![[Pasted image 20221217142755.png]]
+
+> [!note] 
+> Show Help (Manual) for a command:
+> `man ls` 
+> `man mkdir`
+> or 
+> `ls --help`
+> `mkdir --help`
+
+> [!note] 
+> Print out String:
+> `echo 'Hi!'` 
+>  `echo 'Hi!' > test.txt` -> Save this Text to file test.txt
+> ` cat test.txt
+`
+
+> [!note] 
+> Copy file to other folder:
+>  `cp test.txt Downloads`
+
+> [!note] 
+>  Delete File
+> ` rm Downloads/test.txt`
+
+> [!note] 
+> Move file to other location 
+> `mv test.txt Downloads` 
+
+> [!note] 
+>  Locate file (search where a file is)
+>  `locate test.txt`
+>But as we just created this file, locate DB is not updated.
+>`sudo updatedb` -> Index all files 
+
+> [!note] 
+> Change Password for current user
+> `passwd`
+> 
+
+
+
