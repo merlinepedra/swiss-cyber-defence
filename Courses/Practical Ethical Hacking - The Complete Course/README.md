@@ -443,3 +443,154 @@ Course Discord - [TCM Security](https://discord.gg/tcm)
 
 ### Common Network Commands
 
+> [!note] 
+> Show IP Information (ip a is new way)
+> `ip a` 
+> or old way
+> `ifconfig`
+
+> [!note] 
+> Show Wlan Adapter  
+> `iwconfig`
+
+> [!note] 
+> Show ARP information
+> `ip n`
+> or 
+> `arp a` 
+
+> [!hint] 
+> ARP is telling which IP Address has which MAC Address
+> 
+
+> [!note] 
+> Kernel IP routing table
+> `route`
+> 
+
+
+### Viewing, Creating, and Editing Files
+
+> [!note] 
+> Write Text to File 
+> `echo "hallo" > hey.txt` 
+> To add text to existing file:
+>  `echo "hallo" >> hey.txt` 
+
+> [!note] 
+> Create new empty file
+> `touch newfile.txt` 
+
+> [!tip] 
+> Use `nano` editor in terminal to edit files
+> 
+
+> [!hint] 
+> Open file  in GUI Editor
+> `gedit newfile.txt`
+> New GUI Editor alternative:
+> `mousepad newfile.txt`
+> 
+> 
+
+
+### Starting and Stopping Services
+
+> [!note] 
+> Start apache2 webserver
+> `sudo service apache2 start` 
+> Stop apache2 webserver
+> `sudo service apache2 stop` 
+> Path to www root
+> `cd /var/www/html`
+
+> [!tip] 
+> Start Webserver in current folder
+> `python3 -m http.server 80` 
+
+
+> [!note] 
+> Enable SSH Service
+> `sudo systemctl enable ssh`
+> Disable SSH Service
+> `sudo systemctl disable ssh`
+
+
+### Installing and Updating Tools
+
+> [!note] 
+> Update Kali Linux System via apt
+> `sudo apt update && sudo apt upgrade` 
+
+> [!tip] 
+> With apt command you can install new software:
+> `apt install nameOfSoftwareToInstall` 
+
+> [!hint] 
+> Example to find new software: Google for "Office 365 brute force github" 
+
+> [!important] 
+>  Pimpmykali Script from GitHub:
+>  https://github.com/Dewalt-arch/pimpmykali
+>  `git clone https://github.com/Dewalt-arch/pimpmykali.git`
+>  `sudo ./pimpmykali.sh`
+>  
+
+![[Pasted image 20221218171941.png]]
+
+
+### Scripting with Bash
+
+> [!tip] 
+> Create Sash Script for IP Sweep using OpenAI:
+> https://chat.openai.com/chat
+
+``` 
+#!/bin/bash
+
+# Set the range of IP addresses to scan
+ip_range="192.168.1.1-255"
+
+# Set the Slack webhook URL
+webhook_url="https://hooks.slack.com/services/YOUR/WEBHOOK/URL"
+
+# Use nmap to perform the IP sweep
+nmap -sP $ip_range | while read line
+do
+  # Check for online or offline status
+  if [[ $line =~ "Host is up" ]]
+  then
+    # Send message to Slack indicating that a device is online
+    curl -X POST -H 'Content-type: application/json' --data '{"text":"A device has come online"}' $webhook_url
+  elif [[ $line =~ "Host is down" ]]
+  then
+    # Send message to Slack indicating that a device is offline
+    curl -X POST -H 'Content-type: application/json' --data '{"text":"A device has gone offline"}' $webhook_url
+  fi
+done
+```
+
+![[Pasted image 20221218175259.png]]
+![[Pasted image 20221218175325.png]]
+
+And here Solution from Course:
+
+``` 
+#!/bin/bash
+if [ "$1" == "" ]
+then
+echo "You forgot an IP address!"
+echo "Syntax: ./ipsweep.sh 192.168.1"
+
+else
+for ip in `seq 1 254`; do
+ping -c 1 $1.$ip | grep "64 bytes" | cut -d " " -f 4 | tr -d ":" & 
+done
+fi
+```
+
+
+> [!note] 
+> Store Results to text file
+> `./ipsweep.sh 192.168.2 > ips.txt` 
+
