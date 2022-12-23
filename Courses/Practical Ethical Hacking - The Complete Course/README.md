@@ -594,3 +594,243 @@ fi
 > Store Results to text file
 > `./ipsweep.sh 192.168.2 > ips.txt` 
 
+
+
+## Introduction to Python
+
+### Introduction
+
+![[Pasted image 20221223145037.png]]
+
+
+### Strings
+
+``` 
+#!/bin/python3
+
+#Print string
+print("Hello, World!")
+print('Hello, World!')
+print("""This string runs
+multiple lines!""")
+print("This string is "+"awesome!")
+print("\n") # print new line
+print("Test that new line out.")
+```
+
+
+### Math
+
+``` 
+#!/bin/python3
+
+print(50 + 50) # add
+print(50 - 50) # subtract
+print(50 * 50) # multiply
+print(50 / 50) # divide
+print(50 + 50 - 50 * 50 / 50) # PEMDAS
+print(50 ** 2) # exponents
+print(50 % 6) # modulo - takes what is left over
+print(50 / 6) #division with remainder (or a float)
+print(50 // 6) # no remainder
+```
+
+
+### Variables and Methods
+
+``` 
+#!/bin/python3
+
+quote = "All is fair in love and war"
+print(quote)
+print(quote.upper()) # uppercase
+print(quote.lower()) # lowercase
+print(quote.title()) # title case
+print(len(quote)) # counts characters
+name = "Peter" # string
+age = 33 # int
+gpa = 3.7 # float - has a devimal
+print(int(age))
+print(int(30.1))
+print(int(30.9)) # Will it round? NO.
+print("My name is " + name + " and I am " + str(age) + " years old.")
+age += 1
+print("My name is " + name + " and I am " + str(age) + " years old.")
+birthday = 1
+age += birthday
+print("My name is " + name + " and I am " + str(age) + " years old.")
+```
+
+
+###  Functions
+
+``` 
+
+#!/bin/python3
+
+def who_am_i(): # this is a fuction without parameters
+   name = "Peter" # local variable
+   age = 30
+   print("My name is " + name + " and I am " + str(age) + " years old.")
+
+who_am_i()
+
+def add_one_hundred(num):
+   print(num + 100)
+
+add_one_hundred(100)
+
+def add(x,y):
+   print(x + y)
+
+add(7,7)
+
+def multiply(x,y):
+   return x * y
+
+print(multiply(7, 7))
+
+def square_root(x):
+   print(x ** .5)
+
+square_root(64)
+
+def new_line():
+   print("\n")
+  
+new_line()
+```
+
+
+###  Boolean Expressions and Relational Operators
+
+![[Pasted image 20221223171602.png]]
+
+``` 
+#!/bin/python3
+
+bool1 = True
+bool2 = 3*3 == 9
+bool3 = False
+bool4 = 3*3 != 9
+print(bool1, bool2, bool3, bool4)
+print(type(bool1))
+bool5 = "True"
+print(type(bool5))
+
+greater_than = 7 > 5
+less_than = 5 < 7
+greater_than_equal_to = 7 >= 7
+less_than_equal_to = 7 <= 7
+
+test_and = (7 > 5) and (5 < 7) # True
+test_and2 = (7 > 5) and (5 > 7) # False
+test_or = (7 > 5) or (5 < 7) # True
+test_or2 = (7 > 5) or (5 > 7) # True
+  
+test_not = not True # False
+```
+
+
+### Conditional Statements
+
+``` 
+#!/bin/python3
+
+def drink(money):
+   if money >= 2:
+      return "You've got yourself a drink!"
+   else:
+      return "No drink for you!"
+
+print(drink(3))
+print(drink(1))
+
+def alcohol(age,money):
+    if (age >= 21) and (money >= 5):
+      return "We're getting a drink!"
+   elif (age >= 21) and (money < 5 ):
+      return "Come back with more money"
+   elif (age < 21) and (money >= 5):
+      return "Nice try, kid!"
+   else:
+      return "You're too young and too poor."
+
+print(alcohol(21, 5))
+print(alcohol(21, 2))
+print(alcohol(19, 5))
+print(alcohol(19, 1))
+```
+
+
+## Lists
+
+
+``` 
+#!/bin/python3
+
+movies = ["When Harry Met Sally", "The Hangover", "SWAT", "The Rock"]
+print(movies[0]) # return first item in list
+print(movies[1]) # return second item in list
+print(movies[1:3]) # return first index number given right until last number, but not include last number
+print(movies[1:])
+print(movies[:1])
+print(movies[-1])
+print(len(movies)) # count items in the list
+
+movies.append("JAWS")
+print(movies) # appends to the end of the list
+
+movies.insert(2, "Hustle")
+print(movies)
+
+movies.pop() # removes the last item
+print(movies)
+
+movies.pop(0) # removes the first item
+print(movies)
+
+amber_movies = ['Matrix 1', 'Matrix 2']
+our_favorites_movies = movies + amber_movies
+print(our_favorites_movies)
+
+grades = [["Bob", 82], ["Alice", 90], ["Jeff", 73]]
+bobs_grades = grades[0][1]
+print(bobs_grades)
+grades[0][1] = 83
+print(grades)
+```
+
+
+### Tuples
+
+``` 
+#!/bin/python3
+
+# TUPLES - Do not change, ()
+grades = ("a", "b", "c", "d", "f")
+print(grades[1])
+```
+
+## Looping
+
+``` 
+#!/bin/python3
+
+# For loops - start to finish of a iterate
+vegetables = ["tomato", "spinach", "cabbage"]
+for x in vegetables:
+   print(x)
+
+# ip = 1..254
+# for x in ip:
+#  ping 192.168.1.x
+  
+
+# While loops - execute as long as True
+i = 1
+while i < 10:
+   print(i)
+   i += 1
+```
+
