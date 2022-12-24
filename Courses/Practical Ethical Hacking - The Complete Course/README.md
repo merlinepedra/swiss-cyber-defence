@@ -1046,3 +1046,166 @@ days.close()
 
 ### Classes and Objects
 
+``` 
+class Employees:
+
+def __init__(self, name, department, role, salery, years_employed):
+   self.name = name
+   self.deparment = department
+   self.role = role
+   self.salery = salery
+   self.years_employed = years_employed
+
+def eligible_for_retirement(self):
+   if self.years_employed >= 20:
+      return True
+   else:
+      return False
+```
+
+``` 
+#!/bin/python3
+
+from Employees import Employees
+
+e1 = Employees("Bob", "Sales", "Director of Sales", 100000, 20)
+e2 = Employees("Linda", "Executive", "CIO", 150000, 10)
+
+print(e1.name)
+print(e2.role)
+
+print(e1.eligible_for_retirement())
+print(e2.eligible_for_retirement())
+```
+
+### Building a Shoe Budget Tool
+
+``` 
+#!/bin/python3
+
+class Shoes:
+
+def __init__(self, name, price):
+   self.name = name
+   self.price = float(price)
+
+def budget_check(self, budget):
+   if not isinstance(budget, (int, float)):
+      print('Invalid entry. Please enter a number.')
+      exit()
+
+def change(self, budget):
+   return (budget - self.price)
+
+def buy(self, budget):
+   self.budget_check(budget)
+   if budget >= self.price:
+      print(f'You can cop some {self.name}')
+      if budget == self.price:
+         print('You have exactly enough money for these shoes.')
+      else:
+         print(f'You can buy these shoes and have ${self.change(budget)} left over')
+      exit('Thanks for using our shoe budget app!')
+```
+
+
+``` 
+#!/bin/python3
+
+from Shoes import Shoes
+
+low = Shoes('Heels', 30)
+medium = Shoes('Boots', 120)
+high = Shoes('Sexy Heels', 400)
+
+try:
+   shoe_budget = float(input('What is your shoe budget? '))
+
+except ValueError:
+   exit('Please enter a number')
+
+for shoes in [high, medium, low]:
+   shoes.buy(shoe_budget)
+```
+
+
+## The Ethical Hacker Methodology
+
+### The Five Stages of Ethical Hacking
+
+![[Pasted image 20221224141322.png]]
+
+
+## Information Gathering (Reconnaissance)
+
+### Passive Reconnaissance Overview
+
+![[Pasted image 20221224141847.png]]
+
+> [!hint] 
+> Live Satellite images
+> https://zoom.earth/
+> 
+
+![[Pasted image 20221224150033.png]]
+
+
+### Identifying Our Target
+
+> [!hint] 
+> Bug Bounty
+> https://bugcrowd.com/programs 
+
+
+### Discovering Email Addresses
+
+> [!hint] 
+> hunter.io to find E-Mails
+> https://hunter.io/ 
+
+![[Pasted image 20221224163352.png]]
+
+> [!hint] 
+>  https://phonebook.cz
+
+![[Pasted image 20221224165407.png]]
+
+> [!tip] 
+> Useful for Password Sprying
+> 
+
+> [!hint] 
+> https://clearbit.com/ Chrome Extension 
+ 
+
+![[Pasted image 20221224170625.png]]
+
+![[Pasted image 20221224170711.png]]
+
+![[Pasted image 20221224170807.png]]
+
+> [!hint] 
+> ## Free email address verification tool
+> https://tools.emailhippo.com/ 
+
+![[Pasted image 20221224171400.png]]
+
+> [!hint] 
+> # Email Checker
+> A simple tool to check whether an email address exists.
+> https://email-checker.net/
+
+![[Pasted image 20221224171609.png]]
+
+
+
+> [!important] 
+> Use Gmail Login Form to see if E-Mail Address is valid. If you come to this screen, it means Gmail Address is existing.  
+
+![[Pasted image 20221224171848.png]]
+
+> [!hint] 
+> Make a Password Reset 
+
+![[Pasted image 20221224172034.png]]
+
