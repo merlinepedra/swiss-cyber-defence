@@ -834,3 +834,215 @@ while i < 10:
    i += 1
 ```
 
+
+### Advanced Strings
+
+``` 
+#!/bin/python3
+
+my_name = "Peter"
+print(my_name[0]) # first letter
+print(my_name[-1]) # last letter
+
+sentence = "This is a sentence."
+print(sentence[:4])
+print(sentence.split()) # delimeter - default is a space
+
+sentence_split = sentence.split()
+sentence_join = ' '.join(sentence_split)
+print(sentence_join)
+
+quote = 'He said, "give me all your money"'
+print(quote)
+
+quote = "He said, \"give me all your money\""
+print(quote)
+
+too_much_space = " hello "
+print(too_much_space.strip())
+
+print("A" in "Apple") # True
+print("a" in "Apple") # False
+
+letter = "A"
+word = "Apple"
+print(letter.lower() in word.lower()) # improved
+
+movie = "The Rock"
+print("My favorite movie is {}.".formatmovie))
+
+print("My favorite movie is %s" % movie)
+print(f"My favorite movie is {movie}.")
+```
+
+
+### Dictionaries
+
+``` 
+#!/bin/python3
+
+drinks = {"White Russian" : 7, "Old Fashioned": 10, "Beer": 1} # drink is key, price is the value
+print(drinks)
+
+employees = {"Finance": ["Bob", "Linda", "Tina"], "IT": ["Teddy", "Peter", "Hans"], "HR": ["Jimmy", "Mort"]}
+print(employees)
+
+employees['Legal'] = ["Mr. Frond"] # adds new key value pair
+print(employees)
+  
+employees.update({"Sales": ["Andie", "Oli"]})
+print(employees)
+
+drinks['White Russian'] = 8
+print(drinks)
+print(drinks.get("White Russian"))
+```
+
+
+### Importing Modules
+
+``` 
+#!/bin/python3
+
+import sys # system functions and parameters
+from datetime import datetime as dt # import with alias
+
+print(sys.version)
+print(dt.now())
+```
+
+
+### Sockets
+
+``` 
+#!/bin/python3
+
+import socket
+
+HOST = '127.0.0.1'
+PORT = 7777
+
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM) # AF_INET is ipv4, SOCK_STREAM is a port
+s.connect((HOST,PORT))
+```
+
+
+### Building a Port Scanner
+
+
+``` 
+#!/bin/python3
+
+import sys
+import socket
+from datetime import datetime
+
+# Define our target
+if len(sys.argv) == 2:
+   target = socket.gethostbyname(sys.argv[1]) # Translate hostname to IPv4
+else:
+   print("Invalid amount of arguments.")
+   print("Syntax: python3 scanner.py <ip>")
+
+#Add a pretty banner
+print("-" * 50)
+print("Scaning target " + target)
+print("Time started: " +str(datetime.now()))
+print("-" * 50)
+
+try:
+for port in range(1,65535):
+   s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+   socket.setdefaulttimeout(1)
+   result = s.connect_ex((target, port))
+
+   if result == 0:
+      print(f"Port {port} is open")
+   s.close()
+
+except KeyboardInterrupt:
+   print("\n Exiting program.")
+   sys.exit()
+
+except socket.gaierror:
+   print("Hostname could not be resolved.")
+   sys.exit()
+
+except socket.error:
+   print("Could not connect to server.")
+   sys.exit()
+```
+
+
+### User Input
+
+``` 
+#!/bin/python3
+
+name = input("Enter your name: ")
+drink = input("What is your favorite drink? ")
+print(f"Hello {name}! Have a {drink}")
+```
+
+``` 
+#!/bin/python3
+
+x = float(input("Give me a number: "))
+o = input("Give me an operator: ")
+y = float(input("Give me yet another number: "))
+
+if o == "+":
+   print(x + y)
+elif o == "-":
+   print(x - y)
+elif o == "/":
+   print(x / y)
+elif o == "*":
+   print(x * y)
+elif o == "**" or o == "^":
+   print(x ** y)
+else:
+   print("Unknown operator.")
+```
+
+
+### Reading and Writing Files
+
+``` 
+#!/bin/python3
+
+months = open('months.txt')
+print(months)
+print(months.mode)
+print(months.readable())
+print(months.readline())
+print(months.readline())
+print(months.readlines())
+print(months.readlines())
+print(months.seek(0))
+print(months.readlines())
+print(months.seek(0))
+
+for month in months:
+   print(month.strip())
+
+months.close()
+```
+
+``` 
+#!/bin/python3
+
+days = open('days.txt', "w") # write / override
+days = open('days.txt', "a") # add to existing file
+print(days)
+print(days.mode)
+
+days.write("Monday")
+days.write("\nTuesday")
+
+days.close()
+```
+
+
+### Classes and Objects
+
