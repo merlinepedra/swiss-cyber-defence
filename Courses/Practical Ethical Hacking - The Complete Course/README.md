@@ -1304,3 +1304,221 @@ for shoes in [high, medium, low]:
 > Google Search Operators: The Complete List (42 Advanced Operators)
 > https://ahrefs.com/blog/google-advanced-search-operators/
 
+
+### Utilizing Social Media
+
+> [!hint] 
+> Twitter and LinkedIn are good places to find Employee information.
+> 
+
+![[Pasted image 20221226152108.png]]
+
+> [!tip] 
+> Look for Badges, Notes on Desk or what kind of IT tools / OS they use. 
+
+> [!hint] 
+> If there is a big company, there is a big chance that someone of Employees use weak password. You can identify persion in data breach.
+> 
+
+> [!warning] 
+> Information gathering is a very important part of penetration testing work!  
+
+
+### Additional Learning (OSINT Fundamentals)
+
+![[Pasted image 20221226154340.png]]
+
+
+## Scanning & Enumeration
+
+
+### Installing Kioptrix
+
+
+> [!info] 
+> Kioptrix Download - [https://tcm-sec.com/kioptrix](https://tcm-sec.com/kioptrix)
+> 
+
+
+> [!tip] 
+> To find IP, you can login with `john` and `TwoCows2`.
+> You can use ping to find out IP of VM. 
+
+
+### Scanning with Nmap
+
+> [!tip] 
+>  Network discovery with arp-scan
+>  `arp-scan -l`
+>  or
+>  `udo arp-scan -l -I vmnet8`
+
+![[Pasted image 20221226160315.png]]
+
+> [!note] 
+> Scan Network with netdiscover
+> `sudo netdiscover -r 192.168.2.0/24`
+> 
+
+![[Pasted image 20221226161520.png]]
+
+> [!info] 
+> # 3-Way Handshake - Accept Connection
+> SYN SYNACK ACK
+> 
+> # Abort Connection
+> SYN SYNACK RST 
+
+> [!todo] 
+> nmap Scan of VM:
+> nmap -T4 -p- -A 172.16.215.128
+> 
+
+> [!todo] 
+> nmap Scan of UDP:
+> ` sudo nmap -sU -sV -T4 -p1000  172.16.215.128` 
+
+
+### Enumerating HTTP and HTTPS Part 1
+
+> [!info] 
+> Poor Hygiene:
+> Searching for a standard web server page tells us something about the technical hygiene of our customer. You should not run a web server if you do not use a web server. 
+> 
+
+![[Pasted image 20221226165042.png]]
+
+> [!info] 
+> Information Dislclosure of Webserver Version 
+
+![[Pasted image 20221226165410.png]]
+
+> [!important] 
+> Nikto Scan:
+> `nikto -url "http://172.16.215.128/"` 
+
+
+### Enumerating HTTP and HTTPS Part 2
+
+> [!info] 
+> DirBuster Enumeration 
+
+![[Pasted image 20221226171851.png]]
+
+
+
+### Enumerating SMB
+
+> [!tip] 
+> enum4linux scan:
+> `enum4linux 172.16.215.128` 
+
+![[Pasted image 20221226173530.png]]
+
+> [!info] 
+> To start Metasploit:
+> run `msfconsole` 
+
+![[Pasted image 20221226174357.png]]
+
+> [!info] 
+> auxiliary = scanning / enumeration 
+> post = post exploitation modules
+> exploits = get shell on machine
+
+> [!todo] 
+> Search for SMB scanner:
+> `search smb type:auxiliary`
+> Use Modul:
+> `use auxiliary/scanner/smb/smb_version` 
+>`show options` 
+>`set rhost 172.16.215.128`
+>`run`
+
+![[Pasted image 20221226175739.png]]
+
+> [!info] 
+> Anonymously connect to the SMB server:
+>  `smbclient -L \\\\172.16.215.128`
+
+![[Pasted image 20221226180058.png]]
+
+> [!info] 
+> Try to connect to ADMIN$ shared folder:
+>  `smbclient  \\\\172.16.215.128\\ADMIN$`
+
+![[Pasted image 20221226180525.png]]
+
+> [!info] 
+> Try to connect to IPC$ shared folder (normally isn't so helpful this one): 
+> `smbclient  \\\\172.16.215.128\\IPC$ `
+
+![[Pasted image 20221226180652.png]]
+
+> [!note] 
+> Nothing to see here...
+> 
+
+
+### Enumerating SSH
+
+
+> [!important] 
+> Sometimes old SSH Server will have this Error Message:
+> `Unable to negotiate with 172.16.215.128 port 22: no matching key exchange method found. Their offer: diffie-hellman-group-exchange-sha1,diffie-hellman-group1-sha1
+`
+
+![[Pasted image 20221226203834.png]]
+
+
+### Researching Potential Vulnerabilities
+
+
+> [!tip] 
+> Google for Exploit:
+> `mod_ssl 2.8.4 exploit`
+> `samba 2.2.1a exploit`
+
+> [!hint] 
+> Use searchsploit in Terminal:
+> `searchexploit` # go to exploit folder on your kali machine
+> `searchsploit Samba` 
+> `cat exploits/linux_x86/dos/36741.py` # direct access to exploit on your machine
+
+![[Pasted image 20221226210218.png]]
+
+![[Pasted image 20221226210803.png]]
+
+
+### Our Notes So Far
+
+![[Pasted image 20221226211017.png]]
+
+
+
+
+## Vulnerability Scanning with Greenbone Community Edition (OpenVAS)
+
+> [!info] 
+>  Tutorial how to Setup Docker OpenVAS
+>  https://greenbone.github.io/docs/latest/index.html
+
+
+
+## Vulnerability Scanning with Nessus
+
+
+### Scanning with Nessus Part 1
+
+> [!info] 
+>  Download Nessus:
+>  https://www.tenable.com/downloads/nessus?loginAttempted=true
+>  Install it:
+>  `sudo dpkg -i Nessus-10.4.1-ubuntu1404_amd64.deb`
+>  Start Nessus Service:
+>  `/bin/systemctl start nessusd.service`
+>  Open in browser:
+>  `https://hostname:8834/#/`
+>  Choose Nessus Essentials
+
+
