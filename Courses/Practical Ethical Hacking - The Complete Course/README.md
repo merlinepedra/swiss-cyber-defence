@@ -1502,7 +1502,11 @@ for shoes in [high, medium, low]:
 > [!info] 
 >  Tutorial how to Setup Docker OpenVAS
 >  https://greenbone.github.io/docs/latest/index.html
+>  Start OpenVAS Docker
+>  `docker-compose -f ~/Scripts/OpenVAS/docker-compose.yml -p greenbone-community-edition up -d`
+>  
 
+![[Pasted image 20221226222439.png]]
 
 
 ## Vulnerability Scanning with Nessus
@@ -1521,4 +1525,18 @@ for shoes in [high, medium, low]:
 >  `https://hostname:8834/#/`
 >  Choose Nessus Essentials
 
+![[Pasted image 20221226222505.png]]
+
+
+### Scanning with Nessus Part 2
+
+![[Pasted image 20221226224135.png]]
+
+> [!tip] 
+> Go and check founded version numbers manually by yourself. Don't trust vuln scanner on this.  
+
+
+## Exploitation Basics
+
+### Reverse Shells vs Bind Shells
 
