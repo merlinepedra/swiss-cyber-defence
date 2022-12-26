@@ -1209,3 +1209,98 @@ for shoes in [high, medium, low]:
 
 ![[Pasted image 20221224172034.png]]
 
+
+### Gathering Breached Credentials with Breach-Parse
+
+> [!hint] 
+> breach-parse from TCM Security
+> https://github.com/hmaverickadams/breach-parse
+> 
+
+![[Pasted image 20221225085336.png]]
+![[Pasted image 20221225085530.png]]
+
+
+### Hunting Breached Credentials with DeHashed
+
+
+> [!tip] 
+>  https://dehashed.com/
+
+![[Pasted image 20221225090829.png]]
+
+![[Pasted image 20221225091138.png]]
+
+> [!tip] 
+> Searching for the hashed password on the website might take you to another name, such as the private account of the employee in question. It could also reflect the real password instead of the hashed password. 
+
+
+> [!hint] 
+> Hash to Password
+> https://crackstation.net/
+> 
+
+
+### Hunting Subdomains Part 1
+
+> [!info] 
+> Install sublist3r tool:
+> `sudo apt install sublist3r`
+> 
+
+![[Pasted image 20221225100424.png]]
+
+> [!info] 
+> Cert Search: https://crt.sh/
+> 
+
+
+### Hunting Subdomains Part 2
+
+
+
+> [!hint] 
+> In-depth Attack Surface Mapping and Asset Discovery
+> https://github.com/OWASP/Amass 
+
+![[Pasted image 20221225112445.png]]
+
+
+> [!hint] 
+> Take a list of domains and probe for working HTTP and HTTPS servers
+>  https://github.com/tomnomnom/httprobe
+
+
+### Identifying Website Technologies
+
+> [!tip] 
+> Online Check Web Technologies of Website:
+> https://builtwith.com
+> 
+
+![[Pasted image 20221225135834.png]]
+
+> [!hint] 
+> Identify technologies on websites
+> https://www.wappalyzer.com/ 
+> (They have a good browser plugin)
+
+> [!tip] 
+> Kali Terminal
+> `whatweb https://example.com` 
+> Get Information about Website
+
+![[Pasted image 20221225141254.png]]
+
+
+### Information Gathering with Burp Suite
+
+![[Pasted image 20221226121247.png]]
+
+
+### Google Fu
+
+> [!hint] 
+> Google Search Operators: The Complete List (42 Advanced Operators)
+> https://ahrefs.com/blog/google-advanced-search-operators/
+
