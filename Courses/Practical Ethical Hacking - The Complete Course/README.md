@@ -1708,3 +1708,39 @@ for shoes in [high, medium, low]:
 
 ![[Blue_Report.ctd.pdf]]
 
+![[Pasted image 20221227174408.png]]
+
+> [!info] 
+> Manually: MS17-010 Exploit Code:
+> https://github.com/3ndG4me/AutoBlue-MS17-010
+> Install:
+> `pip install -r requirements.txt`
+> Check target:
+> `python eternal_checker.py 172.16.215.130`
+> `cd shellcode`
+> `./shell_prep.sh `
+
+![[Pasted image 20221227175110.png]]
+
+![[Pasted image 20221227175900.png]]
+
+
+### Set Up - Academy
+
+> [!info] 
+>  Default Settings
+>  Use NAT for Network
+
+
+### Walkthrough - Academy
+
+> [!info] 
+> Login:
+> User & PW: root / tcm 
+> Fetch new IP:
+> `dhclient`
+> Now find out which IP:
+> `ip a`
+
+
+
