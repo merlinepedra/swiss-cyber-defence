@@ -1815,3 +1815,57 @@ for shoes in [high, medium, low]:
 ![[Pasted image 20230102182616.png]]
 ![[Pasted image 20230102183026.png]]
 
+
+### Walkthrough - Butler
+
+#### Own Report
+
+![[Own_Report_Butler.pdf]]
+
+
+
+#### Video Walkthrough
+
+> [!check] 
+> Check what is default `user` and `pw` for Jenkins:
+> It's `admin` and `password`
+
+> [!hint] 
+> In ZAP:
+> Double click on entry to see body which was sent.  
+
+![[Pasted image 20230107113814.png]]
+![[Pasted image 20230107113922.png]]
+
+![[Pasted image 20230107114447.png]]
+
+> [!tip] 
+> Check size of response 
+
+![[Pasted image 20230107114807.png]]
+
+> [!tip] 
+> Jenkins Reverse shell script:
+> revsh.groovy:
+> https://gist.github.com/frohoff/fed1ffaab9b9beeb1c76
+
+> [!tip] 
+> Windows Privilege Escalation Awesome Scripts
+>  https://github.com/carlospolop/PEASS-ng/tree/master/winPEAS
+
+![[Pasted image 20230107145617.png]]
+
+> [!info] 
+> It here is no quotes around path. Windows will try to execute C:\Program.exe, then   C:\Program Files.exe, then  C:\Program Files (x86).exe, .... and so on until it can execute. 
+
+![[Pasted image 20230107150633.png]]
+
+> [!check] 
+> Services:
+> `sc stop WiseBootAssistant`
+>  sc query WiseBootAssistant`
+>  `sc start WiseBootAssistant`
+
+![[Pasted image 20230107151210.png]]
+
+
