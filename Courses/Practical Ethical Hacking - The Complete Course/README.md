@@ -1869,3 +1869,54 @@ for shoes in [high, medium, low]:
 ![[Pasted image 20230107151210.png]]
 
 
+### Walkthrough - Blackpearl
+
+#### Own Report
+
+Not mucht findings...
+
+![[Own_Report_Blackpearl.pdf]]
+
+
+#### Video Walkthrough
+
+> [!info] 
+> Reverse DNS Lookup
+> `dnsrecon -r 127.0.0.1/24 -n 192.168.203.131 -d blah`
+
+![[Pasted image 20230108141950.png]]
+
+![[Pasted image 20230108142253.png]]
+
+> [!info] 
+>`ffuf -w  /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt:FUZZ -u http://blackpearl.tcm/FUZZ`
+![[Pasted image 20230108175522.png]]
+
+![[Pasted image 20230108175740.png]]
+
+> [!hint] 
+> Get full Full TTYs Shell
+>  https://book.hacktricks.xyz/generic-methodologies-and-resources/shells/full-ttys
+>  >
+>  ![[Pasted image 20230108180440.png]]
+
+> [!tip] 
+> SUID can be run as like to be `owner` of this application! 
+
+![[Pasted image 20230108181138.png]]
+
+> [!tip] 
+> Search for SUID 
+> `find / -type f -perm -4000 2>/dev/null` 
+
+![[Pasted image 20230108181533.png]]
+
+> [!important] 
+> GTFOBins
+> https://gtfobins.github.io/#+suid
+
+![[Pasted image 20230108181831.png]]
+
+![[Pasted image 20230108182002.png]]
+![[Pasted image 20230108182036.png]]
+
