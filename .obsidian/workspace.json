@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Courses/Practical Ethical Hacking - The Complete Course/README.md",
+                "file": "Courses/The Definitive GRC Analyst Master Class/README.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Courses/Practical Ethical Hacking - The Complete Course/README.md",
+                "file": "Courses/The Definitive GRC Analyst Master Class/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Courses/Practical Ethical Hacking - The Complete Course/README.md",
+                "file": "Courses/The Definitive GRC Analyst Master Class/README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Courses/Practical Ethical Hacking - The Complete Course/README.md"
+                "file": "Courses/The Definitive GRC Analyst Master Class/README.md"
               }
             }
           },
@@ -156,10 +156,12 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "30f89cf3cb361e13",
+  "active": "6e94b30963bacadd",
   "lastOpenFiles": [
-    "Untitled.md",
+    "Courses/Offensive Security - Penetrations Testing Bootcamp/README.md",
+    "Courses/The Definitive GRC Analyst Master Class/README.md",
     "Courses/Practical Ethical Hacking - The Complete Course/README.md",
+    "Untitled.md",
     "2022-12-11.md"
   ]
 }

@@ -158,7 +158,7 @@ SOC2 its a major player in the cybersecurity framework and standards space.
 
 ![](assets/2022-09-21-20-40-40-image.png)
 
-- SOC1 -> Financial Statement (As of <Date of Review>- End of Review)
+- SOC1 -> Financial Statement (As of *Date of Review*- End of Review)
 
 - SOC2 -> Take SOC1 and add security criteria (Report over period of time (E.g. 1 Year) - Review every 6 Month)
 
@@ -169,6 +169,50 @@ SOC2 its a major player in the cybersecurity framework and standards space.
 ![](assets/2022-09-21-20-45-33-image.png)
 
 ![](assets/2022-09-21-20-46-28-image.png)
+
+
+### 2.4c NIST Risk Management Framework (RMF) [Bonus Material]
+
+![[Pasted image 20230111063949.png]]
+
+> [!check] 
+> Step 1
+> Categorize Sytem:
+> - Low 
+> - Moderate
+> - High 
+
+> [!info] 
+> **Step 1 + 2** -> Can be done in around 1 day.
+> **Step 3** -> Takes time to implement & configure security controls 
+> **Step 4** -> External Audit
+> **Step 5** -> CIO takes a look to outcome of Step 4 and say if he approve that system go online or not. If some controls are not in place, he maybe give still OK but with plan in what time this issues has to be fixed. Normally re-audit system every 3 years. But you should to it 1/3 every year, so you don't need to to big audit after 3 years.
+> **Step 6** -> Observer Security Controls
+
+![[NIST_RMF_1673415328.pdf]]
+
+> [!info] 
+> SP 800-60 Vol. 1 Rev. 1 
+> **For Goverment / Critical Infrastructure**: Guide for Mapping Types of Information and Information Systems to Security Categories
+> https://csrc.nist.gov/publications/detail/sp/800-60/vol-1-rev-1/final
+
+![[Pasted image 20230111070759.png]]
+
+> [!info] 
+> NIST Privacy Framework and Cybersecurity Framework to NIST Special Publication 800-53 
+> https://www.nist.gov/privacy-framework/nist-privacy-framework-and-cybersecurity-framework-nist-special-publication-800-53
+
+![[Pasted image 20230111071146.png]]
+
+> [!info] 
+> NIST 800-53 B: Control Baselines for Information Systems and Organizations:
+> https://csrc.nist.gov/publications/detail/sp/800-53b/final
+> 
+
+![[Pasted image 20230111071816.png]]
+
+
+
 
 ### 2.5 Practical Auditing (Practical Lab)
 
