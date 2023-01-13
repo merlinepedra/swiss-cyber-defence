@@ -211,6 +211,38 @@ SOC2 its a major player in the cybersecurity framework and standards space.
 
 ![[Pasted image 20230111071816.png]]
 
+![[Pasted image 20230113140344.png]]
+
+> [!info] 
+> SP 800-18 Rev. 1
+> Guide for Developing Security Plans for Federal Information Systems 
+> https://csrc.nist.gov/publications/detail/sp/800-18/rev-1/final
+
+![[Pasted image 20230113142820.png]]
+
+> [!info] 
+> **First document Auditor want to see is SSP:**
+> System Security Plan (SSP): The OSCAL system security plan (SSP) model represents a description of the control implementation of an information system. The SSP model is part of the OSCAL [implementation](https://pages.nist.gov/OSCAL/concepts/layer/implementation/) layer.
+
+> [!info] 
+> SP 800-53A Rev. 5 
+> Assessing Security and Privacy Controls in Information Systems and Organizations
+> https://csrc.nist.gov/publications/detail/sp/800-53a/rev-5/final
+
+![[Pasted image 20230113144507.png]]
+
+![[Pasted image 20230113144739.png]]
+
+> [!info] 
+> Write Security Control description in your own words when you prepare to inverview audit company. 
+
+> [!success] 
+> Result of Audit is Report to hand over to client with findings.
+> 
+
+![[Pasted image 20230113150154.png]]
+
+![[Pasted image 20230113151125.png]]
 
 
 
@@ -240,6 +272,38 @@ SOC2 its a major player in the cybersecurity framework and standards space.
 
 ![](assets/2022-09-22-08-36-31-image.png)
 
+### 2.5b Practical Auditing (Part 2)
+
+> **Walkthrough of documenting Audit Findings**
+> 
+> This lecture is a companion to the Audit Lab lecture "Practical Auditing". In it I go through a spreadsheet and fill out the audit book and explain how the audit would happen. This video should be watched after the Practical Auditing lecture is watched.
+> 
+> Grab the spreadsheet with and without my answers so you can follow along:
+> 
+> Without my answers: [https://docs.google.com/spreadsheets/d/1vHIdlpUYvKW3V03TFkrymRg_8u2S_9c5/edit?usp=share_link&ouid=106399554625258108388&rtpof=true&sd=true](https://docs.google.com/spreadsheets/d/1vHIdlpUYvKW3V03TFkrymRg_8u2S_9c5/edit?ouid=106399554625258108388&rtpof=true&sd=true&usp=share_link)
+> 
+> With my answers: [https://docs.google.com/spreadsheets/d/1EH1qhF7gRdTyecpk_t7ZzBEc1tmDpAAV/edit?usp=share_link&ouid=106399554625258108388&rtpof=true&sd=true](https://docs.google.com/spreadsheets/d/1EH1qhF7gRdTyecpk_t7ZzBEc1tmDpAAV/edit?ouid=106399554625258108388&rtpof=true&sd=true&usp=share_link)
+
+
+![[Pasted image 20230113174032.png]]
+
+![[Pasted image 20230113174740.png]]
+
+![[Pasted image 20230113174049.png]]
+
+![[Pasted image 20230113174105.png]]
+
+![[Pasted image 20230113174121.png]]
+
+> [!info] 
+> Prepare questions for the people you want to interview. Know which people to interview. 
+
+![[Pasted image 20230113175548.png]]
+
+![[Pasted image 20230113180135.png]]
+
+
+
 ### 2.6 Quiz - Compliance and Audit
 
 > You scored 8 / 10 (80%)
@@ -259,7 +323,8 @@ Based on what you have at this point you could start sniffing around for GRC ana
 
 - Prepared, executed, and reported on audit of subset of NIST SP 800-53 cybersecurity controls to include interview, document review, and testing of systems to support compliance audit activities.
 - Knowledgeable on NIST Cybersecurity Framework and how the Identify, Protect, Detect, Respond, and Recover categories comprise and facilitate an information 
-  security program
+  security progr
+
 
 ## 3. Security Awareness Work
 
