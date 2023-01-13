@@ -896,7 +896,7 @@ meterpreter > webcam_snap -I 2
 
 ---
 
-### Day 7  – Web application pentesting
+## Day 7  – Web application pentesting
 
 ![](assets/2022-08-29-19-05-37-image.png)
 
@@ -992,7 +992,7 @@ https://beefproject.com/
 
 ---
 
-### Day 8 – Web application pentesting
+## Day 8 – Web application pentesting
 
 ![](assets/2022-08-30-19-40-00-image.png)
 
@@ -1092,7 +1092,7 @@ locate webshell
 
 ---
 
-### Day 9 – Buffer Overflow
+## Day 9 – Buffer Overflow
 
 ```
 Check the security.txt if there's information about the bug bounty (same as robots.txt)
