@@ -302,6 +302,14 @@ SOC2 its a major player in the cybersecurity framework and standards space.
 
 ![[Pasted image 20230113180135.png]]
 
+> [!info] 
+> If you have to check Documents or similiar, you're not supposed to see real data. 
+> But you can ask them to provide the last 3 documents where there should be a marker.  (For Example "Confidential")
+
+![[Pasted image 20230114094149.png]]
+
+
+
 
 
 ### 2.6 Quiz - Compliance and Audit
@@ -539,6 +547,28 @@ Calculating risk as a workflow is easy when you've seen it done. There is a lot 
 
 ![](assets/2022-09-22-17-38-55-image.png)
 
+
+### 4.8b Let's Assess Risk! (Practical Lab) (Part 2)
+
+> [!info] 
+> Risk Assessment Lab 2.0
+ >In this lecture I go through and fill out several risks discovered during the audit from section 2. I encourage you to watch me do the first one, then pause the video and fill out your version of the spreadsheet to see what the experience is like. Then watch the rest of the video to see how I filled mine out.
+ > 
+ > Risk assessment is a subjective practice trying to be as objective as possible.
+ > 
+ > The spreadsheet can be pulled from here:
+ > 
+ > Without my answers: [https://docs.google.com/spreadsheets/d/1vHIdlpUYvKW3V03TFkrymRg_8u2S_9c5/edit?usp=share_link&ouid=106399554625258108388&rtpof=true&sd=true](https://docs.google.com/spreadsheets/d/1vHIdlpUYvKW3V03TFkrymRg_8u2S_9c5/edit?ouid=106399554625258108388&rtpof=true&sd=true&usp=share_link)
+ > 
+ > With my answers: [https://docs.google.com/spreadsheets/d/1EH1qhF7gRdTyecpk_t7ZzBEc1tmDpAAV/edit?usp=share_link&ouid=106399554625258108388&rtpof=true&sd=true](https://docs.google.com/spreadsheets/d/1EH1qhF7gRdTyecpk_t7ZzBEc1tmDpAAV/edit?ouid=106399554625258108388&rtpof=true&sd=true&usp=share_link) 
+ > 
+
+
+![[Pasted image 20230114105315.png]]
+
+![[Pasted image 20230114105514.png]]
+
+
 ### 4.9 Quiz - Cybersecurity Risk
 
 > You scored 8 / 10 (80%)
@@ -757,3 +787,57 @@ We need to know how to find the open GRC Analyst opportunities. There are a few 
 
 
 ### 6.4 Setup and Tune LinkedIn
+
+![[Pasted image 20230114111907.png]]
+
+![[Pasted image 20230114111954.png]]
+
+![[Pasted image 20230114112152.png]]
+
+![[Pasted image 20230114112457.png]]
+
+> [!check] 
+> 💥Expert in 🔒Cybersecurity and 🧑🏼‍💻Penetration Testing, Specializing in API, 🖥️Web-Application and Mobile Application Security. 📱iOS & macOS Developer with a passion for building secure and reliable Apps in Swift. 
+
+
+### 6.5 Resume
+
+> [!info] 
+> # Resume: A menu where you're the entree
+> I interviewed Joe Hudson, a long time Cybersecurity recruiter about cyber resumes and what employers are looking for. Instead of making content about resumes, this interview really has immense value. The video can be accessed here: [https://youtu.be/5T_u7l-t56g](https://youtu.be/5T_u7l-t56g)
+> 
+> Also, (as seen in the interview), Joe provided 3 resume templates that are excellent. They are added as attachments to this lecture (below) or can be accessed via [https://drive.google.com/file/d/1PucaJJSXhwW7DEX6YeGaCX_xIXXAZcHR/view?usp=sharing](https://drive.google.com/file/d/1PucaJJSXhwW7DEX6YeGaCX_xIXXAZcHR/view?usp=sharing) 
+
+![[SimplyCyber Resumes and Resignation.zip]]
+
+
+### 6.6 Interviewing
+
+
+> [!info] 
+> # Woo them!
+>
+>It takes a lot of work to secure the interview, but you've done it! (or you will shortly). Here are best practices to take with you.
+> 
+> Remember, they scheduled the interview with you because they see you're a talent that can help them solve their business problems.
+>
+>You deserve to be there and you know what you're talking about.
+> 
+> **You got this!** 
+
+> [!tip] 
+>Do some research on LinkedIn about people you will be interviewing.  
+
+> [!tip] 
+> Question they will maybe ask you:
+> - How you keep updated about Cyber Security? (Can tell them news from morning you read)
+> - Work culture, what do you like about working here?
+>   What makes this company unique?
+> - Why is job open, I'm apply for?
+>   What are next steps? Will you contact me, or should I contact you in a week?
+>   
+>   After interview, send follow up email.
+
+> [!tip] 
+> Prepare some questions to ask them.
+> 
