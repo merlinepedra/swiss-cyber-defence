@@ -772,8 +772,6 @@ By the end of this module, students will be able to:
 
 We need to know how to find the open GRC Analyst opportunities. There are a few keywords to look for and places to look in. I know you know the keywords after taking this class, but lets revisit and look at some ways to find those jobs.
 
-
-
 **Use Discord**
 
 ![](assets/2022-09-23-18-17-58-image.png)
@@ -810,9 +808,32 @@ We need to know how to find the open GRC Analyst opportunities. There are a few 
 
 ![[SimplyCyber Resumes and Resignation.zip]]
 
+![[Pasted image 20230115093517.png]]
+
+> [!tip] 
+>  - Professional Summary
+>  - Create interesting header summary
+
+![[Pasted image 20230115102640.png]]
+
+![[Pasted image 20230115103543.png]]
+
+![[Pasted image 20230115104034.png]]
+
+![[Pasted image 20230115104209.png]]
+
+![[Pasted image 20230115104707.png]]
+
+![[Pasted image 20230115104830.png]]
+
+![[Pasted image 20230115105242.png]]
+
+![[Pasted image 20230115105545.png]]
+
+
+
 
 ### 6.6 Interviewing
-
 
 > [!info] 
 > # Woo them!
@@ -836,8 +857,41 @@ We need to know how to find the open GRC Analyst opportunities. There are a few 
 > - Why is job open, I'm apply for?
 >   What are next steps? Will you contact me, or should I contact you in a week?
 >   
->   After interview, send follow up email.
+>   
+>   > After interview, send follow up email.
 
 > [!tip] 
 > Prepare some questions to ask them.
 > 
+
+
+### 6.7 Quiz - Getting a GRC Analyst Job
+
+> 100% ;-) 
+
+
+### 6.8 Conclusion and Touchpoints
+
+> Fantastic Work
+> 
+> You've run through all the steps and techniques you need to get that GRC Analyst job. Remember many of these tips and processes can be repeated for any role in information security, so don't limit yourself. You're on fire!🔥
+
+
+## 7. Course Conclusions
+
+### 7.1 Final Thoughts
+
+> Congratulations!
+> 
+> You've completed the GRC Analyst Master Class course and I hope you've found value in it. Wonderful job!
+> 
+> If you have any feedback or something you encountered along the way that you think would add value to future students share with me on the Simply Cyber discord server course-feedback channel.
+> 
+> It can be accessed here: [https://simplycyber.io/discord](https://simplycyber.io/discord)
+> 
+> Would love to connect with you on all the socials!
+> Twitter: [www.twitter.com/Gerald_Auger](https://www.twitter.com/Gerald_Auger)
+> LinkedIN: [www.linkedin.com/in/geraldauger](https://www.linkedin.com/in/geraldauger)
+> YouTube: [www.youtube.com/GeraldAuger](https://www.youtube.com/GeraldAuger)
+
+
