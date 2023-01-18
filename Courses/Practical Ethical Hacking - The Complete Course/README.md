@@ -1920,3 +1920,59 @@ Not mucht findings...
 ![[Pasted image 20230108182002.png]]
 ![[Pasted image 20230108182036.png]]
 
+
+
+## Introduction to Exploit Development (Buffer Overflows)
+
+### Required Installations
+
+> [!note] 
+> Download Windows ISO:
+> https://www.microsoft.com/en-us/evalcenter/
+> 
+> Download Vulnserver:
+> https://github.com/stephenbradshaw/vulnserver
+> 
+> Immunity Debugger:
+> https://www.immunityinc.com/products/debugger/
+
+
+### Buffer Overflows Explained
+
+![[Pasted image 20230118064338.png]]
+![[Pasted image 20230118064555.png]]
+![[Pasted image 20230118064706.png]]
+![[Pasted image 20230118064802.png]]
+
+> [!info] 
+> 1. Spiking - Find vulnerability in the program 
+> 2. Fuzzing - Send a lot of characters to program to see if we can break it
+> 3. Finding the Offset - See at which point we break it
+> 4. Overwriting the EIP
+> 5. Finding Bad Characters
+> 6. Finding the Right Module
+> 7. Generating Shellcode
+
+
+### Spiking
+
+![[Pasted image 20230118070013.png]]
+
+![[Pasted image 20230118070316.png]]
+
+![[Pasted image 20230118070435.png]]
+
+`nc -nv <IP> 9999`
+
+![[Pasted image 20230118070644.png]]
+
+![[Pasted image 20230118071606.png]]
+
+![[Pasted image 20230118071723.png]]
+
+`generic_send_tcp <IP> 9999 stats.spk 0 0`
+
+![[Pasted image 20230118071910.png]]
+
+![[Pasted image 20230118072040.png]]
+
