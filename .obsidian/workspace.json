@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Courses/External Pentest Playbook/README.md",
+                "file": "Courses/Practical Ethical Hacking - The Complete Course/README.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 378.5
+    "width": 300
   },
   "right": {
     "id": "40a3912fe2653e49",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Courses/External Pentest Playbook/README.md",
+                "file": "Courses/Practical Ethical Hacking - The Complete Course/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Courses/External Pentest Playbook/README.md",
+                "file": "Courses/Practical Ethical Hacking - The Complete Course/README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Courses/External Pentest Playbook/README.md"
+                "file": "Courses/Practical Ethical Hacking - The Complete Course/README.md"
               }
             }
           },
@@ -156,12 +156,11 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "9213dc31db69b886",
+  "active": "30f89cf3cb361e13",
   "lastOpenFiles": [
-    "Topics/Web Application Penetration Testing/README.md",
+    "Courses/Offensive Security - Penetrations Testing Bootcamp/README.md",
     "Courses/The Definitive GRC Analyst Master Class/README.md",
     "Untitled 1.md",
-    "Courses/Offensive Security - Penetrations Testing Bootcamp/README.md",
     "Courses/Practical Ethical Hacking - The Complete Course/README.md",
     "Untitled.md",
     "2022-12-11.md"
