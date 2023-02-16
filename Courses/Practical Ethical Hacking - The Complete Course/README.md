@@ -2240,3 +2240,47 @@ except:
 	sys.exit()
 ```
 
+
+
+
+## Active Directory Overview
+
+### Active Directory Overview
+
+![[Pasted image 20230216144310.png]]
+
+![[Pasted image 20230216144606.png]]
+
+### Physical Active Directory Components
+
+![[Pasted image 20230216145607.png]]
+
+![[Pasted image 20230216160539.png]]
+
+> [!attention] 
+> We want to grab this file `Ntds.dit` 
+> Contains User, Groups, Password Hashes from all Users
+
+
+### Logical Active Directory Components
+
+![[Pasted image 20230216161349.png]]
+
+![[Pasted image 20230216161919.png]]
+
+![[Pasted image 20230216162047.png]]
+
+![[Pasted image 20230216162151.png]]
+
+![[Pasted image 20230216162308.png]]
+
+![[Pasted image 20230216162622.png]]
+
+![[Pasted image 20230216162954.png]]
+
+## Active Directory Lab Build
+
+### Lab Overview and Requirements
+
+![[Pasted image 20230216164233.png]]
+
