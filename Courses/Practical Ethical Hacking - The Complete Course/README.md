@@ -2284,3 +2284,24 @@ except:
 
 ![[Pasted image 20230216164233.png]]
 
+### Downloading Necessary ISOs
+
+![[Pasted image 20230216165853.png]]
+
+
+> [!note] 
+> Link: https://www.microsoft.com/en-us/evalcenter/
+> 
+
+
+> [!todo] 
+> - Download Windows 11 Enterprise
+> - Windows Server 2022
+
+> [!hint] 
+> Don't worry about 90 days of evaluation. It can work up to 1 Year or more. It just show warning. 
+> 
+
+
+### Setting Up the Domain Controllers
+
