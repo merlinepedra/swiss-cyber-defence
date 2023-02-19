@@ -2305,3 +2305,235 @@ except:
 
 ### Setting Up the Domain Controllers
 
+> [!info] 
+> Install Windows Server in VMWare Workstation:
+>-  No need to set password in Wizzard of VMWare
+> - No need product key 
+> - 60GB HD in multible files
+> - No autostart
+> - Remove Floppy Device in Settings of VM
+> - Set NAT as Network
+> - Set RAM to 4GB
+> - Start VM and install OS (Ensure you choose version with `Desktop Experience`)
+> - Install VM Tools
+> - Type `Computer Name` in search and rename name to somthing `***-DC`
+> - In `Server Management` Application -> `Manage` -> `Add Roles and Features` -> `Role-based or feature-based installation` -> `Next` -> Select `Active Dictionary Domain Services` -> `Next` -> `Next` -> `Install` -> Wait -> `Close` -> Click on Yellow Warning Icon left of `Manage` -> `Promote this server to a domain controller` -> `Add a new forest` -> put as name `***.local` -> Set Password -> `Next` -> `Next` -> `Next` ->`Next`  -> `Install` -> VM will reboot
+> - Take Snapshot now
+
+### Setting Up the User Machines
+
+
+> [!note] 
+>  Install two Windows 11 Workstation VM's:
+>  - Same as step before
+>  - Install OS
+>  - When you see screen `Sign in with Microsoft`, choose `Domain join instead`
+>  - Create user with any name and password
+>  - Install VMWare Tools
+>  - Duplicate VM and create other user on copy VM and change Computer name
+
+
+### Setting Up Users, Groups, and Policies
+
+
+> [!note] 
+> In `Server Manager` -> `Tools` -> `Active Directory User and Computers` -> Create new `Organizational Unit` -> Name it `Groups` -> Next -> Now mouve all Service Users in `Users` to our `Group` Folder
+
+![[Pasted image 20230218104241.png]]
+
+![[Pasted image 20230218104227.png]]
+
+> [!note] 
+> Create new User 
+
+![[Pasted image 20230218104442.png]]
+
+![[Pasted image 20230218104535.png]]
+
+> [!note] 
+> Copy Domain Admin 
+
+![[Pasted image 20230218104759.png]]
+
+> [!todo] 
+> Copy Administrator Account
+> 
+
+![[Pasted image 20230218105414.png]]
+
+![[Pasted image 20230218105649.png]]
+
+> [!info] 
+> Now Users should look like this:
+> 
+![[Pasted image 20230218105744.png]]
+
+> [!todo] 
+> Setup File Share:
+
+![[Pasted image 20230218105912.png]]
+
+![[Pasted image 20230218105951.png]]
+
+![[Pasted image 20230218110020.png]]
+
+![[Pasted image 20230218110051.png]]
+
+![[Pasted image 20230218110120.png]]
+
+
+![[Pasted image 20230218110228.png]]
+
+> [!todo] 
+> 
+Setup SQLServer 
+> `setspn -a TREE-DC/SQLService.TREE.local:6011 TREE\SQLService`
+
+
+![[Pasted image 20230218110647.png]]
+
+> [!todo] 
+> Check is Setup was succsesful:
+>` setspn -T TREE.local -Q */*`
+
+![[Pasted image 20230218110910.png]]
+
+![[Pasted image 20230218110952.png]]
+
+![[Pasted image 20230218115308.png]]
+
+![[Pasted image 20230218115245.png]]
+
+![[Pasted image 20230218115518.png]]
+
+![[Pasted image 20230218115848.png]]![[Pasted image 20230218120040.png]]
+
+
+### Joining Our Machines to the Domain
+
+On one of client
+
+![[Pasted image 20230218131015.png]]
+
+![[Pasted image 20230218131040.png]]
+
+
+> [!hint] 
+> Check DomainController's IP 
+
+![[Pasted image 20230218131153.png]]
+
+![[Pasted image 20230218131814.png]]
+
+![[Pasted image 20230218131856.png]]
+
+![[Pasted image 20230218131931.png]]
+
+![[Pasted image 20230218132000.png]]
+
+![[Pasted image 20230218132036.png]]
+
+![[Pasted image 20230218132418.png]]
+
+> [!info] 
+> Now we can login with one of normal users we have
+> 
+
+> [!todo] 
+> Now we also Login with Domain Admin:
+> User: `TREE\Administrator`
+> Password: ....  
+
+> [!info] 
+> Add a Domain User as local admin
+>  
+
+![[Pasted image 20230218133627.png]]
+
+
+> [!info] 
+> Setup VM 2
+> - Now go other Client Machine 
+> - Add to Domain
+> - Login as Domain Administrator
+
+> [!todo] 
+>  Add here two local Administrators:
+
+![[Pasted image 20230218162125.png]]
+
+> [!todo] 
+> Also here share folder:
+
+
+![[Pasted image 20230218162304.png]]
+
+> [!info] 
+> On DomainController, you can now see two clients:
+
+![[Pasted image 20230218162631.png]]
+
+> [!important] 
+> Everything we setup is more or less just default setup how Domain Controller is normaly setup. So this setup could represent be a real world environment.  In next Chapters wi will start attacking this environment.
+
+
+### Lab Build - (Cloud Alternative)
+
+
+> [!tip] 
+> Ethical Hacking Lessons — Building Free Active Directory Lab in Azure 
+>  https://kamran-bilgrami.medium.com/ethical-hacking-lessons-building-free-active-directory-lab-in-azure-6c67a7eddd7f
+
+
+## Attacking Active Directory: Initial Attack Vectors
+
+### Introduction
+
+> [!tip] 
+> Top Five Ways I Got Domain Admin:
+>  https://medium.com/@adam.toscher/top-five-ways-i-got-domain-admin-on-your-internal-network-before-lunch-2018-edition-82259ab73aaa
+
+
+> [!note] 
+> Attacking AD
+> Initial Attack Vectors
+> 
+
+
+### LLMNR Poisoning Overview
+
+![[Pasted image 20230219094355.png]]
+
+> [!info] 
+> It response with username and password hash
+> 
+
+![[Pasted image 20230219094550.png]]
+
+![[Pasted image 20230219094733.png]]
+
+> [!attention] 
+> Start this tool early in morning or after lunch, when a lot of user login to DC account. Because we need a lot of traffic for this.
+> 
+
+> [!info] 
+> Now if someone put wrong dns name, we're listening in middle 
+
+![[Pasted image 20230219124159.png]]
+
+![[Pasted image 20230219124243.png]]
+
+![[Pasted image 20230219124336.png]]
+
+
+### Capturing NTLMv2 Hashes with Responder
+
+> [!todo] 
+>  In Kali run `sudo responder -I eth0 -rdwv`
+>  for me parameter `-rdwv` gave error. So I just run it without.
+
+![[Pasted image 20230219130008.png]]
+
+
+
+
