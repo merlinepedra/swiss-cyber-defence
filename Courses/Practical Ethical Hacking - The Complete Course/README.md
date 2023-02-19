@@ -2569,12 +2569,14 @@ fcastle::TREE:51934501eb00515e:9ABE5E3F30739166896A5BEEA3D0621F:0101000000000000
 > https://hashcat.net/hashcat/
 
 > [!info] 
+> Example of alternative wordlist:
+> https://github.com/initstring/passphrase-wordlist 
+
+> [!info] 
 > On Windows:
 > `hashcat -m 5600 ntlmv2_hash.txt rockyou.txt  -O` 
 
 ![[Pasted image 20230219155148.png]]
 
-
-
-
+### LLMNR Poisoning Defense
 
