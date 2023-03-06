@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "f378e3bc425b540c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Courses/Bug Bounty Bootcamp/Bug Bounty Bootcamp.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Courses/Open-Source Intelligence (OSINT) Fundamentals/README.md",
+                "file": "Courses/Bug Bounty Bootcamp/Bug Bounty Bootcamp.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Courses/Open-Source Intelligence (OSINT) Fundamentals/README.md",
+                "file": "Courses/Bug Bounty Bootcamp/Bug Bounty Bootcamp.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Courses/Open-Source Intelligence (OSINT) Fundamentals/README.md"
+                "file": "Courses/Bug Bounty Bootcamp/Bug Bounty Bootcamp.md"
               }
             }
           },
@@ -155,7 +167,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 438.5
+    "width": 323.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -169,8 +181,9 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "be13c37bdcce7bc7",
+  "active": "f378e3bc425b540c",
   "lastOpenFiles": [
+    "Courses/Open-Source Intelligence (OSINT) Fundamentals/README.md",
     "Courses/Open-Source Intelligence (OSINT) Fundamentals/assets/Pasted image 20230228103203.png",
     "Courses/Open-Source Intelligence (OSINT) Fundamentals/assets/Pasted image 20230228103014.png",
     "Courses/Open-Source Intelligence (OSINT) Fundamentals/assets/Pasted image 20230228102842.png",
@@ -178,19 +191,7 @@
     "Courses/Open-Source Intelligence (OSINT) Fundamentals/assets/Pasted image 20230228102331.png",
     "Courses/Open-Source Intelligence (OSINT) Fundamentals/assets",
     "Courses/Practical Ethical Hacking - The Complete Course/README.md",
-    "Courses/Open-Source Intelligence (OSINT) Fundamentals/README.md",
     "Courses/External Pentest Playbook/README.md",
-    "Courses/The Definitive GRC Analyst Master Class/README.md",
-    "Courses/Open-Source Intelligence (OSINT) Fundamentals",
-    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230219155148.png",
-    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230219153445.png",
-    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230219153320.png",
-    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230219150701.png",
-    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230219150616.png",
-    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230219150535.png",
-    "Courses/Offensive Security - Penetrations Testing Bootcamp/README.md",
-    "Untitled 1.md",
-    "Untitled.md",
-    "2022-12-11.md"
+    "Courses/The Definitive GRC Analyst Master Class/README.md"
   ]
 }
