@@ -37,14 +37,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Courses/Bug Bounty Bootcamp/Bug Bounty Bootcamp.md",
+                "file": "Topics/DevOps/Jenkins - Build Server.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "acac75d9805a642f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Topics/DevOps/Proxmox.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -110,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Courses/Bug Bounty Bootcamp/Bug Bounty Bootcamp.md",
+                "file": "Topics/DevOps/Proxmox.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Courses/Bug Bounty Bootcamp/Bug Bounty Bootcamp.md",
+                "file": "Topics/DevOps/Proxmox.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Courses/Bug Bounty Bootcamp/Bug Bounty Bootcamp.md"
+                "file": "Topics/DevOps/Proxmox.md"
               }
             }
           },
@@ -171,18 +183,20 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "markdown-importer:Open format converter": false
+      "markdown-importer:Open format converter": false,
+      "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false
     }
   },
-  "active": "f378e3bc425b540c",
+  "active": "acac75d9805a642f",
   "lastOpenFiles": [
+    "Topics/DevOps/Jenkins - Build Server.md",
+    "Courses/Bug Bounty Bootcamp/Bug Bounty Bootcamp.md",
     "Courses/Open-Source Intelligence (OSINT) Fundamentals/README.md",
     "Courses/Open-Source Intelligence (OSINT) Fundamentals/assets/Pasted image 20230228103203.png",
     "Courses/Open-Source Intelligence (OSINT) Fundamentals/assets/Pasted image 20230228103014.png",
@@ -190,8 +204,6 @@
     "Courses/Open-Source Intelligence (OSINT) Fundamentals/assets/Pasted image 20230228102747.png",
     "Courses/Open-Source Intelligence (OSINT) Fundamentals/assets/Pasted image 20230228102331.png",
     "Courses/Open-Source Intelligence (OSINT) Fundamentals/assets",
-    "Courses/Practical Ethical Hacking - The Complete Course/README.md",
-    "Courses/External Pentest Playbook/README.md",
-    "Courses/The Definitive GRC Analyst Master Class/README.md"
+    "Courses/Practical Ethical Hacking - The Complete Course/README.md"
   ]
 }
