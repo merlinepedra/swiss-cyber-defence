@@ -54,9 +54,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "0c05fed57608d63e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Topics/DevOps/Security Onion.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -122,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Topics/DevOps/Proxmox.md",
+                "file": "Topics/DevOps/Security Onion.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Topics/DevOps/Proxmox.md",
+                "file": "Topics/DevOps/Security Onion.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Topics/DevOps/Proxmox.md"
+                "file": "Topics/DevOps/Security Onion.md"
               }
             }
           },
@@ -193,8 +205,9 @@
       "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false
     }
   },
-  "active": "acac75d9805a642f",
+  "active": "0c05fed57608d63e",
   "lastOpenFiles": [
+    "Topics/DevOps/Proxmox.md",
     "Topics/DevOps/Jenkins - Build Server.md",
     "Courses/Bug Bounty Bootcamp/Bug Bounty Bootcamp.md",
     "Courses/Open-Source Intelligence (OSINT) Fundamentals/README.md",
@@ -203,7 +216,6 @@
     "Courses/Open-Source Intelligence (OSINT) Fundamentals/assets/Pasted image 20230228102842.png",
     "Courses/Open-Source Intelligence (OSINT) Fundamentals/assets/Pasted image 20230228102747.png",
     "Courses/Open-Source Intelligence (OSINT) Fundamentals/assets/Pasted image 20230228102331.png",
-    "Courses/Open-Source Intelligence (OSINT) Fundamentals/assets",
-    "Courses/Practical Ethical Hacking - The Complete Course/README.md"
+    "Courses/Open-Source Intelligence (OSINT) Fundamentals/assets"
   ]
 }
