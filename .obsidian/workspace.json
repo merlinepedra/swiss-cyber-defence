@@ -68,7 +68,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Topics/DevOps/Security Onion.md",
+                "file": "Topics/DevOps/Proxmox.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Topics/DevOps/Security Onion.md",
+                "file": "Topics/DevOps/Proxmox.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Topics/DevOps/Security Onion.md"
+                "file": "Topics/DevOps/Proxmox.md"
               }
             }
           },
@@ -205,8 +205,10 @@
       "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false
     }
   },
-  "active": "0c05fed57608d63e",
+  "active": "acac75d9805a642f",
   "lastOpenFiles": [
+    "Topics/DevOps/Security Onion.md",
+    "Courses/The Definitive GRC Analyst Master Class/README.md",
     "Topics/DevOps/Proxmox.md",
     "Topics/DevOps/Jenkins - Build Server.md",
     "Courses/Bug Bounty Bootcamp/Bug Bounty Bootcamp.md",
@@ -215,7 +217,6 @@
     "Courses/Open-Source Intelligence (OSINT) Fundamentals/assets/Pasted image 20230228103014.png",
     "Courses/Open-Source Intelligence (OSINT) Fundamentals/assets/Pasted image 20230228102842.png",
     "Courses/Open-Source Intelligence (OSINT) Fundamentals/assets/Pasted image 20230228102747.png",
-    "Courses/Open-Source Intelligence (OSINT) Fundamentals/assets/Pasted image 20230228102331.png",
-    "Courses/Open-Source Intelligence (OSINT) Fundamentals/assets"
+    "Courses/Open-Source Intelligence (OSINT) Fundamentals/assets/Pasted image 20230228102331.png"
   ]
 }
