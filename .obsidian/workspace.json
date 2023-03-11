@@ -8,30 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "6e94b30963bacadd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Courses/The Definitive GRC Analyst Master Class/README.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "be13c37bdcce7bc7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Courses/Open-Source Intelligence (OSINT) Fundamentals/README.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "f378e3bc425b540c",
             "type": "leaf",
             "state": {
@@ -42,9 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "ab2d9287c14109ce",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Courses/Practical Ethical Hacking - The Complete Course/README.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -110,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Courses/Bug Bounty Bootcamp/Bug Bounty Bootcamp.md",
+                "file": "Courses/Practical Ethical Hacking - The Complete Course/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Courses/Bug Bounty Bootcamp/Bug Bounty Bootcamp.md",
+                "file": "Courses/Practical Ethical Hacking - The Complete Course/README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Courses/Bug Bounty Bootcamp/Bug Bounty Bootcamp.md"
+                "file": "Courses/Practical Ethical Hacking - The Complete Course/README.md"
               }
             }
           },
@@ -181,16 +169,22 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "f378e3bc425b540c",
+  "active": "ab2d9287c14109ce",
   "lastOpenFiles": [
-    "Courses/Open-Source Intelligence (OSINT) Fundamentals/README.md",
-    "Courses/Open-Source Intelligence (OSINT) Fundamentals/assets/Pasted image 20230228103203.png",
-    "Courses/Open-Source Intelligence (OSINT) Fundamentals/assets/Pasted image 20230228103014.png",
-    "Courses/Open-Source Intelligence (OSINT) Fundamentals/assets/Pasted image 20230228102842.png",
-    "Courses/Open-Source Intelligence (OSINT) Fundamentals/assets/Pasted image 20230228102747.png",
-    "Courses/Open-Source Intelligence (OSINT) Fundamentals/assets/Pasted image 20230228102331.png",
-    "Courses/Open-Source Intelligence (OSINT) Fundamentals/assets",
+    "Courses/Bug Bounty Bootcamp/Bug Bounty Bootcamp.md",
     "Courses/Practical Ethical Hacking - The Complete Course/README.md",
+    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230311190013.png",
+    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230311185520.png",
+    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230311184946.png",
+    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230311184012.png",
+    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230311181427.png",
+    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230311175315.png",
+    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230311170128.png",
+    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230311163155.png",
+    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230311162545.png",
+    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230311161827.png",
+    "Courses/Open-Source Intelligence (OSINT) Fundamentals/README.md",
+    "Courses/Open-Source Intelligence (OSINT) Fundamentals/assets",
     "Courses/External Pentest Playbook/README.md",
     "Courses/The Definitive GRC Analyst Master Class/README.md"
   ]
