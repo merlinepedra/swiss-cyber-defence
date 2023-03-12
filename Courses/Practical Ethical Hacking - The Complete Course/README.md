@@ -1936,6 +1936,16 @@ Not mucht findings...
 > Immunity Debugger:
 > https://www.immunityinc.com/products/debugger/
 
+> [!warning] 
+>  Course Provider don't give support if not Windows 10 / Windows 2019 Server is used.
+>  So ensure using this ISO's:
+>  
+>  Windows 2019 Server Evaluation (english)
+>  https://software-download.microsoft.com/download/pr/17763.737.190906-2324.rs5_release_svc_refresh_SERVER_EVAL_x64FRE_en-us_1.iso
+>  
+>  Windows 10 Enterprise CLIENT Eval (english)
+>  https://software-download.microsoft.com/download/pr/19041.264.200511-0456.vb_release_svc_refresh_CLIENTENTERPRISEEVAL_OEMRET_x64FRE_en-us.iso
+
 
 ### Buffer Overflows Explained
 
@@ -2681,5 +2691,9 @@ fcastle::TREE:51934501eb00515e:9ABE5E3F30739166896A5BEEA3D0621F:0101000000000000
 > `\\ip-kali-machine`
 
 ![[Pasted image 20230311190013.png]]
+![[Pasted image 20230312124304.png]]
 
+> [!info] 
+> Now having possiblility to crack hashes offline
+> 
 
