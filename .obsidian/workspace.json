@@ -151,7 +151,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -169,25 +169,26 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "3c990baebffa548b",
+  "active": "ab2d9287c14109ce",
   "lastOpenFiles": [
+    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230314081457.png",
+    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230314081427.png",
+    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230314081256.png",
+    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230314081214.png",
+    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230314080007.png",
+    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230314075345.png",
+    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230314073135.png",
+    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230314072936.png",
+    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230313153648.png",
+    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230313153531.png",
+    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230313125727.png",
+    "Courses/Bug Bounty Bootcamp/Bug Bounty Bootcamp.md",
     "Courses/Practical Ethical Hacking - The Complete Course/README.md",
-    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230312124304.png",
     "Topics/DevOps/Security Onion.md",
     "Topics/DevOps/Proxmox.md",
     "Topics/DevOps/Jenkins - Build Server.md",
     "Topics/DevOps",
     "Scripts/wifi_dos3.py",
-    "Courses/Bug Bounty Bootcamp/Bug Bounty Bootcamp.md",
-    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230311190013.png",
-    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230311185520.png",
-    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230311184946.png",
-    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230311184012.png",
-    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230311181427.png",
-    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230311175315.png",
-    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230311170128.png",
-    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230311163155.png",
-    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230311162545.png",
     "Courses/Open-Source Intelligence (OSINT) Fundamentals/README.md",
     "Courses/Open-Source Intelligence (OSINT) Fundamentals/assets",
     "Courses/External Pentest Playbook/README.md",
