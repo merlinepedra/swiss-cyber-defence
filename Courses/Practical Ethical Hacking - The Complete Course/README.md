@@ -2804,3 +2804,13 @@ fcastle::TREE:51934501eb00515e:9ABE5E3F30739166896A5BEEA3D0621F:0101000000000000
 
 ![[Pasted image 20230314081457.png]]
 
+### IPv6 DNS Takeover via mitm6
+
+> [!info] 
+> Resources for this video:
+>  - mitm6: [https://blog.fox-it.com/2018/01/11/mitm6-compromising-ipv4-networks-via-ipv6/](https://blog.fox-it.com/2018/01/11/mitm6-compromising-ipv4-networks-via-ipv6/) 
+>  - Combining NTLM Relays and Kerberos Delegation: [https://dirkjanm.io/worst-of-both-worlds-ntlm-relaying-and-kerberos-delegation/](https://dirkjanm.io/worst-of-both-worlds-ntlm-relaying-and-kerberos-delegation/)
+
+> [!faq] 
+>**Question**: My ntlmrelayx is giving an error during the attack. How can I resolve?
+  **Resolution**: Impacket versions > 0.9.19 are unstable and causing issues for students and pentesters alike. Try purging impacket completely and downloading 0.9.19 from here: [https://github.com/SecureAuthCorp/impacket/releases](https://github.com/SecureAuthCorp/impacket/releases)
