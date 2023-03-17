@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Courses/Practical Ethical Hacking - The Complete Course/README.md",
+                "file": "Courses/Practical Ethical Hacking - The Complete Course/Practical Ethical Hacking - The Complete Course.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Courses/Practical Ethical Hacking - The Complete Course/README.md",
+                "file": "Courses/Practical Ethical Hacking - The Complete Course/Practical Ethical Hacking - The Complete Course.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Courses/Practical Ethical Hacking - The Complete Course/README.md",
+                "file": "Courses/Practical Ethical Hacking - The Complete Course/Practical Ethical Hacking - The Complete Course.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Courses/Practical Ethical Hacking - The Complete Course/README.md"
+                "file": "Courses/Practical Ethical Hacking - The Complete Course/Practical Ethical Hacking - The Complete Course.md"
               }
             }
           },
@@ -171,19 +171,19 @@
   },
   "active": "ab2d9287c14109ce",
   "lastOpenFiles": [
-    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230314081457.png",
-    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230314081427.png",
-    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230314081256.png",
-    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230314081214.png",
-    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230314080007.png",
-    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230314075345.png",
-    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230314073135.png",
-    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230314072936.png",
-    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230313153648.png",
-    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230313153531.png",
-    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230313125727.png",
+    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230317083413.png",
+    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230317083258.png",
+    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230317083154.png",
+    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230317082814.png",
+    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230317082617.png",
+    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230317082436.png",
+    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230317082254.png",
+    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230317082131.png",
+    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230317082042.png",
+    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230317082030.png",
+    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230317081415.png",
     "Courses/Bug Bounty Bootcamp/Bug Bounty Bootcamp.md",
-    "Courses/Practical Ethical Hacking - The Complete Course/README.md",
+    "Courses/Practical Ethical Hacking - The Complete Course/Practical Ethical Hacking - The Complete Course.md",
     "Topics/DevOps/Security Onion.md",
     "Topics/DevOps/Proxmox.md",
     "Topics/DevOps/Jenkins - Build Server.md",
