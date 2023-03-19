@@ -3005,3 +3005,28 @@ fcastle::TREE:51934501eb00515e:9ABE5E3F30739166896A5BEEA3D0621F:0101000000000000
 
 ![[Pasted image 20230317083413.png]]
 
+### Bloodhound Overview and Setup
+
+> [!info] 
+> Download all DC / Domain related data and analyzing. 
+> 
+
+> [!todo] 
+> Install bloodhound
+> `sudo apt install bloodhound` 
+> `sudo neo4j console`
+> Open: `http://localhost:7474/`
+> Login with User: `neo4j` and PW: `neo4j`
+> Change to new strong password
+> run `sudo bloodhound`
+> Login with new credentials
+
+
+### Grabbing Data with Invoke-Bloodhound
+
+> [!todo] 
+> Download SharpHound.ps1 on Windows Target:
+> https://raw.githubusercontent.com/BloodHoundAD/BloodHound/master/Collectors/SharpHound.ps1
+> 
+
+
