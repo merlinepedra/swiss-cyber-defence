@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Topics/DevOps/Proxmox.md",
+                "file": "Topics/DevOps/Security Onion.md",
                 "mode": "source",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Topics/DevOps/Proxmox.md",
+                "file": "Topics/DevOps/Security Onion.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Topics/DevOps/Proxmox.md",
+                "file": "Topics/DevOps/Security Onion.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Topics/DevOps/Proxmox.md"
+                "file": "Topics/DevOps/Security Onion.md"
               }
             }
           },
@@ -207,9 +207,9 @@
   },
   "active": "acac75d9805a642f",
   "lastOpenFiles": [
+    "Topics/DevOps/Proxmox.md",
     "Topics/DevOps/Security Onion.md",
     "Courses/The Definitive GRC Analyst Master Class/README.md",
-    "Topics/DevOps/Proxmox.md",
     "Topics/DevOps/Jenkins - Build Server.md",
     "Courses/Bug Bounty Bootcamp/Bug Bounty Bootcamp.md",
     "Courses/Open-Source Intelligence (OSINT) Fundamentals/README.md",
