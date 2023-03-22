@@ -9,3 +9,15 @@ ovs-vsctl -- --id=@p get port tap101i1 \
 ```
 
 
+
+[https://bilk0h.com/posts/security-onion-proxmox-open-vswitch](https://bilk0h.com/posts/security-onion-proxmox-open-vswitch)
+
+---
+
+In Shell of Proxmox Server:
+
+daemonlogger -i enp8s0 -o vmbr2
+
+![[Pasted image 20230321164817.png]]
+
+![[Pasted image 20230321164844.png]]
