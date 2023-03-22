@@ -3027,6 +3027,20 @@ fcastle::TREE:51934501eb00515e:9ABE5E3F30739166896A5BEEA3D0621F:0101000000000000
 > [!todo] 
 > Download SharpHound.ps1 on Windows Target:
 > https://raw.githubusercontent.com/BloodHoundAD/BloodHound/master/Collectors/SharpHound.ps1
-> 
+> `powershell -ep bypass`
+> `. .\SharpHound.ps1`
+> `Invoke-BloodHound -CollectionMethod All -Domain MARVEL.local -ZipFileName file.zip`
+> - Drag and Drop ZIP file from Windows VM to Host
+> - Move ZIP file to Kali VM
 
+### Enumerating Domain Data with Bloodhound
+
+![[Pasted image 20230322192720.png]]
+
+![[Pasted image 20230322193027.png]]
+![[Pasted image 20230322193208.png]]
+
+![[Pasted image 20230322193244.png]]
+
+![[Pasted image 20230322193359.png]]
 
