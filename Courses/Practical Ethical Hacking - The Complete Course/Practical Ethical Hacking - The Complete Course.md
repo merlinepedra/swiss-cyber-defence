@@ -3044,3 +3044,28 @@ fcastle::TREE:51934501eb00515e:9ABE5E3F30739166896A5BEEA3D0621F:0101000000000000
 
 ![[Pasted image 20230322193359.png]]
 
+> [!todo] 
+> Click on Box, you will see where machine where Admin is logged in. This machine we will try to compromise later.
+
+![[Pasted image 20230322194114.png]]
+![[Pasted image 20230322194255.png]]
+
+![[Pasted image 20230322194358.png]]
+
+> [!info] 
+> We can see here that SQL Server is member of Domain Admins
+> 
+
+![[Pasted image 20230322194617.png]]
+
+## Attacking Active Directory: Post-Compromise Attacks
+
+### Introduction
+
+> [!info] 
+> All this techniques in this chapter requires kind of credential (hash, password, username, etc.)
+
+
+### Pass the Hash / Password Overview
+
+
