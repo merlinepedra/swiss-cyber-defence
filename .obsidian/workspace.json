@@ -44,7 +44,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -163,7 +163,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -181,8 +181,14 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "0ef1be6b4c45c47e",
+  "active": "ab2d9287c14109ce",
   "lastOpenFiles": [
+    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230329170636.png",
+    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230329170029.png",
+    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230329165843.png",
+    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230329165407.png",
+    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230329164810.png",
+    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230329164707.png",
     "Courses/Bug Bounty Bootcamp/Bug Bounty Bootcamp.md",
     "Courses/Practical Ethical Hacking - The Complete Course/Practical Ethical Hacking - The Complete Course.md",
     "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230329154240.png",
@@ -190,11 +196,6 @@
     "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230329153932.png",
     "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230329153741.png",
     "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230329153611.png",
-    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230329153447.png",
-    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230329153002.png",
-    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230329152803.png",
-    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230329152622.png",
-    "Courses/Practical Ethical Hacking - The Complete Course/assets/Pasted image 20230325122423.png",
     "Topics/DevOps/assets",
     "Tools/Jenkins/assets/Automating iOS app testing and TestFlight deployment with Jenkin.pdf",
     "Tools/Jenkins/assets",
