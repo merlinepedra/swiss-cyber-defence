@@ -3994,4 +3994,47 @@ OWASP Testing Guide: https://owasp.org/www-project-web-security-testing-guide/as
 
 ### Installing OWASP Juice Shop
 
+> [!note] 
+> Resources for this video:
+Installing Docker on Kali: https://medium.com/@airman604/installing-docker-in-kali-linux-2017-1-fbaa4d1447fe
+OWASP Juice Shop: https://github.com/bkimminich/juice-shop
+
+> [!todo] 
+> Install Docker on Kali:
+>  https://airman604.medium.com/installing-docker-in-kali-linux-2017-1-fbaa4d1447fe
+
+> [!caution] 
+>  Reboot Machine after install
+
+> [!todo] 
+> Install OWASP Juice Shop:
+> https://github.com/juice-shop/juice-shop
+> `docker pull bkimminich/juice-shop`
+> `docker run --rm -p 3000:3000 bkimminich/juice-shop`
+> Browse to [http://localhost:3000](http://localhost:3000)
+
+
+### Installing Foxy Proxy
+
+> [!todo] 
+> Install FoxyProxy in your Browser for fast Proxy switching:
+> https://addons.mozilla.org/de/firefox/addon/foxyproxy-standard/
+> 
+
+
+### Exploring Burp Suite
+
+![[Pasted image 20230402153540.png]]
+
+
+### Introducing the Score Board
+
+> [!todo] 
+>  Solve first challange and open score board ;-)
+>  http://localhost:3000/#/score-board
+>
+
+![[Pasted image 20230402154905.png]]
+
+### SQL Injection Attacks Overview
 
